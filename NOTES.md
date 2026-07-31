@@ -227,3 +227,44 @@ NEXT:
 - Calibration: still awaiting Darrin's 59 hand-tagged stories to tune Phase 2.
 - Going forward: edit the template + inputs and rebuild index.html; never hand-edit
   index.html as source. Run only one session at a time.
+
+---
+
+## 2026-07-30 — Card-width control (3/2/1-across + reading-list mode)
+
+Feature request (human): add a segmented control at the right end of the filter
+toolbar to set the grid's max column count, with a distinct 1-across reading-list
+mode. Persist in localStorage + URL.
+
+CHANGED (template-as-source: edited index.template.html, then rebuilt index.html):
+- Toolbar: new `.seg.cols-seg` (right-aligned via margin-left:auto) with 3/2/1
+  buttons, tooltips + aria-labels. Mono tabular digits.
+- Grid CSS: driven by `data-cols` on #grid.
+  - data-cols="2" → 2 columns; data-cols="1" → reading list:
+    single column `minmax(0,75ch)`, centered (`justify-content:center`), and
+    excerpt line-clamp bumped 3→9.
+  - The chosen value is a MAX. Responsive cap unchanged in spirit: ≤1080px caps
+    3→2 (`:not([data-cols="1"]):not([data-cols="2"])`); ≤820px forces single
+    column for every choice (attribute-specificity match so it overrides the
+    75ch cap and fills narrow screens).
+- JS: `state.cols` (default 3); `loadCols()` reads `moh_cols` from localStorage;
+  `?cols=` URL param (written when ≠3, read with URL-wins-over-localStorage
+  precedence). `setCols()` persists + re-renders. cardHTML widens the excerpt to
+  ~3x (170→540 snippet / 190→570 plain) when cols===1. render()/popstate set
+  `#grid[data-cols]` and call `syncColsUI()`.
+- Bugfix guard: the fate seg and cols seg both use `.seg-btn`; retargeted the
+  fate click handler and `syncFateUI()` from `.seg-btn` to `[data-fate]` so the
+  two segmented controls don't clobber each other's active state.
+
+VERIFIED:
+- Rebuild validation: 50 records, valid JSON, all 50 category_hints intact,
+  `node --check` clean, zero raw hex outside the tokens block, template ↔ index.html
+  in sync (22 feature markers each).
+- Headless-Chrome screenshots, all three widths in BOTH light and dark: 3-across
+  and 2-across grids render correctly; 1-across is a centered ~75ch reading list
+  with the long excerpt; active button state correct in each. Responsive check at
+  900px: cols=3 correctly collapses to 2.
+
+NEXT:
+- Unchanged: Phase 5 (scale to 3,475) is the next substantive work; still awaiting
+  Darrin's 59-story calibration set.

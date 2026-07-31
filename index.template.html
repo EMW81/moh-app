@@ -99,6 +99,8 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .seg-btn.fell .star{color:var(--gold);}
 .seg-btn.active.fell{background:var(--accent-solid);}
 .seg-btn.active.fell .star{color:var(--accent-fg);}
+.cols-seg{margin-left:auto;}
+.cols-seg .seg-btn{font-family:var(--font-mono);font-variant-numeric:tabular-nums;font-weight:700;padding:0 12px;}
 
 /* ---------- active filter bar ---------- */
 .activebar{padding:12px 26px 0;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;}
@@ -127,6 +129,10 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 
 /* ---------- card grid ---------- */
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:16px 26px 40px;}
+.grid[data-cols="2"]{grid-template-columns:repeat(2,minmax(0,1fr));}
+/* 1-across = reading list: single column capped to a comfortable measure, centered */
+.grid[data-cols="1"]{grid-template-columns:minmax(0,75ch);justify-content:center;}
+.grid[data-cols="1"] .card-excerpt{-webkit-line-clamp:9;}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow-md);
   padding:15px 17px;display:flex;flex-direction:column;gap:10px;box-sizing:border-box;text-align:left;color:inherit;}
 .card:hover{border-color:var(--border-strong);}
@@ -254,7 +260,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .mp-link:hover{text-decoration:underline;}
 
 /* ---------- responsive ---------- */
-@media (max-width:1080px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:1080px){.grid:not([data-cols="1"]):not([data-cols="2"]){grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media (max-width:820px){
   .rail{transform:translateX(-100%);transition:transform .18s ease;box-shadow:var(--shadow-lg);}
   .rail.open{transform:none;}
@@ -262,7 +268,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
   .menu-toggle{display:inline-flex;}
   .hdr{padding:12px 16px;}
   .filters,.activebar,.countbar,.grid{padding-left:16px;padding-right:16px;}
-  .grid{grid-template-columns:1fr;}
+  .grid,.grid[data-cols="1"],.grid[data-cols="2"],.grid[data-cols="3"]{grid-template-columns:1fr;justify-content:stretch;}
   .search{max-width:none;flex-basis:100%;}
   .theme-menu .cols{grid-template-columns:1fr;gap:0;}
   .theme-col{border-left:none;border-top:1px solid var(--border-soft);padding-top:10px;margin-top:6px;}
@@ -343,6 +349,11 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
         <button class="seg-btn active" data-fate="all">All</button>
         <button class="seg-btn" data-fate="survived">Survived</button>
         <button class="seg-btn fell" data-fate="fell"><span class="star">★</span> Fell</button>
+      </div>
+      <div class="seg cols-seg" role="group" aria-label="Cards per row">
+        <button class="seg-btn" data-cols="3" title="3 across" aria-label="3 cards across">3</button>
+        <button class="seg-btn" data-cols="2" title="2 across" aria-label="2 cards across">2</button>
+        <button class="seg-btn" data-cols="1" title="1 across — reading list" aria-label="1 card across, reading list">1</button>
       </div>
     </div>
 
@@ -426,9 +437,10 @@ const BRANCHES  = [...new Set(STORIES.map(s=>s.branch))].sort();
 const BATTLES   = [...new Set(STORIES.map(s=>s.battle).filter(Boolean))].sort();
 
 /* ===================== state ===================== */
+function loadCols(){ const n=+localStorage.getItem("moh_cols"); return (n===1||n===2||n===3)?n:3; }
 const state = {
   themes:new Set(), conflicts:new Set(), branches:new Set(), battles:new Set(),
-  fate:"all", query:"", view:"list",
+  fate:"all", query:"", view:"list", cols:loadCols(),
 };
 let SAVED = loadSaved();
 let openStoryId = null;
@@ -456,6 +468,7 @@ function writeURL(push){
   if(state.branches.size) p.set("b", [...state.branches].map(c=>BRANCHES.indexOf(c)).sort((a,b)=>a-b).join(","));
   if(state.battles.size) p.set("bt", [...state.battles].map(c=>BATTLES.indexOf(c)).sort((a,b)=>a-b).join(","));
   if(state.fate!=="all") p.set("f", state.fate);
+  if(state.cols!==3) p.set("cols", state.cols);
   if(state.view!=="list") p.set("v", state.view);
   if(openStoryId) p.set("s", openStoryId);
   const url = location.pathname + (p.toString()?"?"+p.toString():"");
@@ -469,6 +482,7 @@ function readURL(){
   state.branches = new Set((p.get("b")||"").split(",").filter(x=>x!=="").map(i=>BRANCHES[+i]).filter(Boolean));
   state.battles = new Set((p.get("bt")||"").split(",").filter(x=>x!=="").map(i=>BATTLES[+i]).filter(Boolean));
   state.fate = p.get("f")||"all";
+  const uc=+p.get("cols"); state.cols = (uc===1||uc===2||uc===3) ? uc : loadCols();
   state.view = p.get("v")==="map" ? "map" : "list";
   openStoryId = p.get("s")||null;
 }
@@ -540,8 +554,9 @@ function cardHTML(s){
   const plus = s.categories.length>1 ? `<span class="plusn">+${s.categories.length-1}</span>` : "";
   const meta = [s.conflict, s.battle].filter(Boolean).join(" · ").toUpperCase();
   let body;
-  if(state.query){ const snip = highlightSnippet(s.citation, state.query); body = snip ? `<div class="card-excerpt snippet">${snip}</div>` : `<div class="card-excerpt">${esc(s.citation.slice(0,170))}</div>`; }
-  else body = `<div class="card-excerpt">${esc(s.citation.slice(0,190))}</div>`;
+  const wide = state.cols===1;   // reading-list mode: ~3x the excerpt
+  if(state.query){ const snip = highlightSnippet(s.citation, state.query); body = snip ? `<div class="card-excerpt snippet">${snip}</div>` : `<div class="card-excerpt">${esc(s.citation.slice(0,wide?540:170))}</div>`; }
+  else body = `<div class="card-excerpt">${esc(s.citation.slice(0,wide?570:190))}</div>`;
   const fate = s.survived ? `<span class="fate-chip surv">Survived</span>` : `<span class="fate-chip fell">★ Fell</span>`;
   return `<button class="card" data-story="${esc(s.id)}">
     <div class="card-top">
@@ -641,6 +656,7 @@ function syncBtnPills(){
 /* ===================== master render ===================== */
 function render(push){
   const list = filtered();
+  $("#grid").dataset.cols = state.cols; syncColsUI();
   renderRail(); renderActive(); renderCounts(list); renderGrid(list); syncBtnPills();
   setView(state.view);
   if(state.view==="map") renderMap(list);
@@ -802,7 +818,15 @@ function cycleTheme(){
 }
 
 /* ===================== fate UI ===================== */
-function syncFateUI(){ document.querySelectorAll(".seg-btn").forEach(b=>b.classList.toggle("active", b.dataset.fate===state.fate)); }
+function syncFateUI(){ document.querySelectorAll("[data-fate]").forEach(b=>b.classList.toggle("active", b.dataset.fate===state.fate)); }
+
+/* ===================== cards-per-row UI ===================== */
+function syncColsUI(){ document.querySelectorAll("[data-cols]").forEach(b=>b.classList.toggle("active", +b.dataset.cols===state.cols)); }
+function setCols(n){
+  if(n!==1&&n!==2&&n!==3) return;
+  state.cols = n; localStorage.setItem("moh_cols", n);
+  syncColsUI(); render(false);
+}
 
 /* ===================== events ===================== */
 let searchTimer=null;
@@ -810,7 +834,8 @@ $("#search").addEventListener("input", e=>{
   clearTimeout(searchTimer);
   searchTimer = setTimeout(()=>{ state.query = e.target.value.trim(); render(false); }, 180);
 });
-document.querySelectorAll(".seg-btn").forEach(b=>b.addEventListener("click",()=>{ state.fate=b.dataset.fate; syncFateUI(); render(false); }));
+document.querySelectorAll("[data-fate]").forEach(b=>b.addEventListener("click",()=>{ state.fate=b.dataset.fate; syncFateUI(); render(false); }));
+document.querySelectorAll("[data-cols]").forEach(b=>b.addEventListener("click",()=>setCols(+b.dataset.cols)));
 $("#btnThemes").addEventListener("click", ()=>{ if(activePop&&activePop.pop===$("#popThemes")) closePop(); else openThemes(); });
 $("#btnConflict").addEventListener("click", ()=>{ const p=$("#popConflict"); if(activePop&&activePop.pop===p){closePop();return;} buildListMenu(p,CONFLICTS,state.conflicts,"conflicts",v=>facet("conflicts",s=>s.conflict===v)); openPop(p,$("#btnConflict")); });
 $("#btnBranch").addEventListener("click", ()=>{ const p=$("#popBranch"); if(activePop&&activePop.pop===p){closePop();return;} buildListMenu(p,BRANCHES,state.branches,"branches",v=>facet("branches",s=>s.branch===v)); openPop(p,$("#btnBranch")); });
@@ -876,8 +901,8 @@ window.addEventListener("resize", ()=>{ if(activePop) positionPop(activePop.pop,
 
 // popstate: sync from URL (handles detail back-button + shared links)
 window.addEventListener("popstate", ()=>{
-  readURL(); $("#search").value=state.query; syncFateUI();
-  const list=filtered(); renderRail(); renderActive(); renderCounts(list); renderGrid(list); syncBtnPills();
+  readURL(); $("#search").value=state.query; syncFateUI(); syncColsUI();
+  const list=filtered(); $("#grid").dataset.cols=state.cols; renderRail(); renderActive(); renderCounts(list); renderGrid(list); syncBtnPills();
   setView(state.view); if(state.view==="map") renderMap(list);
   if(openStoryId){ openDetail(openStoryId,false); } else if($("#detailScrim").classList.contains("open")){ closeDetail(true); }
 });
