@@ -72,7 +72,6 @@
   }
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
 }
-
 </style>
 <style>
 /* ---------- reset / base ---------- */
@@ -400,6 +399,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
       <button class="btn" id="btnThemes" aria-expanded="false" aria-haspopup="true">Themes <span class="pill-n" id="nThemes" hidden>0</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg></button>
       <button class="btn" id="btnConflict" aria-expanded="false" aria-haspopup="true">Conflict <span class="pill-n" id="nConflict" hidden>0</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg></button>
       <button class="btn" id="btnBranch" aria-expanded="false" aria-haspopup="true">Branch <span class="pill-n" id="nBranch" hidden>0</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg></button>
+      <button class="btn" id="btnBattle" aria-expanded="false" aria-haspopup="true">Battle <span class="pill-n" id="nBattle" hidden>0</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg></button>
       <div class="seg" role="group" aria-label="Fate">
         <button class="seg-btn active" data-fate="all">All</button>
         <button class="seg-btn" data-fate="survived">Survived</button>
@@ -426,6 +426,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 <div class="popover" id="popThemes"></div>
 <div class="popover" id="popConflict"></div>
 <div class="popover" id="popBranch"></div>
+<div class="popover" id="popBattle"></div>
 
 <!-- detail -->
 <div class="detail-scrim" id="detailScrim">
@@ -483,10 +484,11 @@ STORIES.forEach(s=>{
 });
 const CONFLICTS = [...new Set(STORIES.map(s=>s.conflict))].sort();
 const BRANCHES  = [...new Set(STORIES.map(s=>s.branch))].sort();
+const BATTLES   = [...new Set(STORIES.map(s=>s.battle).filter(Boolean))].sort();
 
 /* ===================== state ===================== */
 const state = {
-  themes:new Set(), conflicts:new Set(), branches:new Set(),
+  themes:new Set(), conflicts:new Set(), branches:new Set(), battles:new Set(),
   fate:"all", query:"", view:"list",
 };
 let SAVED = loadSaved();
@@ -499,6 +501,7 @@ function passExcept(s, dim){
   if(dim!=="themes"&&state.themes.size){ if(![...state.themes].every(t=>s.categories.includes(t))) return false; }
   if(dim!=="conflicts"&&state.conflicts.size){ if(!state.conflicts.has(s.conflict)) return false; }
   if(dim!=="branches"&&state.branches.size){ if(!state.branches.has(s.branch)) return false; }
+  if(dim!=="battles"&&state.battles.size){ if(!state.battles.has(s.battle)) return false; }
   return true;
 }
 const filtered = () => STORIES.filter(s=>passExcept(s,null));
@@ -512,6 +515,7 @@ function writeURL(push){
   if(state.themes.size) p.set("t", [...state.themes].map(t=>THEMES.indexOf(t)).sort((a,b)=>a-b).join(","));
   if(state.conflicts.size) p.set("c", [...state.conflicts].map(c=>CONFLICTS.indexOf(c)).sort((a,b)=>a-b).join(","));
   if(state.branches.size) p.set("b", [...state.branches].map(c=>BRANCHES.indexOf(c)).sort((a,b)=>a-b).join(","));
+  if(state.battles.size) p.set("bt", [...state.battles].map(c=>BATTLES.indexOf(c)).sort((a,b)=>a-b).join(","));
   if(state.fate!=="all") p.set("f", state.fate);
   if(state.view!=="list") p.set("v", state.view);
   if(openStoryId) p.set("s", openStoryId);
@@ -524,6 +528,7 @@ function readURL(){
   state.themes = new Set((p.get("t")||"").split(",").filter(x=>x!=="").map(i=>THEMES[+i]).filter(Boolean));
   state.conflicts = new Set((p.get("c")||"").split(",").filter(x=>x!=="").map(i=>CONFLICTS[+i]).filter(Boolean));
   state.branches = new Set((p.get("b")||"").split(",").filter(x=>x!=="").map(i=>BRANCHES[+i]).filter(Boolean));
+  state.battles = new Set((p.get("bt")||"").split(",").filter(x=>x!=="").map(i=>BATTLES[+i]).filter(Boolean));
   state.fate = p.get("f")||"all";
   state.view = p.get("v")==="map" ? "map" : "list";
   openStoryId = p.get("s")||null;
@@ -554,6 +559,7 @@ function renderActive(){
   state.themes.forEach(t=>chips.push(chip(t, groupColor(THEME_GROUP[t]), "theme:"+encodeURIComponent(t))));
   state.conflicts.forEach(c=>chips.push(chip(c, "var(--neutral)", "conflict:"+encodeURIComponent(c))));
   state.branches.forEach(b=>chips.push(chip(b, "var(--neutral)", "branch:"+encodeURIComponent(b))));
+  state.battles.forEach(b=>chips.push(chip(b, "var(--neutral)", "battle:"+encodeURIComponent(b))));
   if(state.fate!=="all") chips.push(chip(state.fate==="fell"?"★ Fell":"Survived","var(--neutral)","fate"));
   if(state.query) chips.push(`<span class="chip search">⌕ <em>"${esc(state.query)}"</em><button class="x" data-x="query" aria-label="Clear search">×</button></span>`);
 
@@ -677,7 +683,7 @@ function setView(v){
 /* ===================== filter button counts ===================== */
 function syncBtnPills(){
   const set=(id,n)=>{const e=$(id);e.hidden=!n;e.textContent=n;};
-  set("#nThemes", state.themes.size); set("#nConflict", state.conflicts.size); set("#nBranch", state.branches.size);
+  set("#nThemes", state.themes.size); set("#nConflict", state.conflicts.size); set("#nBranch", state.branches.size); set("#nBattle", state.battles.size);
 }
 
 /* ===================== master render ===================== */
@@ -803,10 +809,10 @@ function closeDetail(fromPop){
 /* ===================== saved views ===================== */
 function loadSaved(){ try{return JSON.parse(localStorage.getItem("moh_saved_views")||"[]");}catch(e){return [];} }
 function persistSaved(){ localStorage.setItem("moh_saved_views", JSON.stringify(SAVED)); }
-function snapshot(){ return {q:state.query, t:[...state.themes], c:[...state.conflicts], b:[...state.branches], f:state.fate}; }
+function snapshot(){ return {q:state.query, t:[...state.themes], c:[...state.conflicts], b:[...state.branches], bt:[...state.battles], f:state.fate}; }
 function applySnapshot(v){
   state.query=v.q||""; $("#search").value=state.query;
-  state.themes=new Set(v.t||[]); state.conflicts=new Set(v.c||[]); state.branches=new Set(v.b||[]); state.fate=v.f||"all";
+  state.themes=new Set(v.t||[]); state.conflicts=new Set(v.c||[]); state.branches=new Set(v.b||[]); state.battles=new Set(v.bt||[]); state.fate=v.f||"all";
   syncFateUI(); render(true);
 }
 function saveCurrent(){
@@ -856,6 +862,7 @@ document.querySelectorAll(".seg-btn").forEach(b=>b.addEventListener("click",()=>
 $("#btnThemes").addEventListener("click", ()=>{ if(activePop&&activePop.pop===$("#popThemes")) closePop(); else openThemes(); });
 $("#btnConflict").addEventListener("click", ()=>{ const p=$("#popConflict"); if(activePop&&activePop.pop===p){closePop();return;} buildListMenu(p,CONFLICTS,state.conflicts,"conflicts",v=>facet("conflicts",s=>s.conflict===v)); openPop(p,$("#btnConflict")); });
 $("#btnBranch").addEventListener("click", ()=>{ const p=$("#popBranch"); if(activePop&&activePop.pop===p){closePop();return;} buildListMenu(p,BRANCHES,state.branches,"branches",v=>facet("branches",s=>s.branch===v)); openPop(p,$("#btnBranch")); });
+$("#btnBattle").addEventListener("click", ()=>{ const p=$("#popBattle"); if(activePop&&activePop.pop===p){closePop();return;} buildListMenu(p,BATTLES,state.battles,"battles",v=>facet("battles",s=>s.battle===v)); openPop(p,$("#btnBattle")); });
 $("#scrim").addEventListener("click", closePop);
 
 // rail group -> open theme menu
@@ -880,6 +887,7 @@ $("#activebar").addEventListener("click", e=>{
     if(k==="theme") state.themes.delete(decodeURIComponent(val));
     else if(k==="conflict") state.conflicts.delete(decodeURIComponent(val));
     else if(k==="branch") state.branches.delete(decodeURIComponent(val));
+    else if(k==="battle") state.battles.delete(decodeURIComponent(val));
     else if(k==="fate") state.fate="all";
     else if(k==="query"){ state.query=""; $("#search").value=""; }
     syncFateUI(); render(false); return; }
@@ -894,11 +902,12 @@ function removeLastFilter(){
   else if(state.themes.size){ state.themes.delete([...state.themes].pop()); }
   else if(state.conflicts.size){ state.conflicts.delete([...state.conflicts].pop()); }
   else if(state.branches.size){ state.branches.delete([...state.branches].pop()); }
+  else if(state.battles.size){ state.battles.delete([...state.battles].pop()); }
   else if(state.fate!=="all"){ state.fate="all"; }
   syncFateUI(); render(false);
 }
 function clearAll(){
-  state.themes.clear(); state.conflicts.clear(); state.branches.clear(); state.fate="all"; state.query=""; $("#search").value="";
+  state.themes.clear(); state.conflicts.clear(); state.branches.clear(); state.battles.clear(); state.fate="all"; state.query=""; $("#search").value="";
   syncFateUI(); render(false); toast("Filters cleared");
 }
 
