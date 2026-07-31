@@ -1,4 +1,4 @@
-/* Stories of Valor — Meridian tokens (from QUITTERS_Art_Dept_HQ_9.html, + theme-group mapping) */
+/* Stories of Valor — Meridian tokens (from QUITTERS_Art_Dept_HQ_9.html, + theme-group mapping, + VALOR branding 2026-07-31) */
 :root{
   --font-ui:"Geist",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --font-mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
@@ -11,14 +11,16 @@
   --rail-text:var(--text); --rail-muted:var(--text-muted); --rail-subtle:var(--text-subtle);
   --rail-hover:color-mix(in srgb,var(--text) 6%,transparent);
   --rail-inverse:#131316; --rail-inverse-text:#ededf0;
-  --rail-badge-ink:var(--rail-inverse); /* dark ink on amber badge, BOTH modes */
+  /* VALOR brand */
+  --brand-ink:#04243b;                      /* navy — wordmark, medal branch labels */
+  --gold-fill:#d9ac51; --gold-line:#77522b; /* star gold — fills get gold-fill, lines/text get gold-line */
+  --gold-ink:#77522b;                       /* text/border ON a solid gold-fill shape — dark bronze BOTH modes */
   /* accent (one) */
   --accent:#5b5bd6; --accent-solid:#5b5bd6; --accent-hover:#4f4fc8;
   --accent-pressed:#4646b8; --accent-bg:#eeeef8; --accent-fg:#ffffff;
   /* semantics */
   --warning:#b45309; --warning-bg:#f9efe2;
   --critical:#d92d20; --critical-bg:#fdecea;
-  --gold:#a16207; --gold-bg:#f7f0da;       /* fallen ★ */
   --neutral:#71717a; --neutral-bg:#f0f0f1; /* survived */
   /* theme groups (Meridian dept ramp) */
   --tg-deed:#c2410c; --tg-person:#7c3aed; --tg-spirit:#15803d; --tg-after:#0369a1;
@@ -43,7 +45,8 @@
   --accent-pressed:#5252d0; --accent-bg:rgba(123,131,235,.14); --accent-fg:#ffffff;
   --warning:#e5a13c; --warning-bg:rgba(229,161,60,.13);
   --critical:#f0655a; --critical-bg:rgba(240,101,90,.13);
-  --gold:#d9b13b; --gold-bg:rgba(217,177,59,.13);
+  --brand-ink:#a9c3da;                      /* light desaturated blue — reads on dark surfaces */
+  --gold-fill:#d9ac51; --gold-line:#c79b57; /* fill holds; line lightens to read on dark */
   --neutral:#8f8f98; --neutral-bg:rgba(143,143,152,.13);
   --tg-deed:#fb923c; --tg-person:#a78bfa; --tg-spirit:#4ade80; --tg-after:#4db8f0;
   --seg-off:#313138;
@@ -57,7 +60,7 @@
     --bg:#ffffff; --surface:#ffffff; --surface-raised:#f4f4f5;
     --border:#d4d4d8; --border-strong:#a1a1aa;
     --text:#111113; --text-muted:#3f3f46; --text-subtle:#71717a;
-    --gold:#7a5c17;
+    --gold-line:#5f4122;
     --shadow-sm:none; --shadow-md:none; --shadow-lg:none;
   }
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
