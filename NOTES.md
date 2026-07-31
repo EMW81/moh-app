@@ -1,5 +1,60 @@
 # MOH Stories App — Build Notes
 
+## Session 2026-07-30 (eve) — Phases 2 & 3 shipped
+CHANGED:
+- PHASE 2 (category tagging) COMPLETE. All 50 pilot recipients now carry 1-4 of
+  the 32 canonical themes in `categories[]`. Tagged by reading each full citation +
+  category_hints, calibrated against the 6 pre-tagged stories in
+  design/stories.sample.json. Every assignment validated against the canonical
+  32-name set; 1-4 per record (Shughart trimmed 5->4 for the sweet spot).
+  Survived flags: verified all 50 against citation language — NO disagreements,
+  so no human-assigned values were changed. Live group story-counts:
+  Deed 50 · Person 18 · Spirit 21 · Aftermath 34. Fate: 33 survived / 17 fell.
+  (Note: the README's rail placeholder counts 61/21/28/37 were designer mock
+  numbers; the app now computes real faceted counts live.)
+- PHASE 3 (app) COMPLETE. Single self-contained index.html (~160KB, zero build
+  step, zero deps). Implements the Meridian "Stories of Valor" design from
+  design/README.md. Built from index.template.html via an inline inject step
+  (tokens + data), kept in-repo for reproducible rebuilds.
+- Design handoff unpacked into design/ (README.md, tokens.css, stories.sample.json,
+  DESIGN_BRIEF.md) from the "MoH Stories Browser mockup.zip" in ~/Downloads.
+
+DESIGN AMENDMENTS APPLIED (per Darrin/handoff instructions):
+  1. --tg-person remapped to violet (#7c3aed light / #a78bfa dark). Gold (#a16207)
+     is now reserved exclusively for the fallen — person no longer collided with it.
+  2. Header avatar omitted (theme toggle sits top-right instead).
+  3. README's React/Vue line ignored — single-file vanilla per CLAUDE.md.
+  4. URL-encoded filter state adopted (shareable ?q/t/c/b/f/s params; back button
+     closes the detail modal via history.pushState).
+
+BUILT (browse view matches mockups 2A/2B, light + dark, verified via headless
+Chrome screenshots): 230px theme-responsive rail (wordmark, nav w/ live badges,
+theme-group color bars w/ live counts, footer note); header; filter row (search +
+Themes/Conflict/Branch popovers + All/Survived/Fell segment); count bar; 3-col
+card grid (avatar initials, 4-block dept-seg group indicator, mono meta line,
+3-line excerpt, lead theme chip +N, fate chip). Plus: theme menu popover (4
+columns, live faceted counts computed with each dimension's own filter removed),
+active-filter chips + clear-all, saved views (localStorage), 180ms debounced
+search with match highlighting on cards + detail, story detail modal (two-column,
+full verbatim citation — stress-tested with the 4,587-char Benavidez citation),
+light/dark/auto theme (persisted), print styles, toast, empty state. All colors
+via CSS custom properties (grep confirms zero raw hex outside the token block);
+tokens.css embedded verbatim + the person-color amendment. Everything rendered
+from data is escaped (esc()).
+
+NEXT:
+- PHASE 4 — Map view (Leaflet + CARTO tiles; coords already present). Header
+  List/Map toggle is speced but not yet wired — deferred to keep this session's
+  gate ("push when the browse view renders") clean.
+- Battle facet: state/data support it but the filter row shows only the 3 speced
+  dropdowns (Themes/Conflict/Branch) to match 2A/2B. Add a Battle menu later.
+- Calibration: when Darrin's 59 hand-tagged stories arrive, diff against my Phase 2
+  tags and tune (esp. Person/Spirit judgment calls).
+
+OPEN QUESTIONS FOR HUMANS:
+- Remote/push: no git remote was configured. Need the target repo (and whether it
+  should be public or private) before pushing.
+
 ## Status (2026-07-30, PM)
 - Phase 1 (data pull) COMPLETE for pilot: 50 curated recipients in data/pilot50.json.
   SOURCE PIVOT: cmohs.org bot-blocked mid-scrape. Switched to the CORGIS public
