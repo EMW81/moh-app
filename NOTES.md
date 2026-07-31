@@ -156,3 +156,42 @@ NEXT / OPEN QUESTIONS
 - Phase 4 (map) effectively done for the pilot. Phase 5 = scale to 3,475.
 - Awaiting Darrin's 59-story calibration set to tune Phase 2 tags.
 - Photos deferred (Wikimedia); card avatar swaps to photo_url when present.
+
+## Session 2026-07-30 (eve 2) — Phase 4 map, Battle facet, Phase 5 prep
+
+CHANGED (all committed + pushed to origin EMW81/moh-app):
+- Reviewed the uncommitted index.html working change: it re-embedded the human
+  category_hints into the inline data (good — restores pilot50.json fidelity) but
+  had introduced a stray `[]` after the STORIES array literal (`= [...][];`), a JS
+  syntax error that blanked the app. Kept the hints, removed the bracket (ce2768b).
+- CLAUDE.md: added a "GitHub workflow" section — canonical origin EMW81/moh-app,
+  pull --rebase at start, small commits, push (with NOTES) at end, stop+log on auth
+  failure without touching creds, never force-push/rewrite history (fc0df79).
+- PHASE 4 (map) wired + built: Leaflet 1.9.4 + CARTO light/dark tiles that follow
+  the theme, faceted pins (survived dot / fallen star), popup -> detail, List/Map
+  rail toggle with ?v=map URL state, approximate-location disclaimer, graceful
+  degradation if Leaflet fails. Verified in headless Chrome (e14771f).
+- BATTLE facet added as a 4th filter menu (Themes/Conflict/Branch/Battle): 27
+  distinct battles, per-option faceted counts, chips, ?bt= URL state, saved-view
+  support. Verified filtering to Iwo Jima (9b5190d).
+- PHASE 5 PREP: renderGrid now chunks ~200 cards/frame via rAF with a cancel token,
+  so the full ~3,475 set won't block paint. No-op for the 50-record pilot (843d029).
+
+BUILD MODEL USED THIS SESSION: index.template.html = source of truth (has the
+/*__TOKENS__*/ and /*__DATA__*/ placeholders); index.html rebuilt from it by
+injecting tokens (from HEAD) + pilot50 data. Every rebuild re-validated: 50 records,
+valid JSON, category_hints intact, node --check clean, zero raw hex outside tokens.
+
+OPEN QUESTION / CONFLICT FOR HUMANS (important):
+- A concurrent writer (commits authored as ericwilsonart@gmail.com, a different
+  identity than this session's claimtheacre@gmail.com) is operating on this repo in
+  parallel. Its own NOTES entry ("Session 2026-07-30 PM 2") states it REMOVED
+  index.template.html "to keep single-file discipline" and wants index.html edited
+  directly. This session (and the "eve" session) instead KEEP the template as the
+  source of truth for reproducible rebuilds. During this session the template was
+  repeatedly deleted from the working tree and my uncommitted edits reverted by that
+  process; I restored the template and committed. NET: both approaches' work is on
+  origin, but they are architecturally at odds. Humans must decide: (a) template-as-
+  source (keep index.template.html, build index.html from it), or (b) single-file only
+  (delete the template, edit index.html directly). Until settled, expect churn.
+  No history was rewritten and nothing was force-pushed.
