@@ -572,3 +572,36 @@ innerWidth before calling mobile overflow a bug (cost me a debug cycle tonight).
 
 FILE SIZE: index.html 224,443 -> 225,063 bytes (+620 B). URL/saved-view behavior
 untouched (state model and handlers unchanged — only presentation).
+
+## 2026-07-31 (night) — Layout: left-align + sticky toolbar; canonical medal re-embed
+
+LAYOUT (human request):
+- 1-across reading column now sits flush LEFT under the toolbar (75ch max-width kept;
+  justify-content:center removed). 2/3-across were already full-width left-aligned.
+- Sticky toolbar: .filters + .activebar wrapped in a sticky .toolbar (top:0, z:15,
+  solid var(--bg), bottom border + shadow-sm); the page header (.hdr) scrolls away —
+  its position:sticky removed. Print rules updated (.toolbar hidden as a unit).
+- Verified NUMERICALLY at scroll y=700 via getBoundingClientRect dump: toolbar top=0,
+  header bottom≈-632, card left = toolbar left + padding, in cols 1/2/3 × light/dark
+  + 500px viewport. (Headless Chrome paints scrolled sticky content with a blank-band
+  screenshot artifact in BOTH old and new headless — geometry dumps are the reliable
+  check; screenshots still confirm relative layering.)
+- Modal (z 2000) and map view unaffected.
+
+MEDALS (human request — canonical transparent sources landed):
+- moh-army/navy/airforce.png are now true RGBA (corners alpha 0). But partial-alpha
+  edge pixels carried a WHITE MATTE tint (mean edge RGB ~248,239,214) → would halo on
+  dark. Fixed by un-matting: F=(C-(1-a)*255)/a per edge pixel before downscale.
+- Branch labels are NOT baked into these sources (old 4-series had them) — no crop
+  needed; labels remain HTML (required for USMC/USCG-on-Navy-pattern).
+- Same pipeline: trim, 208px tall, 256-color quantize. Old vs new compared on dark at
+  display size + zoom: old flood-fill cutouts showed faint light fringe; new AA edges
+  blend clean. Embedded size ~unchanged: 26,501 -> 26,772 B total (+271 B).
+- 4a/4b/4c series remain in design/brand/ as history but are no longer the embed source.
+
+index.html: 225,063 -> 225,756 bytes (+693 B net).
+
+CLAUDE.md updated (human ruling): main auto-deploys to https://everymedal.org via
+GitHub Pages — every push is production; verify build renders before pushing.
+Pre-push verification for THIS push: node --check clean ×2 scripts, 50 records,
+zero raw hex outside tokens, visual smoke light+dark+map+detail. Ready.
