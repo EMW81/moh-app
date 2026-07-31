@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stories of Valor — Medal of Honor</title>
+<meta name="description" content="Browse Medal of Honor citations by what they mean — 32 themes, every conflict, every branch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style id="tokens">
+/* Stories of Valor — Meridian tokens (from QUITTERS_Art_Dept_HQ_9.html, + theme-group mapping) */
+:root{
+  --font-ui:"Geist",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  /* neutrals */
+  --bg:#fafafa; --surface:#ffffff; --surface-raised:#f4f4f5;
+  --border:#e4e4e7; --border-strong:#d4d4d8; --border-soft:#f1f1f3;
+  --text:#18181b; --text-muted:#52525b; --text-subtle:#a1a1aa;
+  /* rail — theme-responsive: light rail in light mode */
+  --rail:var(--bg); --rail-raised:var(--surface-raised); --rail-border:var(--border);
+  --rail-text:var(--text); --rail-muted:var(--text-muted); --rail-subtle:var(--text-subtle);
+  --rail-hover:color-mix(in srgb,var(--text) 6%,transparent);
+  --rail-inverse:#131316; --rail-inverse-text:#ededf0;
+  --rail-badge-ink:var(--rail-inverse); /* dark ink on amber badge, BOTH modes */
+  /* accent (one) */
+  --accent:#5b5bd6; --accent-solid:#5b5bd6; --accent-hover:#4f4fc8;
+  --accent-pressed:#4646b8; --accent-bg:#eeeef8; --accent-fg:#ffffff;
+  /* semantics */
+  --warning:#b45309; --warning-bg:#f9efe2;
+  --critical:#d92d20; --critical-bg:#fdecea;
+  --gold:#a16207; --gold-bg:#f7f0da;       /* fallen ★ */
+  --neutral:#71717a; --neutral-bg:#f0f0f1; /* survived */
+  /* theme groups (Meridian dept ramp) */
+  --tg-deed:#c2410c; --tg-person:#7c3aed; --tg-spirit:#15803d; --tg-after:#0369a1;
+  --seg-off:#e4e4e7;
+  /* geometry */
+  --radius-sm:4px; --radius:6px; --radius-lg:8px; --radius-pill:999px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.05);
+  --shadow-md:0 1px 3px rgba(0,0,0,.07),0 4px 14px rgba(0,0,0,.05);
+  --shadow-lg:0 4px 12px rgba(0,0,0,.10),0 12px 32px rgba(0,0,0,.12);
+  --ring:0 0 0 3px rgba(91,91,214,.28);
+}
+[data-theme="dark"]{
+  --bg:#0f0f11; --surface:#161618; --surface-raised:#1f1f23;
+  --border:#26262b; --border-strong:#313138; --border-soft:#1f1f23;
+  --text:#ededf0; --text-muted:#9d9da6; --text-subtle:#66666e;
+  --rail:#131316; --rail-raised:#232329; --rail-border:#202024;
+  --rail-text:#ededf0; --rail-muted:#9d9da6; --rail-subtle:#66666e;
+  --rail-hover:rgba(255,255,255,.04);
+  --accent:#7b83eb; --accent-solid:#5e5edd; --accent-hover:#6e76e8;
+  --accent-pressed:#5252d0; --accent-bg:rgba(123,131,235,.14); --accent-fg:#ffffff;
+  --warning:#e5a13c; --warning-bg:rgba(229,161,60,.13);
+  --critical:#f0655a; --critical-bg:rgba(240,101,90,.13);
+  --gold:#d9b13b; --gold-bg:rgba(217,177,59,.13);
+  --neutral:#8f8f98; --neutral-bg:rgba(143,143,152,.13);
+  --tg-deed:#fb923c; --tg-person:#a78bfa; --tg-spirit:#4ade80; --tg-after:#4db8f0;
+  --seg-off:#313138;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow-md:0 1px 3px rgba(0,0,0,.5),0 4px 14px rgba(0,0,0,.35);
+  --shadow-lg:0 4px 12px rgba(0,0,0,.5),0 16px 40px rgba(0,0,0,.5);
+  --ring:0 0 0 3px rgba(123,131,235,.35);
+}
+@media print{
+  :root,[data-theme="dark"]{
+    --bg:#ffffff; --surface:#ffffff; --surface-raised:#f4f4f5;
+    --border:#d4d4d8; --border-strong:#a1a1aa;
+    --text:#111113; --text-muted:#3f3f46; --text-subtle:#71717a;
+    --gold:#7a5c17;
+    --shadow-sm:none; --shadow-md:none; --shadow-lg:none;
+  }
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+</style>
+<style>
+/* ---------- reset / base ---------- */
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:var(--font-ui);background:var(--bg);color:var(--text);
+  font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+@media (prefers-reduced-motion:no-preference){
+  a,button,.chip,.card,.seg-btn,.rail-nav-item,.theme-row{transition:background .12s ease,color .12s ease,border-color .12s ease,box-shadow .12s ease;}
+}
+button{font-family:inherit;cursor:pointer;}
+:focus-visible{outline:none;box-shadow:var(--ring);border-radius:var(--radius);}
+mark{background:var(--accent-bg);color:var(--accent);padding:0 .5px;border-radius:2px;font-style:normal;}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+
+/* ---------- layout ---------- */
+.app{display:flex;min-height:100vh;}
+.rail{
+  width:230px;flex:0 0 230px;position:fixed;top:0;left:0;bottom:0;
+  background:var(--rail);border-right:1px solid var(--rail-border);
+  display:flex;flex-direction:column;overflow-y:auto;z-index:20;
+}
+main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:column;}
+
+/* ---------- rail ---------- */
+.rail-logo{padding:14px;border-bottom:1px solid var(--rail-border);}
+.rail-logo .wordmark{font-family:var(--font-mono);font-size:19px;font-weight:700;letter-spacing:.06em;color:var(--rail-text);}
+.rail-logo .wordmark .star{color:var(--warning);}
+.rail-logo .subtitle{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--rail-subtle);margin-top:5px;}
+.rail-nav{padding:12px 10px;display:flex;flex-direction:column;gap:2px;}
+.rail-nav-item{
+  display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:8px;
+  font-size:13.5px;font-weight:500;color:var(--rail-muted);background:none;border:none;text-align:left;width:100%;
+}
+.rail-nav-item:hover{background:var(--rail-hover);color:var(--rail-text);}
+.rail-nav-item.active{background:var(--rail-raised);color:var(--rail-text);font-weight:600;box-shadow:inset 2px 0 var(--accent);}
+.rail-nav-item .label{flex:1 1 auto;}
+.rail-badge{font-family:var(--font-mono);font-size:10.5px;font-weight:800;border-radius:var(--radius-pill);padding:1px 7px;line-height:1.4;}
+.rail-badge.warn{background:var(--warning);color:var(--rail-badge-ink);}
+.rail-badge.neutral{background:var(--rail-raised);color:var(--rail-muted);}
+.rail-section-label{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--rail-subtle);padding:14px 12px 6px;}
+.rail-groups{padding:0 10px;display:flex;flex-direction:column;}
+.theme-row{display:flex;align-items:center;gap:9px;padding:6px 12px;border-radius:6px;font-size:13px;color:var(--rail-text);background:none;border:none;width:100%;text-align:left;}
+.theme-row:hover{background:var(--rail-hover);}
+.theme-row .bar{width:3px;height:15px;border-radius:2px;flex:0 0 3px;}
+.theme-row .name{flex:1 1 auto;}
+.theme-row .count{font-family:var(--font-mono);font-size:11.5px;color:var(--rail-subtle);}
+.rail-foot{margin:10px;padding:9px 12px;border-radius:8px;font-size:11px;line-height:1.5;
+  background:color-mix(in srgb,var(--warning) 12%,transparent);
+  border:1px solid color-mix(in srgb,var(--warning) 30%,transparent);color:var(--warning);}
+.rail-spacer{flex:1 1 auto;}
+
+/* ---------- header ---------- */
+.hdr{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 26px;display:flex;align-items:flex-start;gap:16px;position:sticky;top:0;z-index:15;}
+.hdr h1{font-size:18px;font-weight:700;margin:0;line-height:1.2;}
+.hdr .sub{font-size:12.5px;color:var(--text-subtle);margin-top:3px;}
+.hdr-right{margin-left:auto;display:flex;align-items:center;gap:8px;}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:34px;padding:0 11px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);color:var(--text-muted);font-size:12.5px;font-weight:500;box-shadow:var(--shadow-sm);}
+.icon-btn:hover{border-color:var(--border-strong);color:var(--text);}
+.icon-btn svg{width:15px;height:15px;}
+.menu-toggle{display:none;}
+
+/* ---------- filter row ---------- */
+.filters{padding:14px 26px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.search{position:relative;flex:1 1 260px;max-width:320px;}
+.search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--text-subtle);pointer-events:none;}
+.search input{width:100%;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);
+  padding:8px 10px 8px 32px;font-size:13px;color:var(--text);box-shadow:var(--shadow-sm);}
+.search input::placeholder{color:var(--text-subtle);}
+.search input:focus{border-color:var(--accent);}
+.btn{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border:1px solid var(--border);border-radius:var(--radius);
+  background:var(--surface);color:var(--text);font-size:12.5px;font-weight:500;box-shadow:var(--shadow-sm);white-space:nowrap;}
+.btn:hover{border-color:var(--border-strong);}
+.btn[aria-expanded="true"]{border-color:var(--accent);}
+.btn .chev{width:12px;height:12px;color:var(--text-subtle);}
+.btn .pill-n{font-family:var(--font-mono);font-size:10.5px;font-weight:800;background:var(--accent);color:var(--accent-fg);border-radius:var(--radius-pill);padding:0 6px;line-height:16px;}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);}
+.seg-btn{height:34px;padding:0 13px;border:none;background:var(--surface);color:var(--text-muted);font-size:12.5px;font-weight:500;white-space:nowrap;border-left:1px solid var(--border);}
+.seg-btn:first-child{border-left:none;}
+.seg-btn:hover{color:var(--text);}
+.seg-btn.active{background:var(--accent-solid);color:var(--accent-fg);font-weight:600;}
+.seg-btn.fell .star{color:var(--gold);}
+.seg-btn.active.fell{background:var(--accent-solid);}
+.seg-btn.active.fell .star{color:var(--accent-fg);}
+
+/* ---------- active filter bar ---------- */
+.activebar{padding:12px 26px 0;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;}
+.activebar.hidden{display:none;}
+.ab-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;color:var(--text-subtle);text-transform:uppercase;}
+.chip{display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 6px 0 10px;border-radius:var(--radius-pill);font-size:11.5px;font-weight:600;border:1px solid transparent;}
+.chip .x{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:none;background:transparent;color:inherit;opacity:.7;font-size:13px;line-height:1;}
+.chip .x:hover{opacity:1;background:color-mix(in srgb,currentColor 18%,transparent);}
+.chip.search{background:var(--neutral-bg);color:var(--text-muted);border-color:var(--border);font-family:var(--font-mono);}
+.chip.search em{font-style:normal;color:var(--text);}
+.link-btn{background:none;border:none;color:var(--accent);font-size:12px;font-weight:600;padding:0;}
+.link-btn:hover{text-decoration:underline;}
+.ab-saved{margin-left:auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.pill-outline{display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 12px;border-radius:var(--radius-pill);border:1px solid var(--border-strong);background:var(--surface);font-size:11.5px;font-weight:600;color:var(--text-muted);}
+.pill-outline:hover{border-color:var(--accent);color:var(--text);}
+.pill-outline .x{margin-left:2px;opacity:.6;}
+.pill-outline .x:hover{opacity:1;}
+.pill-dashed{border-style:dashed;border-color:var(--accent);color:var(--accent);background:transparent;}
+
+/* ---------- count bar ---------- */
+.countbar{padding:12px 26px 0;display:flex;gap:12px;align-items:baseline;font-size:12px;color:var(--text-subtle);}
+.countbar .n{font-family:var(--font-mono);font-weight:700;color:var(--text);}
+.countbar .fell{color:var(--gold);font-weight:600;}
+.countbar .fell .star{color:var(--gold);}
+.countbar .range{margin-left:auto;font-family:var(--font-mono);color:var(--text-subtle);}
+
+/* ---------- card grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:16px 26px 40px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow-md);
+  padding:15px 17px;display:flex;flex-direction:column;gap:10px;box-sizing:border-box;text-align:left;color:inherit;}
+.card:hover{border-color:var(--border-strong);}
+.card:hover .card-name{color:var(--accent);}
+.card-top{display:flex;align-items:flex-start;gap:11px;}
+.avatar{width:40px;height:40px;border-radius:50%;flex:0 0 40px;display:flex;align-items:center;justify-content:center;
+  background:var(--accent-bg);color:var(--accent);font-size:14px;font-weight:800;overflow:hidden;}
+.avatar img{width:100%;height:100%;object-fit:cover;}
+.card-id{flex:1 1 auto;min-width:0;}
+.card-name{font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.card-sub{font-size:12px;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px;}
+.dept-seg{display:flex;gap:2px;padding:3px;background:var(--surface-raised);border-radius:4px;flex:0 0 auto;}
+.dept-seg .blk{width:10px;height:6px;border-radius:1px;background:var(--seg-off);}
+.card-meta{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.02em;color:var(--text-subtle);text-transform:uppercase;}
+.card-excerpt{font-size:13px;line-height:1.55;color:var(--text-muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+.card-excerpt.snippet{font-style:italic;}
+.card-foot{margin-top:auto;display:flex;align-items:center;gap:8px;}
+.theme-chip{display:inline-flex;align-items:center;max-width:185px;padding:2px 9px;border-radius:var(--radius-pill);font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.plusn{font-size:11px;font-weight:600;color:var(--text-subtle);}
+.fate-chip{margin-left:auto;padding:2px 9px;border-radius:var(--radius-pill);font-size:11px;font-weight:600;white-space:nowrap;}
+.fate-chip.fell{background:var(--gold-bg);color:var(--gold);font-weight:700;}
+.fate-chip.surv{background:var(--neutral-bg);color:var(--text-muted);}
+
+/* ---------- empty state ---------- */
+.empty{grid-column:1/-1;text-align:center;padding:60px 20px;display:flex;flex-direction:column;align-items:center;gap:14px;}
+.empty .rule{width:44px;height:3px;background:var(--border-strong);border-radius:2px;}
+.empty .kick{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;color:var(--text-subtle);}
+.empty h2{font-size:16px;font-weight:600;margin:0;max-width:440px;}
+.empty p{font-size:13px;color:var(--text-muted);max-width:420px;margin:0;}
+.empty .actions{display:flex;gap:10px;margin-top:4px;}
+
+/* ---------- popover menus ---------- */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.28);z-index:40;opacity:0;pointer-events:none;transition:opacity .12s ease;}
+.scrim.open{opacity:1;pointer-events:auto;}
+.popover{position:absolute;z-index:50;background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow-lg);
+  padding:0;display:none;}
+.popover.open{display:block;}
+.menu-list{max-height:340px;overflow-y:auto;padding:8px;min-width:230px;}
+.menu-list .opt{display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:6px;font-size:12.5px;color:var(--text-muted);cursor:pointer;}
+.menu-list .opt:hover{background:var(--surface-raised);}
+.menu-list .opt .cbx{width:14px;height:14px;border:1.5px solid var(--border-strong);border-radius:3px;flex:0 0 14px;display:flex;align-items:center;justify-content:center;}
+.menu-list .opt .cbx svg{width:10px;height:10px;color:var(--accent-fg);display:none;}
+.menu-list .opt[aria-checked="true"] .cbx{background:var(--accent-solid);border-color:var(--accent-solid);}
+.menu-list .opt[aria-checked="true"] .cbx svg{display:block;}
+.menu-list .opt .lbl{flex:1 1 auto;}
+.menu-list .opt .c{font-family:var(--font-mono);font-size:11px;color:var(--text-subtle);}
+.menu-list .opt.zero{opacity:.5;}
+
+/* theme menu (4 columns) */
+.theme-menu{width:min(760px,92vw);}
+.theme-menu .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:14px;}
+.theme-col{padding:0 12px;border-left:1px solid var(--border-soft);}
+.theme-col:first-child{border-left:none;}
+.theme-col .top-rule{height:3px;border-radius:2px;margin-bottom:8px;}
+.theme-col .grp{font-size:11px;font-weight:800;text-transform:none;}
+.theme-col .desc{font-size:11px;font-style:italic;color:var(--text-subtle);margin:2px 0 8px;}
+.theme-col .opt{padding:5px 4px;}
+.menu-foot{display:flex;align-items:center;gap:12px;padding:12px 16px;border-top:1px solid var(--border);}
+.menu-foot .hint{font-size:11.5px;font-style:italic;color:var(--text-subtle);flex:1 1 auto;}
+.btn-ghost{background:none;border:none;color:var(--text-muted);font-size:12.5px;font-weight:600;padding:6px 8px;border-radius:6px;}
+.btn-ghost:hover{background:var(--surface-raised);color:var(--text);}
+.btn-primary{background:var(--accent-solid);color:var(--accent-fg);border:none;border-radius:var(--radius);padding:8px 14px;font-size:12.5px;font-weight:600;}
+.btn-primary:hover{background:var(--accent-hover);}
+.btn-primary:active{transform:translateY(1px);}
+
+/* ---------- detail modal ---------- */
+.detail-scrim{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:60;display:none;overflow-y:auto;}
+.detail-scrim.open{display:block;}
+.detail{max-width:1040px;margin:24px auto;background:var(--surface);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow-lg);
+  display:grid;grid-template-columns:340px 1fr;overflow:hidden;min-height:200px;}
+.detail-meta{border-right:1px solid var(--border);padding:22px;background:var(--surface);}
+.detail-close{position:absolute;top:36px;right:calc(50% - 520px + 18px);z-index:2;width:34px;height:34px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);}
+.detail-close:hover{border-color:var(--border-strong);color:var(--text);}
+.fate-banner{border-left:3px solid var(--gold);background:color-mix(in srgb,var(--gold) 8%,transparent);padding:10px 12px;border-radius:0 6px 6px 0;margin-bottom:18px;}
+.fate-banner.surv{border-left-color:var(--neutral);background:var(--neutral-bg);}
+.fate-banner .fb-top{font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.03em;}
+.fate-banner.surv .fb-top{color:var(--text-muted);}
+.fate-banner .fb-sub{font-size:11.5px;color:var(--text-muted);margin-top:3px;}
+.meta-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-subtle);margin:18px 0 8px;}
+.meta-rows{display:flex;flex-direction:column;}
+.meta-r{display:flex;gap:10px;padding:6px 0;border-bottom:1px dashed var(--border);font-size:12.5px;}
+.meta-r .k{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-subtle);width:96px;flex:0 0 96px;padding-top:2px;}
+.meta-r .v{color:var(--text);flex:1 1 auto;}
+.meta-themes{display:flex;flex-direction:column;gap:6px;}
+.meta-theme{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--text);}
+.meta-theme .bar{width:3px;height:15px;border-radius:2px;flex:0 0 3px;}
+.meta-links{display:flex;flex-direction:column;gap:8px;margin-top:18px;}
+.meta-links a,.meta-links button{color:var(--accent);font-size:12.5px;font-weight:600;text-decoration:none;background:none;border:none;padding:0;text-align:left;display:inline-flex;align-items:center;gap:6px;}
+.meta-links a:hover,.meta-links button:hover{text-decoration:underline;}
+.detail-read{padding:34px 40px 44px;min-width:0;}
+.read-kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;}
+.read-name{font-size:30px;font-weight:700;line-height:1.12;margin:12px 0 6px;}
+.read-sub{font-size:13.5px;color:var(--text-muted);}
+.read-cite{font-size:16.5px;line-height:1.7;color:var(--text);max-width:66ch;margin-top:22px;white-space:pre-wrap;}
+.read-foot{margin-top:26px;padding-top:16px;border-top:1px solid var(--border);font-size:12px;font-style:italic;color:var(--text-subtle);}
+.read-foot a{color:var(--accent);}
+
+/* ---------- toast ---------- */
+.toast-wrap{position:fixed;right:20px;bottom:20px;z-index:80;display:flex;flex-direction:column;gap:8px;}
+.toast{display:flex;align-items:center;gap:10px;background:var(--rail-inverse);color:var(--rail-inverse-text);border-radius:8px;padding:11px 14px;font-size:12.5px;box-shadow:var(--shadow-lg);
+  animation:toastin .16s ease;}
+.toast svg{width:15px;height:15px;color:var(--accent);}
+@keyframes toastin{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:820px){
+  .rail{transform:translateX(-100%);transition:transform .18s ease;box-shadow:var(--shadow-lg);}
+  .rail.open{transform:none;}
+  main{margin-left:0;}
+  .menu-toggle{display:inline-flex;}
+  .hdr{padding:12px 16px;}
+  .filters,.activebar,.countbar,.grid{padding-left:16px;padding-right:16px;}
+  .grid{grid-template-columns:1fr;}
+  .search{max-width:none;flex-basis:100%;}
+  .theme-menu .cols{grid-template-columns:1fr;gap:0;}
+  .theme-col{border-left:none;border-top:1px solid var(--border-soft);padding-top:10px;margin-top:6px;}
+  .theme-col:first-child{border-top:none;margin-top:0;}
+  .detail{grid-template-columns:1fr;margin:0;border-radius:0;min-height:100vh;}
+  .detail-meta{border-right:none;border-bottom:1px solid var(--border);}
+  .detail-close{right:14px;top:14px;}
+  .detail-read{padding:22px 18px 40px;}
+  .ab-saved{margin-left:0;flex-basis:100%;}
+}
+
+/* ---------- print ---------- */
+@media print{
+  .rail,.hdr-right,.filters,.activebar,.countbar,.menu-toggle,.toast-wrap,.scrim,.popover{display:none !important;}
+  main{margin-left:0;}
+  body{background:var(--bg);}
+  .grid{display:block;padding:0;}
+  .card{page-break-inside:avoid;box-shadow:none;border:none;border-bottom:1px solid var(--border-strong);border-radius:0;margin-bottom:12px;}
+  .detail-scrim{position:static;background:none;display:block;overflow:visible;}
+  .detail{box-shadow:none;border:none;grid-template-columns:1fr;margin:0;}
+  .detail-close,.meta-links{display:none !important;}
+  .read-cite{max-width:none;}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- ================= RAIL ================= -->
+  <aside class="rail" id="rail">
+    <div class="rail-logo">
+      <div class="wordmark">VALOR<span class="star">★</span></div>
+      <div class="subtitle">Medal of Honor · Pilot 50</div>
+    </div>
+    <nav class="rail-nav">
+      <button class="rail-nav-item active" data-nav="stories">
+        <span class="label">Stories</span>
+        <span class="rail-badge warn" id="railStoriesBadge">50</span>
+      </button>
+      <button class="rail-nav-item" data-nav="saved">
+        <span class="label">Saved views</span>
+        <span class="rail-badge neutral" id="railSavedBadge">0</span>
+      </button>
+    </nav>
+    <div class="rail-section-label">Theme Groups</div>
+    <div class="rail-groups" id="railGroups"></div>
+    <div class="rail-spacer"></div>
+    <div class="rail-foot">Pilot: 50 of 3,536 citations. Locations approximate.</div>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <header class="hdr">
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <div>
+        <h1>Stories</h1>
+        <div class="sub">Find the stories by what they mean — 32 themes, every conflict, every branch.</div>
+      </div>
+      <div class="hdr-right">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><span id="themeIcon"></span><span id="themeLabel">Auto</span></button>
+      </div>
+    </header>
+
+    <div class="filters">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="search" type="search" placeholder="Search names, places, citations…" autocomplete="off" aria-label="Search">
+      </div>
+      <button class="btn" id="btnThemes" aria-expanded="false" aria-haspopup="true">Themes <span class="pill-n" id="nThemes" hidden>0</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg></button>
+      <button class="btn" id="btnConflict" aria-expanded="false" aria-haspopup="true">Conflict <span class="pill-n" id="nConflict" hidden>0</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg></button>
+      <button class="btn" id="btnBranch" aria-expanded="false" aria-haspopup="true">Branch <span class="pill-n" id="nBranch" hidden>0</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="seg" role="group" aria-label="Fate">
+        <button class="seg-btn active" data-fate="all">All</button>
+        <button class="seg-btn" data-fate="survived">Survived</button>
+        <button class="seg-btn fell" data-fate="fell"><span class="star">★</span> Fell</button>
+      </div>
+    </div>
+
+    <div class="activebar hidden" id="activebar"></div>
+
+    <div class="countbar" id="countbar"></div>
+
+    <div class="grid" id="grid"></div>
+  </main>
+</div>
+
+<!-- popovers -->
+<div class="scrim" id="scrim"></div>
+<div class="popover" id="popThemes"></div>
+<div class="popover" id="popConflict"></div>
+<div class="popover" id="popBranch"></div>
+
+<!-- detail -->
+<div class="detail-scrim" id="detailScrim">
+  <button class="detail-close" id="detailClose" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="detail" id="detail"></div>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script>
+const STORIES = [{"id":"jacob-parrott","name":"Parrott, Jacob","rank":"Private","branch":"U.S. Army","unit":"Company K, 33d Ohio Infantry","conflict":"U.S. Civil War","battle":"Andrews' Raid","year":null,"action_date":null,"action_place":"Georgia, USA","coords":{"lat":32,"lng":-82},"survived":true,"accredited_to":"Hardin County, Ohio","born":" Fairfield County, Ohio","citation":"Rank and organization: Private, Company K, 33d Ohio Infantry. Place and date: Georgia, April 1862. Entered service at: Hardin County, Ohio. Birth: 17 July 1843, Fairfield County, Ohio. Date of issue: 25 March 1863. Citation: One of the 19 of 22 men (including 2 civilians) who, by direction of Gen. Mitchell (or Buell) penetrated nearly 200 miles south into enemy territory and captured a railroad train at Big Shanty, Ga., in an attempt to destroy the bridges and tracks between Chattanooga and Atlanta.","categories":["The Raid","The Trailblazer / The First"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2854/parrott-jacob.php"},{"id":"william-h-carney","name":"Carney, William H.","rank":"Sergeant","branch":"U.S. Army","unit":"Company C, 54th Massachusetts Colored Infantry","conflict":"U.S. Civil War","battle":"Fort Wagner","year":1863,"action_date":"1863-7-18","action_place":"Fort Wagner, Charleston, SC 29412, USA","coords":{"lat":32,"lng":-79},"survived":true,"accredited_to":"New Bedford, Mass.","born":"Norfolk, Va.","citation":"When the color sergeant was shot down, this soldier grasped the flag, led the way to the parapet, and planted the colors thereon. When the troops fell back he brought off the flag, under a fierce fire in which he was twice severely wounded.","categories":["The Colors","The Trailblazer / The First","The Wounded Warrior"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/224/carney-william-h.php"},{"id":"mary-e-walker","name":"Walker, Dr., Mary E.","rank":"Contract Acting Assistant Surgeon (civilian)","branch":"U.S. Army","unit":"","conflict":"U.S. Civil War","battle":null,"year":null,"action_date":null,"action_place":"Bull Run, VA 20109, USA","coords":{"lat":38,"lng":-77},"survived":true,"accredited_to":"Louisville, Ky.","born":" Oswego County, N.Y.","citation":"Battle of Bull Run, July 21, 1861; Patent Office Hospital, Washington, D.C., October 1861; Chattanooga, Tenn., following Battle of Chickomauga, September 1863; Prisoner of War, April 10, 1864-August 12, 1864, Richmond, Va.; Battle of Atlanta, September 1864\n\nWhereas it appears from official reports that Dr. Mary E. Walker, a graduate of medicine, \"has rendered valuable service to the Government, and her efforts have been earnest and untiring in a variety of ways,\" and that she was assigned to duty and served as an assistant surgeon in charge of female prisoners at Louisville, Ky., upon the recommendation of Major-Generals Sherman and Thomas, and faithfully served as contract surgeon in the service of the United States, and has devoted herself with much patriotic zeal to the sick and wounded soldiers, both in the field and hospitals, to the detriment of her own health, and has also endured hardships as a prisoner of war four months in a Southern prison while acting as contract surgeon; and Whereas by reason of her not being a commissioned officer in the military service, a brevet or honorary rank cannot, under existing laws, be conferred upon her; and\nWhereas in the opinion of the President an honorable recognition of her services and sufferings should be made:\nIt is ordered, That a testimonial thereof shall be hereby made and given to the said Dr. Mary E. Walker, and that the usual medal of honor for meritorious services be given her.\n\nGiven under my hand in the city of Washington, D.C., this 11th day of November, A.D. 1865.\n\nAndrew Johnson,\nPresident\n\n(Medal rescinded 1917 along with 910 others, restored by President Carter 10 June 1977.)","categories":["The Trailblazer / The First","The Healer Under Fire","Unbroken in Captivity","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/1428/walker-dr-mary-e.php"},{"id":"alonzo-h-cushing","name":"Cushing, Alonzo H.","rank":"1st Lieutenant","branch":"U.S. Army","unit":"Battery A, 4th US Artillery, II Corps, Army of the Potomac","conflict":"U.S. Civil War","battle":"Gettysburg","year":null,"action_date":null,"action_place":"Gettysburg, PA 17325, USA","coords":{"lat":39,"lng":-77},"survived":false,"accredited_to":"Fredonia, New York","born":" at Delafield, Wisconsin","citation":"First Lieutenant Alonzo H. Cushing distinguished himself by acts of bravery above and beyond the call of duty while serving as an artillery commander in Battery A, 4th U.S. Artillery, Army of the Potomac at Gettysburg, Pennsylvania on July 3rd, 1863 during the American Civil War.  That morning, Confederate forces led by General Robert E. Lee began cannonading First Lieutenant Cushing's position on Cemetery Ridge.  Using field glasses, First Lieutenant Cushing directed fire for his own artillery battery.  He refused to leave the battlefield after being struck in the shoulder by a shell fragment.  As he continued to direct fire, he was struck again - this time suffering grievous damage to his abdomen.  Still refusing to abandon his command, he boldly stood tall in the face of Major General George E. Pickett's charge and continued to direct devastating fire into oncoming forces.  As the Confederate forces closed in, First Lieutenant Cushing was struck in the mouth by an enemy bullet and fell dead beside his gun. His gallant stand and fearless leadership inflicted severe casualties upon Confederate forces and opened wide gaps in their lines, directly impacting the Union force's ability to repel Pickett's charge.  First Lieutenant Cushing's extraordinary heroism and selflessness above and beyond the call of duty at the cost of his own life are in keeping with the highest traditions of military service and reflect great credit upon himself, Battery A, 4th U.S. Artillery, Army of the Potomac, and the United States Army.","categories":["The Last Stand","Belated Justice / The Long Vindication","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3515/cushing-alonzo-h.php"},{"id":"andrew-jackson-smith","name":"Smith, Andrew Jackson","rank":"Corporal","branch":"U.S. Army","unit":"55th Massachusetts Voluntary Infantry","conflict":"U.S. Civil War","battle":"Honey Hill","year":null,"action_date":null,"action_place":"Honey Hill, SC 29936, USA","coords":{"lat":32,"lng":-80},"survived":true,"accredited_to":null,"born":"Kentucky","citation":"Corporal Andrew Jackson Smith, of Clinton, Illinois, a member of the 55th Massachusetts Voluntary Infantry, distinguished himself on 30 November 1864 by saving his regimental colors, after the color bearer was killed during al bloody charge called the Battle of Honey Hill, South Carolina. In the late afternoon, as the 55th Regiment pursued enemy skirmishers and conducted a running fight, they ran into a swampy area backed by a rise where the Confederate Army awaited. The surrounding woods and thick underbrush impeded infantry movement and artillery support. The 55th and 34th regiments formed columns to advance on the enemy position in a flanking movement. As the Confederates repelled other units, the 55th and 54th regiments continued to move into tanking positions. Forced into a narrow gorge crossing a swamp in the face of the enemy position, the 55th's Color-Sergeant was killed by an exploding shell, and Corporal Smith took the Regimental Colors from his hand and carried them through heavy grape and canister fire. Although half of the officers and a third of the enlisted men engaged in the fight were killed or wounded, Corporal Smith continued to expose himself to enemy fire by carrying the colors throughout the battle. Through his actions, the Regimental Colors of the 55th Infantry Regiment were not lost to the enemy. Corporal Andrew Jackson Smith's extraordinary valor in the face of deadly enemy fire is in keeping with the highest traditions of military service and reflect great credit upon him, the 55th Regiment, and the United States Army.","categories":["The Colors","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/1261/smith-andrew-jackson.php"},{"id":"bernard-j-d-irwin","name":"Irwin, Bernard J. D.","rank":"Assistant Surgeon","branch":"U.S. Army","unit":"","conflict":"Indian Campaigns","battle":"Apache Pass","year":null,"action_date":null,"action_place":"Apache Pass, Bowie, AZ 85605, USA","coords":{"lat":32,"lng":-109},"survived":true,"accredited_to":"New York","born":" Ireland","citation":"Voluntarily took command of troops and attacked and defeated hostile Indians he met on the way. Surgeon Irwin volunteered to go to the rescue of 2d Lt. George N. Bascom, 7th Infantry, who with 60 men was trapped by Chiricahua Apaches under Cochise. Irwin and 14 men, not having horses began the 100-mile march riding mules. After fighting and capturing Indians, recovering stolen horses and cattle, he reached Bascom's column and help break his siege.","categories":["The Rescue & Lifesaver","The Healer Under Fire","The New American / Immigrant's Debt"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/1714/irwin-bernard-j-d.php"},{"id":"charles-windolph","name":"Windolph, Charles","rank":"Private","branch":"U.S. Army","unit":"Company H, 7th U.S. Cavalry","conflict":"Indian Campaigns","battle":"Little Bighorn","year":null,"action_date":null,"action_place":"Little Big Horn Bridge, Lodge Grass, MT 59050, USA","coords":{"lat":45,"lng":-107},"survived":true,"accredited_to":"Brooklyn, N.Y.","born":" Germany","citation":"With 3 comrades, during the entire engagement, courageously held a position that secured water for the command.","categories":["The Last Stand","Brotherhood / No One Left Behind","The New American / Immigrant's Debt"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/1953/windolph-charles.php"},{"id":"john-henry-quick","name":"Quick, John Henry","rank":"Sergeant","branch":"U.S. Marine Corps","unit":"","conflict":"Spanish-American War","battle":"Guantanamo Bay","year":null,"action_date":null,"action_place":"Cuba, Cusco, Peru","coords":{"lat":-13,"lng":-71},"survived":true,"accredited_to":"Pennsylvania","born":" Charleston, W. Va.","citation":"In action during the battle of Cuzco, Cuba, 14 June 1898. Distinguishing himself during this action, Quick signaled the U.S.S. Dolphin on 3 different occasions while exposed to a heavy fire from the enemy.","categories":["One Against Many","The Sea"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2173/quick-john-henry.php"},{"id":"daniel-joseph-daly","name":"Daly, Daniel Joseph","rank":"Gunnery Sergeant","branch":"U.S. Marine Corps","unit":"","conflict":"China Relief Expedition (Boxer Rebellion)","battle":"Peking Legations","year":null,"action_date":null,"action_place":"Fort Liberte, Haiti","coords":{"lat":19,"lng":-71},"survived":true,"accredited_to":"New York","born":"Glen Cove, Long Island, N.Y., 11 November 1873","citation":"FIRST AWARD\nIn the presence of the enemy during the battle of Peking, China, 14 August 1900, Daly distinguished himself by meritorious conduct.\n\nSECOND AWARD\nServing with the 15th Company of Marines on 22 October 1915, G/Sgt. Daly was one of the company to leave Fort Liberte, Haiti, for a 6-day reconnaissance. After dark on the evening of 24 October, while crossing the river in a deep ravine, the detachment was suddenly fired upon from 3 sides by about 400 Cacos concealed in bushes about 100 yards from the fort. The marine detachment fought its way forward to a good position, which it maintained during the night, although subjected to a continuous fre from the Cacos. At daybreak the marines, in 3 squads, advanced in 3 different directions, surprising and scattering the Cacos in all directions. G/Sgt. Daly fought with exceptional gallantry against heavy odds throughout this action.","categories":["The Twice-Honored","One Against Many","The Career Warrior"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2456/daly-daniel-joseph.php"},{"id":"smedley-darlington-butler","name":"Butler, Smedley Darlington","rank":"Major","branch":"U.S. Marine Corps","unit":"","conflict":"Mexican Campaign (Vera Cruz)","battle":"Vera Cruz","year":null,"action_date":null,"action_place":"Heroica Veracruz, Veracruz, Mexico","coords":{"lat":19,"lng":-96},"survived":true,"accredited_to":"Pennsylvania","born":" West Chester, Pa.","citation":"As Commanding Officer of detachments from the 5th, 13th, 23d Companies and the marine and sailor detachment from the U.S.S. Connecticut, Maj. Butler led the attack on Fort Riviere, Haiti, 17 November 1915. Following a concentrated drive, several different detachments of marines gradually closed in on the old French bastion fort in an effort to cut off all avenues of retreat for the Caco bandits. Reaching the fort on the southern side where there was a small opening in the wall, Maj. Butler gave the signal to attack and marines from the 15th Company poured through the breach, engaged the Cacos in hand-to-hand combat, took the bastion and crushed the Caco resistance. Throughout this perilous action, Maj. Butler was conspicuous for his bravery and forceful leadership.\n\nFIRST AWARD\nFor distinguished conduct in battle, engagement of Vera Cruz, 22 April 1914. Maj. Butler was eminent and conspicuous in command of his battalion. He exhibited courage and skill in leading his men through the action of the 22d and in the final occupation of the city.","categories":["The Twice-Honored","The Career Warrior","The Assault"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2455/butler-smedley-darlington.php"},{"id":"alvin-c-york","name":"York, Alvin C.","rank":"Corporal","branch":"U.S. Army","unit":"Company G, 328th Infantry, 82d Division","conflict":"World War I","battle":"Meuse-Argonne Offensive","year":1918,"action_date":"1918-10-8","action_place":"Chatel-Ch?h?ry, France","coords":{"lat":49,"lng":4},"survived":true,"accredited_to":"Pall Mall, Tenn.","born":" Fentress County, Tenn.","citation":"After his platoon had suffered heavy casualties and 3 other noncommissioned officers had become casualties, Cpl. York assumed command. Fearlessly leading 7 men, he charged with great daring a machinegun nest which was pouring deadly and incessant fire upon his platoon. In this heroic feat the machinegun nest was taken, together with 4 officers and 128 men and several guns.","categories":["One Against Many","The Reluctant Warrior","Religious / Faith-Driven"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2613/york-alvin-c.php"},{"id":"frank-jr-luke","name":"Luke, Frank, Jr.","rank":"Second Lieutenant","branch":"U.S. Army","unit":"1st Pursuit Group, 27th Aero Squadron","conflict":"World War I","battle":null,"year":1918,"action_date":"1918-9-29","action_place":"Murvaux, France","coords":{"lat":49,"lng":5},"survived":false,"accredited_to":"Phoenix, Ariz.","born":" Phoenix, Ariz.","citation":"After having previously destroyed a number of enemy aircraft within 17 days he voluntarily started on a patrol after German observation balloons. Though pursued by 8 German planes which were protecting the enemy balloon line, he unhesitatingly attacked and shot down in flames 3 German balloons, being himself under heavy fire from ground batteries and the hostile planes. Severely wounded, he descended to within 50 meters of the ground, and flying at this low altitude near the town of Murvaux opened fire upon enemy troops, killing 6 and wounding as many more. Forced to make a landing and surrounded on all sides by the enemy, who called upon him to surrender, he drew his automatic pistol and defended himself gallantly until he fell dead from a wound in the chest.","categories":["Wings","The Last Stand","One Against Many","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2555/luke-frank-jr.php"},{"id":"charles-w-whittlesey","name":"Whittlesey, Charles W.","rank":"Major","branch":"U.S. Army","unit":"308th Infantry, 77th Division","conflict":"World War I","battle":"Meuse-Argonne Offensive (Lost Battalion)","year":null,"action_date":null,"action_place":"Argonnestraat, 1060 Sint-Gillis, Belgium","coords":{"lat":50,"lng":4},"survived":true,"accredited_to":"Pittsfield, Mass.","born":"Florence, Wis.","citation":"Although cut off for 5 days from the remainder of his division, Maj. Whittlesey maintained his position, which he had reached under orders received for an advance, and held his command, consisting originally of 46 officers and men of the 308th Infantry and of Company K of the 307th Infantry, together in the face of superior numbers of the enemy during the 5 days. Maj. Whittlesey and his command were thus cut off, and no rations or other supplies reached him, in spite of determined efforts which were made by his division. On the 4th day Maj. Whittlesey received from the enemy a written proposition to surrender, which he treated with contempt, although he was at the time out of rations and had suffered a loss of about 50 percent in killed and wounded of his command and was surrounded by the enemy.","categories":["The Rallying Point","Unbroken in Captivity","The Cost of War / Lament"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2609/whittlesey-charles-w.php"},{"id":"freddie-stowers","name":"Stowers, Freddie","rank":"Corporal","branch":"U.S. Army","unit":"Company C, 371st Infantry Regiment, 93d Division","conflict":"World War I","battle":"Meuse-Argonne Offensive","year":null,"action_date":null,"action_place":"Unknown","coords":{"lat":-1,"lng":-1},"survived":false,"accredited_to":null,"born":null,"citation":"Corporal Stowers, distinguished himself by exceptional heroism on 28 September 1918 while serving as a squad leader in Company C, 371st Infantry Regiment, 93d Division. His company was the lead company during the attack on Hill 188, Champagne Marne Sector, France, during World War I. A few minutes after the attack began, the enemy ceased firing and began climbing up onto the parapets of the trenches, holding up their arms as if wishing to surrender. The enemy's actions caused the American forces to cease fire and to come out into the open. As the company started forward and when within about 100 meters of the trench line, the enemy jumped back into their trenches and greeted Corporal Stowers' company with interlocking bands of machine gun fire and mortar fire causing well over fifty percent casualties. Faced with incredible enemy resistance, Corporal Stowers took charge, setting such a courageous example of personal bravery and leadership that he inspired his men to follow him in the attack. With extraordinary heroism and complete disregard of personal danger under devastating fire, he crawled forward leading his squad toward an enemy machine gun nest, which was causing heavy casualties to his company. After fierce fighting, the machine gun position was destroyed and the enemy soldiers were killed. Displaying great courage and intrepidity Corporal Stowers continued to press the attack against a determined enemy. While crawling forward and urging his men to continue the attack on a second trench line, he was gravely wounded by machine gun fire. Although Corporal Stowers was mortally wounded, he pressed forward, urging on the members of his squad, until he died. Inspired by the heroism and display of bravery of Corporal Stowers, his company continued the attack against incredible odds, contributing to the capture of Hill 188 and causing heavy enemy casualties. Corporal Stowers' conspicuous gallantry, extraordinary heroism, and supreme devotion to his men were well above and beyond the call of duty, follow the finest traditions of military service, and reflect the utmost credit on him and the United States Army.","categories":["The Assault","The Fallen / Ultimate Sacrifice","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2595/stowers-freddie.php"},{"id":"fred-w-stockham","name":"Stockham, Fred W.","rank":"Gunnery Sergeant","branch":"U.S. Marine Corps","unit":"96th Company, 2d Battalion, 6th Regiment","conflict":"World War I","battle":"Battle of Belleau Wood","year":null,"action_date":null,"action_place":"Bois de Manche-Seille, 54610 Belleau, France","coords":{"lat":48,"lng":6},"survived":false,"accredited_to":"New York, N.Y.","born":"Detroit, Mich. G.O.","citation":"During an intense enemy bombardment with high explosive and gas shells which wounded or killed many members of the company, G/Sgt. Stockham, upon noticing that the gas mask of a wounded comrade was shot away, without hesitation, removed his own gas mask and insisted upon giving it to the wounded man, well knowing that the effects of the gas would be fatal to himself. He continued with undaunted courage and valor to direct and assist in the evacuation of the wounded, until he himself collapsed from the effects of gas, dying as a result thereof a few days later. His courageous conduct undoubtedly saved the lives of many of his wounded comrades and his conspicuous gallantry and spirit of self-sacrifice were a source of great inspiration to all who served with him.","categories":["Greater Love","The Healer Under Fire","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2594/stockham-fred-w.php"},{"id":"desmond-t-doss","name":"Doss, Desmond T.","rank":"Private First Class","branch":"U.S. Army","unit":"Medical Detachment, 307th Infantry, 77th Infantry Division","conflict":"World War II","battle":"Okinawa","year":null,"action_date":null,"action_place":"Okinawa Prefecture, Japan","coords":{"lat":26,"lng":127},"survived":true,"accredited_to":"Lynchburg, Va.","born":"Lynchburg, Va.","citation":"He was a company aid man when the 1st Battalion assaulted a jagged escarpment 400 feet high As our troops gained the summit, a heavy concentration of artillery, mortar and machinegun fire crashed into them, inflicting approximately 75 casualties and driving the others back. Pfc. Doss refused to seek cover and remained in the fire-swept area with the many stricken, carrying them 1 by 1 to the edge of the escarpment and there lowering them on a rope-supported litter down the face of a cliff to friendly hands. On 2 May, he exposed himself to heavy rifle and mortar fire in rescuing a wounded man 200 yards forward of the lines on the same escarpment; and 2 days later he treated 4 men who had been cut down while assaulting a strongly defended cave, advancing through a shower of grenades to within 8 yards of enemy forces in a cave's mouth, where he dressed his comrades' wounds before making 4 separate trips under fire to evacuate them to safety. On 5 May, he unhesitatingly braved enemy shelling and small arms fire to assist an artillery officer. He applied bandages, moved his patient to a spot that offered protection from small arms fire and, while artillery and mortar shells fell close by, painstakingly administered plasma. Later that day, when an American was severely wounded by fire from a cave, Pfc. Doss crawled to him where he had fallen 25 feet from the enemy position, rendered aid, and carried him 100 yards to safety while continually exposed to enemy fire. On 21 May, in a night attack on high ground near Shuri, he remained in exposed territory while the rest of his company took cover, fearlessly risking the chance that he would be mistaken for an infiltrating Japanese and giving aid to the injured until he was himself seriously wounded in the legs by the explosion of a grenade. Rather than call another aid man from cover, he cared for his own injuries and waited 5 hours before litter bearers reached him and started carrying him to cover. The trio was caught in an enemy tank attack and Pfc. Doss, seeing a more critically wounded man nearby, crawled off the litter; and directed the bearers to give their first attention to the other man. Awaiting the litter bearers' return, he was again struck, this time suffering a compound fracture of 1 arm. With magnificent fortitude he bound a rifle stock to his shattered arm as a splint and then crawled 300 yards over rough terrain to the aid station. Through his outstanding bravery and unflinching determination in the face of desperately dangerous conditions Pfc. Doss saved the lives of many soldiers. His name became a symbol throughout the 77th Infantry Division for outstanding gallantry far above and beyond the call of duty.","categories":["The Healer Under Fire","Religious / Faith-Driven","The Reluctant Warrior","The Rescue & Lifesaver"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2717/doss-desmond-t.php"},{"id":"audie-l-murphy","name":"Murphy, Audie L.","rank":"Second Lieutenant","branch":"U.S. Army","unit":"Company B, 15th Infantry, 3d Infantry Division","conflict":"World War II","battle":null,"year":1945,"action_date":"1945-1-26","action_place":"Holtzwihr, France","coords":{"lat":48,"lng":7},"survived":true,"accredited_to":"Dallas, Tex.","born":"Hunt County, near Kingston, Tex.","citation":"2d Lt. Murphy commanded Company B, which was attacked by 6 tanks and waves of infantry. 2d Lt. Murphy ordered his men to withdraw to prepared positions in a woods, while he remained forward at his command post and continued to give fire directions to the artillery by telephone. Behind him, to his right, 1 of our tank destroyers received a direct hit and began to burn. Its crew withdrew to the woods. 2d Lt. Murphy continued to direct artillery fire which killed large numbers of the advancing enemy infantry. With the enemy tanks abreast of his position, 2d Lt. Murphy climbed on the burning tank destroyer, which was in danger of blowing up at any moment, and employed its .50 caliber machinegun against the enemy. He was alone and exposed to German fire from 3 sides, but his deadly fire killed dozens of Germans and caused their infantry attack to waver. The enemy tanks, losing infantry support, began to fall back. For an hour the Germans tried every available weapon to eliminate 2d Lt. Murphy, but he continued to hold his position and wiped out a squad which was trying to creep up unnoticed on his right flank. Germans reached as close as 10 yards, only to be mowed down by his fire. He received a leg wound, but ignored it and continued the single-handed fight until his ammunition was exhausted. He then made his way to his company, refused medical attention, and organized the company in a counterattack which forced the Germans to withdraw. His directing of artillery fire wiped out many of the enemy; he killed or wounded about 50. 2d Lt. Murphy's indomitable courage and his refusal to give an inch of ground saved his company from possible encirclement and destruction, and enabled it to hold the woods which had been the enemy's objective.","categories":["One Against Many","The Boy (Too Young for This)","The Epic Second Act","The Last Stand"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2907/murphy-audie-l.php"},{"id":"john-basilone","name":"Basilone, John","rank":"Sergeant","branch":"U.S. Marine Corps","unit":"","conflict":"World War II","battle":"Guadalcanal","year":null,"action_date":null,"action_place":"Guadalcanal, Solomon Islands","coords":{"lat":-9,"lng":160},"survived":true,"accredited_to":"New Jersey","born":" Buffalo, N.Y.","citation":"For extraordinary heroism and conspicuous gallantry in action against enemy Japanese forces, above and beyond the call of duty, while serving with the 1st Battalion, 7th Marines, 1st Marine Division in the Lunga Area. Guadalcanal, Solomon Islands, on 24 and 25 October 1942. While the enemy was hammering at the Marines' defensive positions, Sgt. Basilone, in charge of 2 sections of heavy machineguns, fought valiantly to check the savage and determined assault. In a fierce frontal attack with the Japanese blasting his guns with grenades and mortar fire, one of Sgt. Basilone's sections, with its guncrews, was put out of action, leaving only 2 men able to carry on. Moving an extra gun into position, he placed it in action, then, under continual fire, repaired another and personally manned it, gallantly holding his line until replacements arrived. A little later, with ammunition critically low and the supply lines cut off, Sgt. Basilone, at great risk of his life and in the face of continued enemy attack, battled his way through hostile lines with urgently needed shells for his gunners, thereby contributing in large measure to the virtual annihilation of a Japanese regiment. His great personal valor and courageous initiative were in keeping with the highest traditions of the U.S. Naval Service.","categories":["The Rallying Point","The Last Stand","The Career Warrior"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2627/basilone-john.php"},{"id":"hershel-woodrow-williams","name":"Williams, Hershel Woodrow","rank":"Corporal","branch":"U.S. Marine Corps","unit":"21st Marines, 3d Marine Division","conflict":"World War II","battle":"Iwo Jima","year":1945,"action_date":"1945-2-23","action_place":"Volcano Islands","coords":{"lat":25,"lng":141},"survived":true,"accredited_to":"West Virginia","born":" Quiet Dell, W. Va.","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty as demolition sergeant serving with the 21st Marines, 3d Marine Division, in action against enemy Japanese forces on Iwo Jima, Volcano Islands, 23 February 1945. Quick to volunteer his services when our tanks were maneuvering vainly to open a lane for the infantry through the network of reinforced concrete pillboxes, buried mines, and black volcanic sands, Cpl. Williams daringly went forward alone to attempt the reduction of devastating machinegun fire from the unyielding positions. Covered only by 4 riflemen, he fought desperately for 4 hours under terrific enemy small-arms fire and repeatedly returned to his own lines to prepare demolition charges and obtain serviced flamethrowers, struggling back, frequently to the rear of hostile emplacements, to wipe out 1 position after another. On 1 occasion, he daringly mounted a pillbox to insert the nozzle of his flamethrower through the air vent, killing the occupants and silencing the gun; on another he grimly charged enemy riflemen who attempted to stop him with bayonets and destroyed them with a burst of flame from his weapon. His unyielding determination and extraordinary heroism in the face of ruthless enemy resistance were directly instrumental in neutralizing one of the most fanatically defended Japanese strong points encountered by his regiment and aided vitally in enabling his company to reach its objective. Cpl. Williams' aggressive fighting spirit and valiant devotion to duty throughout this fiercely contested action sustain and enhance the highest traditions of the U.S. Naval Service.","categories":["One Against Many","The Assault","The Quiet Return"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3066/williams-hershel-woodrow.php"},{"id":"douglas-albert-munro","name":"Munro, Douglas Albert","rank":"Signalman First Class","branch":"U.S. Coast Guard","unit":"","conflict":"World War II","battle":"Guadalcanal","year":null,"action_date":null,"action_place":"Guadalcanal, Solomon Islands","coords":{"lat":-9,"lng":160},"survived":false,"accredited_to":"Washington","born":" Vancouver, British Columbia","citation":"For extraordinary heroism and conspicuous gallantry m action above and beyond the call of duty as Petty Officer in Charge of a group of 24 Higgins boats, engaged in the evacuation of a battalion of marines trapped by enemy Japanese forces at Point Cruz Guadalcanal, on 27 September 1942. After making preliminary plans for the evacuation of nearly 500 beleaguered marines, Munro, under constant strafing by enemy machineguns on the island, and at great risk of his life, daringly led 5 of his small craft toward the shore. As he closed the beach, he signaled the others to land, and then in order to draw the enemy's fire and protect the heavily loaded boats, he valiantly placed his craft with its 2 small guns as a shield between the beachhead and the Japanese. When the perilous task of evacuation was nearly completed, Munro was instantly killed by enemy fire, but his crew, 2 of whom were wounded, carried on until the last boat had loaded and cleared the beach. By his outstanding leadership, expert planning, and dauntless devotion to duty, he and his courageous comrades undoubtedly saved the lives of many who otherwise would have perished. He gallantly gave his life for his country.","categories":["The Sea","Greater Love","The Rescue & Lifesaver","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2905/munro-douglas-albert.php"},{"id":"ernest-edwin-evans","name":"Evans, Ernest Edwin","rank":"Commander","branch":"U.S. Navy","unit":"","conflict":"World War II","battle":"Battle off Samar (Leyte Gulf)","year":null,"action_date":null,"action_place":"Samara, Samara Oblast, Russia","coords":{"lat":53,"lng":50},"survived":false,"accredited_to":"Oklahoma","born":" Pawnee, Okla.","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty as commanding officer of the U.S.S. Johnston in action against major units of the enemy Japanese fleet during the battle off Samar on 25 October 1944. The first to lay a smokescreen and to open fire as an enemy task force, vastly superior in number, firepower and armor, rapidly approached. Comdr. Evans gallantly diverted the powerful blasts of hostile guns from the lightly armed and armored carriers under his protection, launching the first torpedo attack when the Johnston came under straddling Japanese shellfire. Undaunted by damage sustained under the terrific volume of fire, he unhesitatingly joined others of his group to provide fire support during subsequent torpedo attacks against the Japanese and, outshooting and outmaneuvering the enemy as he consistently interposed his vessel between the hostile fleet units and our carriers despite the crippling loss of engine power and communications with steering aft, shifted command to the fantail, shouted steering orders through an open hatch to men turning the rudder by hand and battled furiously until the Johnston, burning and shuddering from a mortal blow, lay dead in the water after 3 hours of fierce combat. Seriously wounded early in the engagement, Comdr. Evans, by his indomitable courage and brilliant professional skill, aided materially in turning back the enemy during a critical phase of the action. His valiant fighting spirit throughout this historic battle will venture as an inspiration to all who served with him.","categories":["The Sea","The Last Stand","The Trailblazer / The First","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2730/evans-ernest-edwin.php"},{"id":"james-h-doolittle","name":"Doolittle, James H.","rank":"Brigadier General","branch":"U.S. Army","unit":"Air Corps","conflict":"World War II","battle":"Doolittle Raid","year":null,"action_date":null,"action_place":"Japan","coords":{"lat":36,"lng":138},"survived":true,"accredited_to":"Berkeley, Calif.","born":"Alameda, Calif.","citation":"For conspicuous leadership above the call of duty, involving personal valor and intrepidity at an extreme hazard to life. With the apparent certainty of being forced to land in enemy territory or to perish at sea, Gen. Doolittle personally led a squadron of Army bombers, manned by volunteer crews, in a highly destructive raid on the Japanese mainland.","categories":["The Raid","Wings","The Rallying Point"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2716/doolittle-james-h.php"},{"id":"daniel-k-inouye","name":"Inouye, Daniel K.","rank":"Second Lieutenant","branch":"U.S. Army","unit":"Company E, 442nd Regimental Combat Team","conflict":"World War II","battle":null,"year":null,"action_date":null,"action_place":"19032 San Terenzo SP, Italy","coords":{"lat":44,"lng":9},"survived":true,"accredited_to":"Honolulu, HI","born":"September 7, 1924","citation":"Second Lieutenant Daniel K. Inouye distinguished himself by extraordinary heroism in action on 21 April 1945, in the vicinity of San Terenzo, Italy. While attacking a defended ridge guarding an important road junction, Second Lieutenant Inouye skillfully directed his platoon through a hail of automatic weapon and small arms fire, in a swift enveloping movement that resulted in the capture of an artillery and mortar post and brought his men to within 40 yards of the hostile force. Emplaced in bunkers and rock formations, the enemy halted the advance with crossfire from three machine guns. With complete disregard for his personal safety, Second Lieutenant Inouye crawled up the treacherous slope to within five yards of the nearest machine gun and hurled two grenades, destroying the emplacement. Before the enemy could retaliate, he stood up and neutralized a second machine gun nest. Although wounded by a sniper's bullet, he continued to engage other hostile positions at close range until an exploding grenade shattered his right arm. Despite the intense pain, he refused evacuation and continued to direct his platoon until enemy resistance was broken and his men were again deployed in defensive positions. In the attack, 25 enemy soldiers were killed and eight others captured. By his gallant, aggressive tactics and by his indomitable leadership, Second Lieutenant Inouye enabled his platoon to advance through formidable resistance, and was instrumental in the capture of the ridge. Second Lieutenant Inouye's extraordinary heroism and devotion to duty are in keeping with the highest traditions of military service and reflect great credit on him, his unit, and the United States Army.","categories":["The Assault","The New American / Immigrant's Debt","The Wounded Warrior","The Epic Second Act"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2799/inouye-daniel-k.php"},{"id":"vernon-baker","name":"Baker, Vernon","rank":"First Lieutenant","branch":"U.S. Army","unit":"Weapons Platoon, Company C","conflict":"World War II","battle":null,"year":null,"action_date":null,"action_place":"Viareggio LU, Italy","coords":{"lat":43,"lng":10},"survived":true,"accredited_to":"Cheyenne, WY","born":"17 December 1919","citation":"For extraordinary heroism in action on 5 and 6 April 1945, near Viareggio, Italy. Then Second Lieutenant Baker demonstrated outstanding courage and leadership in destroying enemy installations, personnel and equipment during his company's attack against a strongly entrenched enemy in mountainous terrain. When his company was stopped by the concentration of fire from several machine gun emplacements, he crawled to one position and destroyed it, killing three Germans. Continuing forward, he attacked and enemy observation post and killed two occupants. With the aid of one of his men, Lieutenant Baker attacked two more machine gun nests, killing or wounding the four enemy soldiers occupying these positions. He then covered the evacuation of the wounded personnel of his company by occupying an exposed position and drawing the enemy's fire. On the following night Lieutenant Baker voluntarily led a battalion advance through enemy mine fields and heavy fire toward the division objective. Second Lieutenant Baker's fighting spirit and daring leadership were an inspiration to his men and exemplify the highest traditions of the Armed Forces.","categories":["The Assault","The Trailblazer / The First","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2624/baker-vernon.php"},{"id":"john-r-fox","name":"Fox, John R.","rank":"Lieutenant","branch":"U.S. Army","unit":"Cannon Company, 366th Infantry Regiment, 92d Infantry Division","conflict":"World War II","battle":null,"year":null,"action_date":null,"action_place":"55051 Sommocolonia LU, Italy","coords":{"lat":44,"lng":10},"survived":false,"accredited_to":null,"born":null,"citation":"For extraordinary heroism against an armed enemy in the vicinity of Sommocolonia, Italy on 26 December 1944, while serving as a member of Cannon Company, 366th Infantry Regiment, 92d Infantry Division. During the preceding few weeks, Lieutenant Fox served with the 598th Field Artillery Battalion as a forward observer. On Christmas night, enemy soldiers gradually infiltrated the town of Sommocolonia in civilian clothes, and by early morning the town was largely in hostile hands. Commencing with a heavy barrage of enemy artillery at 0400 hours on 26 December 1944, an organized attack by uniformed German units began. Being greatly outnumbered, most of the United States Infantry forces were forced to withdraw from the town, but Lieutenant Fox and some other members of his observer party voluntarily remained on the second floor of a house to direct defensive artillery fire. At 0800 hours, Lieutenant Fox reported that the Germans were in the streets and attacking in strength. He then called for defensive artillery fire to slow the enemy advance. As the Germans continued to press the attack towards the area that Lieutenant Fox occupied, he adjusted the artillery fire closer to his position. Finally he was warned that the next adjustment would bring the deadly artillery right on top of his position. After acknowledging the danger, Lieutenant Fox insisted that the last adjustment be fired as this was the only way to defeat the attacking soldiers. Later, when a counterattack retook the position from the Germans, Lieutenant Fox's body was found with the bodies of approximately 100 German soldiers. Lieutenant Fox's gallant and courageous actions, at the supreme sacrifice of his own life, contributed greatly to delaying the enemy advance until other infantry and artillery units could reorganize to repel the attack. His extraordinary valorous actions were in keeping with the most cherished traditions of military service, and reflect the utmost credit on him, his unit, and the United States Army.","categories":["Greater Love","The Last Stand","The Fallen / Ultimate Sacrifice","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2744/fox-john-r.php"},{"id":"ben-l-salomon","name":"Salomon, Ben L.","rank":"Captain","branch":"U.S. Army","unit":"","conflict":"World War II","battle":"Saipan","year":null,"action_date":null,"action_place":"Mariana Islands, CNMI","coords":{"lat":16,"lng":145},"survived":false,"accredited_to":null,"born":null,"citation":"Captain Ben L. Salomon was serving at Saipan, in the Marianas Islands on July 7, 1944, as the Surgeon for the 2d Battalion, 105th Infantry Regiment, 27th Infantry Division. The Regiment's 1st and 2d Battalions were attacked by an overwhelming force estimated between 3,000 and 5,000 Japanese soldiers. It was one of the largest attacks attempted in the Pacific Theater during World War II. Although both units fought furiously, the enemy soon penetrated the Battalions' combined perimeter and inflicted overwhelming casualties. In the first minutes of the attack, approximately 30 wounded soldiers walked, crawled, or were carried into Captain Salomon's aid station, and the small tent soon filled with wounded men. As the perimeter began to be overrun, it became increasingly difficult for Captain Salomon to work on the wounded. He then saw a Japanese soldier bayoneting one of the wounded soldiers lying near the tent. Firing from a squatting position, Captain Salomon quickly killed the enemy soldier. Then, as he turned his attention back to the wounded, two more Japanese soldiers appeared in the front entrance of the tent. As these enemy soldiers were killed, four more crawled under the tent walls. Rushing them, Captain Salomon kicked the knife out of the hand of one, shot another, and bayoneted a third. Captain Salomon butted the fourth enemy soldier in the stomach and a wounded comrade then shot and killed the enemy soldier. Realizing the gravity of the situation, Captain Salomon ordered the wounded to make their way as best they could back to the regimental aid station, while he attempted to hold off the enemy until they were clear. Captain Salomon then grabbed a rifle from one of the wounded and rushed out of the tent. After four men were killed while manning a machine gun, Captain Salomon took control of it. When his body was later found, 98 dead enemy soldiers were piled in front of his position. Captain Salomon's extraordinary heroism and devotion to duty are in keeping with the highest traditions of military service and reflect great credit upon himself, his unit, and the United States Army.","categories":["The Healer Under Fire","The Last Stand","The Fallen / Ultimate Sacrifice","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2981/salomon-ben-l.php"},{"id":"richard-hetherington-okane","name":"O'Kane, Richard Hetherington","rank":"Commander","branch":"U.S. Navy","unit":"","conflict":"World War II","battle":null,"year":null,"action_date":null,"action_place":"Philippine Islands, Philippines","coords":{"lat":13,"lng":122},"survived":true,"accredited_to":"New Hampshire","born":" Dover, N.H.","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty as commanding officer of the U.S.S. Tang operating against 2 enemy Japanese convoys on 23 and 24 October 1944, during her fifth and last war patrol. Boldly maneuvering on the surface into the midst of a heavily escorted convoy, Comdr. O'Kane stood in the fusillade of bullets and shells from all directions to launch smashing hits on 3 tankers, coolly swung his ship to fire at a freighter and, in a split-second decision, shot out of the path of an onrushing transport, missing it by inches. Boxed in by blazing tankers, a freighter, transport, and several destroyers, he blasted 2 of the targets with his remaining torpedoes and, with pyrotechnics bursting on all sides, cleared the area. Twenty-four hours later, he again made contact with a heavily escorted convoy steaming to support the Leyte campaign with reinforcements and supplies and with crated planes piled high on each unit. In defiance of the enemy's relentless fire, he closed the concentration of ship and in quick succession sent 2 torpedoes each into the first and second transports and an adjacent tanker, finding his mark with each torpedo in a series of violent explosions at less than l,000-yard range. With ships bearing down from all sides, he charged the enemy at high speed, exploding the tanker in a burst of flame, smashing the transport dead in the water, and blasting the destroyer with a mighty roar which rocked the Tang from stem to stern. Expending his last 2 torpedoes into the remnants of a once powerful convoy before his own ship went down, Comdr. O'Kane, aided by his gallant command, achieved an illustrious record of heroism in combat, enhancing the finest traditions of the U.S. Naval Service.","categories":["The Sea","Unbroken in Captivity","The Career Warrior"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2925/o-kane-richard-hetherington.php"},{"id":"gregory-boyington","name":"Boyington, Gregory","rank":"Major","branch":"U.S. Marine Corps","unit":"Marine Squadron 214","conflict":"World War II","battle":null,"year":null,"action_date":null,"action_place":"Central Drive, Prince Frederick, MD 20678, USA","coords":{"lat":38,"lng":-76},"survived":true,"accredited_to":"Washington","born":" Coeur D'Alene, Idaho","citation":"For extraordinary heroism and valiant devotion to duty as commanding officer of Marine Fighting Squadron 214 in action against enemy Japanese forces in the Central Solomons area from 12 September 1943 to 3 January 1944. Consistently outnumbered throughout successive hazardous flights over heavily defended hostile territory, Maj. Boyington struck at the enemy with daring and courageous persistence, leading his squadron into combat with devastating results to Japanese shipping, shore installations, and aerial forces. Resolute in his efforts to inflict crippling damage on the enemy, Maj. Boyington led a formation of 24 fighters over Kahili on 17 October and, persistently circling the airdrome where 60 hostile aircraft were grounded, boldly challenged the Japanese to send up planes. Under his brilliant command, our fighters shot down 20 enemy craft in the ensuing action without the loss of a single ship. A superb airman and determined fighter against overwhelming odds, Maj. Boyington personally destroyed 26 of the many Japanese planes shot down by his squadron and, by his forceful leadership, developed the combat readiness in his command which was a distinctive factor in the Allied aerial achievements in this vitally strategic area.","categories":["Wings","Unbroken in Captivity","The Forgotten Hero / Fall From Grace","The Epic Second Act"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2651/boyington-gregory.php"},{"id":"emil-joseph-kapaun","name":"Kapaun, Emil Joseph","rank":"Captain (Chaplain)","branch":"U.S. Army","unit":"3d Battalion, 8th Cavalry Regiment, 1st Cavalry Division","conflict":"Korean War","battle":"Battle of Unsan","year":null,"action_date":null,"action_place":"Japan, ?780-0901 K?chi-ken, K?chi-shi, Kamimachi, 1 Chome?6?2 ????????","coords":{"lat":33,"lng":133},"survived":false,"accredited_to":"Kansas","born":"April 20, 1916 / Pilsen, Kansas","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty while serving with the 3d Battalion, 8th Cavalry Regiment, 1st Cavalry Division during combat operations against an armed enemy at Unsan, Korea, from November 1-2, 1950. On November 1, as Chinese Communist Forces viciously attacked friendly elements, Chaplain Kapaun calmly walked through withering enemy fire in order to provide comfort and medical aid to his comrades and rescue friendly wounded from no-man's land. Though the Americans successfully repelled the assault, they found themselves surrounded by the enemy. Facing annihilation, the able-bodied men were ordered to evacuate. However, Chaplain Kapaun, fully aware of his certain capture, elected to stay behind with the wounded. After the enemy succeeded in breaking through the defense in the early morning hours of November 2, Chaplain  Kapaun continually made rounds, as hand-to-hand combat ensued. As Chinese Communist Forces approached the American position, Chaplain Kapaun noticed an injured Chinese officer amongst the wounded and convinced him to negotiate the safe surrender of the American Forces. Shortly after his capture, Chaplain Kapaun, with complete disregard for his personal safety and unwavering resolve, bravely pushed aside an enemy soldier preparing to execute Sergeant First Class Herbert A. Miller. Not only did Chaplain Kapaun's gallantry save the life of Sergeant Miller, but also his unparalleled courage and leadership inspired all those present, including those who might have otherwise fled in panic, to remain and fight the enemy until captured. Chaplain Kapaun's extraordinary heroism and selflessness, above and beyond the call of duty, are in keeping with the highest traditions of military service and reflect great credit upon himself, the 3d Battalion, 8th Cavalry Regiment, the 1st Cavalry Division, and the United States Army. President Barack Obama presented the Medal of Honor to Kapaun's nephew at the White House on April 11, 2013.","categories":["Religious / Faith-Driven","Unbroken in Captivity","Greater Love","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3483/kapaun-emil-joseph.php"},{"id":"tibor-rubin","name":"Rubin, Tibor","rank":"Corporal","branch":"U.S. Army","unit":"Company I, 8th Cavalry Regiment, 1st Cavalry Division","conflict":"Korean War","battle":null,"year":null,"action_date":null,"action_place":"South Korea","coords":{"lat":35,"lng":127},"survived":true,"accredited_to":null,"born":" Hungary","citation":"Corporal Tibor Rubin distinguished himself by extraordinary heroism during the period from July 23, 1950, to April 20, 1953, while serving as a rifleman with Company I, 8th Cavalry Regiment, 1st Cavalry Division in the Republic of Korea. While his unit was retreating to the Pusan Perimeter, Corporal Rubin was assigned to stay behind to keep open the vital Taegu-Pusan Road link used by his withdrawing unit. During the ensuing battle, overwhelming numbers of North Korean troops assaulted a hill defended solely by Corporal Rubin. He inflicted a staggering number of casualties on the attacking force during his personal 24-hour battle, single-handedly slowing the enemy advance and allowing the 8th Cavalry Regiment to complete its withdrawal successfully. Following the breakout from the Pusan Perimeter, the 8th Cavalry Regiment proceeded northward and advanced into North Korea. During the advance, he helped capture several hundred North Korean soldiers. On October 30, 1950, Chinese forces attacked his unit at Unsan, North Korea, during a massive nighttime assault. That night and throughout the next day, he manned a .30 caliber machine gun at the south end of the unit's line after three previous gunners became casualties. He continued to man his machine gun until his ammunition was exhausted. His determined stand slowed the pace of the enemy advance in his sector, permitting the remnants of his unit to retreat southward. As the battle raged, Corporal Rubin was severely wounded and captured by the Chinese. Choosing to remain in the prison camp despite offers from the Chinese to return him to his native Hungary, Corporal Rubin disregarded his own personal safety and immediately began sneaking out of the camp at night in search of food for his comrades. Breaking into enemy food storehouses and gardens, he risked certain torture or death if caught. Corporal Rubin provided not only food to the starving Soldiers, but also desperately needed medical care and moral support for the sick and wounded of the POW camp. His brave, selfless efforts were directly attributed to saving the lives of as many as forty of his fellow prisoners. Corporal Rubin's gallant actions in close contact with the enemy and unyielding courage and bravery while a prisoner of war are in the highest traditions of military service and reflect great credit upon himself and the United States Army.","categories":["The New American / Immigrant's Debt","Unbroken in Captivity","One Against Many","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3183/rubin-tibor.php"},{"id":"hiroshi-h-miyamura","name":"Miyamura, Hiroshi H.","rank":"Corporal","branch":"U.S. Army","unit":"Company H, 7th Infantry Regiment, 3rd Infantry Division","conflict":"Korean War","battle":null,"year":null,"action_date":null,"action_place":"South Korea","coords":{"lat":35,"lng":127},"survived":true,"accredited_to":"Gallup, NM","born":"October 6, 1925, Gallup, N. Mex.","citation":"Cpl. Miyamura, a member of Company H, distinguished himself by conspicuous gallantry and intrepidity above and beyond the call of duty in action against the enemy. On the night of 24 April, Company H was occupying a defensive position when the enemy fanatically attacked threatening to overrun the position. Cpl. Miyamura, a machine gun squad leader, aware of the imminent danger to his men unhesitatingly jumped from his shelter wielding his bayonet in close hand-to-hand combat killing approximately 10 of the enemy. Returning to his position, he administered first aid to the wounded and directed their evacuation. As another savage assault hit the line, he manned his machine gun and delivered withering fire until his ammunition was expended. He ordered the squad to withdraw while he stayed behind to render the gun inoperative. He then bayoneted his way through infiltrated enemy soldiers to a second gun emplacement and assisted in its operation. When the intensity of the attack necessitated the withdrawal of the company Cpl. Miyamura ordered his men to fall back while he remained to cover their movement. He killed more than 50 of the enemy before his ammunition was depleted and he was severely wounded. He maintained his magnificent stand despite his painful wounds, continuing to repel the attack until his position was overrun. When last seen he was fighting ferociously against an overwhelming number of enemy soldiers. Cpl. Miyamura's indomitable heroism and consummate devotion to duty reflect the utmost glory on himself and uphold the illustrious traditions on the military service.","categories":["The Last Stand","Unbroken in Captivity","The New American / Immigrant's Debt"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3160/miyamura-hiroshi-h.php"},{"id":"william-e-barber","name":"Barber, William E.","rank":"Captain","branch":"U.S. Marine Corps","unit":"Company F, 2d Battalion, 7th Marines, 1st Marine Division","conflict":"Korean War","battle":"Chosin Reservoir (Fox Hill)","year":null,"action_date":null,"action_place":"South Korea","coords":{"lat":35,"lng":127},"survived":true,"accredited_to":"West Liberty, Ky.","born":" Dehart, Ky.","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty as commanding officer of Company F in action against enemy aggressor forces. Assigned to defend a 3-mile mountain pass along the division's main supply line and commanding the only route of approach in the march from Yudam-ni to Hagaru-ri, Capt. Barber took position with his battle-weary troops and, before nightfall, had dug in and set up a defense along the frozen, snow-covered hillside. When a force of estimated regimental strength savagely attacked during the night, inflicting heavy casualties and finally surrounding his position following a bitterly fought 7-hour conflict, Capt. Barber, after repulsing the enemy gave assurance that he could hold if supplied by airdrops and requested permission to stand fast when orders were received by radio to fight his way back to a relieving force after 2 reinforcing units had been driven back under fierce resistance in their attempts to reach the isolated troops. Aware that leaving the position would sever contact with the 8,000 marines trapped at Yudam-ni and jeopardize their chances of joining the 3,000 more awaiting their arrival in Hagaru-ri for the continued drive to the sea, he chose to risk loss of his command rather than sacrifice more men if the enemy seized control and forced a renewed battle to regain the position, or abandon his many wounded who were unable to walk. Although severely wounded in the leg in the early morning of the 29th, Capt. Barber continued to maintain personal control, often moving up and down the lines on a stretcher to direct the defense and consistently encouraging and inspiring his men to supreme efforts despite the staggering opposition. Waging desperate battle throughout 5 days and 6 nights of repeated onslaughts launched by the fanatical aggressors, he and his heroic command accounted for approximately 1,000 enemy dead in this epic stand in bitter subzero weather, and when the company was relieved only 82 of his original 220 men were able to walk away from the position so valiantly defended against insuperable odds. His profound faith and courage, great personal valor, and unwavering fortitude were decisive factors in the successful withdrawal of the division from the deathtrap in the Chosin Reservoir sector and reflect the highest credit upon Capt. Barber, his intrepid officers and men, and the U.S. Naval Service.","categories":["The Last Stand","The Rallying Point","The Wounded Warrior"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3081/barber-william-e.php"},{"id":"roy-p-benavidez","name":"Benavidez, Roy P.","rank":"Master Sergeant","branch":"U.S. Army","unit":"Detachment B-56, 5th Special Forces Group","conflict":"Vietnam War","battle":null,"year":null,"action_date":null,"action_place":"Vietnam","coords":{"lat":14,"lng":108},"survived":true,"accredited_to":"Houston, Texas June 1955","born":" DeWitt County, Cuero, Texas","citation":"Master Sergeant (then Staff Sergeant) Roy P. Benavidez United States Army, who distinguished himself by a series of daring and extremely valorous actions on 2 May 1968 while assigned to Detachment B56, 5th Special Forces Group (Airborne), 1st Special Forces, Republic of Vietnam. On the morning of 2 May 1968, a 12-man Special Forces Reconnaissance Team was inserted by helicopters in a dense jungle area west of Loc Ninh, Vietnam to gather intelligence information about confirmed large-scale enemy activity. This area was controlled and routinely patrolled by the North Vietnamese Army. After a short period of time on the ground, the team met heavy enemy resistance, and requested emergency extraction. Three helicopters attempted extraction, but were unable to land due to intense enemy small arms and anti-aircraft fire. Sergeant Benavidez was at the Forward Operating Base in Loc Ninh monitoring the operation by radio when these helicopters returned to off-load wounded crewmembers and to assess aircraft damage. Sergeant Benavidez voluntarily boarded a returning aircraft to assist in another extraction attempt. Realizing that all the team members were either dead or wounded and unable to move to the pickup zone, he directed the aircraft to a nearby clearing where he jumped from the hovering helicopter, and ran approximately 75 meters under withering small arms fire to the crippled team. Prior to reaching the team's position he was wounded in his right leg, face, and head. Despite these painful injuries, he took charge, repositioning the team members and directing their fire to facilitate the landing of an extraction aircraft, and the loading of wounded and dead team members. He then threw smoke canisters to direct the aircraft to the team's position. Despite his severe wounds and under intense enemy fire, he carried and dragged half of the wounded team members to the awaiting aircraft. He then provided protective fire by running alongside the aircraft as it moved to pick up the remaining team members. As the enemy's fire intensified, he hurried to recover the body and classified documents on the dead team leader. When he reached the leader's body, Sergeant Benavidez was severely wounded by small arms fire in the abdomen and grenade fragments in his back. At nearly the same moment, the aircraft pilot was mortally wounded, and his helicopter crashed. Although in extremely critical condition due to his multiple wounds, Sergeant Benavidez secured the classified documents and made his way back to the wreckage, where he aided the wounded out of the overturned aircraft, and gathered the stunned survivors into a defensive perimeter. Under increasing enemy automatic weapons and grenade fire, he moved around the perimeter distributing water and ammunition to his weary men, reinstilling in them a will to live and fight. Facing a buildup of enemy opposition with a beleaguered team, Sergeant Benavidez mustered his strength, began calling in tactical air strikes and directed the fire from supporting gunships to suppress the enemy's fire and so permit another extraction attempt. He was wounded again in his thigh by small arms fire while administering first aid to a wounded team member just before another extraction helicopter was able to land. His indomitable spirit kept him going as he began to ferry his comrades to the craft. On his second trip with the wounded, he was clubbed from additional wounds to his head and arms before killing his adversary. He then continued under devastating fire to carry the wounded to the helicopter. Upon reaching the aircraft, he spotted and killed two enemy soldiers who were rushing the craft from an angle that prevented the aircraft door gunner from firing upon them. With little strength remaining, he made one last trip to the perimeter to ensure that all classified material had been collected or destroyed, and to bring in the remaining wounded. Only then, in extremely serious condition from numerous wounds and loss of blood, did he allow himself to be pulled into the extraction aircraft. Sergeant Benavidez' gallant choice to join voluntarily his comrades who were in critical straits, to expose himself constantly to withering enemy fire, and his refusal to be stopped despite numerous severe wounds, saved the lives of at least eight men. His fearless personal leadership, tenacious devotion to duty, and extremely valorous actions in the face of overwhelming odds were in keeping with the highest traditions of the military service, and reflect the utmost credit on him and the United States Army.","categories":["The Rescue & Lifesaver","Miraculous / Left for Dead","Brotherhood / No One Left Behind","The Wounded Warrior"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3229/benavidez-roy-p.php"},{"id":"ed-w-freeman","name":"Freeman, Ed W.","rank":"Captain","branch":"U.S. Army","unit":"Company A, 229th Assault Helicopter Battalion, 1st Cavalry Division","conflict":"Vietnam War","battle":"Ia Drang","year":null,"action_date":null,"action_place":"Vietnam","coords":{"lat":14,"lng":108},"survived":true,"accredited_to":"Hattiesburg, MS","born":" Hattiesburg, MS","citation":"Captain Ed W. Freeman, United States Army, distinguished himself by numerous acts of conspicuous gallantry and extraordinary intrepidity on 14 November 1965 while serving with Company A, 229th Assault Helicopter Battalion, 1st Cavalry Division (Airmobile). As a flight leader and second in command of a 16-helicopter lift unit, he supported a heavily engaged American infantry battalion at Landing Zone X-Ray in the Ia Drang Valley, Republic of Vietnam. The unit was almost out of ammunition after taking some of the heaviest casualties of the war, fighting off a relentless attack from a highly motivated, heavily armed enemy force. When the infantry commander closed the helicopter landing zone due to intense direct enemy fire, Captain Freeman risked his own life by flying his unarmed helicopter through a gauntlet of enemy fire time after time, delivering critically needed ammunition, water and medical supplies to the besieged battalion. His flights had a direct impact on the battle's outcome by providing the engaged units with timely supplies of ammunition critical to their survival, without which they would almost surely have gone down, with much greater loss of life. After medical evacuation helicopters refused to fly into the area due to intense enemy fire, Captain Freeman flew 14 separate rescue missions, providing life-saving evacuation of an estimated 30 seriously wounded soldiers -- some of whom would not have survived had he not acted. All flights were made into a small emergency landing zone within 100 to 200 meters of the defensive perimeter where heavily committed units were perilously holding off the attacking elements. Captain Freeman's selfless acts of great valor, extraordinary perseverance and intrepidity were far above and beyond the call of duty or mission and set a superb example of leadership and courage for all of his peers. Captain Freeman's extraordinary heroism and devotion to duty are in keeping with the highest traditions of military service and reflect great credit upon himself, his unit and the United States Army.","categories":["Wings","The Rescue & Lifesaver","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3286/freeman-ed-w.php"},{"id":"william-h-pitsenbarger","name":"Pitsenbarger, William H.","rank":"Airman First Class","branch":"U.S. Air Force","unit":"","conflict":"Vietnam War","battle":null,"year":null,"action_date":null,"action_place":"C?m M?, C?m Xuy?n, H? T?nh, Vietnam","coords":{"lat":18,"lng":105},"survived":false,"accredited_to":null,"born":null,"citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty. Airman First Class Pitsenbarger distinguished himself by extreme valor on 11 April 1966 near Cam My, Republic of Vietnam, while assigned as a Pararescue Crew Member, Detachment 6, 38th Aerospace Rescue and Recovery Squadron. On that date, Airman Pitsenbarger was aboard a rescue helicopter responding to a call for evacuation of casualties incurred in an ongoing firefight between elements of the United States Army's 1st Infantry Division and a sizeable enemy force approximately 35 miles east of Saigon. With complete disregard for personal safety, Airman Pitsenbarger volunteered to ride a hoist more than one hundred feet through the jungle, to the ground. On the ground, he organized and coordinated rescue efforts, cared for the wounded, prepared casualties for evacuation, and insured that the recovery operation continued in a smooth and orderly fashion. Through his personal efforts, the evacuation of the wounded was greatly expedited. As each of the nine casualties evacuated that day was recovered, Airman Pitsenbarger refused evacuation in order to get more wounded soldiers to safety. After several pick-ups, one of the two rescue helicopters involved in the evacuation was struck by heavy enemy ground fire and was forced to leave the scene for an emergency landing. Airman Pitsenbarger stayed behind on the ground to perform medical duties. Shortly thereafter, the area came under sniper and mortar fire. During a subsequent attempt to evacuate the site, American forces came under heavy assault by a large Viet Cong force. When the enemy launched the assault, the evacuation was called off and Airman Pitsenbarger took up arms with the besieged infantrymen. He courageously resisted the enemy, braving intense gunfire to gather and distribute vital ammunition to American defenders. As the battle raged on, he repeatedly exposed himself to enemy fire to care for the wounded, pull them out of the line of fire, and return fire whenever he could, during which time he was wounded three times. Despite his wounds, he valiantly fought on, simultaneously treating as many wounded as possible. In the vicious fighting that followed, the American forces suffered 80 percent casualties as their perimeter was breached, and Airman Pitsenbarger was fatally wounded. Airman Pitsenbarger exposed himself to almost certain death by staying on the ground, and perished while saving the lives of wounded infantrymen. His bravery and determination exemplify the highest professional standards and traditions of military service and reflect great credit upon himself, his unit, and the United States Air Force.","categories":["The Healer Under Fire","Greater Love","The Fallen / Ultimate Sacrifice","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3388/pitsenbarger-william-h.php"},{"id":"thomas-r-norris","name":"Norris, Thomas R.","rank":"Lieutenant","branch":"U.S. Navy","unit":"Strategic Technical Directorate Assitance Team, U.S. Army Support Command","conflict":"Vietnam War","battle":null,"year":null,"action_date":null,"action_place":"Honorary Consulate General of the Republic of the Philippines, ph??ng 19, B?nh Th?nh, H? Ch? Minh, Vietnam","coords":{"lat":10,"lng":106},"survived":true,"accredited_to":"Silver Springs, MD","born":" Jacksonville, Fla.","citation":"Lt. Norris completed an unprecedented ground rescue of 2 downed pilots deep within heavily controlled enemy territory in Quang Tri Province. Lt. Norris, on the night of 10 April, led a 5-man patrol through 2,000 meters of heavily controlled enemy territory, located 1 of the downed pilots at daybreak, and returned to the Forward Operating Base (FOB). On 11 April, after a devastating mortar and rocket attack on the small FOB, Lt. Norris led a 3-man team on 2 unsuccessful rescue attempts for the second pilot. On the afternoon of the 12th, a forward air controller located the pilot and notified Lt. Norris. Dressed in fishermen disguises and using a sampan, Lt. Norris and 1 Vietnamese traveled throughout that night and found the injured pilot at dawn. Covering the pilot with bamboo and vegetation, they began the return journey, successfully evading a North Vietnamese patrol. Approaching the FOB, they came under heavy machinegun fire. Lt. Norris called in an air strike which provided suppression fire and a smoke screen, allowing the rescue party to reach the FOB. By his outstanding display of decisive leadership, undaunted courage, and selfless dedication in the face of extreme danger, Lt. Norris enhanced the finest traditions of the U.S. Naval Service.","categories":["The Rescue & Lifesaver","One Against Many"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3374/norris-thomas-r.php"},{"id":"michael-edwin-thornton","name":"Thornton, Michael Edwin","rank":"Petty Officer","branch":"U.S. Navy","unit":"","conflict":"Vietnam War","battle":null,"year":1972,"action_date":"1972-10-31","action_place":"Honorary Consulate General of the Republic of the Philippines, ph??ng 19, B?nh Th?nh, H? Ch? Minh, Vietnam","coords":{"lat":10,"lng":106},"survived":true,"accredited_to":"Spartanburg, S.C.","born":" Greenville, S.C.","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty while participating in a daring operation against enemy forces. PO Thornton, as Assistant U.S. Navy Advisor, along with a U.S. Navy lieutenant serving as Senior Advisor, accompanied a 3-man Vietnamese Navy SEAL patrol on an intelligence gathering and prisoner capture operation against an enemy-occupied naval river base. Launched from a Vietnamese Navy junk in a rubber boat, the patrol reached land and was continuing on foot toward its objective when it suddenly came under heavy fire from a numerically superior force. The patrol called in naval gunfire support and then engaged the enemy in a fierce firefight, accounting for many enemy casualties before moving back to the waterline to prevent encirclement. Upon learning that the Senior Advisor had been hit by enemy fire and was was believed to be dead, PO Thornton returned through a hail of fire to the lieutenant's last position; quickly disposed of 2 enemy soldiers about to overrun the position, and succeeded in removing the seriously wounded and unconscious Senior Naval Advisor to the water's edge. He then inflated the lieutenant's lifejacket and towed him seaward for approximately 2 hours until picked up by support craft. By his extraordinary courage and perseverance, PO Thornton was directly responsible for saving the life of his superior officer and enabling the safe extraction of all patrol members, thereby upholding the highest traditions of the U.S. Naval Service.","categories":["The Rescue & Lifesaver","Brotherhood / No One Left Behind","Greater Love"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3432/thornton-michael-edwin.php"},{"id":"james-b-stockdale","name":"Stockdale, James B.","rank":"Rear Admiral","branch":"U.S. Navy","unit":"","conflict":"Vietnam War","battle":null,"year":1969,"action_date":"1969-9-4","action_place":"Hoa Lo Prison, Ho? L?, Tr?n H?ng ??o, Ho?n Ki?m, H? N?i, Vietnam","coords":{"lat":21,"lng":105},"survived":true,"accredited_to":"Abingdon, Ill.","born":" Abingdon, Ill.","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty while senior naval officer in the Prisoner of War camps of North Vietnam. Recognized by his captors as the leader in the Prisoners' of War resistance to interrogation and in their refusal to participate in propaganda exploitation, Rear Adm. Stockdale was singled out for interrogation and attendant torture after he was detected in a covert communications attempt. Sensing the start of another purge, and aware that his earlier efforts at self-disfiguration to dissuade his captors from exploiting him for propaganda purposes had resulted in cruel and agonizing punishment, Rear Adm. Stockdale resolved to make himself a symbol of resistance regardless of personal sacrifice. He deliberately inflicted a near-mortal wound to his person in order to convince his captors of his willingness to give up his life rather than capitulate. He was subsequently discovered and revived by the North Vietnamese who, convinced of his indomitable spirit, abated in their employment of excessive harassment and torture toward all of the Prisoners of War. By his heroic action, at great peril to himself, he earned the everlasting gratitude of his fellow prisoners and of his country. Rear Adm. Stockdale's valiant leadership and extraordinary courage in a hostile environment sustain and enhance the finest traditions of the U.S. Naval Service.","categories":["Unbroken in Captivity","The Epic Second Act"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3423/stockdale-james-b.php"},{"id":"bennie-g-adkins","name":"Adkins, Bennie G.","rank":"Sergeant First Class","branch":"U.S. Army","unit":"Detachment A-102, 5th Special Forces Group (Airborne), 1st Special Forces","conflict":"Vietnam War","battle":"Camp A Shau","year":null,"action_date":null,"action_place":"9 12, 8640 Rapperswil-Jona, Switzerland","coords":{"lat":47,"lng":8},"survived":true,"accredited_to":"Waurika, Oklahoma","born":" Waurika, Okla.","citation":"Sergeant First Class Adkins distinguished himself during the period 9 March 1966 to 12 March 1966 during combat operations at Camp A Shau, Republic of Vietnam. When the camp was attacked by a large Viet Cong force, Sergeant First Class Adkins rushed through intense hostile fire and manned a mortar position. Although he was wounded, he ran through exploding mortar rounds and dragged several of his comrades to safety. When the hostile fire subsided, Sergeant First Class Adkins exposed himself to sporadic sniper fire and carried his wounded comrades to the camp dispensary. During the evacuation of a seriously wounded American, Sergeant First Class Adkins maneuvered outside the camp walls to draw fire and successfully covered the rescue. During the early morning hours of 10 March 1966, a Viet Cong regiment launched their main attack. Within two hours, Sergeant First Class Adkins was the only man firing a mortar weapon. Although he was painfully wounded and most of his crew was killed or wounded, he fought off the fanatical waves of attacking Viet Cong. After withdrawing to a communications bunker where several Americans were attempting to fight off a company of Viet Cong, Sergeant First Class Adkins killed numerous insurgents with his suppressive fire. Running extremely low on ammunition, he returned to the mortar pit, gathered the vital ammunition, and ran through intense fire back to the communications bunker. After being ordered to evacuate the camp, all signal equipment and classified documents were destroyed. Sergeant First Class Adkins and a small group of men fought their way out of the camp and evaded the Viet Cong for two days until they were rescued by a helicopter. Sergeant First Class Adkins' extraordinary heroism in close combat against a numerically superior hostile force was in keeping with the highest traditions of the military service and reflect great credit upon himself, his unit, and the United States Army.","categories":["One Against Many","The Last Stand","Belated Justice / The Long Vindication"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3513/adkins-bennie-g.php"},{"id":"randall-d-shughart","name":"Shughart, Randall D.","rank":"Sergeant First Class","branch":"U.S. Army","unit":"","conflict":"Somalia (Operation Restore Hope)","battle":"Battle of Mogadishu","year":null,"action_date":null,"action_place":"Mogadishu, Somalia","coords":{"lat":2,"lng":45},"survived":false,"accredited_to":"Newville, Pennsylvania","born":"Lincoln, Nebraska","citation":"Sergeant First Class Shughart, United States Army, distinguished himself by actions above and beyond the call of duty on 3 October 1993, while serving as a Sniper Team Member, United States Army Special Operations Command with Task Force Ranger in Mogadishu, Somalia. Sergeant First Class Shughart provided precision sniper fires from the lead helicopter during an assault on a building and at two helicopter crash sites, while subjected to intense automatic weapons and rocket propelled grenade fires. While providing critical suppressive fires at the second crash site, Sergeant First Class Shughart and his team leader learned that ground forces were not immediately available to secure the site. Sergeant First Class Shughart and his team leader unhesitatingly volunteered to be inserted to protect the four critically wounded personnel, despite being well aware of the growing number of enemy personnel closing in on the site. After their third request to be inserted, Sergeant First Class Shughart and his team leader received permission to perform this volunteer mission. When debris and enemy ground fires at the site caused them to abort the first attempt, Sergeant First Class Shughart and his team leader were inserted one hundred meters south of the crash site. Equipped with only his sniper rifle and a pistol, Sergeant First Class Shughart and his team leader, while under intense small arms fire from the enemy, fought their way through a dense maze of shanties and shacks to reach the critically injured crew members. Sergeant First Class Shughart pulled the pilot and the other crew members from the aircraft, establishing a perimeter which placed him and his fellow sniper in the most vulnerable position. Sergeant First Class Shughart used his long range rifle and side arm to kill an undetermined number of attackers while traveling the perimeter, protecting the downed crew. Sergeant First Class Shughart continued his protective fire until he depleted his ammunition and was fatally wounded. His actions saved the pilot's life. Sergeant First Class Shughart's extraordinary heroism and devotion to duty were in keeping with the highest standards of military service and reflect great credit upon him, his unit and the United States Army.","categories":["Greater Love","Brotherhood / No One Left Behind","The Last Stand","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2198/shughart-randall-d.php"},{"id":"gary-i-gordon","name":"Gordon, Gary I.","rank":"Master Sergeant","branch":"U.S. Army","unit":"","conflict":"Somalia (Operation Restore Hope)","battle":"Battle of Mogadishu","year":null,"action_date":null,"action_place":"Mogadishu, Somalia","coords":{"lat":2,"lng":45},"survived":false,"accredited_to":null,"born":"Lincoln, Maine","citation":"Master Sergeant Gordon, United States Army, distinguished himself by actions above and beyond the call of duty on 3 October 1993, while serving as Sniper Team Leader, United States Army Special Operations Command with Task Force Ranger in Mogadishu, Somalia. Master Sergeant Gordon's sniper team provided precision fires from the lead helicopter during an assault and at two helicopter crash sites, while subjected to intense automatic weapons and rocket propelled grenade fires. When Master Sergeant Gordon learned that ground forces were not immediately available to secure the second crash site, he and another sniper unhesitatingly volunteered to be inserted to protect the four critically wounded personnel, despite being well aware of the growing number of enemy personnel closing in on the site. After his third request to be inserted, Master Sergeant Gordon received permission to perform his volunteer mission. When debris and enemy ground fires at the site caused them to abort the first attempt, Master Sergeant Gordon was inserted one hundred meters south of the crash site. Equipped with only his sniper rifle and a pistol, Master Sergeant Gordon and his fellow sniper, while under intense small arms fire from the enemy, fought their way through a dense maze of shanties and shacks to reach the critically injured crew members. Master Sergeant Gordon immediately pulled the pilot and the other crew members from the aircraft, establishing a perimeter which placed him and his fellow sniper in the most vulnerable position. Master Sergeant Gordon used his long range rifle and side arm to kill an undetermined number of attackers until he depleted his ammunition. Master Sergeant Gordon then went back to the wreckage, recovering some of the crew's weapons and ammunition. Despite the fact that he was critically low on ammunition, he provided some of it to the dazed pilot and then radioed for help. Master Sergeant Gordon continued to travel the perimeter, protecting the downed crew. After his team member was fatally wounded and his own rifle ammunition exhausted, Master Sergeant Gordon returned to the wreckage, recovering a rifle with the last five rounds of ammunition and gave it to the pilot with the words, \"good luck.\" Then, armed only with his pistol, Master Sergeant Gordon continued to fight until he was fatally wounded. His actions saved the pilot's life. Master Sergeant Gordon's extraordinary heroism and devotion to duty were in keeping with the highest standards of military service and reflect great credit upon him, his unit and the United States Army.","categories":["Greater Love","Brotherhood / No One Left Behind","The Last Stand","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2197/gordon-gary-i.php"},{"id":"paul-r-smith","name":"Smith, Paul R.","rank":"Sergeant First Class","branch":"U.S. Army","unit":"","conflict":"War on Terrorism (Iraq)","battle":"Baghdad Airport","year":null,"action_date":null,"action_place":"Baghdad, Iraq","coords":{"lat":33,"lng":44},"survived":false,"accredited_to":"October 1989","born":null,"citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty:Sergeant First Class Paul R. Smith distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty in action with an armed enemy near Baghdad International Airport, Baghdad, Iraq on 4 April 2003. On that day, Sergeant First Class Smith was engaged in the construction of a prisoner of war holding area when his Task Force was violently attacked by a company-sized enemy force. Realizing the vulnerability of over 100 fellow soldiers, Sergeant First Class Smith quickly organized a hasty defense consisting of two platoons of soldiers, one Bradley Fighting Vehicle and three armored personnel carriers. As the fight developed, Sergeant First Class Smith braved hostile enemy fire to personally engage the enemy with hand grenades and anti-tank weapons, and organized the evacuation of three wounded soldiers from an armored personnel carrier struck by a rocket propelled grenade and a 60mm mortar round. Fearing the enemy would overrun their defenses, Sergeant First Class Smith moved under withering enemy fire to man a .50 caliber machine gun mounted on a damaged armored personnel carrier. In total disregard for his own life, he maintained his exposed position in order to engage the attacking enemy force. During this action, he was mortally wounded. His courageous actions helped defeat the enemy attack, and resulted in as many as 50 enemy soldiers killed, while allowing the safe withdrawal of numerous wounded soldiers. Sergeant First Class Smith?s extraordinary heroism and uncommon valor are in keeping with the highest traditions of the military service and reflect great credit upon himself, the Third Infantry Division ?Rock of the Marne,? and the United States Army.","categories":["The Last Stand","The Rallying Point","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3461/smith-paul-r.php"},{"id":"ross-a-mcginnis","name":"Mcginnis, Ross A.","rank":"Private First Class","branch":"U.S. Army","unit":"Company C, 1st Battalion, 1st Infantry Division","conflict":"War on Terrorism (Iraq)","battle":null,"year":null,"action_date":null,"action_place":"Baghdad, Iraq","coords":{"lat":33,"lng":44},"survived":false,"accredited_to":"June 14, 2004 in Pittsburgh, Pa.","born":"June 14, 1987 in Meadville, Pa.","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty:\nPrivate First Class Ross A. McGinnis distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty while serving as an M2 .50-caliber Machine Gunner, 1st Platoon, C Company, 1st Battalion, 26th Infantry Regiment, in connection with combat operations against an armed enemy in Adhamiyah, Northeast Baghdad, Iraq, on 4 December 2006.\n\nThat afternoon his platoon was conducting combat control operations in an effort to reduce and control sectarian violence in the area. While Private McGinnis was manning the M2 .50-caliber Machine Gun, a fragmentation grenade thrown by an insurgent fell through the gunner's hatch into the vehicle. Reacting quickly, he yelled \"grenade,\" allowing all four members of his crew to prepare for the grenade's blast. Then, rather than leaping from the gunner's hatch to safety, Private McGinnis made the courageous decision to protect his crew. In a selfless act of bravery, in which he was mortally wounded, Private McGinnis covered the live grenade, pinning it between his body and the vehicle and absorbing most of the explosion.\n\nPrivate McGinnis' gallant action directly saved four men from certain serious injury or death. Private First Class McGinnis' extraordinary heroism and selflessness at the cost of his own life, above and beyond the call of duty, are in keeping with the highest traditions of the military service and reflect great credit upon himself, his unit, and the United States Army.","categories":["The Body on the Grenade","The Boy (Too Young for This)","Greater Love","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3459/mcginnis-ross-a.php"},{"id":"michael-p-murphy","name":"Murphy, Michael P.","rank":"Lieutenant","branch":"U.S. Navy","unit":"ALFA Platoon, SEAL Delivery Vehicle Team 1","conflict":"War on Terrorism (Afghanistan)","battle":"Operation Red Wings","year":2005,"action_date":"2005-6-28","action_place":"Asadabad, Afghanistan","coords":{"lat":34,"lng":71},"survived":false,"accredited_to":"Pensacola, Fla.","born":"May 7, 1976 in Smithtown, N.Y.","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty as the leader of a special reconnaissance element with Naval Special Warfare Task Unit Afghanistan on 27 and 28 June 2005. While leading a mission to locate a high-level anti-coalition militia leader, Lieutenant Murphy demonstrated extraordinary heroism in the face of grave danger in the vicinity of Asadabad, Konar Province, Afghanistan. On 28 June 2005, operating in an extremely rugged enemy-controlled area, Lieutenant Murphy?s team was discovered by anti-coalition militia sympathizers, who revealed their position to Taliban fighters. As a result, between 30 and 40 enemy fighters besieged his four-member team. Demonstrating exceptional resolve, Lieutenant Murphy valiantly led his men in engaging the large enemy force. The ensuing fierce firefight resulted in numerous enemy casualties, as well as the wounding of all four members of the team. Ignoring his own wounds and demonstrating exceptional composure, Lieutenant Murphy continued to lead and encourage his men. When the primary communicator fell mortally wounded, Lieutenant Murphy repeatedly attempted to call for assistance for his beleaguered teammates. Realizing the impossibility of communicating in the extreme terrain, and in the face of almost certain death, he fought his way into open terrain to gain a better position to transmit a call. This deliberate, heroic act deprived him of cover, exposing him to direct enemy fire. Finally achieving contact with his Headquarters, Lieutenant Murphy maintained his exposed position while he provided his location and requested immediate support for his team. In his final act of bravery, he continued to engage the enemy until he was mortally wounded, gallantly giving his life for his country and for the cause of freedom. By his selfless leadership, courageous actions, and extraordinary devotion to duty, Lieutenant Murphy reflected great credit upon himself and upheld the highest traditions of the United States Naval Service.","categories":["The Last Stand","Greater Love","Brotherhood / No One Left Behind","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/2199/murphy-michael-p.php"},{"id":"jared-c-monti","name":"Monti, Jared C.","rank":"Sergeant First Class","branch":"U.S. Army","unit":"Headquarters Company, 10th Mountain","conflict":"War on Terrorism (Afghanistan)","battle":null,"year":null,"action_date":null,"action_place":"Nurestan, Afghanistan","coords":{"lat":35,"lng":70},"survived":false,"accredited_to":"Rayntham, Mass.","born":" Abington, Mass.","citation":"Staff Sergeant Jared C. Monti distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty while serving as a team leader with Headquarters and Headquarters Troop, 3d Squadron, 71st Cavalry Regiment, 3d Brigade Combat Team, 10th Mountain Division, in connection with combat operations against an armed enemy in Nuristan Province, Afghanistan, on June 21, 2006. While Staff Sergeant Monti was leading a mission aimed at gathering intelligence and directing fire against the enemy, his 16-man patrol was attacked by as many as 50 enemy fighters. On the verge of being overrun, Staff Sergeant Monti quickly directed his men to set up a defensive position behind a rock formation. He then called for indirect fire support, accurately targeting the rounds upon the enemy who had closed to within 50 meters of his position. While still directing fire, Staff Sergeant Monti personally engaged the enemy with his rifle and a grenade, successfully disrupting an attempt to flank his patrol. Staff Sergeant Monti then realized that one of his Soldiers was lying wounded in the open ground between the advancing enemy and the patrol?s position. With complete disregard for his own safety, Staff Sergeant Monti twice attempted to move from behind the cover of the rocks into the face of relentless enemy fire to rescue his fallen comrade. Determined not to leave his Soldier, Staff Sergeant Monti made a third attempt to cross open terrain through intense enemy fire. On this final attempt, he was mortally wounded, sacrificing his own life in an effort to save his fellow Soldier. Staff Sergeant Monti?s selfless acts of heroism inspired his patrol to fight off the larger enemy force. Staff Sergeant Monti?s immeasurable courage and uncommon valor are in keeping with the highest traditions of military service and reflect great credit upon himself, Headquarters and Headquarters Troop, 3rd Squadron, 71st Cavalry Regiment, 3rd Brigade Combat Team, 10th Mountain Division, and the United States Army.","categories":["Greater Love","Brotherhood / No One Left Behind","The Rescue & Lifesaver","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3467/monti-jared-c.php"},{"id":"robert-j-miller","name":"Miller, Robert J.","rank":"Staff Sergeant","branch":"U.S. Army","unit":"Special Forces Operational Detachment Alpha 3312, Special Operations Task Force 33","conflict":"War on Terrorism (Afghanistan)","battle":null,"year":null,"action_date":null,"action_place":"Kunar, Afghanistan","coords":{"lat":34,"lng":71},"survived":false,"accredited_to":"Florida","born":"14 October 1983","citation":"Robert J. Miller distinguished himself by extraordinary acts of heroism while serving as the Weapons Sergeant in Special Forces Operational Detachment Alpha 3312, Special Operations Task Force-33, Combined Joint Special Operations Task Force-Afghanistan during combat operations against an armed enemy in Konar Province, Afghanistan on January 25, 2008. While conducting a combat reconnaissance patrol through the Gowardesh Valley, Staff Sergeant Miller and his small element of U.S. and Afghan National Army soldiers engaged a force of 15 to 20 insurgents occupying prepared fighting positions. Staff Sergeant Miller initiated the assault by engaging the enemy positions with his vehicle's turret-mounted Mark-19 40 millimeter automatic grenade launcher while simultaneously providing detailed descriptions of the enemy positions to his command, enabling effective, accurate close air support. Following the engagement, Staff Sergeant Miller led a small squad forward to conduct a battle damage assessment. As the group neared the small, steep, narrow valley that the enemy had inhabited, a large, well-coordinated insurgent force initiated a near ambush, assaulting from elevated positions with ample cover.  Exposed and with little available cover, the patrol was totally vulnerable to enemy rocket propelled grenades and automatic weapon fire. As point man, Staff Sergeant Miller was at the front of the patrol, cut off from supporting elements, and less than 20 meters from enemy forces. Nonetheless, with total disregard for his own safety, he called for his men to quickly move back to covered positions as he charged the enemy over exposed ground and under overwhelming enemy fire in order to provide protective fire for his team. While maneuvering to engage the enemy, Staff Sergeant Miller was shot in his upper torso. Ignoring the wound, he continued to push the fight, moving to draw fire from over one hundred enemy fighters upon himself. He then again charged forward through an open area in order to allow his teammates to safely reach cover. After killing at least 10 insurgents, wounding dozens more, and repeatedly exposing himself to withering enemy fire while moving from position to position, Staff Sergeant Miller was mortally wounded by enemy fire. His extraordinary valor ultimately saved the lives of seven members of his own team and 15 Afghanistan National Army soldiers. Staff Sergeant Miller's heroism and selflessness above and beyond the call of duty, and at the cost of his own life, are in keeping with the highest traditions of military service and reflect great credit upon himself and the United States Army.","categories":["One Against Many","Greater Love","Brotherhood / No One Left Behind","The Fallen / Ultimate Sacrifice"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3470/miller-robert-j.php"},{"id":"leroy-a-petry","name":"Petry, Leroy A.","rank":"Staff Sergeant","branch":"U.S. Army","unit":"Company D, 2d Battalion, 75th Ranger Regiment","conflict":"War on Terrorism (Afghanistan)","battle":null,"year":null,"action_date":null,"action_place":"Paktika, Afghanistan","coords":{"lat":32,"lng":68},"survived":true,"accredited_to":"New Mexico","born":" Santa Fe, NM","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty: Staff Sergeant Leroy A. Petry distinguished himself by acts of gallantry and intrepidity at the risk of his life above and beyond the call of duty in action with an armed enemy in the vicinity of Paktya Province, Afghanistan, on May 26, 2008. As a Weapons Squad Leader with D Company, 2nd Battalion, 75th Ranger Regiment, Staff Sergeant Petry moved to clear the courtyard of a house that potentially contained high-value combatants. While crossing the courtyard, Staff Sergeant Petry and another Ranger were engaged and wounded by automatic weapons fire from enemy fighters. Still under enemy fire, and wounded in both legs, Staff Sergeant Petry led the other Ranger to cover. He then reported the situation and engaged the enemy with a hand grenade, providing suppression as another Ranger moved to his position. The enemy quickly responded by maneuvering closer and throwing grenades. The first grenade explosion knocked his two fellow Rangers to the ground and wounded both with shrapnel. A second grenade then landed only a few feet away from them. Instantly realizing the danger, Staff Sergeant Petry, unhesitatingly and with complete disregard for his safety, deliberately and selflessly moved forward, picked up the grenade, and in an effort to clear the immediate threat, threw the grenade away from his fellow Rangers. As he was releasing the grenade it detonated, amputating his right hand at the wrist and further injuring him with multiple shrapnel wounds. Although picking up and throwing the live grenade grievously wounded Staff Sergeant Petry, his gallant act undeniably saved his fellow Rangers from being severely wounded or killed. Despite the severity of his wounds, Staff Sergeant Petry continued to maintain the presence of mind to place a tourniquet on his right wrist before communicating the situation by radio in order to coordinate support for himself and his fellow wounded Rangers. Staff Sergeant Petry's extraordinary heroism and devotion to duty are in keeping with the highest traditions of military service, and reflect great credit upon himself, 75th Ranger Regiment, and the United States Army.","categories":["The Body on the Grenade","Greater Love","The Wounded Warrior"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3479/petry-leroy-a.php"},{"id":"dakota-meyer","name":"Meyer, Dakota","rank":"Sergeant","branch":"U.S. Marine Corps","unit":"Embedded Training Team 2-8, Regional Corps Advisory Command 3-7","conflict":"War on Terrorism (Afghanistan)","battle":"Battle of Ganjgal","year":null,"action_date":null,"action_place":"Kunar, Afghanistan","coords":{"lat":34,"lng":71},"survived":true,"accredited_to":"Kentucky","born":" Columbia, KY","citation":"Corporal Meyer maintained security at a patrol rally point while other members of his team moved on foot with two platoons of Afghan National Army and Border Police into the village of Ganjgal for a pre-dawn meeting with village elders. Moving into the village, the patrol was ambushed by more than 50 enemy fighters firing rocket propelled grenades, mortars, and machine guns from houses and fortified positions on the slopes above. Hearing over the radio that four U.S. team members were cut off, Corporal Meyer seized the initiative. With a fellow Marine driving, Corporal Meyer took the exposed gunner's position in a gun-truck as they drove down the steeply terraced terrain in a daring attempt to disrupt the enemy attack and locate the trapped U.S. team. Disregarding intense enemy fire now concentrated on their lone vehicle, Corporal Meyer killed a number of enemy fighters with the mounted machine guns and his rifle, some at near point blank range, as he and his driver made three solo trips into the ambush area. During the first two trips, he and his driver evacuated two dozen Afghan soldiers, many of whom were wounded. When one machine gun became inoperable, he directed a return to the rally point to switch to another gun-truck for a third trip into the ambush area where his accurate fire directly supported the remaining U.S. personnel and Afghan soldiers fighting their way out of the ambush. Despite a shrapnel wound to his arm, Corporal Meyer made two more trips into the ambush area in a third gun-truck accompanied by four other Afghan vehicles to recover more wounded Afghan soldiers and search for the missing U.S. team members. Still under heavy enemy fire, he dismounted the vehicle on the fifth trip and moved on foot to locate and recover the bodies of his team members. Corporal Meyer's daring initiative and bold fighting spirit throughout the 6-hour battle significantly disrupted the enemy's attack and inspired the members of the combined force to fight on. His unwavering courage and steadfast devotion to his U.S. and Afghan comrades in the face of almost certain death reflected great credit upon himself and upheld the highest traditions of the Marine Corps and the United States Naval Service.","categories":["One Against Many","Brotherhood / No One Left Behind","The Rescue & Lifesaver"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3480/meyer-dakota.php"},{"id":"william-kyle-carpenter","name":"Carpenter, William Kyle","rank":"Lance Corporal","branch":"U.S. Marine Corps","unit":"Company F, 2d Battalion, 9th Marines","conflict":"War on Terrorism (Afghanistan)","battle":null,"year":null,"action_date":null,"action_place":"Helmand, Afghanistan","coords":{"lat":31,"lng":63},"survived":true,"accredited_to":"South Carolina","born":"17 October, 1989, Flowood, MS","citation":"For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty while serving as an Automatic Rifleman with Company F, 2d Battalion, 9th Marines, Regimental Combat Team 1, 1st Marine Division (Forward), 1 Marine Expeditionary Force (Forward), in Helmand Province, Afghanistan in support of Operation Enduring Freedom on 21 November 2010.  Lance Corporal Carpenter was a member of a platoon-sized coalition force, comprised of two reinforced Marine squads partnered with an Afghan National Army squad.  The platoon had established Patrol Base Dakota two days earlier in a small village in the Marjah District in order to disrupt enemy activity and provide security for the local Afghan population.  Lance Corporal Carpenter and a fellow Marine were manning a rooftop security position on the perimeter of Patrol Base Dakota when the enemy initiated a daylight attack with hand grenades, one of which landed inside their sandbagged position.  Without hesitation, and with complete disregard for his own safety, Lance Corporal Carpenter moved toward the grenade in an attempt to shield his fellow Marine from the deadly blast.  When the grenade detonated, his body absorbed the brunt of the blast, severely wounding him, but saving the life of his fellow Marine.  By his undaunted courage, bold fighting spirit, and unwavering devotion to duty in the face of almost certain death, Lance Corporal Carpenter reflected great credit upon himself and upheld the highest traditions of the Marine Corps and the United States Naval Service.","categories":["The Body on the Grenade","Miraculous / Left for Dead","The Wounded Warrior","The Epic Second Act"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3511/carpenter-william-kyle.php"},{"id":"clinton-l-romesha","name":"Romesha, Clinton L.","rank":"Staff Sergeant","branch":"U.S. Army","unit":"3rd Squadron, 61st Calvary Regiment, 4th Brigade Combat Team, 4th Infantry","conflict":"War on Terrorism (Afghanistan)","battle":"COP Keating (Kamdesh)","year":null,"action_date":null,"action_place":"Nurestan, Afghanistan","coords":{"lat":35,"lng":70},"survived":true,"accredited_to":"California","born":"August 17, 1981 / Lake City, CA","citation":"For conspicuous gallantry and intrepidity in action at the risk of his life above and beyond the call of duty while serving as a Section Leader with Bravo Troop, 3d Squadron, 61st Cavalry Regiment, 4th Brigade Combat Team, 4th Infantry Division, during combat operations against an armed enemy at Combat Outpost Keating, Kamdesh District, Nuristan Province, Afghanistan on 3 October 2009.  On that morning, Staff Sergeant Romesha and his comrades awakened to an attack by an estimated 300 enemy fighters occupying the high ground on all four sides of the complex, employing concentrated fire from recoilless rifles, rocket propelled grenades, anti-aircraft machine guns, mortars and small arms fire.  Staff Sergeant Romesha moved uncovered under intense enemy fire to conduct a reconnaissance of the battlefield and seek reinforcements from the barracks before returning to action with the support of an assistant gunner.  Staff Sergeant Romesha took out an enemy machine gun team and, while engaging a second, the generator he was using for cover was struck by a rocket-propelled grenade, inflicting him with shrapnel wounds.  Undeterred by his injuries, Staff Sergeant Romesha continued to fight and upon the arrival of another soldier to aid him and the assistant gunner, he again rushed through the exposed avenue to assemble additional soldiers.  Staff Sergeant Romesha then mobilized a five-man team and returned to the fight equipped with a sniper rifle.  With complete disregard for his own safety, Staff Sergeant Romesha continually exposed himself to heavy enemy fire, as he moved confidently about the battlefield engaging and destroying multiple enemy targets, including three Taliban fighters who had breached the combat outpost?s perimeter.  While orchestrating a successful plan to secure and reinforce key points of the battlefield, Staff Sergeant Romesha maintained radio communication with the tactical operations center.  As the enemy forces attacked with even greater ferocity, unleashing a barrage of rocket-propelled grenades and recoilless rifle rounds, Staff Sergeant Romesha identified the point of attack and directed air support to destroy over 30 enemy fighters.  After receiving reports that seriously injured soldiers were at a distant battle position, Staff Sergeant Romesha and his team provided covering fire to allow the injured soldiers to safely reach the aid station.  Upon receipt of orders to proceed to the next objective, his team pushed forward 100 meters under overwhelming enemy fire to recover and prevent the enemy fighters from taking the bodies of the fallen comrades.  Staff Sergeant Romesha?s heroic actions throughout the day-long battle were critical in suppressing an enemy that had far greater numbers.  His extraordinary efforts gave Bravo Troop the opportunity to regroup, reorganize and prepare for the counterattack that allowed the Troop to account for its personnel and secure Combat Post Keating.  Staff Sergeant Romesha?s discipline and extraordinary heroism above and beyond the call of duty reflect great credit upon himself, Bravo Troop, 3d Squadron, 61st Cavalry Regiment, 4th Brigade Combat Team, 4th Infantry Division and the United States Army.","categories":["The Rallying Point","One Against Many","Brotherhood / No One Left Behind","The Wounded Warrior"],"photo_url":null,"cmohs_link":"http://www.cmohs.org/recipient-detail/3482/romesha-clinton-l.php"}];
+</script>
+<script>
+"use strict";
+/* ===================== taxonomy ===================== */
+const GROUPS = [
+  {key:"deed",  label:"The Deed",      desc:"what earned it",        varc:"--tg-deed",
+   themes:["The Assault","The Last Stand","The Body on the Grenade","The Rescue & Lifesaver","The Healer Under Fire","The Colors","One Against Many","The Raid","Wings","The Sea","Unbroken in Captivity","The Rallying Point"]},
+  {key:"person",label:"The Person",    desc:"who they were",         varc:"--tg-person",
+   themes:["The Reluctant Warrior","The New American / Immigrant's Debt","The Trailblazer / The First","The Boy (Too Young for This)","The Career Warrior","The Citizen-Soldier","The Twice-Honored"]},
+  {key:"spirit",label:"The Spirit",    desc:"why it moves us",       varc:"--tg-spirit",
+   themes:["Religious / Faith-Driven","Miraculous / Left for Dead","Greater Love","Redemption / The Second Birth","Brotherhood / No One Left Behind","Duty & Country","The Cost of War / Lament"]},
+  {key:"after", label:"The Aftermath", desc:"life beyond the medal", varc:"--tg-after",
+   themes:["The Fallen / Ultimate Sacrifice","The Quiet Return","Belated Justice / The Long Vindication","The Forgotten Hero / Fall From Grace","The Wounded Warrior","The Epic Second Act"]},
+];
+const THEMES = GROUPS.flatMap(g=>g.themes);                 // flat 32, stable order (URL index)
+const THEME_GROUP = {}; GROUPS.forEach(g=>g.themes.forEach(t=>THEME_GROUP[t]=g));
+const groupColor = g => `var(${g.varc})`;
+
+/* ===================== helpers ===================== */
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>';
+function yearOf(s){
+  if(s.year) return s.year;
+  const m = String((s.action_date||"")+" "+(s.citation||"")).match(/\b(1[89]\d\d|20[0-2]\d)\b/);
+  return m ? +m[1] : null;
+}
+function initials(name){
+  // roster order "Last, First ..." -> First-name + Last-name initials
+  const parts = name.split(",");
+  const last = (parts[0]||"").trim();
+  const rest = (parts[1]||"").trim();
+  const a = (rest[0]||last[0]||"?");
+  const b = (last[0]||"");
+  return (a+b).toUpperCase();
+}
+// derive search blob + year once
+STORIES.forEach(s=>{
+  s._year = yearOf(s);
+  s._blob = [s.name,s.rank,s.branch,s.unit,s.conflict,s.battle,s.action_place,s.accredited_to,s.citation,(s.categories||[]).join(" ")].join(" ").toLowerCase();
+});
+const CONFLICTS = [...new Set(STORIES.map(s=>s.conflict))].sort();
+const BRANCHES  = [...new Set(STORIES.map(s=>s.branch))].sort();
+
+/* ===================== state ===================== */
+const state = {
+  themes:new Set(), conflicts:new Set(), branches:new Set(),
+  fate:"all", query:"",
+};
+let SAVED = loadSaved();
+let openStoryId = null;
+
+/* ===================== filtering / facets ===================== */
+function passExcept(s, dim){
+  if(dim!=="fate"){ if(state.fate==="survived"&&!s.survived) return false; if(state.fate==="fell"&&s.survived) return false; }
+  if(dim!=="query"&&state.query){ if(!s._blob.includes(state.query.toLowerCase())) return false; }
+  if(dim!=="themes"&&state.themes.size){ if(![...state.themes].every(t=>s.categories.includes(t))) return false; }
+  if(dim!=="conflicts"&&state.conflicts.size){ if(!state.conflicts.has(s.conflict)) return false; }
+  if(dim!=="branches"&&state.branches.size){ if(!state.branches.has(s.branch)) return false; }
+  return true;
+}
+const filtered = () => STORIES.filter(s=>passExcept(s,null));
+// faceted count: stories passing all OTHER dims, that also hold `value` in `dim`
+function facet(dim, test){ return STORIES.filter(s=>passExcept(s,dim)&&test(s)).length; }
+
+/* ===================== URL state ===================== */
+function writeURL(push){
+  const p = new URLSearchParams();
+  if(state.query) p.set("q", state.query);
+  if(state.themes.size) p.set("t", [...state.themes].map(t=>THEMES.indexOf(t)).sort((a,b)=>a-b).join(","));
+  if(state.conflicts.size) p.set("c", [...state.conflicts].map(c=>CONFLICTS.indexOf(c)).sort((a,b)=>a-b).join(","));
+  if(state.branches.size) p.set("b", [...state.branches].map(c=>BRANCHES.indexOf(c)).sort((a,b)=>a-b).join(","));
+  if(state.fate!=="all") p.set("f", state.fate);
+  if(openStoryId) p.set("s", openStoryId);
+  const url = location.pathname + (p.toString()?"?"+p.toString():"");
+  if(push) history.pushState({}, "", url); else history.replaceState({}, "", url);
+}
+function readURL(){
+  const p = new URLSearchParams(location.search);
+  state.query = p.get("q")||"";
+  state.themes = new Set((p.get("t")||"").split(",").filter(x=>x!=="").map(i=>THEMES[+i]).filter(Boolean));
+  state.conflicts = new Set((p.get("c")||"").split(",").filter(x=>x!=="").map(i=>CONFLICTS[+i]).filter(Boolean));
+  state.branches = new Set((p.get("b")||"").split(",").filter(x=>x!=="").map(i=>BRANCHES[+i]).filter(Boolean));
+  state.fate = p.get("f")||"all";
+  openStoryId = p.get("s")||null;
+}
+
+/* ===================== render: rail groups ===================== */
+function renderRail(){
+  $("#railGroups").innerHTML = GROUPS.map(g=>{
+    const n = facet("themes", s=>g.themes.some(t=>s.categories.includes(t)));
+    return `<button class="theme-row" data-group="${g.key}" title="Filter by ${esc(g.label)} themes">
+      <span class="bar" style="background:${groupColor(g)}"></span>
+      <span class="name">${esc(g.label)}</span>
+      <span class="count">${n}</span>
+    </button>`;
+  }).join("");
+  $("#railStoriesBadge").textContent = filtered().length;
+  $("#railSavedBadge").textContent = SAVED.length;
+}
+
+/* ===================== render: active bar ===================== */
+function chip(label, color, onx){
+  const bg = `color-mix(in srgb, ${color} 14%, transparent)`;
+  return `<span class="chip" style="background:${bg};color:${color}">${esc(label)}<button class="x" data-x="${onx}" aria-label="Remove ${esc(label)}">×</button></span>`;
+}
+function renderActive(){
+  const bar = $("#activebar");
+  const chips = [];
+  state.themes.forEach(t=>chips.push(chip(t, groupColor(THEME_GROUP[t]), "theme:"+encodeURIComponent(t))));
+  state.conflicts.forEach(c=>chips.push(chip(c, "var(--neutral)", "conflict:"+encodeURIComponent(c))));
+  state.branches.forEach(b=>chips.push(chip(b, "var(--neutral)", "branch:"+encodeURIComponent(b))));
+  if(state.fate!=="all") chips.push(chip(state.fate==="fell"?"★ Fell":"Survived","var(--neutral)","fate"));
+  if(state.query) chips.push(`<span class="chip search">⌕ <em>"${esc(state.query)}"</em><button class="x" data-x="query" aria-label="Clear search">×</button></span>`);
+
+  const savedPills = SAVED.map((v,i)=>`<span class="pill-outline" data-view="${i}">${esc(v.name)}<button class="x" data-delview="${i}" aria-label="Delete view">×</button></span>`).join("");
+  const anyFilter = chips.length>0;
+
+  bar.classList.toggle("hidden", !anyFilter && SAVED.length===0);
+  bar.innerHTML =
+    (anyFilter ? `<span class="ab-label">Active</span>${chips.join("")}<button class="link-btn" id="clearAll">Clear all</button>` : "")
+    + `<span class="ab-saved"><span class="ab-label">Saved views</span>${savedPills}<button class="pill-outline pill-dashed" id="saveCurrent" ${anyFilter?"":"disabled style=\"opacity:.45\""}>+ Save current</button></span>`;
+}
+
+/* ===================== render: count bar ===================== */
+function renderCounts(list){
+  const fell = list.filter(s=>!s.survived).length;
+  const surv = list.length - fell;
+  const ys = list.map(s=>s._year).filter(Boolean);
+  const range = ys.length ? `${Math.min(...ys)} — ${Math.max(...ys)}` : "—";
+  $("#countbar").innerHTML =
+    `<span><span class="n">${list.length} of ${STORIES.length}</span> stories · ${surv} survived · <span class="fell"><span class="star">★</span> ${fell} fell</span></span>`+
+    `<span class="range">${range}</span>`;
+}
+
+/* ===================== render: cards ===================== */
+function highlightSnippet(cit, q){
+  const low = cit.toLowerCase(), i = low.indexOf(q.toLowerCase());
+  if(i<0) return null;
+  const start = Math.max(0, i-40), end = Math.min(cit.length, i+q.length+80);
+  let snip = (start>0?"…":"") + cit.slice(start,end) + (end<cit.length?"…":"");
+  const re = new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),"ig");
+  return esc(snip).replace(re, m=>`<mark>${m}</mark>`);
+}
+function cardHTML(s){
+  const groupsPresent = new Set(s.categories.map(t=>THEME_GROUP[t]&&THEME_GROUP[t].key));
+  const seg = GROUPS.map(g=>`<span class="blk" style="${groupsPresent.has(g.key)?`background:${groupColor(g)}`:""}"></span>`).join("");
+  const lead = s.categories[0];
+  const leadG = lead?THEME_GROUP[lead]:null;
+  const leadChip = lead ? `<span class="theme-chip" style="background:color-mix(in srgb, ${groupColor(leadG)} 13%, transparent);color:${groupColor(leadG)}">${esc(lead)}</span>` : "";
+  const plus = s.categories.length>1 ? `<span class="plusn">+${s.categories.length-1}</span>` : "";
+  const meta = [s.conflict, s.battle].filter(Boolean).join(" · ").toUpperCase();
+  let body;
+  if(state.query){ const snip = highlightSnippet(s.citation, state.query); body = snip ? `<div class="card-excerpt snippet">${snip}</div>` : `<div class="card-excerpt">${esc(s.citation.slice(0,170))}</div>`; }
+  else body = `<div class="card-excerpt">${esc(s.citation.slice(0,190))}</div>`;
+  const fate = s.survived ? `<span class="fate-chip surv">Survived</span>` : `<span class="fate-chip fell">★ Fell</span>`;
+  return `<button class="card" data-story="${esc(s.id)}">
+    <div class="card-top">
+      <span class="avatar">${esc(initials(s.name))}</span>
+      <span class="card-id"><span class="card-name">${esc(s.name)}</span><span class="card-sub">${esc(s.rank)} · ${esc(s.branch)}</span></span>
+      <span class="dept-seg" title="Theme groups">${seg}</span>
+    </div>
+    <div class="card-meta">${esc(meta)}</div>
+    ${body}
+    <div class="card-foot">${leadChip}${plus}${fate}</div>
+  </button>`;
+}
+function renderGrid(list){
+  const grid = $("#grid");
+  if(!list.length){ grid.innerHTML = emptyHTML(); return; }
+  grid.innerHTML = list.map(cardHTML).join("");
+}
+function emptyHTML(){
+  return `<div class="empty">
+    <div class="rule"></div>
+    <div class="kick">No Matches</div>
+    <h2>No stories match this combination of filters.</h2>
+    <p>The pilot holds 50 of 3,536 citations. Try loosening a filter — full coverage arrives as the archive scales.</p>
+    <div class="actions">
+      <button class="btn" id="removeLast">Remove last filter</button>
+      <button class="btn-ghost" id="clearAll2">Clear all filters</button>
+    </div>
+  </div>`;
+}
+
+/* ===================== filter button counts ===================== */
+function syncBtnPills(){
+  const set=(id,n)=>{const e=$(id);e.hidden=!n;e.textContent=n;};
+  set("#nThemes", state.themes.size); set("#nConflict", state.conflicts.size); set("#nBranch", state.branches.size);
+}
+
+/* ===================== master render ===================== */
+function render(push){
+  const list = filtered();
+  renderRail(); renderActive(); renderCounts(list); renderGrid(list); syncBtnPills();
+  writeURL(push);
+}
+
+/* ===================== popovers ===================== */
+let activePop = null;
+function positionPop(pop, btn, wide){
+  const r = btn.getBoundingClientRect();
+  pop.style.top = (r.bottom + window.scrollY + 6) + "px";
+  if(wide){
+    const w = Math.min(760, window.innerWidth*0.92);
+    let left = r.left + window.scrollX; if(left + w > window.innerWidth-12) left = window.innerWidth-12-w;
+    pop.style.left = Math.max(12,left)+"px";
+  } else {
+    pop.style.left = (r.left + window.scrollX) + "px";
+  }
+}
+function closePop(){ if(activePop){ activePop.pop.classList.remove("open"); activePop.btn.setAttribute("aria-expanded","false"); activePop=null; } $("#scrim").classList.remove("open"); }
+function openPop(pop, btn, wide){
+  if(activePop && activePop.pop===pop){ closePop(); return; }
+  closePop();
+  positionPop(pop, btn, wide);
+  pop.classList.add("open"); btn.setAttribute("aria-expanded","true");
+  $("#scrim").classList.add("open");
+  activePop = {pop, btn};
+}
+function buildListMenu(pop, values, set, dim, facetFn){
+  pop.innerHTML = `<div class="menu-list">`+ values.map(v=>{
+    const n = facetFn(v);
+    return `<div class="opt ${n?"":"zero"}" role="checkbox" aria-checked="${set.has(v)}" data-val="${esc(v)}">
+      <span class="cbx">${CHECK}</span><span class="lbl">${esc(v)}</span><span class="c">${n}</span></div>`;
+  }).join("") + `</div>`;
+  pop.querySelectorAll(".opt").forEach(o=>o.addEventListener("click",()=>{
+    const v=o.dataset.val; set.has(v)?set.delete(v):set.add(v);
+    render(false);
+    buildListMenu(pop, values, set, dim, facetFn); // refresh counts + checks
+  }));
+}
+function openThemes(){
+  const pop = $("#popThemes");
+  pop.className = "popover theme-menu";
+  pop.innerHTML = `<div class="cols">`+ GROUPS.map(g=>`
+    <div class="theme-col">
+      <div class="top-rule" style="background:${groupColor(g)}"></div>
+      <div class="grp" style="color:${groupColor(g)}">${esc(g.label)}</div>
+      <div class="desc">${esc(g.desc)}</div>
+      ${g.themes.map(t=>{
+        const n = facet("themes", s=>s.categories.includes(t));
+        return `<div class="opt ${n?"":"zero"}" role="checkbox" aria-checked="${state.themes.has(t)}" data-val="${esc(t)}">
+          <span class="cbx">${CHECK}</span><span class="lbl">${esc(t)}</span><span class="c">${n}</span></div>`;
+      }).join("")}
+    </div>`).join("") + `</div>
+    <div class="menu-foot">
+      <span class="hint">Counts update live as you stack filters.</span>
+      <button class="btn-ghost" data-clear-themes>Clear</button>
+      <button class="btn-primary" data-close-themes>Show ${filtered().length} stories</button>
+    </div>`;
+  pop.querySelectorAll(".opt").forEach(o=>o.addEventListener("click",()=>{
+    const t=o.dataset.val; state.themes.has(t)?state.themes.delete(t):state.themes.add(t);
+    render(false); openThemes();
+  }));
+  pop.querySelector("[data-clear-themes]").addEventListener("click",()=>{ state.themes.clear(); render(false); openThemes(); });
+  pop.querySelector("[data-close-themes]").addEventListener("click", closePop);
+  openPop(pop, $("#btnThemes"), true);
+}
+
+/* ===================== detail modal ===================== */
+function openDetail(id, push){
+  const s = STORIES.find(x=>x.id===id); if(!s) return;
+  openStoryId = id;
+  const fell = !s.survived;
+  const dateStr = (s.action_date||"").trim();
+  const fbTop = fell ? `★ Fell${dateStr?" — "+esc(dateStr.toUpperCase()):""}` : `Survived${dateStr?" — "+esc(dateStr.toUpperCase()):""}`;
+  const rows = [
+    ["Rank", s.rank],["Branch", s.branch],["Unit", s.unit],["Conflict", s.conflict],
+    ["Battle", s.battle],["Place", s.action_place],["Accredited", s.accredited_to],["Born", s.born&&s.born.trim()],
+  ].filter(r=>r[1]);
+  const themes = s.categories.map(t=>{const g=THEME_GROUP[t];return `<div class="meta-theme"><span class="bar" style="background:${groupColor(g)}"></span>${esc(t)}</div>`;}).join("");
+  let cite = esc(s.citation);
+  if(state.query){ const re=new RegExp(state.query.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),"ig"); cite = cite.replace(re,m=>`<mark>${m}</mark>`); }
+  const sub = [s.rank, s.branch, s.conflict].filter(Boolean).join(" · ");
+  $("#detail").innerHTML = `
+    <div class="detail-meta">
+      <div class="fate-banner ${fell?"":"surv"}">
+        <div class="fb-top">${fbTop}</div>
+        <div class="fb-sub">${esc([s.action_place].filter(Boolean).join(""))}</div>
+      </div>
+      <div class="meta-label">Service</div>
+      <div class="meta-rows">${rows.map(r=>`<div class="meta-r"><span class="k">${esc(r[0])}</span><span class="v">${esc(r[1])}</span></div>`).join("")}</div>
+      <div class="meta-label">Themes</div>
+      <div class="meta-themes">${themes}</div>
+      <div class="meta-links">
+        ${s.cmohs_link?`<a href="${esc(s.cmohs_link)}" target="_blank" rel="noopener">Official record — cmohs.org ↗</a>`:""}
+        <button data-print>Print this story</button>
+      </div>
+    </div>
+    <div class="detail-read">
+      <div class="read-kicker">Medal of Honor · Official Citation — Rendered Verbatim</div>
+      <div class="read-name">${esc(s.name)}</div>
+      <div class="read-sub">${esc(sub)}</div>
+      <div class="read-cite">${cite}</div>
+      <div class="read-foot">Citation is a public-domain work of the U.S. Government, rendered in full and unedited. Source: ${s.cmohs_link?`<a href="${esc(s.cmohs_link)}" target="_blank" rel="noopener">cmohs.org</a>`:"cmohs.org"}.</div>
+    </div>`;
+  $("#detail").querySelector("[data-print]")?.addEventListener("click",()=>window.print());
+  $("#detailScrim").classList.add("open");
+  document.body.style.overflow="hidden";
+  if(push) writeURL(true);
+}
+function closeDetail(fromPop){
+  $("#detailScrim").classList.remove("open");
+  document.body.style.overflow="";
+  openStoryId=null;
+  if(!fromPop) history.back();  // undo the pushState so URL reflects list
+}
+
+/* ===================== saved views ===================== */
+function loadSaved(){ try{return JSON.parse(localStorage.getItem("moh_saved_views")||"[]");}catch(e){return [];} }
+function persistSaved(){ localStorage.setItem("moh_saved_views", JSON.stringify(SAVED)); }
+function snapshot(){ return {q:state.query, t:[...state.themes], c:[...state.conflicts], b:[...state.branches], f:state.fate}; }
+function applySnapshot(v){
+  state.query=v.q||""; $("#search").value=state.query;
+  state.themes=new Set(v.t||[]); state.conflicts=new Set(v.c||[]); state.branches=new Set(v.b||[]); state.fate=v.f||"all";
+  syncFateUI(); render(true);
+}
+function saveCurrent(){
+  const name = prompt("Name this view:");
+  if(!name) return;
+  SAVED.push({name:name.trim(), state:snapshot()}); persistSaved();
+  render(false); toast("View saved");
+}
+
+/* ===================== toast ===================== */
+function toast(msg){
+  const el = document.createElement("div"); el.className="toast";
+  el.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>${esc(msg)}`;
+  $("#toastWrap").appendChild(el);
+  setTimeout(()=>{el.style.opacity="0";el.style.transition="opacity .2s";setTimeout(()=>el.remove(),200);},2200);
+}
+
+/* ===================== theme ===================== */
+function syncThemeUI(mode){
+  const icons = {light:"☀", dark:"☾", auto:"◐"};
+  $("#themeIcon").textContent = icons[mode]+" ";
+  $("#themeLabel").textContent = mode[0].toUpperCase()+mode.slice(1);
+}
+function applyTheme(mode){
+  localStorage.setItem("moh_theme", mode);
+  const eff = mode==="auto" ? (matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light") : mode;
+  document.documentElement.setAttribute("data-theme", eff);
+  syncThemeUI(mode);
+}
+function cycleTheme(){
+  const cur = localStorage.getItem("moh_theme")||"auto";
+  const next = {auto:"light",light:"dark",dark:"auto"}[cur];
+  applyTheme(next);
+}
+
+/* ===================== fate UI ===================== */
+function syncFateUI(){ document.querySelectorAll(".seg-btn").forEach(b=>b.classList.toggle("active", b.dataset.fate===state.fate)); }
+
+/* ===================== events ===================== */
+let searchTimer=null;
+$("#search").addEventListener("input", e=>{
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(()=>{ state.query = e.target.value.trim(); render(false); }, 180);
+});
+document.querySelectorAll(".seg-btn").forEach(b=>b.addEventListener("click",()=>{ state.fate=b.dataset.fate; syncFateUI(); render(false); }));
+$("#btnThemes").addEventListener("click", ()=>{ if(activePop&&activePop.pop===$("#popThemes")) closePop(); else openThemes(); });
+$("#btnConflict").addEventListener("click", ()=>{ const p=$("#popConflict"); if(activePop&&activePop.pop===p){closePop();return;} buildListMenu(p,CONFLICTS,state.conflicts,"conflicts",v=>facet("conflicts",s=>s.conflict===v)); openPop(p,$("#btnConflict")); });
+$("#btnBranch").addEventListener("click", ()=>{ const p=$("#popBranch"); if(activePop&&activePop.pop===p){closePop();return;} buildListMenu(p,BRANCHES,state.branches,"branches",v=>facet("branches",s=>s.branch===v)); openPop(p,$("#btnBranch")); });
+$("#scrim").addEventListener("click", closePop);
+
+// rail group -> open theme menu
+$("#railGroups").addEventListener("click", e=>{ if(e.target.closest(".theme-row")) openThemes(); });
+document.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("[data-nav]").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+  if(b.dataset.nav==="saved"){ document.querySelector(".ab-saved")?.scrollIntoView({behavior:"smooth",block:"center"}); }
+  if(window.innerWidth<=820) $("#rail").classList.remove("open");
+}));
+
+// grid + activebar delegation
+$("#grid").addEventListener("click", e=>{
+  const card=e.target.closest(".card"); if(card){ openDetail(card.dataset.story,true); return; }
+  if(e.target.id==="removeLast"){ removeLastFilter(); }
+  if(e.target.id==="clearAll2"){ clearAll(); }
+});
+$("#activebar").addEventListener("click", e=>{
+  const x=e.target.closest("[data-x]");
+  if(x){ const [k,val]=x.dataset.x.split(/:(.+)/);
+    if(k==="theme") state.themes.delete(decodeURIComponent(val));
+    else if(k==="conflict") state.conflicts.delete(decodeURIComponent(val));
+    else if(k==="branch") state.branches.delete(decodeURIComponent(val));
+    else if(k==="fate") state.fate="all";
+    else if(k==="query"){ state.query=""; $("#search").value=""; }
+    syncFateUI(); render(false); return; }
+  if(e.target.id==="clearAll"){ clearAll(); return; }
+  if(e.target.id==="saveCurrent"){ saveCurrent(); return; }
+  const dv=e.target.closest("[data-delview]"); if(dv){ SAVED.splice(+dv.dataset.delview,1); persistSaved(); render(false); toast("View deleted"); return; }
+  const v=e.target.closest("[data-view]"); if(v){ applySnapshot(SAVED[+v.dataset.view].state); }
+});
+
+function removeLastFilter(){
+  if(state.query){ state.query=""; $("#search").value=""; }
+  else if(state.themes.size){ state.themes.delete([...state.themes].pop()); }
+  else if(state.conflicts.size){ state.conflicts.delete([...state.conflicts].pop()); }
+  else if(state.branches.size){ state.branches.delete([...state.branches].pop()); }
+  else if(state.fate!=="all"){ state.fate="all"; }
+  syncFateUI(); render(false);
+}
+function clearAll(){
+  state.themes.clear(); state.conflicts.clear(); state.branches.clear(); state.fate="all"; state.query=""; $("#search").value="";
+  syncFateUI(); render(false); toast("Filters cleared");
+}
+
+$("#detailClose").addEventListener("click", ()=>closeDetail(false));
+$("#detailScrim").addEventListener("click", e=>{ if(e.target===$("#detailScrim")) closeDetail(false); });
+$("#themeToggle").addEventListener("click", cycleTheme);
+$("#menuToggle").addEventListener("click", ()=>$("#rail").classList.toggle("open"));
+
+document.addEventListener("keydown", e=>{
+  if(e.key==="Escape"){ if($("#detailScrim").classList.contains("open")) closeDetail(false); else closePop(); }
+  if(e.key==="/" && document.activeElement!==$("#search")){ e.preventDefault(); $("#search").focus(); }
+});
+window.addEventListener("resize", ()=>{ if(activePop) positionPop(activePop.pop, activePop.btn, activePop.pop.classList.contains("theme-menu")); });
+
+// popstate: sync from URL (handles detail back-button + shared links)
+window.addEventListener("popstate", ()=>{
+  readURL(); $("#search").value=state.query; syncFateUI();
+  const list=filtered(); renderRail(); renderActive(); renderCounts(list); renderGrid(list); syncBtnPills();
+  if(openStoryId){ openDetail(openStoryId,false); } else if($("#detailScrim").classList.contains("open")){ closeDetail(true); }
+});
+
+/* ===================== init ===================== */
+applyTheme(localStorage.getItem("moh_theme")||"auto");
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{ if((localStorage.getItem("moh_theme")||"auto")==="auto") applyTheme("auto"); });
+readURL();
+$("#search").value = state.query; syncFateUI();
+render(false);
+if(openStoryId) openDetail(openStoryId,false);
+</script>
+</body>
+</html>

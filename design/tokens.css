@@ -1,0 +1,62 @@
+/* Stories of Valor — Meridian tokens (from QUITTERS_Art_Dept_HQ_9.html, + theme-group mapping) */
+:root{
+  --font-ui:"Geist",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  /* neutrals */
+  --bg:#fafafa; --surface:#ffffff; --surface-raised:#f4f4f5;
+  --border:#e4e4e7; --border-strong:#d4d4d8; --border-soft:#f1f1f3;
+  --text:#18181b; --text-muted:#52525b; --text-subtle:#a1a1aa;
+  /* rail — theme-responsive: light rail in light mode */
+  --rail:var(--bg); --rail-raised:var(--surface-raised); --rail-border:var(--border);
+  --rail-text:var(--text); --rail-muted:var(--text-muted); --rail-subtle:var(--text-subtle);
+  --rail-hover:color-mix(in srgb,var(--text) 6%,transparent);
+  --rail-inverse:#131316; --rail-inverse-text:#ededf0;
+  --rail-badge-ink:var(--rail-inverse); /* dark ink on amber badge, BOTH modes */
+  /* accent (one) */
+  --accent:#5b5bd6; --accent-solid:#5b5bd6; --accent-hover:#4f4fc8;
+  --accent-pressed:#4646b8; --accent-bg:#eeeef8; --accent-fg:#ffffff;
+  /* semantics */
+  --warning:#b45309; --warning-bg:#f9efe2;
+  --critical:#d92d20; --critical-bg:#fdecea;
+  --gold:#a16207; --gold-bg:#f7f0da;       /* fallen ★ */
+  --neutral:#71717a; --neutral-bg:#f0f0f1; /* survived */
+  /* theme groups (Meridian dept ramp) */
+  --tg-deed:#c2410c; --tg-person:#7c3aed; --tg-spirit:#15803d; --tg-after:#0369a1;
+  --seg-off:#e4e4e7;
+  /* geometry */
+  --radius-sm:4px; --radius:6px; --radius-lg:8px; --radius-pill:999px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.05);
+  --shadow-md:0 1px 3px rgba(0,0,0,.07),0 4px 14px rgba(0,0,0,.05);
+  --shadow-lg:0 4px 12px rgba(0,0,0,.10),0 12px 32px rgba(0,0,0,.12);
+  --ring:0 0 0 3px rgba(91,91,214,.28);
+}
+[data-theme="dark"]{
+  --bg:#0f0f11; --surface:#161618; --surface-raised:#1f1f23;
+  --border:#26262b; --border-strong:#313138; --border-soft:#1f1f23;
+  --text:#ededf0; --text-muted:#9d9da6; --text-subtle:#66666e;
+  --rail:#131316; --rail-raised:#232329; --rail-border:#202024;
+  --rail-text:#ededf0; --rail-muted:#9d9da6; --rail-subtle:#66666e;
+  --rail-hover:rgba(255,255,255,.04);
+  --accent:#7b83eb; --accent-solid:#5e5edd; --accent-hover:#6e76e8;
+  --accent-pressed:#5252d0; --accent-bg:rgba(123,131,235,.14); --accent-fg:#ffffff;
+  --warning:#e5a13c; --warning-bg:rgba(229,161,60,.13);
+  --critical:#f0655a; --critical-bg:rgba(240,101,90,.13);
+  --gold:#d9b13b; --gold-bg:rgba(217,177,59,.13);
+  --neutral:#8f8f98; --neutral-bg:rgba(143,143,152,.13);
+  --tg-deed:#fb923c; --tg-person:#a78bfa; --tg-spirit:#4ade80; --tg-after:#4db8f0;
+  --seg-off:#313138;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow-md:0 1px 3px rgba(0,0,0,.5),0 4px 14px rgba(0,0,0,.35);
+  --shadow-lg:0 4px 12px rgba(0,0,0,.5),0 16px 40px rgba(0,0,0,.5);
+  --ring:0 0 0 3px rgba(123,131,235,.35);
+}
+@media print{
+  :root,[data-theme="dark"]{
+    --bg:#ffffff; --surface:#ffffff; --surface-raised:#f4f4f5;
+    --border:#d4d4d8; --border-strong:#a1a1aa;
+    --text:#111113; --text-muted:#3f3f46; --text-subtle:#71717a;
+    --gold:#7a5c17;
+    --shadow-sm:none; --shadow-md:none; --shadow-lg:none;
+  }
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}

@@ -1,0 +1,270 @@
+{
+  "note": "Pilot sample — 6 of the 50 pilot stories, citations verbatim where full. Theme pilotCounts are across all 50 pilot stories.",
+  "taxonomy": [
+    {
+      "group": "The Deed",
+      "key": "deed",
+      "themes": [
+        {
+          "name": "The Assault",
+          "pilotCount": 4
+        },
+        {
+          "name": "The Last Stand",
+          "pilotCount": 9
+        },
+        {
+          "name": "The Body on the Grenade",
+          "pilotCount": 2
+        },
+        {
+          "name": "The Rescue & Lifesaver",
+          "pilotCount": 8
+        },
+        {
+          "name": "The Healer Under Fire",
+          "pilotCount": 5
+        },
+        {
+          "name": "The Colors",
+          "pilotCount": 3
+        },
+        {
+          "name": "One Against Many",
+          "pilotCount": 8
+        },
+        {
+          "name": "The Raid",
+          "pilotCount": 2
+        },
+        {
+          "name": "Wings",
+          "pilotCount": 4
+        },
+        {
+          "name": "The Sea",
+          "pilotCount": 4
+        },
+        {
+          "name": "Unbroken in Captivity",
+          "pilotCount": 8
+        },
+        {
+          "name": "The Rallying Point",
+          "pilotCount": 4
+        }
+      ]
+    },
+    {
+      "group": "The Person",
+      "key": "person",
+      "themes": [
+        {
+          "name": "The Reluctant Warrior",
+          "pilotCount": 2
+        },
+        {
+          "name": "The New American / Immigrant's Debt",
+          "pilotCount": 3
+        },
+        {
+          "name": "The Trailblazer / The First",
+          "pilotCount": 6
+        },
+        {
+          "name": "The Boy (Too Young for This)",
+          "pilotCount": 2
+        },
+        {
+          "name": "The Career Warrior",
+          "pilotCount": 5
+        },
+        {
+          "name": "The Citizen-Soldier",
+          "pilotCount": 1
+        },
+        {
+          "name": "The Twice-Honored",
+          "pilotCount": 2
+        }
+      ]
+    },
+    {
+      "group": "The Spirit",
+      "key": "spirit",
+      "themes": [
+        {
+          "name": "Religious / Faith-Driven",
+          "pilotCount": 3
+        },
+        {
+          "name": "Miraculous / Left for Dead",
+          "pilotCount": 2
+        },
+        {
+          "name": "Greater Love",
+          "pilotCount": 9
+        },
+        {
+          "name": "Redemption / The Second Birth",
+          "pilotCount": 0
+        },
+        {
+          "name": "Brotherhood / No One Left Behind",
+          "pilotCount": 10
+        },
+        {
+          "name": "Duty & Country",
+          "pilotCount": 3
+        },
+        {
+          "name": "The Cost of War / Lament",
+          "pilotCount": 1
+        }
+      ]
+    },
+    {
+      "group": "The Aftermath",
+      "key": "after",
+      "themes": [
+        {
+          "name": "The Fallen / Ultimate Sacrifice",
+          "pilotCount": 17
+        },
+        {
+          "name": "The Quiet Return",
+          "pilotCount": 1
+        },
+        {
+          "name": "Belated Justice / The Long Vindication",
+          "pilotCount": 11
+        },
+        {
+          "name": "The Forgotten Hero / Fall From Grace",
+          "pilotCount": 1
+        },
+        {
+          "name": "The Wounded Warrior",
+          "pilotCount": 3
+        },
+        {
+          "name": "The Epic Second Act",
+          "pilotCount": 4
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "douglas-albert-munro",
+      "name": "Munro, Douglas Albert",
+      "rank": "Signalman First Class",
+      "branch": "U.S. Coast Guard",
+      "conflict": "World War II",
+      "battle": "Guadalcanal",
+      "place": "Guadalcanal, Solomon Islands",
+      "lat": -9,
+      "lng": 160,
+      "survived": false,
+      "categories": [
+        "The Sea",
+        "Greater Love",
+        "The Rescue & Lifesaver",
+        "The Fallen / Ultimate Sacrifice"
+      ],
+      "citation": "For extraordinary heroism and conspicuous gallantry m action above and beyond the call of duty as Petty Officer in Charge of a group of 24 Higgins boats, engaged in the evacuation of a battalion of marines trapped by enemy Japanese forces at Point Cruz Guadalcanal, on 27 September 1942. After making preliminary plans for the evacuation of nearly 500 beleaguered marines, Munro, under constant strafing by enemy machineguns on the island, and at great risk of his life, daringly led 5 of his small craft toward the shore. As he closed the beach, he signaled the others to land, and then in order to draw the enemy's fire and protect the heavily loaded boats, he valiantly placed his craft with its 2 small guns as a shield between the beachhead and the Japanese. When the perilous task of evacuation was nearly completed, Munro was instantly killed by enemy fire, but his crew, 2 of whom were wounded, carried on until the last boat had loaded and cleared the beach. By his outstanding leadership, expert planning, and dauntless devotion to duty, he and his courageous comrades undoubtedly saved the lives of many who otherwise would have perished. He gallantly gave his life for his country."
+    },
+    {
+      "id": "charles-windolph",
+      "name": "Windolph, Charles",
+      "rank": "Private",
+      "branch": "U.S. Army",
+      "conflict": "Indian Campaigns",
+      "battle": "Little Bighorn",
+      "place": "Little Big Horn Bridge, Lodge Grass, MT",
+      "lat": 45,
+      "lng": -107,
+      "survived": true,
+      "categories": [
+        "The Last Stand",
+        "Brotherhood / No One Left Behind"
+      ],
+      "citation": "With 3 comrades, during the entire engagement, courageously held a position that secured water for the command."
+    },
+    {
+      "id": "mary-e-walker",
+      "name": "Walker, Dr., Mary E.",
+      "rank": "Contract Acting Assistant Surgeon (civilian)",
+      "branch": "U.S. Army",
+      "conflict": "U.S. Civil War",
+      "battle": null,
+      "place": "Bull Run, VA",
+      "lat": 38,
+      "lng": -77,
+      "survived": true,
+      "categories": [
+        "The Trailblazer / The First",
+        "The Healer Under Fire",
+        "Unbroken in Captivity",
+        "Belated Justice / The Long Vindication"
+      ],
+      "citation": "Battle of Bull Run, July 21, 1861; Patent Office Hospital, Washington, D.C., October 1861; Chattanooga, Tenn., following Battle of Chickomauga, September 1863; Prisoner of War, April 10, 1864-August 12, 1864, Richmond, Va.; Battle of Atlanta, September 1864\n\nWhereas it appears from official reports that Dr. Mary E. Walker, a graduate of medicine, \"has rendered valuable service to the Government, and her efforts have been earnest and untiring in a variety of ways,\" and that she was assigned to duty and served as an assistant surgeon in charge of female prisoners at Louisville, Ky., upon the recommendation of Major-Generals Sherman and Thomas, and faithfully served as contract surgeon in the service of the United States, and has devoted herself with much patriotic zeal to the sick and wounded soldiers, both in the field and hospitals, to the detriment of her own health, and has also endured hardships as a prisoner of war four months in a Southern prison while acting as contract surgeon."
+    },
+    {
+      "id": "richard-hetherington-okane",
+      "name": "O'Kane, Richard Hetherington",
+      "rank": "Commander",
+      "branch": "U.S. Navy",
+      "conflict": "World War II",
+      "battle": null,
+      "place": "Philippine Islands, Philippines",
+      "lat": 13,
+      "lng": 122,
+      "survived": true,
+      "categories": [
+        "The Sea",
+        "Unbroken in Captivity",
+        "The Career Warrior"
+      ],
+      "citation": "For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty as commanding officer of the U.S.S. Tang operating against 2 enemy Japanese convoys on 23 and 24 October 1944, during her fifth and last war patrol. Boldly maneuvering on the surface into the midst of a heavily escorted convoy, Comdr. O'Kane stood in the fusillade of bullets and shells from all directions to launch smashing hits on 3 tankers, coolly swung his ship to fire at a freighter and, in a split-second decision, shot out of the path of an onrushing transport, missing it by inches."
+    },
+    {
+      "id": "ross-a-mcginnis",
+      "name": "Mcginnis, Ross A.",
+      "rank": "Private First Class",
+      "branch": "U.S. Army",
+      "conflict": "War on Terrorism (Iraq)",
+      "battle": null,
+      "place": "Baghdad, Iraq",
+      "lat": 33,
+      "lng": 44,
+      "survived": false,
+      "categories": [
+        "The Body on the Grenade",
+        "The Boy (Too Young for This)",
+        "Greater Love",
+        "The Fallen / Ultimate Sacrifice"
+      ],
+      "citation": "For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty:\nPrivate First Class Ross A. McGinnis distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty while serving as an M2 .50-caliber Machine Gunner, 1st Platoon, C Company, 1st Battalion, 26th Infantry Regiment, in connection with combat operations against an armed enemy in Adhamiyah, Northeast Baghdad, Iraq, on 4 December 2006.\n\nThat afternoon his platoon was conducting combat control operations in an effort to reduce and control sectarian violence in the area. While Private McGinnis was manning the M2 .50-caliber Machine Gun, a fragmentation grenade thrown by an insurgent fell through the gunner's hatch into the vehicle. Reacting quickly, he yelled \"grenade,\" allowing all four members of his crew to prepare for the grenade's blast. Then, rather than leaping from the gunner's hatch to safety, Private McGinnis made the courageous decision to protect his crew. In a selfless act of bravery, in which he was mortally wounded, Private McGinnis covered the live grenade, pinning it between his body and the vehicle and absorbing most of the explosion.\n\nPrivate McGinnis' gallant action directly saved four men from certain serious injury or death. Private First Class McGinnis' extraordinary heroism and selflessness at the cost of his own life, above and beyond the call of duty, are in keeping with the highest traditions of the military service and reflect great credit upon himself, his unit, and the United States Army."
+    },
+    {
+      "id": "william-kyle-carpenter",
+      "name": "Carpenter, William Kyle",
+      "rank": "Lance Corporal",
+      "branch": "U.S. Marine Corps",
+      "conflict": "War on Terrorism (Afghanistan)",
+      "battle": null,
+      "place": "Helmand, Afghanistan",
+      "lat": 31,
+      "lng": 63,
+      "survived": true,
+      "categories": [
+        "The Body on the Grenade",
+        "Miraculous / Left for Dead",
+        "The Wounded Warrior",
+        "The Epic Second Act"
+      ],
+      "citation": "For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty while serving as an Automatic Rifleman with Company F, 2d Battalion, 9th Marines, Regimental Combat Team 1, 1st Marine Division (Forward), 1 Marine Expeditionary Force (Forward), in Helmand Province, Afghanistan in support of Operation Enduring Freedom on 21 November 2010. Lance Corporal Carpenter and a fellow Marine were manning a rooftop security position on the perimeter of Patrol Base Dakota when the enemy initiated a daylight attack with hand grenades, one of which landed inside their sandbagged position. Without hesitation, and with complete disregard for his own safety, Lance Corporal Carpenter moved toward the grenade in an attempt to shield his fellow Marine from the deadly blast."
+    }
+  ]
+}
