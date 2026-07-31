@@ -195,3 +195,35 @@ OPEN QUESTION / CONFLICT FOR HUMANS (important):
   source (keep index.template.html, build index.html from it), or (b) single-file only
   (delete the template, edit index.html directly). Until settled, expect churn.
   No history was rewritten and nothing was force-pushed.
+
+## Session 2026-07-30 (eve 3) — Human ruling: template conflict RESOLVED
+
+RULING RECEIVED (from the humans) and APPLIED:
+- (a) TEMPLATE-AS-SOURCE is the permanent architecture. index.template.html is the
+  source of truth; index.html is a build artifact, rebuilt via the inject step and
+  always committed alongside so the shipped product stays a zero-build single file.
+  The template is REQUIRED — never delete it. This is settled; do not re-litigate.
+
+CHANGED:
+- CLAUDE.md: amended the single-file hard rule to state that single-file discipline
+  governs the SHIPPED ARTIFACT (index.html), not the repo; the template is required.
+  Added an operational hard rule: ONE agent session at a time (no parallel writers).
+  Added a new "Architecture — template-as-source" section documenting the inject
+  placeholders (/*__TOKENS__*/, const STORIES = /*__DATA__*/[];), the inject step,
+  and the per-rebuild validation checklist.
+- Git identity: set this repo's local config to user.email ericwilsonart@gmail.com,
+  user.name EMW81, so future commits from this repo are consistent.
+
+VERIFIED (no restore/rebuild needed):
+- index.template.html is present on origin/main (the concurrent session's deletion
+  did NOT reach origin — nothing to restore). Working tree clean, in sync with origin.
+- Template ↔ index.html SYNC confirmed: re-running the inject step (tokens + data
+  extracted from index.html, injected into the template) reproduces index.html
+  byte-for-byte. Data re-validated: 50 records, valid JSON, all 50 carry
+  category_hints and 1–4 categories[].
+
+NEXT:
+- Resume the task queue: Phase 5 (scale to 3,475) is the next substantive work.
+- Calibration: still awaiting Darrin's 59 hand-tagged stories to tune Phase 2.
+- Going forward: edit the template + inputs and rebuild index.html; never hand-edit
+  index.html as source. Run only one session at a time.

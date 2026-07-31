@@ -72,9 +72,18 @@ Multiple categories per story allowed; 1-4 is the sweet spot. Deed categories co
 from the citation; Person/Spirit/Aftermath may need the hints or brief research.
 
 ## Hard rules
-- Single-file discipline: one index.html, zero build step, zero external deps
-  except Leaflet CDN for the map. All colors via CSS custom properties; grep for
-  raw hex outside the token block before every commit (spec §1).
+- Single-file discipline governs the SHIPPED ARTIFACT, not the repo. The shipped
+  product (index.html) is one self-contained file, zero build step, zero external
+  deps except Leaflet CDN for the map. But the repo is template-as-source (see
+  Architecture below): index.template.html is the source of truth and is REQUIRED —
+  never delete it. index.html is a build artifact, rebuilt from the template via the
+  inject step and always committed alongside it so the shipped file stays standalone.
+  All colors via CSS custom properties; grep for raw hex outside the token block
+  before every commit (spec §1).
+- One agent session at a time. Only a single agent session may operate on this repo
+  concurrently. Do NOT run parallel sessions — concurrent writers cause template-vs-
+  index churn and conflicting pushes. If you observe another session's commits under a
+  different identity, stop and log it rather than racing.
 - Escape everything rendered from data (rpEsc pattern in spec §5).
 - Never overwrite human-provided values (category_hints, Darrin's calibration
   tags, hand-assigned conflict/survived) — log disagreements instead.
@@ -85,6 +94,22 @@ from the citation; Person/Spirit/Aftermath may need the hints or brief research.
 - git init if not a repo; small commits with clear messages; never force-push.
 - End every session by appending a dated summary to NOTES.md (what changed, what's
   next, any open questions for the humans).
+
+## Architecture — template-as-source (human ruling, 2026-07-30)
+Permanent, settled architecture. Do not re-litigate.
+- index.template.html is the SOURCE OF TRUTH. It carries the page chrome/markup plus
+  two inject placeholders: `/*__TOKENS__*/` (inside `<style id="tokens">`) and the
+  data slot `const STORIES = /*__DATA__*/[];`.
+- index.html is a BUILD ARTIFACT. Rebuild it from the template by the inject step,
+  then commit it alongside the template in the same session. Never hand-edit index.html
+  as the primary source — edit the template (or the tokens/data inputs) and rebuild.
+- Inject step (no build script; done inline/reproducibly): replace `/*__TOKENS__*/`
+  with the tokens CSS (design/tokens.css + the --tg-person violet amendment) and
+  replace the literal `const STORIES = /*__DATA__*/[];` with
+  `const STORIES = <pilot data array>;`. Nothing else changes.
+- Every rebuild must re-validate: correct record count, valid JSON, category_hints
+  intact, `node --check` clean, zero raw hex outside the tokens block. Confirm the
+  template and index.html are in sync before pushing.
 
 ## GitHub workflow
 Canonical repo: EMW81/moh-app (https://github.com/EMW81/moh-app.git) — permanent
