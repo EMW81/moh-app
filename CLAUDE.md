@@ -85,3 +85,15 @@ from the citation; Person/Spirit/Aftermath may need the hints or brief research.
 - git init if not a repo; small commits with clear messages; never force-push.
 - End every session by appending a dated summary to NOTES.md (what changed, what's
   next, any open questions for the humans).
+
+## GitHub workflow
+Canonical repo: EMW81/moh-app (https://github.com/EMW81/moh-app.git) — permanent
+origin. Standing procedure every session:
+- START: `git pull --rebase origin main` before doing any work, to take remote
+  changes cleanly.
+- DURING: small, focused commits as you go (never batch a session into one commit).
+- END: `git push origin main` — include the NOTES.md session-log commit in the push.
+- AUTH FAILURE: if pull/push fails on authentication, STOP and log it in NOTES.md.
+  Never touch, prompt for, or modify git credentials.
+- Never force-push and never rewrite published history (no rebase/amend of pushed
+  commits, no `push --force`).
