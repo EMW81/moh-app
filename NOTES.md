@@ -536,3 +536,39 @@ artwork. Single-file discipline intact (only Leaflet CDN external).
 NOTE FOR HUMANS: disk on this machine remains ~100% full (632 MB free) — worth clearing
 before the Phase 5 full-dataset build. Non-suffixed full-res medal PNGs (~3 MB each) are
 committed in design/brand/ as brand source; the build only embeds the processed copies.
+
+## 2026-07-31 (evening) — Branding doc v2: themes filter redesign SHIPPED
+
+New inputs committed: VALOR_BRANDING_PROMPT.md v2 + themes-filter-mockup-6a.png.
+Prior branding (wordmark/medals/star) verified unregressed and untouched. New "Don't"
+(never coin-crop the medals) noted — we already ship full medal artwork, no action.
+
+CHANGES:
+- Themes popover: doc's list-row design — 15px checkboxes (1.5px border, 3px radius),
+  right-aligned faceted counts (live, mono 10.5px, muted), row hover + selected-row
+  tint and navy-filled checkbox with check glyph, columns separated by whitespace
+  (vertical rules dropped per mockup). Group top-rules/titles keep OUR tokens per
+  instruction (doc's Aftermath #1d4ed8 vs our --tg-after — tokens win).
+- All colors derive from --brand-ink via color-mix, so dark mode adapts automatically
+  (check glyph uses var(--surface): white-on-navy light, dark-on-blue dark).
+- Active filter pills: uniform navy design across ALL dimensions (themes, conflict,
+  branch, battle, fate, search) — brand-ink tint bg + 18% border, 16px circular ✕
+  (hover: solid navy, white glyph), underlined navy "Clear all". Fate pill keeps the
+  gold star artwork. Per-group chip colors retired from the active bar.
+- Popover responsive: 4-col -> 2-col ≤820px -> stacked ≤600px.
+
+TWO REAL PRE-EXISTING BUGS FOUND & FIXED:
+1. The theme menu's rows never matched the `.menu-list .opt` CSS (no .menu-list
+   wrapper) — check SVGs rendered as giant unconstrained checkmarks. This is what the
+   doc calls the "oversized checkmark grid". Selectors generalized to `.popover .opt`.
+2. `.chip.search` collided with the `.search{flex:1 1 260px}` rule for the search BOX,
+   stretching the active search pill to 320px. Scoped to `.filters .search`.
+
+VALIDATION: node --check clean; 50 records; zero raw hex outside tokens; screenshots:
+popover light/dark/narrow-2col/stacked, pills row all dimensions, cards 2-across
+regression. Note for future sessions: headless Chrome clamps window width to 500px min
+— a "390px" screenshot renders a 500px viewport with the image cropped; check
+innerWidth before calling mobile overflow a bug (cost me a debug cycle tonight).
+
+FILE SIZE: index.html 224,443 -> 225,063 bytes (+620 B). URL/saved-view behavior
+untouched (state model and handlers unchanged — only presentation).
