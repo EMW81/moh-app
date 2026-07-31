@@ -84,6 +84,22 @@
     "4": 7
    },
    "status": "done"
+  },
+  "06": {
+   "input_sha256": "467f6b520bce8a69d13be5368e1274423e424d9de740da7c6a201c93abb3058d",
+   "count": 250,
+   "confidence": {
+    "high": 169,
+    "medium": 35,
+    "low": 46
+   },
+   "tags_per_record": {
+    "0": 27,
+    "1": 115,
+    "2": 78,
+    "3": 30
+   },
+   "status": "done"
   }
  }
 }
