@@ -1,0 +1,21 @@
+{
+ "chunks": {
+  "01": {
+   "input_sha256": "8f5325f5cf96b22b38b3c0f52ae8222b0714ad5d0dd5f5b53448139bba92723f",
+   "count": 250,
+   "confidence": {
+    "high": 198,
+    "medium": 26,
+    "low": 26
+   },
+   "tags_per_record": {
+    "0": 11,
+    "1": 46,
+    "2": 76,
+    "3": 75,
+    "4": 42
+   },
+   "status": "done"
+  }
+ }
+}
