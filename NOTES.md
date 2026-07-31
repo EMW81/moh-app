@@ -110,3 +110,49 @@ Redemption/Second Birth, Brotherhood/No One Left Behind, Duty & Country, Cost of
 The Aftermath: The Fallen, Quiet Return, Belated Justice, Forgotten Hero/Fall From
 Grace, Wounded Warrior, Epic Second Act.
 Multiple categories per story allowed.
+
+## Session 2026-07-30 (PM 2) — Phase 3 build shipped
+
+CHANGED
+- Phase 2 confirmed COMPLETE: all 50 pilot recipients already carry categories[]
+  (1–4 each, 29 distinct themes in use, all mapping cleanly to the 4 groups). No
+  re-tagging done (idempotent rule); survived flags left as hand-assigned.
+- Design handoff read (design/README.md + tokens.css + mockup canvas). Chosen
+  direction: Meridian, options 2A (light) / 2B (dark).
+- tokens.css AMENDED per instruction: --tg-person → violet (#7c3aed light /
+  #a78bfa dark); gold now reserved exclusively for the fallen. Otherwise verbatim,
+  embedded inline in index.html.
+- Built index.html — ONE self-contained file, zero build step, deps only Leaflet CDN
+  (map) + Geist/Geist Mono. pilot50 embedded inline. Implements: 230px theme-
+  responsive rail (Stories/Map/Saved views + live faceted group counts), header with
+  NO avatar (amendment), 180ms debounced search + match highlight, Themes 4-col
+  popover + Conflict/Branch dropdowns with per-option faceted counts (own-dim-removed),
+  fate segmented, active-filter chips + clear-all, saved views (localStorage), 3-col
+  card grid (dept-seg 4-block indicator, lead theme chip + "+N", fate chip), count bar,
+  empty state, detail modal (citation verbatim & in full, history.pushState back-button,
+  deep-linkable), Leaflet map (CARTO light/dark tiles, accent-dot=survived /
+  gold-star=fell, popups → detail), light/dark/auto theme (persisted, OS-following),
+  print styles, toasts.
+- URL-ENCODED filter+search+view+story state (amendment #4): shareable + back-button
+  (compact index-based ?t/c/b, plus ?q/?f/?v/?s).
+- All rendered data escaped (esc()). Token discipline verified: 0 raw hex in app CSS.
+
+VALIDATED (headless Chrome, zero app-level JS errors): browse light (matches 2A),
+browse dark (matches 2B), map view, deep-linked detail modal.
+
+DEVIATIONS / NOTES
+- An index.template.html scaffold (same tokens/placeholder scheme, Meridian classes,
+  SVG icons) was present when the build started — a strong near-complete Phase 3
+  implementation. Adopted it, added the missing Map view + reconciled nav/popstate,
+  then inlined tokens+data and REMOVED the template to keep single-file discipline
+  (index.html stands alone; edit it directly henceforth).
+- Battle NOT surfaced as a 4th dropdown (2A shows only Themes/Conflict/Branch — matched
+  the hifi exactly). Battle data is present; easy to add later.
+- Print currently prints the open detail (chrome hidden) rather than the bespoke 1H
+  sheet; acceptable for pilot, refine later.
+
+NEXT / OPEN QUESTIONS
+- git remote: none configured — committed locally; needs a remote before I can push.
+- Phase 4 (map) effectively done for the pilot. Phase 5 = scale to 3,475.
+- Awaiting Darrin's 59-story calibration set to tune Phase 2 tags.
+- Photos deferred (Wikimedia); card avatar swaps to photo_url when present.
