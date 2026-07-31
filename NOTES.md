@@ -443,3 +443,25 @@ NEXT: chunks 4-14 (2,675 records) with the same fixed prompt + `check` skip. The
 Phase-5 render pass (fold data/tagged into the app; conflict_uncertain / low-confidence
 could get a subtle UI marker). Photos at scale reuse the eve MediaWiki-API pass. Still
 awaiting Darrin's 59-story calibration set to tune the taxonomy.
+
+## 2026-07-31 — Branding pass: BLOCKED, assets missing
+
+Requested: apply design/brand/VALOR_BRANDING_PROMPT.md with integration amendments
+(medal-per-branch card column, base64-embedded assets via the inject pipeline, brand
+ink tokens with dark-mode counterparts).
+
+Could not start: design/brand/ does not exist in the repo, and none of the named files
+(VALOR_BRANDING_PROMPT.md, valorstar.png, moharmy4a.png, mohnavy4b.png,
+mohairforce4c.png, valorbanner3a.png, storiespagemockup5a.png) were found anywhere —
+searched the repo, all git branches/stashes/history, ~/Downloads, ~/Desktop, iCloud
+Drive, and Spotlight. The only nearby files were the old design-handoff mockup zip
+(DESIGN_BRIEF/tokens/sample JSON, already in design/) and an unrelated
+brand-source-of-truth.md for the sculpture website.
+
+No changes made to template, index.html, or tokens. Nothing invented in place of the
+missing artwork or branding doc.
+
+OPEN QUESTION FOR HUMANS: please add the branding doc + the four embeddable PNGs to
+design/brand/ (or point me at their location) and re-run the branding pass. The
+amendment details from the request are captured above and will be honored when the
+assets arrive.
