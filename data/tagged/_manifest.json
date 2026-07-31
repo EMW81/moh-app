@@ -33,6 +33,23 @@
     "4": 38
    },
    "status": "done"
+  },
+  "03": {
+   "input_sha256": "2567af8b7f182ed3cfcc3dd2dc468fe26fb4749272dfdadfe23bcbe73ef5ed9a",
+   "count": 250,
+   "confidence": {
+    "high": 181,
+    "medium": 50,
+    "low": 19
+   },
+   "tags_per_record": {
+    "0": 5,
+    "1": 58,
+    "2": 63,
+    "3": 98,
+    "4": 26
+   },
+   "status": "done"
   }
  }
 }
