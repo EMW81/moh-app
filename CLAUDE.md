@@ -113,7 +113,10 @@ Permanent, settled architecture. Do not re-litigate.
 
 ## GitHub workflow
 Canonical repo: EMW81/moh-app (https://github.com/EMW81/moh-app.git) — permanent
-origin. Standing procedure every session:
+origin. PRODUCTION: main is auto-deployed to https://everymedal.org via GitHub Pages —
+every push is a live production deploy. Never push a broken index.html; verify the
+build renders (record count, node --check, visual smoke test) before every push.
+Standing procedure every session:
 - START: `git pull --rebase origin main` before doing any work, to take remote
   changes cleanly.
 - DURING: small, focused commits as you go (never batch a session into one commit).
