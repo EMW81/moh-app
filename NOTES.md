@@ -306,3 +306,59 @@ NEXT:
 - Same as before: Phase 5 scale-up + awaiting Darrin's 59-story calibration set.
 - Incoming (this queue): 1-across centering nudge, Photos phase (50 pilot), and
   photo-on-card design — starting now.
+
+---
+
+## 2026-07-31 (session: photos phase + photo-card design)
+
+LAYOUT (1-across centering): investigated the reported "card column offset to the
+right." Measured in headless Chrome at 3 widths: card centre === toolbar centre ===
+countbar centre (835px, 0px offset) — already dead-centred within the content area.
+The rightward *feel* is the 230px sidebar shifting the whole content area right.
+Asked the human; ruling = keep content-area centering (aligned with the toolbar).
+NO code change. Not a bug.
+
+PHOTOS (pilot 50) — 48/50 found (96%). Method: MediaWiki API only (no scraping,
+no hallucinated URLs) — generator=search "<name> Medal of Honor" → pageimages
+`original` → derive File: from the upload.wikimedia URL → imageinfo `extmetadata`
+for license + a 500px `thumburl`. Accept PD or permissive CC; every accepted URL
+was HTTP-verified to return image/* (200). Article matching was correct for all 50.
+- License mix: 47 public domain, 1 CC BY 2.0 (John Basilone — credit "USMC Archives
+  from Quantico, USA / Wikimedia Commons — CC BY 2.0").
+- MISSES (2, left null): `charles-windolph` (no image on any Commons file);
+  `freddie-stowers` (killed 1918 — Commons has only his grave & the posthumous
+  ceremony, no portrait). Skipped per "no clearly-licensed portrait" rule.
+- CORRECTION: `fred-w-stockham` — Wikipedia's top hit was "USNS GySgt. Fred W.
+  Stockham" (a SHIP named for him); its lead image was the vessel. Replaced with the
+  real USMC portrait File:Fred W. Stockham - WWI Medal of Honor Recipient.jpg (PD).
+- Also rejected two grave/ship lead-images caught by a non-portrait filename scan;
+  false-positives (Whittlesey, Adkins — "Medal_of_Honor" in filename) kept.
+- pilot50.json: added `photo_credit` (new field, placed after photo_url) + populated
+  `photo_url`. Only photo fields changed; category_hints/categories untouched.
+
+CARD DESIGN:
+- 1/2-across: portrait is a full-card-height strip on the LEFT edge (122px, object-fit
+  cover, clipped to the card's 8px radius via card overflow:hidden, `border-right`
+  token divider). Card flips to `flex-direction:row`; content wrapped in `.card-main`.
+  The small round avatar is hidden in these modes (strip replaces it).
+- 3-across: unchanged compact layout; the round `.avatar` swaps to the photo `<img>`
+  when present (the avatar already supported `img` + overflow:hidden).
+- No-photo cards: 3-across keeps initials avatar; 1/2-across shows a quiet `.ph`
+  placeholder (initials on `--surface-raised`, no broken-image icon).
+- All images `loading=lazy decoding=async`.
+- Detail modal: portrait at top of the meta rail (`.detail-portrait`, 4:5, capped
+  150px) + credit line under the rail (`.meta-credit`); both omitted when no photo.
+  No credit on cards, per spec.
+
+VERIFIED (headless Chrome, real Wikimedia images over network):
+- 1/2/3-across in BOTH light and dark, with-photo (jacob-parrott) and no-photo
+  (charles-windolph): strip visible+img in 1/2 (122px, full height) with avatar
+  hidden; avatar+img in 3 with strip hidden; initials placeholder for no-photo;
+  images actually loaded (naturalWidth 500). Modal: portrait + PD credit shown for
+  a photo record, both absent for a no-photo record. Screenshots eyeballed.
+- Rebuild: 50 records, 48 photos, `node --check` clean, zero raw hex outside tokens,
+  template ↔ index.html photo-feature markers in sync (11 each).
+
+NEXT:
+- Phase 5 scale-up (3,475) — at scale, run the same MediaWiki-API photo pass in
+  batches with input fingerprinting. Still awaiting Darrin's 59-story calibration set.

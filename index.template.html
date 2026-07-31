@@ -133,8 +133,18 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 /* 1-across = reading list: single column capped to a comfortable measure, centered */
 .grid[data-cols="1"]{grid-template-columns:minmax(0,75ch);justify-content:center;}
 .grid[data-cols="1"] .card-excerpt{-webkit-line-clamp:9;}
+/* 1/2-across: portrait becomes a full-card-height image strip on the LEFT edge */
+.grid[data-cols="1"] .card,.grid[data-cols="2"] .card{flex-direction:row;align-items:stretch;}
+.grid[data-cols="1"] .card>.card-photo,.grid[data-cols="2"] .card>.card-photo{display:block;flex:0 0 122px;align-self:stretch;
+  background:var(--surface-raised);border-right:1px solid var(--border);}
+.grid[data-cols="1"] .card .avatar,.grid[data-cols="2"] .card .avatar{display:none;}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow-md);
-  padding:15px 17px;display:flex;flex-direction:column;gap:10px;box-sizing:border-box;text-align:left;color:inherit;}
+  display:flex;flex-direction:column;box-sizing:border-box;text-align:left;color:inherit;overflow:hidden;}
+.card-main{display:flex;flex-direction:column;gap:10px;padding:15px 17px;min-width:0;flex:1 1 auto;}
+.card-photo{display:none;}          /* portrait strip: only shown in 1/2-across (see grid rules) */
+.card-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+.card-photo .ph{width:100%;height:100%;min-height:132px;display:flex;align-items:center;justify-content:center;
+  color:var(--text-subtle);font-family:var(--font-mono);font-weight:700;font-size:26px;}
 .card:hover{border-color:var(--border-strong);}
 .card:hover .card-name{color:var(--accent);}
 .card-top{display:flex;align-items:flex-start;gap:11px;}
@@ -223,6 +233,8 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .meta-links{display:flex;flex-direction:column;gap:8px;margin-top:18px;}
 .meta-links a,.meta-links button{color:var(--accent);font-size:12.5px;font-weight:600;text-decoration:none;background:none;border:none;padding:0;text-align:left;display:inline-flex;align-items:center;gap:6px;}
 .meta-links a:hover,.meta-links button:hover{text-decoration:underline;}
+.detail-portrait{width:100%;max-width:150px;aspect-ratio:4/5;object-fit:cover;border-radius:8px;border:1px solid var(--border);background:var(--surface-raised);display:block;margin-bottom:18px;}
+.meta-credit{margin-top:16px;padding-top:12px;border-top:1px dashed var(--border);font-size:11px;line-height:1.45;color:var(--text-subtle);}
 .detail-read{padding:34px 40px 44px;min-width:0;}
 .read-kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;}
 .read-name{font-size:30px;font-weight:700;line-height:1.12;margin:12px 0 6px;}
@@ -559,15 +571,24 @@ function cardHTML(s){
   if(state.query){ const snip = highlightSnippet(s.citation, state.query); body = snip ? `<div class="card-excerpt snippet">${snip}</div>` : `<div class="card-excerpt">${esc(s.citation.slice(0,wide?540:170))}</div>`; }
   else body = `<div class="card-excerpt">${esc(s.citation.slice(0,wide?570:190))}</div>`;
   const fate = s.survived ? `<span class="fate-chip surv">Survived</span>` : `<span class="fate-chip fell">★ Fell</span>`;
+  const ini = esc(initials(s.name));
+  const img = s.photo_url ? `<img src="${esc(s.photo_url)}" alt="" loading="lazy" decoding="async">` : "";
+  // Left strip (shown only in 1/2-across): portrait or a quiet initials placeholder — never a broken-image icon.
+  const photoStrip = `<span class="card-photo">${s.photo_url ? img : `<span class="ph">${ini}</span>`}</span>`;
+  // Small round avatar (shown only in 3-across): swaps to the photo when present.
+  const avatar = `<span class="avatar">${s.photo_url ? img : ini}</span>`;
   return `<button class="card" data-story="${esc(s.id)}">
-    <div class="card-top">
-      <span class="avatar">${esc(initials(s.name))}</span>
-      <span class="card-id"><span class="card-name">${esc(s.name)}</span><span class="card-sub">${esc(s.rank)} · ${esc(s.branch)}</span></span>
-      <span class="dept-seg" title="Theme groups">${seg}</span>
-    </div>
-    <div class="card-meta">${esc(meta)}</div>
-    ${body}
-    <div class="card-foot">${leadChip}${plus}${fate}</div>
+    ${photoStrip}
+    <span class="card-main">
+      <div class="card-top">
+        ${avatar}
+        <span class="card-id"><span class="card-name">${esc(s.name)}</span><span class="card-sub">${esc(s.rank)} · ${esc(s.branch)}</span></span>
+        <span class="dept-seg" title="Theme groups">${seg}</span>
+      </div>
+      <div class="card-meta">${esc(meta)}</div>
+      ${body}
+      <div class="card-foot">${leadChip}${plus}${fate}</div>
+    </span>
   </button>`;
 }
 let gridToken = 0;            // cancels an in-flight chunk loop when a newer render starts
@@ -743,6 +764,7 @@ function openDetail(id, push){
   const sub = [s.rank, s.branch, s.conflict].filter(Boolean).join(" · ");
   $("#detail").innerHTML = `
     <div class="detail-meta">
+      ${s.photo_url?`<img class="detail-portrait" src="${esc(s.photo_url)}" alt="Portrait of ${esc(s.name)}" loading="lazy" decoding="async">`:""}
       <div class="fate-banner ${fell?"":"surv"}">
         <div class="fb-top">${fbTop}</div>
         <div class="fb-sub">${esc([s.action_place].filter(Boolean).join(""))}</div>
@@ -755,6 +777,7 @@ function openDetail(id, push){
         ${s.cmohs_link?`<a href="${esc(s.cmohs_link)}" target="_blank" rel="noopener">Official record — cmohs.org ↗</a>`:""}
         <button data-print>Print this story</button>
       </div>
+      ${s.photo_credit?`<div class="meta-credit">Portrait: ${esc(s.photo_credit)}</div>`:""}
     </div>
     <div class="detail-read">
       <div class="read-kicker">Medal of Honor · Official Citation — Rendered Verbatim</div>
