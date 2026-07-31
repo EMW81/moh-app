@@ -624,3 +624,51 @@ zero raw hex outside tokens, visual smoke light+dark+map+detail. Ready.
 
 Verified 1/2/3-across × light/dark + 760px narrow; node --check clean; 50 records;
 zero raw hex outside tokens. index.html 225,756 -> 226,579 B (+823 B).
+
+## 2026-07-31 — Phase 5 category tagging COMPLETE (all 14 chunks, 3,425 records)
+
+Resumed the Phase-5 batch loop from chunk 04 (chunks 01-03 already done) and tagged
+the remaining 11 chunks (04-14). All 14/14 chunks now DONE — the full CORGIS scale
+set is tagged. Pipeline followed exactly: fixed prompt scripts/TAGGING_PROMPT.md,
+citation-TEXT-only rule (never infer biography/motive/outcome), per-chunk validate +
+merge via scripts/merge_chunk.py (coverage, canonical names, 0-4 tags, confidence,
+low-requires-reason), sha256 fingerprint in _manifest.json, commit + push after EVERY
+chunk (11 separate commits, each a live everymedal.org deploy of DATA only — index.html
+untouched).
+
+Method: each chunk's 250 citations were tagged by a dedicated sub-session handed the
+identical fixed prompt + the chunk file, writing its JSON tag array to /tmp and
+returning only a summary; the merge script re-validated every array independently
+before writing to data/tagged/. Same fixed prompt across all chunks = consistent with
+01-03. Ran 5 chunks in parallel per batch; no chunk left half-tagged.
+
+AGGREGATE over all 3,425 tagged records (post-merge, re-validated in one pass):
+- 3,425 records, 3,425 unique ids, 0 duplicates, 0 non-canonical category strings.
+- Confidence: high 2,274 (66.4%) | medium 630 (18.4%) | low 521 (15.2%).
+- Tags/record: 0->394 (11.5%) | 1->1350 | 2->884 | 3->614 | 4->183. 88.5% have >=1 tag.
+- Top categories: The Assault 915, The Sea 667, The Rescue & Lifesaver 601,
+  The Wounded Warrior 552, The Fallen/Ultimate Sacrifice 523, The Colors 483.
+
+ANOMALIES / THINGS FOR THE HUMANS:
+- Per-chunk low/zero-tag rates track citation TERSENESS, not tagging quality. Chunks
+  04 & 08 (Boxer Rebellion / Indian Wars / interim Navy awards) have median citation
+  lengths of 385 and 174 chars respectively ("Gallantry in action", "Rescue of
+  regimental colors", "meritorious conduct") vs ~1165 for the WWII/modern chunks.
+  Those one-liners correctly yield 0 tags at low conf, or 1 tag at medium conf. This
+  is the citation-text-only rule working as intended — flagging, not fixing.
+- SIX categories are never assigned from citation text alone: Redemption/The Second
+  Birth, The Cost of War/Lament, The Epic Second Act, The Forgotten Hero/Fall From
+  Grace, The New American/Immigrant's Debt, The Quiet Return. All six require
+  biography/post-war/motive facts that MOH citations essentially never state. Expected
+  under the rule. If Darrin wants these populated at scale, it needs a separate
+  enrichment pass over hints/external research (as the CLAUDE.md taxonomy notes for
+  Person/Spirit/Aftermath) — NOT inference from the citation.
+- survived flag was NOT re-derived here (Phase-5 pre-pass already set survived +
+  survived_confidence heuristically); tagging only added categories/confidence and did
+  not touch it. The Fallen/Ultimate Sacrifice (523) vs survived flags could be
+  cross-checked in a later QA pass.
+
+NEXT: wire data/tagged/*.json into the app (Phase 5 render at scale — lazy/chunked
+rendering ~200 cards/rAF per the queue) and re-run the inject/build so index.html
+carries the full tagged set instead of pilot50. Optionally diff against Darrin's
+59-story calibration set if it has arrived.
