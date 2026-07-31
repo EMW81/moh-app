@@ -199,7 +199,8 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .btn-primary:active{transform:translateY(1px);}
 
 /* ---------- detail modal ---------- */
-.detail-scrim{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:60;display:none;overflow-y:auto;}
+/* z-index:var(--z-modal) (2000) escapes Leaflet's panes/controls so the modal covers the map */
+.detail-scrim{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:var(--z-modal);display:none;overflow-y:auto;}
 .detail-scrim.open{display:block;}
 .detail{max-width:1040px;margin:24px auto;background:var(--surface);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow-lg);
   display:grid;grid-template-columns:340px 1fr;overflow:hidden;min-height:200px;}
@@ -763,6 +764,7 @@ function openDetail(id, push){
       <div class="read-foot">Citation is a public-domain work of the U.S. Government, rendered in full and unedited. Source: ${s.cmohs_link?`<a href="${esc(s.cmohs_link)}" target="_blank" rel="noopener">cmohs.org</a>`:"cmohs.org"}.</div>
     </div>`;
   $("#detail").querySelector("[data-print]")?.addEventListener("click",()=>window.print());
+  if(MAP) MAP.closePopup();          // dismiss any open pin popup as the modal takes over
   $("#detailScrim").classList.add("open");
   document.body.style.overflow="hidden";
   if(push) writeURL(true);

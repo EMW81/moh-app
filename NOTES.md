@@ -268,3 +268,41 @@ VERIFIED:
 NEXT:
 - Unchanged: Phase 5 (scale to 3,475) is the next substantive work; still awaiting
   Darrin's 59-story calibration set.
+
+---
+
+## 2026-07-30 (eve, session: modal-z-index bugfix)
+
+BUG: From Map view, clicking "Read the story" in a Leaflet pin popup opened the
+detail modal BEHIND the map — partially hidden, unreadable, uncloseable.
+
+ROOT CAUSE: `.detail-scrim` had `z-index:60`. It is (correctly) a direct child of
+`<body>`, but `.mapwrap`/`main`/`.app` create NO stacking context (no positioned
+ancestor with a z-index), so Leaflet's panes/controls (z-index ~700–1000) lived in
+the same root stacking context and painted over the modal.
+
+FIX (template-as-source; edited template + tokens.css, rebuilt index.html):
+- New token `--z-modal:2000;` in design/tokens.css `:root` (geometry section) —
+  flows into the `<style id="tokens">` block on rebuild. 2000 > Leaflet's ~1000.
+- `.detail-scrim` z-index `60` → `var(--z-modal)`. position:fixed + z-index makes
+  its own stacking context above everything Leaflet; inset:0 + backdrop + default
+  pointer-events intercept clicks/scroll so pan/zoom can't be reached; body
+  overflow already pinned hidden while open.
+- `openDetail()` now calls `if(MAP) MAP.closePopup();` so the pin popup dismisses
+  as the modal takes over.
+
+VERIFIED (headless Chrome via puppeteer-core driving the REAL app + Leaflet CDN):
+- 69/69 automated checks. Map view, actual pin→popup→"Read the story" flow, in
+  light AND dark × cols 3/2/1: modal open, scrim covers viewport, element at
+  viewport centre resolves INTO #detailScrim (was a leaflet layer before),
+  computed z-index=2000, popup closed on open, and all three close paths (X,
+  backdrop, Escape) work. List-view spot check: card→modal still opens topmost and
+  closes on Escape — unchanged path.
+- Rebuild validation: 50 records, valid JSON, 50/50 category_hints intact,
+  `node --check` clean, zero raw hex outside tokens, index.html diff = only the 3
+  intended changes.
+
+NEXT:
+- Same as before: Phase 5 scale-up + awaiting Darrin's 59-story calibration set.
+- Incoming (this queue): 1-across centering nudge, Photos phase (50 pilot), and
+  photo-on-card design — starting now.
