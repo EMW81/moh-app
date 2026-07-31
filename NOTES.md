@@ -490,3 +490,49 @@ counterparts; light gold never used for text — bronze for labels); sidebar cou
 pill and siblings restyled light-gold fill / 1px bronze border / bronze text.
 
 No app changes made. Both passes execute in order once the files actually exist.
+
+## 2026-07-31 (later still) — VALOR branding pass + star/gold refresh SHIPPED
+
+Assets finally landed in design/brand/ (7 files, hyphenated names). Executed both queued
+passes per the amendments logged above.
+
+ASSET PIPELINE (new, committed):
+- All four embeddable PNGs were WHITE-BACKED (including moh-airforce-4c, despite the
+  branding doc claiming transparency). Removed via edge flood-fill + defringe.
+- FINDING: the three 4-series medal PNGs have their branch label ("ARMY" etc.) BAKED
+  INTO the artwork. Cropped the labels off the bitmaps — required anyway, since the
+  amendment puts the recipient's branch in an HTML label (MARINE CORPS / COAST GUARD
+  ride the Navy pattern).
+- Downscaled to 2x display (medals 208px tall for 104px display; star 64px), quantized
+  to 256-color palette: 26.5 KB raw total -> ~35 KB base64. Processed copies live in
+  design/brand/build/; scripts/build.mjs is the inject step (template + tokens + data +
+  assets -> index.html), sanctioned by amendment 3.
+
+WHAT CHANGED IN THE APP:
+- Wordmark: VALOR Geist Mono 900/30px/ls .1em in --brand-ink (#04243b; dark-mode
+  #a9c3da), star raster after the R (24px), kicker restyled per branding doc.
+- Cards: 3-column (portrait · info · medal) in 1/2-across; medal column 148px, hairline
+  divider, medal 104px, branch label Geist Mono 900 10px ls .22em in brand ink.
+  3-across unchanged/compact. Medal column hidden below 640px (never squeezed).
+- Medal mapping: Army->Army, Navy/USMC/USCG->Navy pattern, AF->AF. Verified: Basilone
+  = Navy medal + MARINE CORPS, Munro = Navy medal + COAST GUARD, Walker = Army.
+- Star artwork EVERYWHERE the ★ glyph appeared: seg button, countbar, fate chips,
+  active-filter chip, detail fate banner, map popup (all inline SVG silhouette,
+  point-DOWN, fill var(--gold-fill) + stroke var(--gold-line)); wordmark, map pins,
+  map legend (raster data URI). No text-glyph stars remain.
+- Gold refresh: retired --gold/--gold-bg. New --gold-fill #d9ac51 / --gold-line #77522b
+  / --gold-ink (bronze-on-fill, both modes). Text labels render bronze, never light
+  gold. Dark mode: fill holds, line lightens to #c79b57.
+- Sidebar Stories pill: gold-fill bg, 1px bronze border, bronze text (was amber).
+
+VALIDATION: node --check clean on both inline scripts; 50 records, hints intact; zero
+raw hex outside tokens block; headless-Chrome screenshots across 1/2/3-across, light +
+dark, all five branches, map (pins+legend), detail modal (fell + survived), 420px
+mobile. No white boxes around any artwork on dark surfaces.
+
+FILE SIZE: index.html 184,632 -> 224,443 bytes (+39.8 KB, +21.6%), all from embedded
+artwork. Single-file discipline intact (only Leaflet CDN external).
+
+NOTE FOR HUMANS: disk on this machine remains ~100% full (632 MB free) — worth clearing
+before the Phase 5 full-dataset build. Non-suffixed full-res medal PNGs (~3 MB each) are
+committed in design/brand/ as brand source; the build only embeds the processed copies.
