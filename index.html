@@ -615,10 +615,23 @@ function cardHTML(s){
     <div class="card-foot">${leadChip}${plus}${fate}</div>
   </button>`;
 }
+let gridToken = 0;            // cancels an in-flight chunk loop when a newer render starts
 function renderGrid(list){
   const grid = $("#grid");
   if(!list.length){ grid.innerHTML = emptyHTML(); return; }
-  grid.innerHTML = list.map(cardHTML).join("");
+  // Chunked (~200 cards / frame) so the full ~3,500-record set won't block paint.
+  // For the pilot (50) this is a single synchronous chunk — identical to before.
+  const CHUNK = 200;
+  const token = ++gridToken;
+  grid.innerHTML = list.slice(0, CHUNK).map(cardHTML).join("");
+  if(list.length <= CHUNK) return;
+  let i = CHUNK;
+  (function step(){
+    if(token !== gridToken) return;   // superseded by a newer renderGrid
+    grid.insertAdjacentHTML("beforeend", list.slice(i, i+CHUNK).map(cardHTML).join(""));
+    i += CHUNK;
+    if(i < list.length) requestAnimationFrame(step);
+  })();
 }
 function emptyHTML(){
   return `<div class="empty">
