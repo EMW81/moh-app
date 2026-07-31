@@ -362,3 +362,84 @@ VERIFIED (headless Chrome, real Wikimedia images over network):
 NEXT:
 - Phase 5 scale-up (3,475) — at scale, run the same MediaWiki-API photo pass in
   batches with input fingerprinting. Still awaiting Darrin's 59-story calibration set.
+
+---
+
+## 2026-07-31 (session: Phase 5 kickoff — resumable batched tagging pipeline)
+
+Built the machinery, validated it, processed the first 3 chunks. Did NOT tag
+everything (11 chunks remain).
+
+PIPELINE (all in scripts/):
+- prepare_batches.py — deterministic PRE-PASS. medal_of_honor.json (3,475) →
+  14 chunk files of 250 at data/chunks/chunk_NN.json. Skips the 50 curated pilot
+  records (matched by cmohs recipient-detail number — never overwritten). Derives:
+  * conflict from action year + location/citation keywords. keyword_signal is
+    year-aware so ambiguous theaters disambiguate (philippine/china/korea → WWII vs
+    insurrection/boxer/Korean-War by year). Disagreements → conflict_uncertain.
+  * survived from citation posthumous-language (strong phrases → False/high;
+    ambiguous "died" → False/low; none → True). survived_confidence field.
+- canonical.py — the 32 category strings + conflict labels (single source of truth).
+- TAGGING_PROMPT.md — the FIXED per-batch prompt. Core rule: tag only what the
+  citation text supports. Deed = free; Spirit = only if explicit; Person/Aftermath =
+  only if the citation STATES it (posthumous→The Fallen, 2nd award→Twice-Honored);
+  never infer biography. 1-4 tags, confidence high/med/low, low needs a reason.
+- merge_chunk.py — validate (valid JSON, exact-canonical names, 0-4 tags, full
+  coverage, low-needs-reason) → merge into data/tagged/ → sha256 fingerprint in
+  data/tagged/_manifest.json. Subcommands status/check/merge. `check` returns done
+  only when the input hash still matches, so re-runs skip completed chunks and a
+  changed chunk forces a re-tag. Commit+push after every chunk = interruption costs
+  at most one chunk.
+
+BATCH EXECUTION: each chunk tagged by 5 parallel subagents (50 records each) reading
+the fixed prompt, outputs concatenated → merge_chunk validates → commit+push.
+
+PRE-PASS STATS (3,425 non-pilot records, 14 chunks):
+- conflict_uncertain: 938 (27%). Driver: 1,228 records have NO action year in the
+  source; 930 of those got no keyword either → "Unknown" + uncertain. This is honest,
+  not a bug — flagged for human review, not silently guessed.
+- conflict distribution (top): Civil War 1109, Unknown 930, WWII 277, Indian 273,
+  Vietnam 244, Korea 149, Spanish-Am 112, Philippine 106, WWI 87, Boxer 57, Mexico 54.
+- survived=False: 431. survived_confidence high/med/low = 3054/328/43.
+
+CHUNKS 1-3 TAGGED (750 records):
+- tags-per-record: {0:20, 1:155, 2:205, 3:264, 4:106}  mean 2.37.
+- tag confidence: high 574 (76%), medium 105, low 71.
+- top categories: The Assault 320, The Fallen 220, The Wounded Warrior 199,
+  One Against Many 191, Rescue & Lifesaver 151, Rallying Point 147, Last Stand 131,
+  Greater Love 111, The Sea 81, Body on the Grenade 49.
+- 9 categories UNUSED so far — all Person/Spirit/Aftermath that need biography rarely
+  present in a citation (Reluctant Warrior, New American, The Boy, Redemption, Cost of
+  War/Lament, Quiet Return, Belated Justice, Forgotten Hero, Epic Second Act). This is
+  the citation-only discipline working: the tagger is not inventing backstory. If
+  Darrin wants those populated, they'll need biographical sources beyond the citation.
+- Per-chunk confidence: c01 198/26/26, c02 195/29/26, c03 181/50/19.
+- VALIDATION CAUGHT a real defect in c02: 3 records emitted 5 categories + 1 dropped
+  id. merge_chunk rejected the whole chunk (wrote nothing); re-tagged those 4 records
+  and re-merged clean. Exactly the intended safety net.
+
+5 SAMPLE RECORDS FOR HUMAN SPOT-CHECK:
+1. Dunham, Jason L. (Iraq, conflict_uncertain) — [Body on the Grenade, Greater Love,
+   The Fallen] — grenade-smother, posthumous. Conflict flagged uncertain because year
+   (2004→GWOT default Afghanistan) disagreed with the Iraq location keyword; chose Iraq.
+2. Womack, Bryant H. (Korea) — [Healer Under Fire, The Fallen, Wounded Warrior, Greater
+   Love] — medic. NOTE: pre-pass survived_confidence=low (citation says "died", an
+   ambiguous phrase) — a good human-review flag; the LLM still tagged The Fallen right.
+3. Hack, John (Civil War) — [The Raid, The Sea] — steam-tug run past enemy batteries.
+4. Bresnahan, Patrick F. (Unknown, uncertain) — [] confidence low, reason "terse
+   citation; no specific action" — boiler-accident heroism, no described deed. Correct
+   0-tag (one of a cluster of 1905 USS Iowa boiler-explosion awards).
+5. Sagelhurst, John C. (Civil War) — [Rescue & Lifesaver, The Assault] — carried off a
+   wounded officer under fire and led a charge.
+
+OPEN QUESTIONS FOR HUMANS:
+- The 930 "Unknown"-conflict records (no year + no keyword) — accept as Unknown, or
+  supply a supplementary date source? Many are surely Civil War / Indian Wars / peacetime
+  Navy but the source data can't prove it.
+- Survived heuristic is conservative on "died" (marks False/low). Spot-check the 43
+  low-confidence survived flags before trusting them at scale.
+
+NEXT: chunks 4-14 (2,675 records) with the same fixed prompt + `check` skip. Then a
+Phase-5 render pass (fold data/tagged into the app; conflict_uncertain / low-confidence
+could get a subtle UI marker). Photos at scale reuse the eve MediaWiki-API pass. Still
+awaiting Darrin's 59-story calibration set to tune the taxonomy.
