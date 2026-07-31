@@ -465,3 +465,28 @@ OPEN QUESTION FOR HUMANS: please add the branding doc + the four embeddable PNGs
 design/brand/ (or point me at their location) and re-run the branding pass. The
 amendment details from the request are captured above and will be honored when the
 assets arrive.
+
+## 2026-07-31 (later) — Branding pass attempt #2: still blocked, files never landed
+
+Human reported the seven assets were added to design/brand/ (hyphenated names:
+VALOR_BRANDING_PROMPT.md, valor-star.png, moh-army-4a.png, moh-navy-4b.png,
+moh-airforce-4c.png, valor-banner-3a.png, stories-page-mockup-5a.png). Verified:
+the design/brand/ directory EXISTS (created 08:09 today) but is EMPTY — zero files.
+Re-searched the whole machine (find across home incl. Trash, Spotlight, Downloads,
+Desktop, iCloud) and the GitHub remote: no copies anywhere under any spelling.
+
+LIKELY CAUSE: the boot volume is at 100% capacity (632 MB free). A Finder/AirDrop
+copy can create the destination folder then fail to write the files. Suggest freeing
+space (Downloads has ~120 MB+ of quitters_project_backup_*.json dups from 2026-07-30)
+and re-copying the seven files, then re-running the branding pass.
+
+Also queued from this session (to run after the branding pass, per human message):
+STAR + GOLD REFRESH — canonical star valor-star.png (point-DOWN MoH rosette star,
+fill #d9ac51, outline #77522b, white bg must be removed); replace ALL star glyphs
+site-wide (card/chip fallen marker, '★ Fell' segment, countbar, footer legend, map
+fallen pins) — data-URI raster for large uses, faithful inline SVG for 11-16px uses;
+retire dark gold for --gold-fill #d9ac51 / --gold-line #77522b (+dark-mode
+counterparts; light gold never used for text — bronze for labels); sidebar count
+pill and siblings restyled light-gold fill / 1px bronze border / bronze text.
+
+No app changes made. Both passes execute in order once the files actually exist.
