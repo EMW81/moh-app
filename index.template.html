@@ -70,7 +70,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .rail-spacer{flex:1 1 auto;}
 
 /* ---------- header ---------- */
-.hdr{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 26px;display:flex;align-items:flex-start;gap:16px;position:sticky;top:0;z-index:15;}
+.hdr{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 26px;display:flex;align-items:flex-start;gap:16px;}
 .hdr h1{font-size:18px;font-weight:700;margin:0;line-height:1.2;}
 .hdr .sub{font-size:12.5px;color:var(--text-subtle);margin-top:3px;}
 .hdr-right{margin-left:auto;display:flex;align-items:center;gap:8px;}
@@ -78,6 +78,9 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .icon-btn:hover{border-color:var(--border-strong);color:var(--text);}
 .icon-btn svg{width:15px;height:15px;}
 .menu-toggle{display:none;}
+
+/* ---------- sticky toolbar (filters + active pills stick; page header scrolls away) ---------- */
+.toolbar{position:sticky;top:0;z-index:15;background:var(--bg);border-bottom:1px solid var(--border);box-shadow:var(--shadow-sm);padding-bottom:14px;}
 
 /* ---------- filter row ---------- */
 .filters{padding:14px 26px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
@@ -131,8 +134,9 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 /* ---------- card grid ---------- */
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:16px 26px 40px;}
 .grid[data-cols="2"]{grid-template-columns:repeat(2,minmax(0,1fr));}
-/* 1-across = reading list: single column capped to a comfortable measure, centered */
-.grid[data-cols="1"]{grid-template-columns:minmax(0,75ch);justify-content:center;}
+/* 1-across = reading list: single column capped to a comfortable measure, flush LEFT
+   under the toolbar (human ruling 2026-07-31 — no horizontal centering in any width mode) */
+.grid[data-cols="1"]{grid-template-columns:minmax(0,75ch);}
 .grid[data-cols="1"] .card-excerpt{-webkit-line-clamp:9;}
 /* 1/2-across: portrait becomes a full-card-height image strip on the LEFT edge */
 .grid[data-cols="1"] .card,.grid[data-cols="2"] .card{flex-direction:row;align-items:stretch;}
@@ -313,7 +317,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 
 /* ---------- print ---------- */
 @media print{
-  .rail,.hdr-right,.filters,.activebar,.countbar,.menu-toggle,.toast-wrap,.scrim,.popover,.mapwrap{display:none !important;}
+  .rail,.hdr-right,.toolbar,.countbar,.menu-toggle,.toast-wrap,.scrim,.popover,.mapwrap{display:none !important;}
   main{margin-left:0;}
   body{background:var(--bg);}
   .grid{display:block;padding:0;}
@@ -367,6 +371,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
       </div>
     </header>
 
+    <div class="toolbar">
     <div class="filters">
       <div class="search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
@@ -389,6 +394,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
     </div>
 
     <div class="activebar hidden" id="activebar"></div>
+    </div><!-- /.toolbar -->
 
     <div class="countbar" id="countbar"></div>
 
