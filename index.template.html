@@ -7,7 +7,7 @@
 <meta name="description" content="Browse Medal of Honor citations by what they mean — 32 themes, every conflict, every branch.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <style id="tokens">
 /*__TOKENS__*/
@@ -28,6 +28,8 @@ button{font-family:inherit;cursor:pointer;}
 :focus-visible{outline:none;box-shadow:var(--ring);border-radius:var(--radius);}
 mark{background:var(--accent-bg);color:var(--accent);padding:0 .5px;border-radius:2px;font-style:normal;}
 .mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
+/* VALOR star — inline SVG silhouette of valor-star.png for small (11-16px) uses; raster data URI covers the rest */
+.star-i{width:1em;height:1em;display:inline-block;vertical-align:-.12em;}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
 
 /* ---------- layout ---------- */
@@ -40,10 +42,10 @@ mark{background:var(--accent-bg);color:var(--accent);padding:0 .5px;border-radiu
 main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:column;}
 
 /* ---------- rail ---------- */
-.rail-logo{padding:14px;border-bottom:1px solid var(--rail-border);}
-.rail-logo .wordmark{font-family:var(--font-mono);font-size:19px;font-weight:700;letter-spacing:.06em;color:var(--rail-text);}
-.rail-logo .wordmark .star{color:var(--warning);}
-.rail-logo .subtitle{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--rail-subtle);margin-top:5px;}
+.rail-logo{padding:18px 14px 14px;border-bottom:1px solid var(--rail-border);}
+.rail-logo .wordmark{font-family:var(--font-mono);font-size:30px;font-weight:900;letter-spacing:.1em;line-height:.72;text-transform:uppercase;color:var(--brand-ink);}
+.rail-logo .wordmark .wm-star{height:24px;width:auto;vertical-align:-2px;margin-left:2px;}
+.rail-logo .subtitle{font-family:var(--font-mono);font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:.24em;color:var(--text-subtle);margin-top:8px;}
 .rail-nav{padding:12px 10px;display:flex;flex-direction:column;gap:2px;}
 .rail-nav-item{
   display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:8px;
@@ -53,7 +55,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .rail-nav-item.active{background:var(--rail-raised);color:var(--rail-text);font-weight:600;box-shadow:inset 2px 0 var(--accent);}
 .rail-nav-item .label{flex:1 1 auto;}
 .rail-badge{font-family:var(--font-mono);font-size:10.5px;font-weight:800;border-radius:var(--radius-pill);padding:1px 7px;line-height:1.4;}
-.rail-badge.warn{background:var(--warning);color:var(--rail-badge-ink);}
+.rail-badge.warn{background:var(--gold-fill);color:var(--gold-ink);border:1px solid var(--gold-ink);}
 .rail-badge.neutral{background:var(--rail-raised);color:var(--rail-muted);}
 .rail-section-label{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--rail-subtle);padding:14px 12px 6px;}
 .rail-groups{padding:0 10px;display:flex;flex-direction:column;}
@@ -96,9 +98,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .seg-btn:first-child{border-left:none;}
 .seg-btn:hover{color:var(--text);}
 .seg-btn.active{background:var(--accent-solid);color:var(--accent-fg);font-weight:600;}
-.seg-btn.fell .star{color:var(--gold);}
-.seg-btn.active.fell{background:var(--accent-solid);}
-.seg-btn.active.fell .star{color:var(--accent-fg);}
+.seg-btn .star-i{margin-right:3px;}
 .cols-seg{margin-left:auto;}
 .cols-seg .seg-btn{font-family:var(--font-mono);font-variant-numeric:tabular-nums;font-weight:700;padding:0 12px;}
 
@@ -123,8 +123,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 /* ---------- count bar ---------- */
 .countbar{padding:12px 26px 0;display:flex;gap:12px;align-items:baseline;font-size:12px;color:var(--text-subtle);}
 .countbar .n{font-family:var(--font-mono);font-weight:700;color:var(--text);}
-.countbar .fell{color:var(--gold);font-weight:600;}
-.countbar .fell .star{color:var(--gold);}
+.countbar .fell{color:var(--gold-line);font-weight:600;}
 .countbar .range{margin-left:auto;font-family:var(--font-mono);color:var(--text-subtle);}
 
 /* ---------- card grid ---------- */
@@ -138,6 +137,13 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .grid[data-cols="1"] .card>.card-photo,.grid[data-cols="2"] .card>.card-photo{display:block;flex:0 0 122px;align-self:stretch;
   background:var(--surface-raised);border-right:1px solid var(--border);}
 .grid[data-cols="1"] .card .avatar,.grid[data-cols="2"] .card .avatar{display:none;}
+/* medal column — branding 3-column card (portrait · info · medal), 1/2-across only; 3-across stays compact */
+.card-medal{display:none;}
+.grid[data-cols="1"] .card .card-medal,.grid[data-cols="2"] .card .card-medal{
+  display:flex;flex:0 0 148px;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+  align-self:stretch;border-left:1px solid var(--border);padding:16px 10px;}
+.card-medal img{height:104px;width:auto;}
+.card-medal .medal-branch{font-family:var(--font-mono);font-weight:900;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--brand-ink);text-align:center;line-height:1.6;}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow-md);
   display:flex;flex-direction:column;box-sizing:border-box;text-align:left;color:inherit;overflow:hidden;}
 .card-main{display:flex;flex-direction:column;gap:10px;padding:15px 17px;min-width:0;flex:1 1 auto;}
@@ -163,7 +169,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .theme-chip{display:inline-flex;align-items:center;max-width:185px;padding:2px 9px;border-radius:var(--radius-pill);font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .plusn{font-size:11px;font-weight:600;color:var(--text-subtle);}
 .fate-chip{margin-left:auto;padding:2px 9px;border-radius:var(--radius-pill);font-size:11px;font-weight:600;white-space:nowrap;}
-.fate-chip.fell{background:var(--gold-bg);color:var(--gold);font-weight:700;}
+.fate-chip.fell{background:color-mix(in srgb,var(--gold-fill) 22%,transparent);border:1px solid color-mix(in srgb,var(--gold-line) 55%,transparent);color:var(--gold-line);font-weight:700;}
 .fate-chip.surv{background:var(--neutral-bg);color:var(--text-muted);}
 
 /* ---------- empty state ---------- */
@@ -217,9 +223,9 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .detail-meta{border-right:1px solid var(--border);padding:22px;background:var(--surface);}
 .detail-close{position:absolute;top:36px;right:calc(50% - 520px + 18px);z-index:2;width:34px;height:34px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);}
 .detail-close:hover{border-color:var(--border-strong);color:var(--text);}
-.fate-banner{border-left:3px solid var(--gold);background:color-mix(in srgb,var(--gold) 8%,transparent);padding:10px 12px;border-radius:0 6px 6px 0;margin-bottom:18px;}
+.fate-banner{border-left:3px solid var(--gold-fill);background:color-mix(in srgb,var(--gold-fill) 12%,transparent);padding:10px 12px;border-radius:0 6px 6px 0;margin-bottom:18px;}
 .fate-banner.surv{border-left-color:var(--neutral);background:var(--neutral-bg);}
-.fate-banner .fb-top{font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.03em;}
+.fate-banner .fb-top{font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--gold-line);letter-spacing:.03em;}
 .fate-banner.surv .fb-top{color:var(--text-muted);}
 .fate-banner .fb-sub{font-size:11.5px;color:var(--text-muted);margin-top:3px;}
 .meta-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-subtle);margin:18px 0 8px;}
@@ -259,16 +265,17 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
   font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--text-muted);padding:7px 11px;}
 .map-legend{left:42px;bottom:44px;display:flex;align-items:center;gap:4px;}
 .map-legend .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);display:inline-block;}
-.map-legend .star{color:var(--gold);font-size:13px;}
+.map-legend .legend-star{width:14px;height:14px;vertical-align:-3px;}
 .map-disclaimer{right:42px;bottom:44px;color:var(--text-subtle);}
 .pin-dot{width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--accent),var(--shadow-sm);}
-.pin-star{font-size:19px;line-height:1;color:var(--gold);text-shadow:0 1px 3px rgba(0,0,0,.55);}
+.pin-star{width:20px;height:20px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5));}
+.pin-star img{width:100%;height:100%;display:block;}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--surface);color:var(--text);box-shadow:var(--shadow-lg);}
 .leaflet-popup-content{margin:12px 14px;font-family:var(--font-ui);}
 .mp-kick{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-subtle);}
 .mp-name{font-size:14px;font-weight:700;color:var(--text);margin-top:3px;}
 .mp-meta{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.06em;color:var(--text-muted);margin-top:4px;}
-.mp-meta .gold{color:var(--gold);}
+.mp-meta .gold{color:var(--gold-line);}
 .mp-link{display:inline-block;margin-top:9px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--accent);cursor:pointer;background:none;border:none;padding:0;}
 .mp-link:hover{text-decoration:underline;}
 
@@ -292,6 +299,8 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
   .detail-read{padding:22px 18px 40px;}
   .ab-saved{margin-left:0;flex-basis:100%;}
 }
+/* medal stays dignified, never squeezed: below 640px there isn't room for the third column */
+@media (max-width:640px){.card-medal{display:none !important;}}
 
 /* ---------- print ---------- */
 @media print{
@@ -312,7 +321,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
   <!-- ================= RAIL ================= -->
   <aside class="rail" id="rail">
     <div class="rail-logo">
-      <div class="wordmark">VALOR<span class="star">★</span></div>
+      <div class="wordmark">VALOR<img class="wm-star" id="wmStar" alt="" aria-hidden="true"></div>
       <div class="subtitle">Medal of Honor · Pilot 50</div>
     </div>
     <nav class="rail-nav">
@@ -361,7 +370,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
       <div class="seg" role="group" aria-label="Fate">
         <button class="seg-btn active" data-fate="all">All</button>
         <button class="seg-btn" data-fate="survived">Survived</button>
-        <button class="seg-btn fell" data-fate="fell"><span class="star">★</span> Fell</button>
+        <button class="seg-btn fell" data-fate="fell"><span class="star-slot"></span>Fell</button>
       </div>
       <div class="seg cols-seg" role="group" aria-label="Cards per row">
         <button class="seg-btn" data-cols="3" title="3 across" aria-label="3 cards across">3</button>
@@ -378,7 +387,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 
     <div class="mapwrap" id="mapwrap" hidden>
       <div id="map"></div>
-      <div class="map-legend"><span class="dot" aria-hidden="true"></span> Survived&nbsp;&nbsp;<span class="star" aria-hidden="true">★</span> Fell</div>
+      <div class="map-legend"><span class="dot" aria-hidden="true"></span> Survived&nbsp;&nbsp;<img class="legend-star" id="legendStar" alt="" aria-hidden="true"> Fell</div>
       <div class="map-disclaimer">Locations approximate — nearest named place.</div>
     </div>
   </main>
@@ -404,6 +413,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 const STORIES = /*__DATA__*/[];
+const ASSETS = /*__ASSETS__*/{};
 </script>
 <script>
 "use strict";
@@ -421,6 +431,21 @@ const GROUPS = [
 const THEMES = GROUPS.flatMap(g=>g.themes);                 // flat 32, stable order (URL index)
 const THEME_GROUP = {}; GROUPS.forEach(g=>g.themes.forEach(t=>THEME_GROUP[t]=g));
 const groupColor = g => `var(${g.varc})`;
+
+/* ===================== VALOR brand: star + medals ===================== */
+// Inline SVG silhouette of valor-star.png (rosette-tipped MoH star, native point-DOWN — never flip).
+// Used at small sizes (11-16px) where the raster would blur; ASSETS.star (data URI) covers larger uses.
+const STAR_PATH = "M12.00 21.40L9.59 15.32L3.06 14.90L8.10 10.73L6.47 4.40L12.00 7.90L17.53 4.40L15.90 10.73L20.94 14.90L14.41 15.32ZM11.38 21.85A0.62 0.62 0 1 0 12.62 21.85A0.62 0.62 0 1 0 11.38 21.85ZM10.66 21.30A0.62 0.62 0 1 0 11.90 21.30A0.62 0.62 0 1 0 10.66 21.30ZM12.10 21.30A0.62 0.62 0 1 0 13.34 21.30A0.62 0.62 0 1 0 12.10 21.30ZM2.01 15.04A0.62 0.62 0 1 0 3.25 15.04A0.62 0.62 0 1 0 2.01 15.04ZM2.31 14.19A0.62 0.62 0 1 0 3.55 14.19A0.62 0.62 0 1 0 2.31 14.19ZM2.76 15.56A0.62 0.62 0 1 0 4.00 15.56A0.62 0.62 0 1 0 2.76 15.56ZM5.59 4.03A0.62 0.62 0 1 0 6.83 4.03A0.62 0.62 0 1 0 5.59 4.03ZM6.50 4.05A0.62 0.62 0 1 0 7.74 4.05A0.62 0.62 0 1 0 6.50 4.05ZM5.33 4.90A0.62 0.62 0 1 0 6.57 4.90A0.62 0.62 0 1 0 5.33 4.90ZM17.17 4.03A0.62 0.62 0 1 0 18.41 4.03A0.62 0.62 0 1 0 17.17 4.03ZM17.43 4.90A0.62 0.62 0 1 0 18.67 4.90A0.62 0.62 0 1 0 17.43 4.90ZM16.26 4.05A0.62 0.62 0 1 0 17.50 4.05A0.62 0.62 0 1 0 16.26 4.05ZM20.75 15.04A0.62 0.62 0 1 0 21.99 15.04A0.62 0.62 0 1 0 20.75 15.04ZM20.00 15.56A0.62 0.62 0 1 0 21.24 15.56A0.62 0.62 0 1 0 20.00 15.56ZM20.45 14.19A0.62 0.62 0 1 0 21.69 14.19A0.62 0.62 0 1 0 20.45 14.19Z";
+// two passes: fat dark stroke behind, gold fill on top -> clean outer outline, no interior seams
+const starSVG = () => `<svg class="star-i" viewBox="0 0 24 24" aria-hidden="true"><path d="${STAR_PATH}" fill="var(--gold-line)" stroke="var(--gold-line)" stroke-width="1.3" stroke-linejoin="round"/><path d="${STAR_PATH}" fill="var(--gold-fill)"/></svg>`;
+// Medal artwork by branch: Army pattern for Army; Navy pattern for Navy, Marine Corps AND Coast Guard
+// (historically correct — they receive the Navy medal); Air Force pattern for Air Force.
+// The label under the medal always names the RECIPIENT'S branch, even on the Navy pattern.
+function medalSrc(branch){
+  const b = (branch||"").toLowerCase();
+  return b.includes("air force") ? ASSETS.medalAF : b.includes("army") ? ASSETS.medalArmy : ASSETS.medalNavy;
+}
+const branchLabel = branch => (branch||"").replace(/^U\.S\.\s*/,"").toUpperCase();
 
 /* ===================== helpers ===================== */
 const $ = s => document.querySelector(s);
@@ -515,9 +540,9 @@ function renderRail(){
 }
 
 /* ===================== render: active bar ===================== */
-function chip(label, color, onx){
+function chip(label, color, onx, htmlLabel){
   const bg = `color-mix(in srgb, ${color} 14%, transparent)`;
-  return `<span class="chip" style="background:${bg};color:${color}">${esc(label)}<button class="x" data-x="${onx}" aria-label="Remove ${esc(label)}">×</button></span>`;
+  return `<span class="chip" style="background:${bg};color:${color}">${htmlLabel||esc(label)}<button class="x" data-x="${onx}" aria-label="Remove ${esc(label)}">×</button></span>`;
 }
 function renderActive(){
   const bar = $("#activebar");
@@ -526,7 +551,9 @@ function renderActive(){
   state.conflicts.forEach(c=>chips.push(chip(c, "var(--neutral)", "conflict:"+encodeURIComponent(c))));
   state.branches.forEach(b=>chips.push(chip(b, "var(--neutral)", "branch:"+encodeURIComponent(b))));
   state.battles.forEach(b=>chips.push(chip(b, "var(--neutral)", "battle:"+encodeURIComponent(b))));
-  if(state.fate!=="all") chips.push(chip(state.fate==="fell"?"★ Fell":"Survived","var(--neutral)","fate"));
+  if(state.fate!=="all") chips.push(state.fate==="fell"
+    ? chip("Fell","var(--neutral)","fate",starSVG()+" Fell")
+    : chip("Survived","var(--neutral)","fate"));
   if(state.query) chips.push(`<span class="chip search">⌕ <em>"${esc(state.query)}"</em><button class="x" data-x="query" aria-label="Clear search">×</button></span>`);
 
   const savedPills = SAVED.map((v,i)=>`<span class="pill-outline" data-view="${i}">${esc(v.name)}<button class="x" data-delview="${i}" aria-label="Delete view">×</button></span>`).join("");
@@ -545,7 +572,7 @@ function renderCounts(list){
   const ys = list.map(s=>s._year).filter(Boolean);
   const range = ys.length ? `${Math.min(...ys)} — ${Math.max(...ys)}` : "—";
   $("#countbar").innerHTML =
-    `<span><span class="n">${list.length} of ${STORIES.length}</span> stories · ${surv} survived · <span class="fell"><span class="star">★</span> ${fell} fell</span></span>`+
+    `<span><span class="n">${list.length} of ${STORIES.length}</span> stories · ${surv} survived · <span class="fell">${starSVG()} ${fell} fell</span></span>`+
     `<span class="range">${range}</span>`;
 }
 
@@ -570,7 +597,8 @@ function cardHTML(s){
   const wide = state.cols===1;   // reading-list mode: ~3x the excerpt
   if(state.query){ const snip = highlightSnippet(s.citation, state.query); body = snip ? `<div class="card-excerpt snippet">${snip}</div>` : `<div class="card-excerpt">${esc(s.citation.slice(0,wide?540:170))}</div>`; }
   else body = `<div class="card-excerpt">${esc(s.citation.slice(0,wide?570:190))}</div>`;
-  const fate = s.survived ? `<span class="fate-chip surv">Survived</span>` : `<span class="fate-chip fell">★ Fell</span>`;
+  const fate = s.survived ? `<span class="fate-chip surv">Survived</span>` : `<span class="fate-chip fell">${starSVG()} Fell</span>`;
+  const medal = `<span class="card-medal" aria-hidden="true"><img src="${medalSrc(s.branch)}" alt=""><span class="medal-branch">${esc(branchLabel(s.branch))}</span></span>`;
   const ini = esc(initials(s.name));
   const img = s.photo_url ? `<img src="${esc(s.photo_url)}" alt="" loading="lazy" decoding="async">` : "";
   // Left strip (shown only in 1/2-across): portrait or a quiet initials placeholder — never a broken-image icon.
@@ -589,6 +617,7 @@ function cardHTML(s){
       ${body}
       <div class="card-foot">${leadChip}${plus}${fate}</div>
     </span>
+    ${medal}
   </button>`;
 }
 let gridToken = 0;            // cancels an in-flight chunk loop when a newer render starts
@@ -645,9 +674,9 @@ function renderMap(list){
     const c=s.coords; if(!c||c.lat==null||c.lng==null) return;
     const icon = s.survived
       ? L.divIcon({className:"",html:'<div class="pin-dot"></div>',iconSize:[13,13],iconAnchor:[7,7]})
-      : L.divIcon({className:"",html:'<div class="pin-star">★</div>',iconSize:[19,19],iconAnchor:[10,10]});
+      : L.divIcon({className:"",html:`<div class="pin-star"><img src="${ASSETS.star}" alt=""></div>`,iconSize:[20,20],iconAnchor:[10,10]});
     const meta=[s.conflict,s.battle].filter(Boolean).join(" · ").toUpperCase();
-    const fate=s.survived?'Survived':'<span class="gold">★ Fell</span>';
+    const fate=s.survived?'Survived':`<span class="gold">${starSVG()} Fell</span>`;
     const m=L.marker([c.lat,c.lng],{icon}).bindPopup(
       `<div class="mp-kick">${esc((s.rank+" · "+s.branch).toUpperCase())}</div>`+
       `<div class="mp-name">${esc(s.name)}</div>`+
@@ -753,7 +782,7 @@ function openDetail(id, push){
   openStoryId = id;
   const fell = !s.survived;
   const dateStr = (s.action_date||"").trim();
-  const fbTop = fell ? `★ Fell${dateStr?" — "+esc(dateStr.toUpperCase()):""}` : `Survived${dateStr?" — "+esc(dateStr.toUpperCase()):""}`;
+  const fbTop = fell ? `${starSVG()} Fell${dateStr?" — "+esc(dateStr.toUpperCase()):""}` : `Survived${dateStr?" — "+esc(dateStr.toUpperCase()):""}`;
   const rows = [
     ["Rank", s.rank],["Branch", s.branch],["Unit", s.unit],["Conflict", s.conflict],
     ["Battle", s.battle],["Place", s.action_place],["Accredited", s.accredited_to],["Born", s.born&&s.born.trim()],
@@ -933,6 +962,10 @@ window.addEventListener("popstate", ()=>{
 });
 
 /* ===================== init ===================== */
+// brand star artwork into the static slots (wordmark + map legend raster; seg button inline SVG)
+$("#wmStar").src = ASSETS.star;
+$("#legendStar").src = ASSETS.star;
+document.querySelectorAll(".star-slot").forEach(e=>{ e.innerHTML = starSVG(); });
 applyTheme(localStorage.getItem("moh_theme")||"auto");
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{ if((localStorage.getItem("moh_theme")||"auto")==="auto") applyTheme("auto"); });
 readURL();
