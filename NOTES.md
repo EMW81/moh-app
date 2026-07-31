@@ -605,3 +605,22 @@ CLAUDE.md updated (human ruling): main auto-deploys to https://everymedal.org vi
 GitHub Pages — every push is production; verify build renders before pushing.
 Pre-push verification for THIS push: node --check clean ×2 scripts, 50 records,
 zero raw hex outside tokens, visual smoke light+dark+map+detail. Ready.
+
+## 2026-07-31 (late night) — Four list-view UI fixes
+
+1. 1-ACROSS WIDTH: reading column 75ch -> minmax(0,1080px) — matches the toolbar's
+   minimum comfortable span (≈ a 2-across pair). Fluid below the cap; card/toolbar/
+   countbar share edges. Excerpt slice lengthened (570->950 chars) for the wider line.
+2. PHOTO CROP: strip 122px -> 150px (2-across) / 200px (1-across) / 130px (≤820px);
+   object-position:50% 18% biases the cover-crop upward (also applied to the modal
+   portrait). Parrott/Carney/Walker/Doss checked at all widths — heads intact.
+3. GROUP BLOCKS: moved to their own right-aligned row above the name (out of the text
+   layout path entirely). Verified vs the two longest name+rank combos (Munro, Walker).
+4. NAME/RANK FUSION — root cause found: .card-name/.card-sub were INLINE spans, so
+   white-space:nowrap + text-overflow:ellipsis never applied; long text overflowed the
+   flex item and ran under the group blocks (same bug caused #3's occlusion). Both now
+   display:block -> real truncation, name and rank on separate lines with margin.
+   Detail modal header was already two block lines — no change needed there.
+
+Verified 1/2/3-across × light/dark + 760px narrow; node --check clean; 50 records;
+zero raw hex outside tokens. index.html 225,756 -> 226,579 B (+823 B).
