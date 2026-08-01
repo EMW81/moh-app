@@ -750,3 +750,37 @@ records refused). App verified headless: 3,475 loaded, 18 conflicts incl. Interi
 REMAINING IN TASK 1 (next session): tag-correction review of the 521 confidence=low
 records (201 overlap with now-resolved conflicts). Then TASK 2 (post-2014 top-up) and
 TASK 3 (photos at scale) — untouched.
+
+## 2026-08-01 (later) — Favorites layer (Supabase) built; AWAITING CREDENTIALS
+
+Feature complete and end-to-end tested against a local mock of the Supabase API
+(auth password/refresh/recover/logout + PostgREST profiles/favorites with CORS).
+The message that ordered this feature contained literal "[PASTE URL]"/"[PASTE ANON
+KEY]" placeholders, so the layer ships DORMANT:
+
+TO ACTIVATE (humans):
+1. Run supabase/schema.sql in the Supabase SQL editor (profiles + favorites, RLS:
+   world-read, self-write). Then insert the 3 profile rows — template at the bottom
+   of the file (needs the auth.users uuids + confirmed display-name spellings;
+   colors are token keys: sky/rose/moss/amber).
+2. Paste the project URL + anon key into the two constants at the top of the
+   favorites section in index.template.html (search "SUPABASE_URL"), rebuild
+   (node scripts/build.mjs), commit template+index together, push.
+
+DESIGN/IMPLEMENTATION NOTES:
+- No supabase-js CDN: the client is ~90 lines of plain fetch against /auth/v1 +
+  /rest/v1 (single-file discipline; only Leaflet stays external). Session persists
+  in localStorage and refreshes on boot.
+- profiles.color stores a TOKEN KEY (sky|rose|moss|amber) -> --uc-* custom
+  properties with light+dark variants; heart uses --fav. Zero raw hex in markup.
+- Picks are a real filter dimension (state.pick: "top"|user_id, URL param p=,
+  composable, in saved views). Top Stories sorts by favorite count; a user's picks
+  sort by their favoriting recency.
+- Degradation verified headless: empty creds -> favs-on class never set, zero
+  favorites DOM, app identical to pre-feature (this is what production runs until
+  activation). Mock-backed tests verified: counts (Top 4 / Darrin 3 / Chet 2 /
+  Brant 1), 3-chip tooltip, signed-out heart -> sign-in prompt toast, sign-in
+  (incl. wrong-password error path), optimistic add/remove with server ops
+  confirmed, pick+fate composability, dark mode, detail-modal favrow (incl. a
+  fixed bug: modal opened from a shared URL before the layer loaded showed a stale
+  favrow — now refreshed when the layer arrives).
