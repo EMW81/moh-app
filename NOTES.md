@@ -820,3 +820,39 @@ extracted from citation text ("Place and date:" lines beat the polluted action_p
 -> cached Nominatim (1 req/s, proper UA) -> conflict-consistency validation; plus a
 per-record geo_precision field (exact|battlefield|locality|region|country) surfaced
 in the map popups. Stages 2-5 follow in this session's commits.
+
+## 2026-08-01 (late) — MAP ACCURACY: stages 2-5 SHIPPED
+
+RECOMPUTED all 3,475 coordinates (pilot included, per instruction). Pipeline:
+gazetteer (163 curated entries, word-boundary + conflict-gated) 1,380 records ->
+citation "Place and date:" extraction beats polluted action_place -> Nominatim
+(565 unique queries, 1 req/s, UA set, cached in data/geocache.json) 1,325 ->
+box-check discards 42 inconsistent results. Precision distribution:
+exact 160 / battlefield 1,213 / locality 874 / region 43 / country 415 / none 770.
+
+DECISION (logged): country-precision and unplaceable records are EXCLUDED from the
+map (2,290 pins shown of 3,475) — a country-centroid pin misleads more than it
+informs. They remain fully present in list/search/filters. The unplaced set is
+dominated by "Gallantry in action"-style one-line citations and junk source places
+(a Saigon consulate address for Vietnam actions, US subdivision streets named after
+battles). Popups now lead with the resolved place NAME + an "approximate" tag for
+locality/region precision.
+
+VERIFIED (specified cases): Windolph -> Little Bighorn battlefield exact (0 km);
+Finn -> Kaneohe Bay NAS exact (his citation never says "Pearl Harbor" — new
+gazetteer entry); Shughart + Gordon -> Mogadishu; Iwo Jima cluster = 27 records on
+(24.78,141.32); Belleau Wood = 3 records. Post-fix validator: zero coordinate
+flags (only the 770 null-coords records, by design).
+
+BUGS CAUGHT BY OWN QA (fixed): bare-word gazetteer regex "makin" matched inside
+"making" (7 records scattered to the Gilberts); ungated "fredericksburg" caught
+"Aleutians, Fredericksburg TX"; ungated "yokohama" bypassed the box check. Also
+3 CONFLICT errors surfaced by geo cross-checks -> manual_03: Titus (Peking wall,
+Boxer not Phil-American), Bazaar (USS "Santiago de Cuba" SHIP NAME had triggered
+the spanish keyword; Fort Fisher 1865 Civil War), Quick (Yokohama drowning rescue
+1902, Interim). Validator false-alarm classes documented: Kearsarge crew off
+Cherbourg FRANCE is correct; "New Mexico" vs mexico keyword fixed; curated
+exact/battlefield pins now skip theater boxes (Midway, Attu, Philippine Sea).
+
+QUEUE STATUS: urgent map task DONE. Still pending: Task-1 remainder (tag review of
+521 confidence=low), Task 2 (post-2014 top-up), Task 3 (photos at scale).
