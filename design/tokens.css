@@ -22,6 +22,9 @@
   --warning:#b45309; --warning-bg:#f9efe2;
   --critical:#d92d20; --critical-bg:#fdecea;
   --neutral:#71717a; --neutral-bg:#f0f0f1; /* survived */
+  /* favorites — quiet social layer; user colors keyed by profile.color */
+  --fav:#a34d5e;                /* favorited-heart fill */
+  --uc-sky:#3b7ea8; --uc-rose:#a34d5e; --uc-moss:#4e7d51; --uc-amber:#a8762e;
   /* theme groups (Meridian dept ramp) */
   --tg-deed:#c2410c; --tg-person:#7c3aed; --tg-spirit:#15803d; --tg-after:#0369a1;
   --seg-off:#e4e4e7;
@@ -48,6 +51,8 @@
   --brand-ink:#a9c3da;                      /* light desaturated blue — reads on dark surfaces */
   --gold-fill:#d9ac51; --gold-line:#c79b57; /* fill holds; line lightens to read on dark */
   --neutral:#8f8f98; --neutral-bg:rgba(143,143,152,.13);
+  --fav:#d78a9a;
+  --uc-sky:#7db4d9; --uc-rose:#d78a9a; --uc-moss:#8fbd92; --uc-amber:#d3a55e;
   --tg-deed:#fb923c; --tg-person:#a78bfa; --tg-spirit:#4ade80; --tg-after:#4db8f0;
   --seg-off:#313138;
   --shadow-sm:0 1px 2px rgba(0,0,0,.4);

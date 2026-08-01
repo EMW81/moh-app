@@ -34,6 +34,9 @@
   --warning:#b45309; --warning-bg:#f9efe2;
   --critical:#d92d20; --critical-bg:#fdecea;
   --neutral:#71717a; --neutral-bg:#f0f0f1; /* survived */
+  /* favorites — quiet social layer; user colors keyed by profile.color */
+  --fav:#a34d5e;                /* favorited-heart fill */
+  --uc-sky:#3b7ea8; --uc-rose:#a34d5e; --uc-moss:#4e7d51; --uc-amber:#a8762e;
   /* theme groups (Meridian dept ramp) */
   --tg-deed:#c2410c; --tg-person:#7c3aed; --tg-spirit:#15803d; --tg-after:#0369a1;
   --seg-off:#e4e4e7;
@@ -60,6 +63,8 @@
   --brand-ink:#a9c3da;                      /* light desaturated blue — reads on dark surfaces */
   --gold-fill:#d9ac51; --gold-line:#c79b57; /* fill holds; line lightens to read on dark */
   --neutral:#8f8f98; --neutral-bg:rgba(143,143,152,.13);
+  --fav:#d78a9a;
+  --uc-sky:#7db4d9; --uc-rose:#d78a9a; --uc-moss:#8fbd92; --uc-amber:#d3a55e;
   --tg-deed:#fb923c; --tg-person:#a78bfa; --tg-spirit:#4ade80; --tg-after:#4db8f0;
   --seg-off:#313138;
   --shadow-sm:0 1px 2px rgba(0,0,0,.4);
@@ -135,6 +140,45 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
   background:color-mix(in srgb,var(--warning) 12%,transparent);
   border:1px solid color-mix(in srgb,var(--warning) 30%,transparent);color:var(--warning);}
 .rail-spacer{flex:1 1 auto;}
+
+/* ---------- favorites layer (hidden until Supabase reachable — .favs-on on body) ---------- */
+.rail-picks,.rail-auth{display:none;}
+.favs-on .rail-picks{display:block;}
+.favs-on .rail-auth{display:block;margin:4px 10px 10px;padding:10px 12px;border-radius:8px;background:var(--rail-raised);}
+.auth-box summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--rail-muted);list-style:none;}
+.auth-box summary::-webkit-details-marker{display:none;}
+.auth-box[open] summary{margin-bottom:8px;}
+.auth-form{display:flex;flex-direction:column;gap:6px;}
+.auth-form input{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);
+  padding:6px 8px;font-size:12px;color:var(--text);width:100%;}
+.auth-form input:focus{border-color:var(--accent);outline:none;}
+.auth-row{display:flex;align-items:center;gap:8px;justify-content:space-between;}
+.auth-err{font-size:11px;color:var(--critical);min-height:0;}
+.auth-err:empty{display:none;}
+.auth-user{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--rail-text);}
+.auth-user .link-quiet{margin-left:auto;}
+.link-quiet{background:none;border:none;color:var(--rail-subtle);font-size:11px;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:2px;}
+.link-quiet:hover{color:var(--rail-muted);}
+
+/* heart toggle — quiet; visible only when the layer is live */
+.fav-btn{display:none;width:24px;height:24px;border-radius:6px;align-items:center;justify-content:center;color:var(--text-subtle);cursor:pointer;flex:0 0 auto;}
+.favs-on .fav-btn{display:inline-flex;}
+.fav-btn:hover{color:var(--fav);background:color-mix(in srgb,var(--fav) 10%,transparent);}
+.fav-btn[aria-pressed="true"]{color:var(--fav);}
+.fav-btn svg{width:15px;height:15px;}
+.fav-btn[aria-pressed="true"] svg path{fill:currentColor;}
+
+/* liked-by chips — small initials circles in each user's color */
+.liked-chips{display:none;align-items:center;margin-left:4px;}
+.favs-on .liked-chips{display:inline-flex;}
+.liked-chips .lk{width:17px;height:17px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-size:8.5px;font-weight:800;color:var(--surface);border:1.5px solid var(--surface);margin-left:-5px;}
+.liked-chips .lk:first-child{margin-left:0;}
+.auth-user .lk{width:18px;height:18px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-size:9px;font-weight:800;color:var(--surface);}
+.detail-favrow{display:none;align-items:center;gap:6px;margin-bottom:18px;}
+.favs-on .detail-favrow{display:flex;}
+.detail-favrow .lk-label{font-size:11.5px;color:var(--text-muted);}
 
 /* ---------- header ---------- */
 .hdr{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 26px;display:flex;align-items:flex-start;gap:16px;}
@@ -424,9 +468,11 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
         <span class="rail-badge neutral" id="railSavedBadge">0</span>
       </button>
     </nav>
+    <div class="rail-picks" id="railPicks"></div>
     <div class="rail-section-label">Theme Groups</div>
     <div class="rail-groups" id="railGroups"></div>
     <div class="rail-spacer"></div>
+    <div class="rail-auth" id="railAuth"></div>
     <div class="rail-foot" id="railFoot">Loading the collection… Locations approximate.</div>
   </aside>
 
@@ -577,12 +623,17 @@ function loadCols(){ const n=+localStorage.getItem("moh_cols"); return (n===1||n
 const state = {
   themes:new Set(), conflicts:new Set(), branches:new Set(), battles:new Set(),
   fate:"all", query:"", view:"list", cols:loadCols(),
+  pick:null,   // favorites dimension: "top" | profile user_id | null
 };
 let SAVED = loadSaved();
 let openStoryId = null;
 
 /* ===================== filtering / facets ===================== */
 function passExcept(s, dim){
+  if(dim!=="picks"&&state.pick){
+    if(state.pick==="top"){ if(!FAV.byStory.has(s.id)) return false; }
+    else { if(!FAV.byUser.get(state.pick)?.has(s.id)) return false; }
+  }
   if(dim!=="fate"){ if(state.fate==="survived"&&!s.survived) return false; if(state.fate==="fell"&&s.survived) return false; }
   if(dim!=="query"&&state.query){ if(!s._blob.includes(state.query.toLowerCase())) return false; }
   if(dim!=="themes"&&state.themes.size){ if(![...state.themes].every(t=>s.categories.includes(t))) return false; }
@@ -616,6 +667,7 @@ function writeURL(push){
   if(state.branches.size) p.set("b", [...state.branches].map(c=>BRANCHES.indexOf(c)).sort((a,b)=>a-b).join(","));
   if(state.battles.size) p.set("bt", [...state.battles].map(c=>BATTLES.indexOf(c)).sort((a,b)=>a-b).join(","));
   if(state.fate!=="all") p.set("f", state.fate);
+  if(state.pick) p.set("p", state.pick);
   if(state.cols!==3) p.set("cols", state.cols);
   if(state.view!=="list") p.set("v", state.view);
   if(openStoryId) p.set("s", openStoryId);
@@ -630,6 +682,7 @@ function readURL(){
   state.branches = new Set((p.get("b")||"").split(",").filter(x=>x!=="").map(i=>BRANCHES[+i]).filter(Boolean));
   state.battles = new Set((p.get("bt")||"").split(",").filter(x=>x!=="").map(i=>BATTLES[+i]).filter(Boolean));
   state.fate = p.get("f")||"all";
+  state.pick = p.get("p")||null;
   const uc=+p.get("cols"); state.cols = (uc===1||uc===2||uc===3) ? uc : loadCols();
   state.view = p.get("v")==="map" ? "map" : "list";
   openStoryId = p.get("s")||null;
@@ -664,6 +717,10 @@ function renderActive(){
   if(state.fate!=="all") chips.push(state.fate==="fell"
     ? chip("Fell","fate",starSVG()+" Fell")
     : chip("Survived","fate"));
+  if(state.pick){
+    const label = state.pick==="top" ? "Top Stories" : `${(FAV.prof[state.pick]||{}).display_name||"?"}'s Picks`;
+    chips.push(chip(label,"pick"));
+  }
   if(state.query) chips.push(`<span class="chip search">⌕ <em>"${esc(state.query)}"</em><button class="x" data-x="query" aria-label="Clear search">×</button></span>`);
 
   const savedPills = SAVED.map((v,i)=>`<span class="pill-outline" data-view="${i}">${esc(v.name)}<button class="x" data-delview="${i}" aria-label="Delete view">×</button></span>`).join("");
@@ -718,14 +775,14 @@ function cardHTML(s){
   return `<button class="card" data-story="${esc(s.id)}">
     ${photoStrip}
     <span class="card-main">
-      <div class="dept-row"><span class="dept-seg" title="Theme groups">${seg}</span></div>
+      <div class="dept-row">${favBtn(s.id)}<span class="dept-seg" title="Theme groups">${seg}</span></div>
       <div class="card-top">
         ${avatar}
         <span class="card-id"><span class="card-name">${esc(s.name)}</span><span class="card-sub">${esc(s.rank)} · ${esc(s.branch)}</span></span>
       </div>
       <div class="card-meta">${esc(meta)}</div>
       ${body}
-      <div class="card-foot">${leadChip}${plus}${fate}</div>
+      <div class="card-foot">${leadChip}${plus}${fate}${likedChips(s.id)}</div>
     </span>
     ${medal}
   </button>`;
@@ -830,9 +887,15 @@ function syncBtnPills(){
 /* ===================== master render ===================== */
 function render(push){
   facetToken++;
-  const list = filtered();
+  let list = filtered();
+  if(FAV.on && state.pick==="top"){
+    list = [...list].sort((a,b)=>(FAV.byStory.get(b.id)?.size||0)-(FAV.byStory.get(a.id)?.size||0));
+  } else if(FAV.on && state.pick){
+    const u = FAV.byUser.get(state.pick);
+    if(u) list = [...list].sort((a,b)=>String(u.get(b.id)||"").localeCompare(String(u.get(a.id)||"")));
+  }
   $("#grid").dataset.cols = state.cols; syncColsUI();
-  renderRail(); renderActive(); renderCounts(list); renderGrid(list); syncBtnPills();
+  renderRail(); renderPicks(); renderActive(); renderCounts(list); renderGrid(list); syncBtnPills();
   setView(state.view);
   if(state.view==="map") renderMap(list);
   writeURL(push);
@@ -922,6 +985,7 @@ function openDetail(id, push){
         <div class="fb-top">${fbTop}</div>
         <div class="fb-sub">${esc([s.action_place].filter(Boolean).join(""))}</div>
       </div>
+      <div class="detail-favrow">${favBtn(s.id)}${likedChips(s.id)}${FAV.byStory.get(s.id)?.size?`<span class="lk-label">${FAV.byStory.get(s.id).size} favorite${FAV.byStory.get(s.id).size>1?"s":""}</span>`:`<span class="lk-label">Not favorited yet</span>`}</div>
       <div class="meta-label">Service</div>
       <div class="meta-rows">${rows.map(r=>`<div class="meta-r"><span class="k">${esc(r[0])}</span><span class="v">${esc(r[1])}</span></div>`).join("")}</div>
       <div class="meta-label">Themes</div>
@@ -955,10 +1019,11 @@ function closeDetail(fromPop){
 /* ===================== saved views ===================== */
 function loadSaved(){ try{return JSON.parse(localStorage.getItem("moh_saved_views")||"[]");}catch(e){return [];} }
 function persistSaved(){ localStorage.setItem("moh_saved_views", JSON.stringify(SAVED)); }
-function snapshot(){ return {q:state.query, t:[...state.themes], c:[...state.conflicts], b:[...state.branches], bt:[...state.battles], f:state.fate}; }
+function snapshot(){ return {q:state.query, t:[...state.themes], c:[...state.conflicts], b:[...state.branches], bt:[...state.battles], f:state.fate, p:state.pick}; }
 function applySnapshot(v){
   state.query=v.q||""; $("#search").value=state.query;
   state.themes=new Set(v.t||[]); state.conflicts=new Set(v.c||[]); state.branches=new Set(v.b||[]); state.battles=new Set(v.bt||[]); state.fate=v.f||"all";
+  state.pick=v.p||null;
   syncFateUI(); render(true);
 }
 function saveCurrent(){
@@ -994,6 +1059,137 @@ function cycleTheme(){
   const cur = localStorage.getItem("moh_theme")||"auto";
   const next = {auto:"light",light:"dark",dark:"auto"}[cur];
   applyTheme(next);
+}
+
+/* ===================== favorites layer (Supabase, plain fetch) ===================== */
+// Anon key is safe to embed client-side (RLS enforces writes). NEVER a service_role key.
+// Empty values = the layer stays hidden and the app behaves exactly as before.
+const SUPABASE_URL = "";       // ← paste the Supabase project URL, then rebuild
+const SUPABASE_ANON_KEY = "";  // ← paste the anon (public) key, then rebuild
+const FAV = {on:false, profiles:[], prof:{}, byStory:new Map(), byUser:new Map(), session:null};
+const HEART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+
+function sbHeaders(auth){
+  const h = {apikey:SUPABASE_ANON_KEY, "Content-Type":"application/json"};
+  if(auth && FAV.session) h.Authorization = "Bearer "+FAV.session.access_token;
+  return h;
+}
+async function sbFetch(path, opts={}, auth){
+  const r = await fetch(SUPABASE_URL+path, {...opts, headers:{...sbHeaders(auth), ...(opts.headers||{})}});
+  if(!r.ok) throw new Error(await r.text().catch(()=> "")||("http "+r.status));
+  const t = await r.text();
+  return t ? JSON.parse(t) : null;
+}
+function saveSession(){ if(FAV.session) localStorage.setItem("moh_sb", JSON.stringify(FAV.session)); else localStorage.removeItem("moh_sb"); }
+async function restoreSession(){
+  let s = null;
+  try{ s = JSON.parse(localStorage.getItem("moh_sb")||"null"); }catch(e){}
+  if(!s || !s.refresh_token) return;
+  try{
+    const d = await sbFetch("/auth/v1/token?grant_type=refresh_token", {method:"POST", body:JSON.stringify({refresh_token:s.refresh_token})});
+    FAV.session = {access_token:d.access_token, refresh_token:d.refresh_token, user_id:d.user.id};
+  }catch(e){ FAV.session = null; }
+  saveSession();
+}
+async function signIn(email, password){
+  const d = await sbFetch("/auth/v1/token?grant_type=password", {method:"POST", body:JSON.stringify({email, password})});
+  FAV.session = {access_token:d.access_token, refresh_token:d.refresh_token, user_id:d.user.id};
+  saveSession(); renderAuth(); render(false);
+}
+function signOut(){
+  sbFetch("/auth/v1/logout", {method:"POST"}, true).catch(()=>{});
+  FAV.session = null; saveSession(); renderAuth(); render(false);
+}
+function addFavLocal(f){
+  if(!FAV.byStory.has(f.story_id)) FAV.byStory.set(f.story_id, new Map());
+  FAV.byStory.get(f.story_id).set(f.user_id, f.created_at);
+  if(!FAV.byUser.has(f.user_id)) FAV.byUser.set(f.user_id, new Map());
+  FAV.byUser.get(f.user_id).set(f.story_id, f.created_at);
+}
+function delFavLocal(uid, sid){
+  const s = FAV.byStory.get(sid); if(s){ s.delete(uid); if(!s.size) FAV.byStory.delete(sid); }
+  const u = FAV.byUser.get(uid); if(u) u.delete(sid);
+}
+async function loadFavLayer(){
+  if(!SUPABASE_URL || !SUPABASE_ANON_KEY) return;
+  try{
+    await restoreSession();
+    const [profiles, favs] = await Promise.all([
+      sbFetch("/rest/v1/profiles?select=id,display_name,color"),
+      sbFetch("/rest/v1/favorites?select=user_id,story_id,created_at&limit=10000"),
+    ]);
+    FAV.profiles = profiles.sort((a,b)=>a.display_name.localeCompare(b.display_name));
+    FAV.prof = Object.fromEntries(profiles.map(p=>[p.id, p]));
+    favs.forEach(addFavLocal);
+    FAV.on = true;
+    document.body.classList.add("favs-on");
+    renderAuth(); render(false);
+    // a detail modal opened from a shared URL rendered before the layer arrived — refresh it
+    if(openStoryId && $("#detailScrim").classList.contains("open")) openDetail(openStoryId, false);
+  }catch(e){ /* Supabase unreachable — core browser unaffected, layer stays hidden */ }
+}
+function toggleFav(sid){
+  if(!FAV.on) return;
+  if(!FAV.session){
+    toast("Sign in (bottom of the sidebar) to save favorites");
+    const box = document.querySelector(".auth-box"); if(box) box.open = true;
+    return;
+  }
+  const uid = FAV.session.user_id;
+  const mine = FAV.byStory.get(sid)?.has(uid);
+  if(mine){
+    delFavLocal(uid, sid); render(false);
+    sbFetch(`/rest/v1/favorites?user_id=eq.${uid}&story_id=eq.${encodeURIComponent(sid)}`,
+      {method:"DELETE", headers:{Prefer:"return=minimal"}}, true)
+      .catch(()=>{ addFavLocal({user_id:uid, story_id:sid, created_at:new Date().toISOString()}); render(false); toast("Couldn't remove favorite — check your connection"); });
+  } else {
+    addFavLocal({user_id:uid, story_id:sid, created_at:new Date().toISOString()}); render(false);
+    sbFetch("/rest/v1/favorites", {method:"POST", headers:{Prefer:"return=minimal"},
+      body:JSON.stringify({user_id:uid, story_id:sid})}, true)
+      .catch(()=>{ delFavLocal(uid, sid); render(false); toast("Couldn't save favorite — check your connection"); });
+  }
+}
+const userColor = p => `var(--uc-${(p && p.color) || "sky"})`;
+function favBtn(sid){
+  if(!FAV.on) return "";
+  const mine = !!(FAV.session && FAV.byStory.get(sid)?.has(FAV.session.user_id));
+  return `<span class="fav-btn" role="button" tabindex="0" aria-pressed="${mine}" data-fav="${esc(sid)}" title="${mine?"Remove from your favorites":"Add to your favorites"}">${HEART}</span>`;
+}
+function likedChips(sid){
+  if(!FAV.on) return "";
+  const m = FAV.byStory.get(sid);
+  if(!m || !m.size) return "";
+  const users = FAV.profiles.filter(p=>m.has(p.id));
+  const names = users.map(p=>p.display_name).join(", ");
+  return `<span class="liked-chips" title="Favorited by ${esc(names)}">`+
+    users.map(p=>`<span class="lk" style="background:${userColor(p)}">${esc((p.display_name||"?")[0].toUpperCase())}</span>`).join("")+`</span>`;
+}
+function renderPicks(){
+  const el = $("#railPicks");
+  if(!FAV.on){ el.innerHTML=""; return; }
+  const rows = [
+    `<button class="rail-nav-item ${state.pick==="top"?"active":""}" data-pick="top"><span class="label">Top Stories</span><span class="rail-badge neutral">${FAV.byStory.size}</span></button>`
+  ].concat(FAV.profiles.map(p=>
+    `<button class="rail-nav-item ${state.pick===p.id?"active":""}" data-pick="${esc(p.id)}"><span class="label">${esc(p.display_name)}&rsquo;s Picks</span><span class="rail-badge neutral">${FAV.byUser.get(p.id)?.size||0}</span></button>`));
+  el.innerHTML = `<div class="rail-section-label">Favorites</div><nav class="rail-nav">${rows.join("")}</nav>`;
+}
+function renderAuth(){
+  const el = $("#railAuth");
+  if(!FAV.on){ el.innerHTML=""; return; }
+  if(FAV.session){
+    const p = FAV.prof[FAV.session.user_id];
+    el.innerHTML = `<div class="auth-user"><span class="lk" style="background:${userColor(p)}">${esc(((p&&p.display_name)||"?")[0].toUpperCase())}</span>`+
+      `<span>${esc((p&&p.display_name)||"Signed in")}</span><button class="link-quiet" data-auth="out">Sign out</button></div>`;
+  } else {
+    el.innerHTML = `<details class="auth-box"><summary>Sign in to save favorites</summary>
+      <form class="auth-form" data-auth="form">
+        <input type="email" required placeholder="Email" autocomplete="email" data-auth="email">
+        <input type="password" required placeholder="Password" autocomplete="current-password" data-auth="pass">
+        <div class="auth-err" data-auth="err"></div>
+        <div class="auth-row"><button class="btn-primary" type="submit">Sign in</button>
+        <button type="button" class="link-quiet" data-auth="forgot">Forgot password</button></div>
+      </form></details>`;
+  }
 }
 
 /* ===================== full-dataset load + swap ===================== */
@@ -1056,6 +1252,39 @@ $("#scrim").addEventListener("click", closePop);
 
 // rail group -> open theme menu
 $("#railGroups").addEventListener("click", e=>{ if(e.target.closest(".theme-row")) openThemes(); });
+
+// favorites: picks nav, auth box, detail heart
+$("#railPicks").addEventListener("click", e=>{
+  const b=e.target.closest("[data-pick]"); if(!b) return;
+  state.pick = state.pick===b.dataset.pick ? null : b.dataset.pick;
+  state.view = "list"; render(true);
+  if(window.innerWidth<=820) $("#rail").classList.remove("open");
+});
+$("#railAuth").addEventListener("click", e=>{
+  const a=e.target.closest("[data-auth]"); if(!a) return;
+  if(a.dataset.auth==="out"){ signOut(); toast("Signed out"); }
+  else if(a.dataset.auth==="forgot"){
+    const email = ($("#railAuth [data-auth=email]")||{}).value||"";
+    if(!email){ $("#railAuth [data-auth=err]").textContent = "Enter your email first, then tap Forgot password."; return; }
+    sbFetch("/auth/v1/recover",{method:"POST",body:JSON.stringify({email})})
+      .then(()=>toast("Password-reset email sent"))
+      .catch(()=>{ $("#railAuth [data-auth=err]").textContent = "Couldn't send the reset email — try again."; });
+  }
+});
+$("#railAuth").addEventListener("submit", e=>{
+  if(!e.target.matches("[data-auth=form]")) return;
+  e.preventDefault();
+  const err=$("#railAuth [data-auth=err]"); err.textContent="";
+  signIn($("#railAuth [data-auth=email]").value.trim(), $("#railAuth [data-auth=pass]").value)
+    .then(()=>toast("Signed in"))
+    .catch(ex=>{ err.textContent = /invalid/i.test(ex.message) ? "Wrong email or password." : "Sign-in failed — check your connection."; });
+});
+$("#detail").addEventListener("click", e=>{
+  const f=e.target.closest(".fav-btn"); if(!f) return;
+  e.stopPropagation();
+  toggleFav(f.dataset.fav);
+  if(openStoryId) openDetail(openStoryId, false);   // refresh heart + chips in place
+});
 document.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()=>{
   const nav=b.dataset.nav;
   if(nav==="stories"){ state.view="list"; render(true); }
@@ -1066,6 +1295,7 @@ document.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()
 
 // grid + activebar delegation
 $("#grid").addEventListener("click", e=>{
+  const f=e.target.closest(".fav-btn"); if(f){ e.stopPropagation(); toggleFav(f.dataset.fav); return; }
   const card=e.target.closest(".card"); if(card){ openDetail(card.dataset.story,true); return; }
   if(e.target.id==="removeLast"){ removeLastFilter(); }
   if(e.target.id==="clearAll2"){ clearAll(); }
@@ -1078,6 +1308,7 @@ $("#activebar").addEventListener("click", e=>{
     else if(k==="branch") state.branches.delete(decodeURIComponent(val));
     else if(k==="battle") state.battles.delete(decodeURIComponent(val));
     else if(k==="fate") state.fate="all";
+    else if(k==="pick") state.pick=null;
     else if(k==="query"){ state.query=""; $("#search").value=""; }
     syncFateUI(); render(false); return; }
   if(e.target.id==="clearAll"){ clearAll(); return; }
@@ -1092,11 +1323,12 @@ function removeLastFilter(){
   else if(state.conflicts.size){ state.conflicts.delete([...state.conflicts].pop()); }
   else if(state.branches.size){ state.branches.delete([...state.branches].pop()); }
   else if(state.battles.size){ state.battles.delete([...state.battles].pop()); }
+  else if(state.pick){ state.pick=null; }
   else if(state.fate!=="all"){ state.fate="all"; }
   syncFateUI(); render(false);
 }
 function clearAll(){
-  state.themes.clear(); state.conflicts.clear(); state.branches.clear(); state.battles.clear(); state.fate="all"; state.query=""; $("#search").value="";
+  state.themes.clear(); state.conflicts.clear(); state.branches.clear(); state.battles.clear(); state.fate="all"; state.pick=null; state.query=""; $("#search").value="";
   syncFateUI(); render(false); toast("Filters cleared");
 }
 
@@ -1132,6 +1364,7 @@ $("#search").value = state.query; syncFateUI();
 render(false);
 if(openStoryId) openDetail(openStoryId,false);
 loadFullDataset();   // pilot renders above; the full corpus swaps in when the fetch lands
+loadFavLayer();      // favorites layer activates only if Supabase is configured + reachable
 </script>
 </body>
 </html>
