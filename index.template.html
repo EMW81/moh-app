@@ -283,7 +283,6 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .map-legend .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);display:inline-block;}
 .map-legend .legend-star{width:14px;height:14px;vertical-align:-3px;}
 .map-disclaimer{right:42px;bottom:44px;color:var(--text-subtle);}
-.pin-dot{width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--accent),var(--shadow-sm);}
 .pin-star{width:20px;height:20px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5));}
 .pin-star img{width:100%;height:100%;display:block;}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--surface);color:var(--text);box-shadow:var(--shadow-lg);}
@@ -343,7 +342,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
   <aside class="rail" id="rail">
     <div class="rail-logo">
       <div class="wordmark">VALOR<img class="wm-star" id="wmStar" alt="" aria-hidden="true"></div>
-      <div class="subtitle">Medal of Honor · Pilot 50</div>
+      <div class="subtitle" id="railKicker">Medal of Honor</div>
     </div>
     <nav class="rail-nav">
       <button class="rail-nav-item active" data-nav="stories">
@@ -361,7 +360,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
     <div class="rail-section-label">Theme Groups</div>
     <div class="rail-groups" id="railGroups"></div>
     <div class="rail-spacer"></div>
-    <div class="rail-foot">Pilot: 50 of 3,536 citations. Locations approximate.</div>
+    <div class="rail-foot" id="railFoot">Loading the collection… Locations approximate.</div>
   </aside>
 
   <!-- ================= MAIN ================= -->
@@ -435,7 +434,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
-const STORIES = /*__DATA__*/[];
+const PILOT = /*__DATA__*/[];
 const ASSETS = /*__ASSETS__*/{};
 </script>
 <script>
@@ -476,7 +475,8 @@ const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&
 const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>';
 function yearOf(s){
   if(s.year) return s.year;
-  const m = String((s.action_date||"")+" "+(s.citation||"")).match(/\b(1[89]\d\d|20[0-2]\d)\b/);
+  // bounded to 1860+ so a "Birth: 1844" in a dateless citation can't pollute the year span
+  const m = String((s.action_date||"")+" "+(s.citation||"")).match(/\b(18[6-9]\d|19\d\d|20[0-2]\d)\b/);
   return m ? +m[1] : null;
 }
 function initials(name){
@@ -488,14 +488,22 @@ function initials(name){
   const b = (last[0]||"");
   return (a+b).toUpperCase();
 }
-// derive search blob + year once
-STORIES.forEach(s=>{
-  s._year = yearOf(s);
-  s._blob = [s.name,s.rank,s.branch,s.unit,s.conflict,s.battle,s.action_place,s.accredited_to,s.citation,(s.categories||[]).join(" ")].join(" ").toLowerCase();
-});
-const CONFLICTS = [...new Set(STORIES.map(s=>s.conflict))].sort();
-const BRANCHES  = [...new Set(STORIES.map(s=>s.branch))].sort();
-const BATTLES   = [...new Set(STORIES.map(s=>s.battle).filter(Boolean))].sort();
+/* ===================== dataset bootstrap =====================
+   PILOT (50, inline) renders instantly and is the offline/file:// fallback.
+   The full corpus (data/stories.json) is fetched at runtime and swapped in. */
+let STORIES = PILOT;
+let FULL_LOADED = false;
+let CONFLICTS = [], BRANCHES = [], BATTLES = [];
+function indexData(){
+  STORIES.forEach(s=>{
+    s._year = yearOf(s);
+    s._blob = [s.name,s.rank,s.branch,s.unit,s.conflict,s.battle,s.action_place,s.accredited_to,s.citation,(s.categories||[]).join(" ")].join(" ").toLowerCase();
+  });
+  CONFLICTS = [...new Set(STORIES.map(s=>s.conflict))].sort();
+  BRANCHES  = [...new Set(STORIES.map(s=>s.branch))].sort();
+  BATTLES   = [...new Set(STORIES.map(s=>s.battle).filter(Boolean))].sort();
+}
+indexData();
 
 /* ===================== state ===================== */
 function loadCols(){ const n=+localStorage.getItem("moh_cols"); return (n===1||n===2||n===3)?n:3; }
@@ -517,8 +525,20 @@ function passExcept(s, dim){
   return true;
 }
 const filtered = () => STORIES.filter(s=>passExcept(s,null));
-// faceted count: stories passing all OTHER dims, that also hold `value` in `dim`
-function facet(dim, test){ return STORIES.filter(s=>passExcept(s,dim)&&test(s)).length; }
+/* faceted count: stories passing all OTHER dims, that also hold `value` in `dim`.
+   At 3,475 records the per-dim pass mask is cached per render cycle (facetToken) so the
+   32-theme popover costs one corpus scan per dim instead of one per option. */
+let facetToken = 0;
+let FACET_MASKS = {token:-1, masks:{}};
+function maskFor(dim){
+  if(FACET_MASKS.token!==facetToken) FACET_MASKS = {token:facetToken, masks:{}};
+  return FACET_MASKS.masks[dim] || (FACET_MASKS.masks[dim] = STORIES.map(s=>passExcept(s,dim)));
+}
+function facet(dim, test){
+  const m = maskFor(dim); let n = 0;
+  for(let i=0;i<STORIES.length;i++){ if(m[i]&&test(STORIES[i])) n++; }
+  return n;
+}
 
 /* ===================== URL state ===================== */
 function writeURL(push){
@@ -611,9 +631,9 @@ function highlightSnippet(cit, q){
 function cardHTML(s){
   const groupsPresent = new Set(s.categories.map(t=>THEME_GROUP[t]&&THEME_GROUP[t].key));
   const seg = GROUPS.map(g=>`<span class="blk" style="${groupsPresent.has(g.key)?`background:${groupColor(g)}`:""}"></span>`).join("");
-  const lead = s.categories[0];
+  const lead = s.categories.find(t=>THEME_GROUP[t]);   // guard: unknown tag names must never crash a card
   const leadG = lead?THEME_GROUP[lead]:null;
-  const leadChip = lead ? `<span class="theme-chip" style="background:color-mix(in srgb, ${groupColor(leadG)} 13%, transparent);color:${groupColor(leadG)}">${esc(lead)}</span>` : "";
+  const leadChip = leadG ? `<span class="theme-chip" style="background:color-mix(in srgb, ${groupColor(leadG)} 13%, transparent);color:${groupColor(leadG)}">${esc(lead)}</span>` : "";
   const plus = s.categories.length>1 ? `<span class="plusn">+${s.categories.length-1}</span>` : "";
   const meta = [s.conflict, s.battle].filter(Boolean).join(" · ").toUpperCase();
   let body;
@@ -662,11 +682,14 @@ function renderGrid(list){
   })();
 }
 function emptyHTML(){
+  const scope = FULL_LOADED
+    ? `The archive holds ${STORIES.length.toLocaleString()} citations.`
+    : `Pilot mode — ${STORIES.length} curated stories loaded.`;
   return `<div class="empty">
     <div class="rule"></div>
     <div class="kick">No Matches</div>
     <h2>No stories match this combination of filters.</h2>
-    <p>The pilot holds 50 of 3,536 citations. Try loosening a filter — full coverage arrives as the archive scales.</p>
+    <p>${scope} Try loosening a filter.</p>
     <div class="actions">
       <button class="btn" id="removeLast">Remove last filter</button>
       <button class="btn-ghost" id="clearAll2">Clear all filters</button>
@@ -675,36 +698,46 @@ function emptyHTML(){
 }
 
 /* ===================== map (Leaflet) ===================== */
-let MAP=null, MAP_TILES=null, MAP_MARKERS=null;
+/* Full-corpus scale (~3,300 pins): survived pins are CANVAS circle markers (cheap to
+   pan/zoom at ~3,000); fallen pins (~450) stay branded star divIcons — few enough for
+   the DOM, and the star matters most there. Popups build lazily on click. */
+let MAP=null, MAP_TILES=null, MAP_MARKERS=null, MAP_CANVAS=null, STAR_ICON=null;
 function tileURL(){
   const eff = document.documentElement.getAttribute("data-theme")==="dark" ? "dark_all" : "light_all";
   return `https://{s}.basemaps.cartocdn.com/${eff}/{z}/{x}/{y}{r}.png`;
 }
 function initMap(){
   if(MAP || typeof L==="undefined") return;
-  MAP = L.map("map",{worldCopyJump:true,zoomControl:true,attributionControl:true}).setView([20,5],2);
+  MAP = L.map("map",{worldCopyJump:true,zoomControl:true,attributionControl:true,preferCanvas:true}).setView([20,5],2);
   MAP_TILES = L.tileLayer(tileURL(),{subdomains:"abcd",maxZoom:19,attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(MAP);
   MAP_MARKERS = L.layerGroup().addTo(MAP);
+  MAP_CANVAS = L.canvas({padding:0.3});
+  STAR_ICON = L.divIcon({className:"",html:`<div class="pin-star"><img src="${ASSETS.star}" alt=""></div>`,iconSize:[20,20],iconAnchor:[10,10]});
 }
 function refreshTiles(){ if(MAP && MAP_TILES) MAP_TILES.setUrl(tileURL()); }
+function popupHTML(s){
+  const meta=[s.conflict,s.battle].filter(Boolean).join(" · ").toUpperCase();
+  const fate=s.survived?'Survived':`<span class="gold">${starSVG()} Fell</span>`;
+  return `<div class="mp-kick">${esc((s.rank+" · "+s.branch).toUpperCase())}</div>`+
+    `<div class="mp-name">${esc(s.name)}</div>`+
+    `<div class="mp-meta">${esc(meta)}${meta?" · ":""}${fate}</div>`+
+    `<button class="mp-link" data-story="${esc(s.id)}">Read the story →</button>`;
+}
 function renderMap(list){
   const wrap=$("#mapwrap");
   if(typeof L==="undefined"){ wrap.innerHTML='<div class="empty" style="position:absolute;inset:0;display:flex"><div class="kick">Map unavailable</div><p>The mapping library could not load. The list view has every story.</p></div>'; return; }
   initMap();
   MAP_MARKERS.clearLayers();
+  const css = getComputedStyle(document.documentElement);
+  const accent = css.getPropertyValue("--accent").trim();
+  const stroke = css.getPropertyValue("--surface").trim();
   const pts=[];
   list.forEach(s=>{
     const c=s.coords; if(!c||c.lat==null||c.lng==null) return;
-    const icon = s.survived
-      ? L.divIcon({className:"",html:'<div class="pin-dot"></div>',iconSize:[13,13],iconAnchor:[7,7]})
-      : L.divIcon({className:"",html:`<div class="pin-star"><img src="${ASSETS.star}" alt=""></div>`,iconSize:[20,20],iconAnchor:[10,10]});
-    const meta=[s.conflict,s.battle].filter(Boolean).join(" · ").toUpperCase();
-    const fate=s.survived?'Survived':`<span class="gold">${starSVG()} Fell</span>`;
-    const m=L.marker([c.lat,c.lng],{icon}).bindPopup(
-      `<div class="mp-kick">${esc((s.rank+" · "+s.branch).toUpperCase())}</div>`+
-      `<div class="mp-name">${esc(s.name)}</div>`+
-      `<div class="mp-meta">${esc(meta)}${meta?" · ":""}${fate}</div>`+
-      `<button class="mp-link" data-story="${esc(s.id)}">Read the story →</button>`);
+    const m = s.survived
+      ? L.circleMarker([c.lat,c.lng],{renderer:MAP_CANVAS,radius:4.5,weight:1,color:stroke,fillColor:accent,fillOpacity:.85})
+      : L.marker([c.lat,c.lng],{icon:STAR_ICON});
+    m.bindPopup(()=>popupHTML(s));
     MAP_MARKERS.addLayer(m); pts.push([c.lat,c.lng]);
   });
   setTimeout(()=>{ MAP.invalidateSize(); if(pts.length){ try{ MAP.fitBounds(pts,{padding:[50,50],maxZoom:6}); }catch(e){} } },0);
@@ -729,6 +762,7 @@ function syncBtnPills(){
 
 /* ===================== master render ===================== */
 function render(push){
+  facetToken++;
   const list = filtered();
   $("#grid").dataset.cols = state.cols; syncColsUI();
   renderRail(); renderActive(); renderCounts(list); renderGrid(list); syncBtnPills();
@@ -810,7 +844,7 @@ function openDetail(id, push){
     ["Rank", s.rank],["Branch", s.branch],["Unit", s.unit],["Conflict", s.conflict],
     ["Battle", s.battle],["Place", s.action_place],["Accredited", s.accredited_to],["Born", s.born&&s.born.trim()],
   ].filter(r=>r[1]);
-  const themes = s.categories.map(t=>{const g=THEME_GROUP[t];return `<div class="meta-theme"><span class="bar" style="background:${groupColor(g)}"></span>${esc(t)}</div>`;}).join("");
+  const themes = s.categories.filter(t=>THEME_GROUP[t]).map(t=>{const g=THEME_GROUP[t];return `<div class="meta-theme"><span class="bar" style="background:${groupColor(g)}"></span>${esc(t)}</div>`;}).join("");
   let cite = esc(s.citation);
   if(state.query){ const re=new RegExp(state.query.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),"ig"); cite = cite.replace(re,m=>`<mark>${m}</mark>`); }
   const sub = [s.rank, s.branch, s.conflict].filter(Boolean).join(" · ");
@@ -887,11 +921,45 @@ function applyTheme(mode){
   document.documentElement.setAttribute("data-theme", eff);
   syncThemeUI(mode);
   refreshTiles();
+  if(MAP && state.view==="map") renderMap(filtered());   // recolor canvas pins for the new theme
 }
 function cycleTheme(){
   const cur = localStorage.getItem("moh_theme")||"auto";
   const next = {auto:"light",light:"dark",dark:"auto"}[cur];
   applyTheme(next);
+}
+
+/* ===================== full-dataset load + swap ===================== */
+const INIT_SEARCH = location.search;   // original shared-link params (index-encoded vs FULL dataset)
+let USER_TOUCHED = false;              // any interaction before the swap wins over re-parsing the URL
+["pointerdown","keydown"].forEach(ev=>document.addEventListener(ev,()=>{USER_TOUCHED=true;},{once:true,capture:true}));
+function pilotMode(){
+  $("#railKicker").textContent = "Medal of Honor · Pilot 50";
+  $("#railFoot").textContent = "Pilot mode: 50 curated stories. The full collection loads when online.";
+}
+async function loadFullDataset(){
+  if(location.protocol==="file:"){ pilotMode(); return; }   // fetch is blocked on file: — pilot is the offline mode
+  $("#railKicker").textContent = "Medal of Honor · Loading…";
+  try{
+    const r = await fetch("data/stories.json");
+    if(!r.ok) throw new Error("http "+r.status);
+    const data = await r.json();
+    if(!Array.isArray(data) || data.length < 1000) throw new Error("bad payload");
+    STORIES = data; FULL_LOADED = true;
+    indexData(); facetToken++;
+    // URL params are index-encoded against the dataset's value lists; a shared full-mode
+    // link parsed under pilot indexes maps wrong — re-parse the original params now,
+    // unless the user has already started filtering.
+    if(!USER_TOUCHED && INIT_SEARCH){
+      history.replaceState({}, "", location.pathname + INIT_SEARCH);
+      readURL(); $("#search").value = state.query; syncFateUI(); syncColsUI();
+    }
+    render(false);
+    $("#railKicker").textContent = `Medal of Honor · ${STORIES.length.toLocaleString()} Stories`;
+    $("#railFoot").textContent = `${STORIES.length.toLocaleString()} citations (through the 2014 presentations). Locations approximate.`;
+    if(openStoryId && !$("#detailScrim").classList.contains("open")) openDetail(openStoryId,false);
+    toast(`Full collection loaded — ${STORIES.length.toLocaleString()} stories`);
+  }catch(e){ pilotMode(); }
 }
 
 /* ===================== fate UI ===================== */
@@ -979,6 +1047,7 @@ window.addEventListener("resize", ()=>{ if(activePop) positionPop(activePop.pop,
 // popstate: sync from URL (handles detail back-button + shared links)
 window.addEventListener("popstate", ()=>{
   readURL(); $("#search").value=state.query; syncFateUI(); syncColsUI();
+  facetToken++;   // state changed outside render() — invalidate facet masks
   const list=filtered(); $("#grid").dataset.cols=state.cols; renderRail(); renderActive(); renderCounts(list); renderGrid(list); syncBtnPills();
   setView(state.view); if(state.view==="map") renderMap(list);
   if(openStoryId){ openDetail(openStoryId,false); } else if($("#detailScrim").classList.contains("open")){ closeDetail(true); }
@@ -995,6 +1064,7 @@ readURL();
 $("#search").value = state.query; syncFateUI();
 render(false);
 if(openStoryId) openDetail(openStoryId,false);
+loadFullDataset();   // pilot renders above; the full corpus swaps in when the fetch lands
 </script>
 </body>
 </html>

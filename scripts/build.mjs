@@ -19,7 +19,7 @@ const assets = {
 // replacer functions throughout so "$"-sequences in citations/base64 are never treated as patterns
 let out = tpl
   .replace("/*__TOKENS__*/", () => tokens)
-  .replace("const STORIES = /*__DATA__*/[];", () => "const STORIES = " + JSON.stringify(data) + ";")
+  .replace("const PILOT = /*__DATA__*/[];", () => "const PILOT = " + JSON.stringify(data) + ";")
   .replace("const ASSETS = /*__ASSETS__*/{};", () => "const ASSETS = " + JSON.stringify(assets) + ";");
 
 for (const ph of ["__TOKENS__", "__DATA__", "__ASSETS__"]) {
