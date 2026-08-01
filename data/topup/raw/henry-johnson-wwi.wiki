@@ -1,0 +1,148 @@
+{{Short description|United States Army soldier}}
+{{for-multi|the 1890 Medal of Honor recipient |Henry Johnson (Buffalo Soldier)|the attorney and politician|Henry Lincoln Johnson}}
+<!--It is important to keep this DAB line up since multiple sources mistakenly give Johnson's name as "Henry Lincoln Johnson"-->
+{{Use mdy dates|date=September 2022}}
+{{Infobox military person
+| name          = Henry Johnson
+| image         = Henry Lincoln Johnson in uniform (cropped).png
+| caption       = Johnson, {{circa|1917}}
+| birth_name    = William Henry Johnson
+| nickname      = Black Death
+| birth_date    = {{circa|{{birth date|1892|7|15}}}}<ref name="Sergeant Henry Johnson"/>
+| birth_place   = [[Winston-Salem, North Carolina]], U.S.
+| death_date    = {{death date and age|1929|7|1|1892|7|15}}
+| death_place   = [[Washington, D.C.]], U.S.
+| burial_place = [[Arlington National Cemetery]]
+| allegiance    = United States
+| branch        = [[United States Army]]
+| service_years  = 1917–1919
+| rank          = [[Sergeant#United States|Sergeant]]
+| service_number = 1316046
+| unit          = [[369th Infantry Regiment (United States)|369th Infantry Regiment]], [[New York Army National Guard|New York National Guard]]
+| battles       = [[World War I]]
+* [[Meuse–Argonne offensive]]
+| awards        = [[File:Medal of Honor ribbon.svg|border|30px]] [[Medal of Honor]]<br/>[[File:Purple Heart ribbon.svg|border|30px]] [[Purple Heart]] (2)<br/>[[File:CroixdeGuerreFR-BronzePalm.png|border|30px]] [[Croix de guerre 1914–1918 (France)|Croix de Guerre]] (France)
+}}
+'''William Henry Johnson''' (circa July 15, 1892 – July 1, 1929), commonly known as '''Henry Johnson''',<ref>Although he has been confused with [[Henry Lincoln Johnson]] in several sources, they are different individuals. See {{cite news|first=Megan |last=Smolenyak |url=http://www.huffingtonpost.com/megan-smolenyak-smolenyak/memorial-day-correcting-t_b_7422068.html |title=Memorial Day: Correcting the Story of World War I Medal of Honor Recipient Sgt. Henry Johnson |work=Huffington Post |access-date=3 August 2016}}</ref> was a [[United States Army]] soldier who performed heroically in the first [[African Americans|African American]] unit of the [[United States Army]] to engage in combat in [[World War I]].<ref name="anb.org"/> On watch in the [[Forest of Argonne|Argonne Forest]] on May 14, 1918, he fought off a German raid in hand-to-hand combat, killing multiple [[Imperial German Army|German]] soldiers and rescuing a fellow soldier while suffering 21 wounds, in an action that was brought to the nation's attention by coverage in the ''[[New York World]]'' and ''[[The Saturday Evening Post]]'' later that year. On June 2, 2015, he was posthumously awarded the [[Medal of Honor]] by President [[Barack Obama]] in a ceremony at the [[White House]].<ref>{{cite news |first=Michael D. |last=Shear |date=2015-06-03 |title=Two World War I Soldiers Posthumously Receive Medal of Honor |url=https://www.nytimes.com/2015/06/03/us/two-world-war-i-soldiers-to-posthumously-receive-medal-of-honor.html |newspaper=[[The New York Times]] |access-date=2015-10-20}}</ref>
+
+In 1918, the [[French Third Republic|French]] awarded Johnson with a [[Croix de guerre 1914–1918 (France)|Croix de guerre]] with star and bronze palm.<ref name="anb.org">{{cite web |url=http://www.anb.org/articles/20/20-01908.html |title=Johnson, Henry |last=Martin |first=Tony |date=2008 |work=American National Biography Online}}</ref><ref>{{cite web |url=http://www.nysm.nysed.gov/citizensoldier/conflicts/WWI/hjohnson.cfm |title=Conflicts – World War I – Personal Stories: Henry Johnson, 15th New York Infantry — The Harlem Hellfighters (1891—1929) |work=[[New York State Museum]] |url-status=dead |archive-url=https://web.archive.org/web/20110304084033/http://www.nysm.nysed.gov/citizensoldier/conflicts/WWI/hjohnson.cfm |archive-date=March 4, 2011}}</ref><ref name="catalog.archives.gov">https://catalog.archives.gov/id/55177212 . Retrieved 5 October 2025</ref><ref name="Gilbert 400">{{Cite book |last=Gilbert |first=Martin |url=https://books.google.com/books?id=4povVJ-jkCoC&pg=PA400 |title=The First World War, Second Edition: A Complete History |date= March 2004|publisher=Macmillan |page=400 |isbn=978-0-8050-7617-2 |language=en}}</ref>
+
+Johnson died poor and in obscurity in 1929.<ref name="Sergeant Henry Johnson" /> There was a long struggle to achieve awards for him from the U.S. military. He was posthumously awarded the [[Purple Heart]] in 1996. In 2002, the U.S. military awarded him the [[Distinguished Service Cross (United States)|Distinguished Service Cross]]. Previous efforts to secure the [[Medal of Honor]] failed,<ref name="anb.org"/> but in 2015 he was [[Posthumous award|posthumously]] honored with the award. On May 24, 2022, [[The Naming Commission]] recommended that [[Fort Polk]] in [[Leesville, Louisiana]], be renamed Fort Johnson after Henry Johnson, rather than its previous namesake, [[Confederate States of America|Confederate]] General [[Leonidas Polk]]. The post was renamed in Johnson's honor on June 5, 2023; the name change was reversed on June 20, 2025.
+
+==Early life and education==
+Johnson stated that he was born in [[Winston-Salem, North Carolina]], on July 15, 1892, when registered for the World War I draft, but he used other dates on other documents and may not have known the exact date of his birth.<ref name="Sergeant Henry Johnson">{{cite web |title=Sergeant Henry Johnson |url=https://www.army.mil/medalofhonor/johnson/ |website=US Army |access-date=17 June 2015}}</ref><ref name=clayton>{{cite news |last1=Clayton |date=2015-06-29 
+ |first1=Cindy |title=Genealogist helps set the record straight |url=http://www.fredericksburg.com/features/home_and_garden/genealogist-helps-set-the-record-straight/article_ddd9a0f9-fe5e-5a5d-9a2c-de47731a3f44.html |access-date=14 July 2015 |work=Fredericksburg Free Lance-Star}}</ref><ref name=draft>{{cite web |url=https://commons.wikimedia.org/wiki/File:Henry_Lincoln_Johnson_in_the_WWI_draft_registration.jpg |title=Henry Johnson in the World War I draft registration |date=June 5, 1917 |access-date=2015-10-20 |location=[[Albany, New York]]}}</ref> He moved to [[Albany, New York]] when he was in his early teens and worked various jobs, such as a chauffeur, soda mixer, and as a redcap [[Porter (carrier)|porter]] at the [[Union Station (Albany, New York)|Albany Union Station]] on Broadway.<ref name="Sergeant Henry Johnson"/><ref name=draft/>
+
+==Military career==
+{{more citations needed section|date=December 2024}}
+[[File:henry johnson.jpg|thumb|left|Henry Johnson biographical cartoon by [[Charles Alston]], 1943.]]
+
+Henry Johnson enlisted in the [[United States Armed Forces]] on June 5, 1917 as a 5-foot-4-inch young man. This was almost two months after the [[American entry into World War I]], joining the all-black [[United States National Guard|New York National Guard]] 15th Infantry Regiment, which, when mustered into Federal service, was redesignated as the [[369th Infantry Regiment (United States)|369th Infantry Regiment]], and was then based in [[Harlem]]. The 369th Infantry joined the 185th Infantry Brigade upon arrival in France, but was relegated to labor service duties instead of combat training. The 185th Infantry Brigade was in turn assigned on January 5, 1918, to the [[93rd Infantry Division (United States)|93rd Infantry Division]].
+
+[[File:Henry Johnson.PNG|thumb|right|Johnson in 1919, wearing his [[Croix de guerre 1914–1918 (France)|Croix de Guerre]]. Two wound chevrons can be seen on his lower right sleeve.]]
+
+Although General [[John J. Pershing]], [[Commander-in-chief|Commander-in-Chief]] of the [[American Expeditionary Forces]] (AEF) on the [[Western Front (World War I)|Western Front]], wished to keep the American forces autonomous, he "loaned" the 369th to the 161st Division of the [[French Army in World War I|French Army]]. Supposedly, the unreported and unofficial reason he was willing to detach the African-American regiments from U.S. command was that vocal white U.S. soldiers refused to fight alongside black troops. These black regiments suffered considerable harassment by white U.S. soldiers and even denigration by the AEF headquarters, which went so far as to release the notorious pamphlet ''Secret Information Concerning Black American Troops'', which "warned" French civilian authorities of the alleged inferior nature and supposed tendencies of African-American troops to commit sexual assaults.<ref name="anb.org"/> Johnson arrived in France on New Year's Day, 1918.
+
+The French Army needed more men and welcomed the reinforcements.<ref name="France24">{{cite web |url=http://www.france24.com/en/20180514-france-henry-johnson-harlem-soldier-forgotten-hero-world-war |title=Henry Johnson, Harlem soldier and forgotten WWI hero |website=France24 |date=May 14, 2018 |access-date=July 16, 2018 |last=Trouillard |first=Stéphanie}}</ref> The 369th Infantry regiment, later nicknamed the "Harlem Hellfighters", was among the first to arrive in France, and among the most highly decorated when it returned. The 369th was an all-black unit under the command of mostly white officers, including their commander, Colonel William Hayward. The idea of a black New York National Guard regiment had first been put forward by Charles W. Fillmore, a black New Yorker. Governor [[Charles Seymour Whitman]], inspired by the brave showing of the black [[10th Cavalry Regiment (United States)|10th Cavalry]] in Mexico, authorized the project. He appointed Colonel Hayward to carry out the task of organizing the unit, and Hayward gave Fillmore a commission as a captain in the 15th Infantry Regiment, New York National Guard. The 15th New York Infantry Regiment became the 369th United States Infantry Regiment prior to engaging in combat in France.
+
+[[File:Our Colored Heroes (1918), by E.G. Renesch of Chicago.jpg|thumb|left|A 1918 lithograph dramatizing Johnson's actions in the war.]]
+
+The 369th got off to a rocky departure from the United States, making three attempts over a period of months to sail for France before finally getting out of sight of land. Even then, their transport, which had stopped and anchored before it could get out of the harbor due to a sudden snowstorm, was struck by another ship due to poor visibility. The captain of the transport, the ''Pocahontas'', wanted to turn back, much to the dismay of his passengers. The by-now angry and impatient members of the 369th, led by Hayward, took a very dim view of any further delay. Since damage to the ship was well above the [[waterline]], the ship's captain admitted that there was no danger of sinking. Hayward then informed the captain that he saw no reason to turn back, aside from cowardice. Hayward's men repaired the damage themselves and the ship sailed on. According to Hayward's notes, they "landed at Brest. Right side up" on December 27, 1917. They acquitted themselves well once they finally got to France. Many months were to pass by, however, before they were to see combat.
+
+[[File:William Henry Johnson and Needham Roberts in 1918.png|thumb|right|Johnson and Needham Roberts in 1918.]]
+
+The [[French Army]] assigned Johnson's regiment to Outpost 20 on the edge of the [[Forest of Argonne|Argonne Forest]] in the [[Champagne (historical province)|Champagne]] region of France, equipping it with French rifles and helmets.<ref name="gilbertking">{{cite web |url=http://www.smithsonianmag.com/history/remembering-henry-johnson-the-soldier-called-black-death-117386701/?no-ist |title=Remembering Henry Johnson, the Soldier Called "Black Death" |last=King |first=Gilbert |author-link=Gilbert King (author) |work=[[Smithsonian magazine]]}}</ref> While on observation post duty on the night of May 14, 1918, Johnson came under attack by a large German raiding party, which may have numbered up to 36 soldiers. Using grenades, the butt of his [[rifle]], a [[bolo knife]] and his bare fists, Johnson repelled the Germans, killing four while wounding others, rescuing [[Needham Roberts]] from capture and saving the lives of his fellow soldiers. Johnson suffered 21 wounds during the ordeal.<ref name="anb.org"/><ref name="gilbertking"/> This act of valor earned him the nickname of "Black Death", as a sign of respect for his prowess in combat.
+
+The story of Johnson's exploits first came to national attention in an article by [[Irvin S. Cobb]] entitled "Young Black Joe" published in the August 24, 1918 ''[[Saturday Evening Post]]''.<ref>{{cite book |chapter-url=https://www.gutenberg.org/files/44225/44225-h/44225-h.htm#link2HCH0017 |last1=Cobb |first1=Irvin S. |title=The Glory of the Coming |chapter=Chapter XVII. Young Black Joe |location=New York City |publisher=[[George H. Doran Company]] |date=1918 |via=Gutenberg.org |access-date=10 August 2014}}</ref>
+
+Returning home, now-Sergeant Johnson participated (with his regiment) in a victory parade on [[Fifth Avenue]] in [[New York City]] in February 1919.<ref name="gilbertking"/> Johnson was then paid to take part in a series of lecture tours. He appeared one evening in [[St. Louis]], and instead of delivering the expected tale of racial harmony in the trenches, revealed the abuse that black soldiers had suffered, such as white soldiers refusing to share trenches with blacks. Soon afterwards, a warrant was issued for Johnson's arrest for violating the regulations governing wearing his uniform (beyond the prescribed date of his commission). Paid lecturing engagements dried up.<ref>{{cite book |last=Grant |first=Colin |author-link=Colin Grant (author) |date=2008 |title=Negro with a Hat, The Rise and Fall of Marcus Garvey and his Dream of Mother Africa |location=London, UK |publisher=Jonathan Cape |page=113 |isbn=978-0-224-07868-9}}</ref>
+
+==Military awards==
+The French government awarded Johnson the [[Croix de Guerre 1914–1918 (France)|Croix de guerre]] with a special citation and a golden palm.<ref name="anb.org"/><ref name="1st">{{cite book |title=Report on the Activities in the World War of 369th United States Infantry (15th New York) |date=July 1, 1920 |publisher=Headquarters Division, New York Guard |url=https://dmna.ny.gov/historic/reghist/wwi/infantry/369thInf/369th_Infantry_1920_Report_trans.pdf}} Located in the George S. Robb papers at the Kansas Historical Society, Topeka, Kansas.</ref><ref name="catalog.archives.gov"/><ref name="Gilbert 400"/>
+
+In June 1996, Johnson was posthumously awarded the [[Purple Heart]] by President [[Bill Clinton]]. In February 2003, the [[Distinguished Service Cross (United States)|Distinguished Service Cross]], the Army's second highest award, was awarded to Johnson.<ref>{{cite web |url=http://www.apd.army.mil/pdffiles/go0509.pdf |archive-url=https://web.archive.org/web/20110929062320/http://www.apd.army.mil/pdffiles/go0509.pdf |url-status=dead |archive-date=September 29, 2011 |title=General Orders No. 9 |author=Headquarters, Department of the Army |date=18 November 2005 |website=Army Publishing Directorate}}</ref> John Howe, a [[Vietnam War]] veteran who had campaigned tirelessly for recognition for Johnson, and U.S. Army [[Major general (United States)|Major General]] Nathaniel James, President of the [[369th Veterans' Association]], were present at the ceremony in Albany.<ref>{{cite web |url=http://www.defenselink.mil/specials/AfricanAm2003/honors.html |archive-url=https://web.archive.org/web/20031225053844/http://www.defenselink.mil/specials/AfricanAm2003/honors.html |url-status=dead |archive-date=December 25, 2003 |title=Black WWI hero receives due honors |first=Marcia |last=Triggs |date=2003 |work=U.S. Department of Defense}}</ref> The award was received by [[Herman A. Johnson]], one of the [[Tuskegee Airmen]] of WWII, on behalf of Henry Johnson, then believed to be his father; the mistake was not clarified until 2015, a decade after the younger Johnson's death, as part of the further research done leading up to the senior Johnson's Medal of Honor.<ref name="sad">{{cite news |url=https://www.washingtonpost.com/news/checkpoint/wp/2015/06/02/in-sad-surprise-army-learns-that-new-medal-of-honor-recipient-henry-johnson-has-no-family-left/ |title=Army discovers sad surprise in family history of new Medal of Honor recipient Henry Johnson |date=June 2, 2015 |first=Dan |last=Lamothe |newspaper=[[The Washington Post]] |place=Washington, D.C. |issn=0190-8286 |oclc=1330888409}}</ref>
+
+===Medal of Honor===
+[[File:WWI Soldier Pvt. Henry Johnson receives Medal of Honor 150602-D-BN624-276.jpg|thumb|Command Sgt. Maj. Louis Wilson of the New York Army National Guard accepts the Medal of Honor on behalf of Johnson.]]
+On May 14, 2015, the [[White House]] announced that Johnson would receive the [[Medal of Honor]] posthumously, presented by President [[Barack Obama]].<ref>{{cite web |url=http://www.timesunion.com/news/article/White-House-Henry-Johnson-will-receive-Medal-of-6264001.php |title=White House: WWI vet Henry Johnson to receive Medal of Honor |work=Times Union |date=14 May 2015}}</ref> In the ceremony, held on 2 June 2015, Johnson's medal was received on his behalf by Command Sergeant Major Louis Wilson of the New York National Guard. Obama said, "The least we can do is to say, 'We know who you are. We know what you did for us. We are forever grateful.'"<ref name=NyTimesAward>{{cite news |last1=Shear |first1=Michael |title=Two World War I Soldiers Posthumously Receive Medal of Honor |url=https://www.nytimes.com/2015/06/03/us/two-world-war-i-soldiers-to-posthumously-receive-medal-of-honor.html |access-date=2 June 2015 |work=The New York Times|date=June 2, 2015 }}</ref>
+
+The official citation reads:<ref>{{cite web |title=Sergeant Henry Johnson |url=https://www.army.mil/medalofhonor/johnson/ |website=US Army |access-date=2 June 2015}}</ref>
+
+{{blockquote|
+The President of the United States of America, authorized by Act of Congress, March 3, 1863, has awarded in the name of Congress the Medal of Honor to
+
+<big>Private Henry Johnson</big>
+
+United States Army
+
+For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty:
+
+Private Johnson distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty while serving as a member of Company C, 369th Infantry Regiment, 93rd Division, American Expeditionary Forces, during combat operations against the enemy on the front lines of the Western Front in France on May 15, 1918. Private Johnson and another soldier were on sentry duty at a forward outpost when they received a surprise attack from a German raiding party consisting of at least 12 soldiers. While under intense enemy fire and despite receiving significant wounds, Private Johnson mounted a brave retaliation, resulting in several enemy casualties. When his fellow soldier was badly wounded, Private Johnson prevented him from being taken prisoner by German forces. Private Johnson exposed himself to grave danger by advancing from his position to engage an enemy soldier in hand-to-hand combat. Wielding only a knife and gravely wounded himself, Private Johnson continued fighting and took his Bolo knife and stabbed it through an enemy soldier's head. Displaying great courage, Private Johnson held back the enemy force until they retreated. Private Johnson's extraordinary heroism and selflessness above and beyond the call of duty are in keeping with the highest traditions of military service and reflect great credit upon himself, his unit and the United States Army.}}
+
+==Later life and death==
+[[File:Henry Johnson Arlington National Cemetery.jpg|thumb|Tombstone of Henry Johnson at Arlington National Cemetery]]
+[[United States Department of Veterans Affairs|Veterans Affairs]] records show that a "permanent and total disability" rating was granted to Johnson on September 16, 1927, as a result of his [[tuberculosis]] infection. Additionally, Johnson suffered approximately 21 different combat injuries, rendering him unable to return to his previous job as a porter. Also, Veterans Affairs records refer to Johnson receiving monthly compensation and regular visits by Veterans Affairs medical personnel until his death.<ref name="Washington Post">{{cite news |url=https://www.washingtonpost.com/news/checkpoint/wp/2015/06/11/how-the-white-house-and-media-got-it-wrong-on-medal-of-honor-recipient-henry-johnson/ |title=How the White House and media got it wrong on Medal of Honor recipient Henry Johnson |last1=Lamothe |first1=Dan |date=11 June 2015 |newspaper=Washington Post |access-date=11 June 2015}}</ref>
+
+Johnson died on July 1, 1929, in [[Washington, D.C.]], of [[myocarditis]].<ref name=huff>{{cite news |last=Smolenyak |first=Megan |author-link=Megan Smolenyak |title=WWI Hero Sgt. Henry Johnson Receives Long Overdue Medal of Honor |url=http://www.huffingtonpost.com/megan-smolenyak-smolenyak/wwi-hero-sgt-henry-johnso_b_7493898.html |access-date=17 June 2015 |work=[[The Huffington Post]]}}</ref> He was buried at [[Arlington National Cemetery]] on July 6, 1929.
+
+==Legacy==
+In 1919, co-founder of the [[American Legion]] [[Theodore Roosevelt Jr.]], son of former United States President [[Theodore Roosevelt]], referred to Johnson as one of the "five bravest Americans" to have served in World War I.<ref name="gilbertking"/><!---this attribution to Jr. is correct, see talk page--->
+
+Interest in obtaining fitting recognition for Johnson grew during the 1970s and 1980s. In November 1991, a monument was erected in Albany, New York's [[Washington Park Historic District (Albany, New York)|Washington Park]] in his honor, and a section of Northern Boulevard was renamed Henry Johnson Boulevard.
+
+In December 2004, the Postal facility at 747 Broadway was renamed the "United States Postal Service Henry Johnson Annex".
+
+On September 4, 2007, the Brighter Choice Foundation in [[Albany, New York]], dedicated the Henry Johnson Charter School, with Johnson's granddaughter in attendance.
+
+A 1918 commercial poster honoring Johnson's wartime heroics was the subject of a 2012 episode of the PBS television series ''[[History Detectives]]''.<ref>{{cite web |last1=Tukufu |first1=Zuberi |title=Our Colored Heroes – History Detectives – PBS |url=https://www.pbs.org/opb/historydetectives/investigation/our-colored-heroes/ |website=PBS |access-date=10 August 2014}}</ref>
+
+As of December 3, 2014, the national defense bill included a provision, added by Senator [[Chuck Schumer]], to award Johnson the [[Medal of Honor]].<ref>{{cite web |last1=Grondahl |first1=Paul |title=WWI hero Henry Johnson on verge of Medal of Honor |url=http://www.timesunion.com/local/article/WWI-hero-Henry-Johnson-on-verge-of-Medal-of-Honor-5931952.php |website=Times Union |date=3 December 2014 |access-date=3 December 2014}}</ref>
+
+For many years, it was thought that [[Herman Archibald Johnson]] was the son of Henry Johnson. In tracking Henry Johnson's genealogy prior to his being awarded the Medal of Honor, however, it was discovered that there was no family connection.<ref name=clayton/><ref name="sad"/> The Army was quoted as saying, "While we appreciate the Johnson family fighting for the award and keeping the memory and valorous acts of Henry Johnson alive, we regretfully cannot recognize them as PNOK," or primary next of kin.<ref name="Washington Post"/>
+
+In December 2014, the [[City School District of Albany]] established a Junior Reserve officers' Training Program (JROTC) at [[Albany High School (New York)|Albany High School]] named the Henry Johnson Battalion in honor of him.<ref>{{cite web |url=http://www.albanyschools.org/district/communications/DistrictNews/2015-16/JROTC.promotions.4-8-16.htm |title=Congressman promotes JROTC cadets |website=City School District of Albany |url-status=dead |archive-url=https://web.archive.org/web/20161229033434/http://www.albanyschools.org/district/communications/DistrictNews/2015-16/JROTC.promotions.4-8-16.htm |archive-date=2016-12-29}}</ref> The program currently enrolls over 100 cadets.
+
+In 2017, Albany-area PBS station WMHT aired a documentary about Henry Johnson entitled ''Henry Johnson: A Tale of Courage''.<ref>{{cite web |url=https://video.wmht.org/video/henry-johnson-a-tale-of-courage-msskcp/ |title=Henry Johnson: A Tale of Courage |website=WMHT}}</ref>
+
+Johnson's story is recounted in the song ''Don't Tread on Me (Harlem Hellfighters)'' by the Ukrainian death metal band [[1914 (band)|1914]] on their album ''Where Fear and Weapons Meet'', released October 22, 2021.<ref>{{cite web |url=https://everythingisnoise.net/reviews/1914-where-fear-and-weapons-meet/ |accessdate=2026-06-18 |title=1914 – "Where Fear and Weapons Meet" |website=everythingisnoise.net |date=21 October 2021
+|first=Jake |last=Walters}}
+</ref>
+
+In June 2023, [[Fort Polk]] in [[Louisiana]], a [[U.S. Army]] base, was renamed for Johnson, though this renaming was reverted in June 2025.<ref>{{Cite web |last=Iyer |first=Kaanita |date=2023-06-13 |title=Fort Polk is now Fort Johnson after US Army moves to honor World War I hero |url=https://www.cnn.com/2023/06/13/politics/fort-polk-johnson-renamed-us-army/index.html |access-date=2023-06-19 |website=[[CNN]] |language=en}}</ref><ref>{{Cite web |title=Army Publishing Directorate |url=https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PUB_ID=1031304 |access-date=2025-06-17 |website=armypubs.army.mil}}</ref>
+
+In 2025, Macho Goat Productions, finished a featured film entitled “The Battle of Henry Johnson”. The movie represents the battle in real time, as well as, moments of his life with flashbacks.
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* {{cite book |title=History of the American Negro in the Great World War |first=William Allison |last=Sweeney |year=2008 |location=LaVergne, TN |publisher=BiblioBazaar |isbn=978-0-559-13514-9 |oclc=680498774}}
+* {{cite book |title=Torchbearers of democracy : African American soldiers and the era of the First World War |first=Chad Louis |last=Williams |year=2010 |location=Chapel Hill, NC |publisher=University of North Carolina Press |isbn=978-0-8078-3394-0 |oclc= 984707088}}
+
+==External links==
+{{commons category|William Henry Johnson}}
+*{{cite web |url=https://ancexplorer.army.mil/publicwmv/#/arlington-national/search/results/2/CgdKb2huc29uEgVIZW5yeQ--/ |title=Burial Detail: Johnson, Henry |website=Arlington National Cemetery}}
+*{{cite web |url=https://www.npr.org/2015/06/02/411406432/obama-to-honor-harlem-hellfighter-with-medal-of-honor |title=Obama To Honor Harlem Hellfighter With Medal of Honor |first=Tom |last=Bowman |date=June 2, 2015 |website=NPR}}
+*{{cite web |url=http://www.oldmagazinearticles.com/article-summary/ww1_battle_of_henry_johnson#.Xr1xcMhKizk |title=The Heroics of Henry Johnson and Needham Roberts |website=Old Magazine Articles}}
+*{{cite web |url=https://www.mentalfloss.com/article/586076/henry-johnson-world-war-i |title=Henry Johnson, the One-Man Army Who Fought Off Dozens of German Soldiers During World War I |first=Jake |last=Rossen |date=August 29, 2019 |website=Mental Floss}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Johnson, William Henry}}
+[[Category:1892 births]]
+[[Category:1929 deaths]]
+[[Category:African-American military personnel of World War I]]
+[[Category:Military personnel from Albany, New York]]
+[[Category:United States Army Medal of Honor recipients]]
+[[Category:United States Army non-commissioned officers]]
+[[Category:Burials at Arlington National Cemetery]]
+[[Category:Recipients of the Distinguished Service Cross (United States)]]
+[[Category:American recipients of the Croix de Guerre 1914–1918 (France)]]
+[[Category:Military personnel from Alexandria, Virginia]]
+[[Category:369th Infantry Regiment personnel]]
+[[Category:World War I recipients of the Medal of Honor]]
+[[Category:People from Winston-Salem, North Carolina]]
+[[Category:Military personnel from North Carolina]]
+[[Category:United States Army personnel of World War I]]
+[[Category:Deaths from myocarditis]]
+[[Category:African-American United States Army personnel]]

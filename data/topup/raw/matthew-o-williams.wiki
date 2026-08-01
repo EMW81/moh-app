@@ -1,0 +1,165 @@
+{{short description|United States Army Medal of Honor recipient}}
+{{Use American English|date=February 2026}}
+{{Infobox military person
+| name           = Matthew O. Williams
+| image          = Matthew O. Williams official portrait.jpg
+| image_upright  = 
+| alt            = 
+| caption        = 
+| nickname       = 
+| birth_date     = {{birth date and age|1981|10|03}}
+| birth_place    = [[Boerne, Texas]], U.S.
+| death_date     = 
+| death_place    = 
+| burial_place   = 
+| allegiance     = United States
+| branch         = [[United States Army]]
+| service_years  = 2005–2025<ref>https://www.linkedin.com/in/matthew-williams-tamu/</ref>
+| rank           = [[Command Sergeant Major#United States Army|Command Sergeant Major]]
+| service_number = 
+| unit           = U.S. Army John F. Kennedy
+Special Warfare Center and School
+| commands       = 
+| battles        = [[Operation Enduring Freedom]]
+* [[Battle of Shok Valley]]
+[[Operation Juniper Shield]]
+| awards         = [[Medal of Honor]]<br/>[[Bronze Star Medal]] (3)<br/>[[Meritorious Service Medal (United States)|Meritorious Service Medal]]
+| relations      = 
+| other_work     = 
+}}
+[[File:Army Master Sgt. Matthew Williams Medal of Honor Presentation.jpg|thumb|300px|Williams being presented with the Medal of Honor, October 30, 2019]]
+
+'''Matthew O. Williams''' (born October 3, 1981) is a retired [[Sergeant major#United States Army|sergeant major]] in the [[United States Army]].<ref>https://www.linkedin.com/in/matthew-williams-tamu/</ref><ref name="stripes.com">{{cite web |title=Medal of Honor recipient Matthew Williams promoted to sergeant major |url=https://www.stripes.com/news/us/medal-of-honor-recipient-matthew-williams-promoted-to-sergeant-major-1.620792 |website=Stars and Stripes |access-date=29 Feb 2020}}</ref> He received the [[Medal of Honor]] (upgraded from a [[Silver Star]])<ref>{{cite web |title=Medal of Honor Monday: Army Master Sgt. Matthew Williams |url=https://www.war.gov/News/Feature-Stories/story/Article/1998846/medal-of-honor-monday-army-master-sgt-matthew-williams/ |website=U.S. Department of Defense |access-date=19 July 2024}}</ref> on October 30, 2019, for his actions as a sergeant on April 6, 2008, as a member of Operational Detachment Alpha 3336, Special Operations Task Force 11, Combined Joint Special Operations Task Force-Afghanistan in the [[Battle of Shok Valley]].<ref name="auto">{{Cite web|url=https://www.army.mil/medalofhonor/williams/|title=Master Sergeant Matthew Williams &#124; Medal of Honor Nominee|website=www.army.mil}}</ref><ref>{{Cite web|url=https://www.washingtonpost.com/national-security/2019/10/30/what-can-i-do-special-forces-soldier-who-fought-save-his-team-afghanistan-will-receive-medal-honor/|title='What can I do?': Special Forces soldier who fought to save his team in Afghanistan receives Medal of Honor|first1=Dan|last1=Lam|website=Washington Post}}</ref><ref>{{Cite web|url=https://www.armytimes.com/news/your-army/2019/10/30/president-trump-awards-medal-of-honor-to-master-sgt-matthew-williams/|title=President Trump awards Medal of Honor to Master Sgt. Matthew Williams|first=Kyle|last=Rempfer|date=October 30, 2019|website=Army Times}}</ref>
+
+==Early life ==
+Williams was born October 3, 1981, and spent most of his childhood in the small town of Boerne, Texas. He initially wanted to be a detective or work for the [[FBI]] when he grew up, so he obtained a bachelor's degree in criminal justice at [[Angelo State University]] in San Angelo, Texas. After [[9/11]], Williams started rethinking how he could serve his country. He researched Special Forces programs and, in September 2005, joined the [[United States Army]].<ref name="auto"/><ref name="United States Department of Defense">{{Cite web|url=https://www.war.gov/News/Feature-Stories/story/Article/1998846/medal-of-honor-monday-army-master-sgt-matthew-williams/|title=Medal of Honor Monday: Army Master Sgt. Matthew Williams|website=U.S. DEPARTMENT OF DEFENSE}}</ref>
+
+==Military career==
+In 2007, two years after he had joined the army, Williams became a Special Forces Weapons Sergeant (18B) with the [[3rd Special Forces Group]]. Williams' first deployment was to Afghanistan and, on April 6, 2008, his unit was tasked to capture or kill high-value targets in the Shok Valley. The operation led to the events for which Williams was awarded the [[Medal of Honor]].<ref name="United States Department of Defense"/>
+
+Williams was promoted to [[sergeant major]] during a ceremony at [[Fort Bragg]], North Carolina, on February 28, 2020.<ref name="stripes.com"/>
+
+As of 2026, Williams, Lieutenant Colonel [[William D. Swenson]], Sergeant Major [[Thomas Payne (soldier)|Thomas Payne]], and CW5 [[Eric Slover]] are the only Medal of Honor recipients still on active duty. One recipient, [[Dakota Meyer]], is serving part-time after reenlisting with the [[United States Marine Corps Reserve]] in April 2025.
+
+==Awards and decorations==
+[[File:Master Sgt. Matthew Williams- Medal of Honor Ceremony IzTiH5C4oR4.webm|thumb|President Donald J. Trump presents Army Master Sgt. Matthew Williams with the Medal of Honor at the White House, Oct. 30, 2019. ]]
+{| style="width=100%;"
+|-
+|valign="top" |
+{| class="wikitable"
+|-  style="background:#ccf; text-align:center;"
+| colspan=2 |'''Personal decorations'''
+|-
+|{{ribbon devices|number=0|type=oak|ribbon=Medal of Honor ribbon.svg|width=60}}
+|[[Medal of Honor]]  ''(upgraded from the [[Silver Star]])''
+|-
+|{{ribbon devices|number=2|type=oak|name=Bronze Star ribbon|width=60}}
+|[[Bronze Star Medal]] with two bronze [[oak leaf cluster]]s
+|-
+|{{ribbon devices|number=0|type=oak|ribbon=Meritorious Service ribbon.svg|width=60}}
+|[[Meritorious Service Medal (United States)|Meritorious Service Medal]]
+|-
+|{{ribbon devices|number=2|type=oak|ribbon=Army Commendation Medal ribbon.svg|width=60}}
+|[[Army Commendation Medal]] with two oak leaf clusters
+|-
+|{{ribbon devices|number=0|type=oak|ribbon=Army Achievement Medal ribbon.svg|width=60}}
+|[[Army Achievement Medal]]
+|-
+|{{ribbon devices|number=0|type=oak|ribbon=Army Good Conduct Medal ribbon.svg|width=60}}<span style="position:relative; top: 0px; left: -57px; display: inline-block; width: 0;">[[File:Gcl-05.png|54px]]</span>
+|[[Army Good Conduct Medal]] (5 awards)
+|-
+|{{ribbon devices|number=0|type=service-star|ribbon=National Defense Service Medal ribbon.svg|width=60}}
+|[[National Defense Service Medal]]
+|-
+|{{ribbon devices|number=3|type=service-star|ribbon=Afghanistan Campaign Medal ribbon.svg|width=60}}
+|[[Afghanistan Campaign Medal]] with three bronze [[service star]]s
+|-
+|{{ribbon devices|number=0|type=oak|ribbon=Global War on Terrorism Service ribbon.svg|width=60}}
+|[[Global War on Terrorism Service Medal]]
+|-
+|{{ribbon devices|number=0|type=oak|ribbon=NCO Professional Development Ribbon.svg|width=60}}<span style="position:relative; top: 0px; left: -36px; display: inline-block; width: 0;">[[File:Award numeral 4.png|11px]]</span>
+|[[NCO Professional Development Ribbon]] with bronze [[award numeral]] 4
+|-
+|{{ribbon devices|number=0|type=oak|ribbon=Army Service Ribbon.svg|width=60}}
+|[[Army Service Ribbon]]
+|-
+|{{ribbon devices|number=0|type=oak|ribbon=Army Overseas Service Ribbon.svg|width=60}}<span style="position:relative; top: 0px; left: -35px; display: inline-block; width: 0;">[[File:Award numeral 3.svg|9px]]</span>
+|[[Overseas Service Ribbon|Army Overseas Service Ribbon]] with award numeral 3
+|-
+|{{ribbon devices|number=0|type=service-star|ribbon=NATO Medal ISAF ribbon bar.svg|width=60}}
+|[[NATO Medal]] for service with [[ISAF]]
+|-  style="background:#ccf; text-align:center;"
+| colspan=2 |'''Unit awards'''
+|-
+|{{ribbon devices|number=0|type=oak|ribbon=Valorous Unit Award ribbon.svg|width=60}}
+|[[Valorous Unit Award]]
+|}
+|valign="top" |
+{| class="wikitable"
+|-  style="background:#ccf; text-align:center;"
+| colspan=2 |'''Other accoutrements'''
+|-
+|[[File:Combat Infantry Badge.svg|140px]]
+|[[Combat Infantryman Badge]]
+|-
+|[[File:Einzelbild Special Forces (Special Forces Insignia).svg|95px]]
+|[[Special Forces Tab]]
+|-
+|[[File:Image4159.gif|90px]]<span style="position:relative; top: 0px; left: -75px; display: inline-block; width: 0;">[[File:United_States_Air_Force_Parachutist_Badge.svg|60px]]</span>
+|[[Parachutist Badge (United States)|Basic Parachutist Badge]] with [[3rd Special Forces Group (United States)|3rd Special Forces Group]] background trimming
+|-
+|[[File:US Army Expert Marksmanship Qualification Badge-Generic.png|65px]]
+|[[Marksmanship badges (United States)|Expert Marksmanship Badge]] with one weapon bar
+|-
+|[[File:United States Army Special Forces CSIB.svg|65px]]
+|[[Special Forces (United States Army)]] [[Combat Service Identification Badge]]
+|-
+|[[File:Para Wing A Netherlands.jpg|100px]]
+|Dutch Parachutist Badge with star
+|-
+|[[File:SpecialForces Badge.svg|50px]]
+|[[Special Forces (United States Army)]] [[Distinctive Unit Insignia]]
+|-
+|[[File:Service stripe.jpg|55px]]
+|5 [[Service stripe]]s
+|-
+|[[File:ArmyOSB.svg|60px]]
+|5 [[Overseas Service Bar]]s
+|}
+|}
+
+==Medal of Honor citation==
+[[File:Moh army mil.jpg|200px|center]]
+<br/>
+{{center
+|The [[President of the United States]]
+
+In the Name of the Congress
+
+Takes Pleasure in Presenting The Medal of Honor To
+
+'''Sergeant Matthew O. Williams'''
+
+United States Army}}
+{{quote|For Services as Set Forth in the Following Citation:
+
+Sergeant Williams distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty on 6 April 2008, while serving as a Weapons Sergeant, Special Forces Operational Detachment Alpha 3336, Special Operations Task Force-33, in support of Operation ENDURING FREEDOM. Sergeant Williams was part of an assault element inserted by helicopter into a location in Afghanistan. As the assault element was moving up a mountain toward its objective, it was engaged by intense enemy machine gun, sniper, and rocket-propelled grenade fire. The lead portion of the assault element, which included the ground commander, sustained several casualties and became pinned down on the sheer mountainside. Sergeant Williams, upon hearing that the lead element had sustained casualties and was in danger of being overrun, braved intense enemy fire to lead a counter-attack across a valley of ice-covered boulders and a fast-moving, ice cold, and waist-deep river. Under withering fire, Sergeant Williams and his local national commandos fought up the terraced mountainside to the besieged element. Arriving at the lead element's position, Sergeant Williams arrayed his Afghan commandos to provide suppressive fire, which kept the insurgent fighters from overrunning the position. When the Team Sergeant was wounded, Sergeant Williams braved enemy fire once again to provide buddy-aid and to move the Team Sergeant down the sheer mountainside to the casualty collection point. Sergeant Williams then fought and climbed his way back up the mountainside to help defend the lead assault element that still had several serious casualties in need of evacuation. Sergeant Williams directed suppressive fire and exposed himself to enemy fire in order to reestablish the team's critical satellite radio communications. He then assisted with moving the wounded down the near-vertical mountainside to the casualty collection point. Noting that the collection point was about to be overrun by enemy fighters, Sergeant Williams led the Afghan commandos in a counter-attack that lasted for several hours. When helicopters arrived to evacuate the wounded, Sergeant Williams again exposed himself to enemy fire, carrying and loading casualties onto the helicopters while continuing to direct commando firepower to suppress numerous insurgent positions. His actions enabled the patrol to evacuate wounded and dead comrades without further casualties. Sergeant Williams' complete disregard for his own safety and his concern for the safety of his teammates ensured the survival of four critically wounded soldiers and prevented the lead element of the assault force from being overrun by the enemy. Sergeant Williams' actions are in keeping with the finest traditions of military service and reflect great credit upon himself, Combined Joint Special Operations Task Force-Afghanistan, Special Operations Command Central, and the United States Army.<ref>{{Cite web|url=https://valor.militarytimes.com/hero/3795|title=Matthew Williams – Recipient -|website=valor.militarytimes.com|language=en|access-date=2020-01-30}}</ref>}}
+
+==Personal life==
+Williams lives in North Carolina,<ref name="auto"/> with his wife Kate and two sons, Nolan and Barrett. Following his retirement from the United States Army in 2025 and his graduation from Texas A&M with a Masters in Business Administration<ref>{{Cite web |date=2025-11-18 |title=Medal of Honor recipient embodies Texas A&M’s Core Values and the Aggie Spirit |url=https://stories.tamu.edu/stories/medal-of-honor-recipient-embodies-texas-ams-core-values-and-the-aggie-spirit/ |access-date=2026-01-05 |language=en-US}}</ref>, Matt took a job within Decisive Point as a Partner, where he focuses on venture investment and advisory work with early stage companies advancing technologies that matter<ref>{{Cite web |title=Decisive Point |url=https://www.decisivepoint.com/team/matt-williams |access-date=2026-01-05 |website=www.decisivepoint.com}}</ref>. Matt currently sits on the advisory board for the veteran nonprofit group, HunterSeven Foundation<ref>{{Cite web |title=HunterSeven – Cancer Screening in Military Veterans |url=https://hunterseven.org/ |access-date=2026-01-05 |language=en}}</ref>, as cancer prevention and early detection is an important aspect within Matts personal and professional history.<ref name="United States Department of Defense"/><ref>{{Cite web|url=https://www.cbsnews.com/dfw/news/green-beret-to-receive-medal-of-honor-for-saving-wounded-soldiers-in-afghanistan/|title=Green Beret To Receive Medal Of Honor For Saving Wounded Soldiers In Afghanistan|date=October 10, 2019}}</ref>
+
+==References==
+{{Commons category|Matthew O. Williams}}
+{{wikiquote}}
+{{reflist}}
+
+{{DEFAULTSORT:Williams, Matthew O.}}
+[[Category:1981 births]]
+[[Category:Angelo State University alumni]]
+[[Category:Living people]]
+[[Category:Members of the United States Army Special Forces]]
+[[Category:Recipients of the Meritorious Service Medal (United States)]]
+[[Category:United States Army Medal of Honor recipients]]
+[[Category:War in Afghanistan (2001–2021) recipients of the Medal of Honor]]
+[[Category:United States Army personnel of the War in Afghanistan (2001–2021)]]
+[[Category:United States Army soldiers]]

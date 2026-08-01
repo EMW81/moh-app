@@ -1,0 +1,67 @@
+{{Short description|Union Army Medal of Honor recipient (1840–1862)}}
+{{Use American English|date=March 2026}}
+{{Infobox military person
+| name          = Philip Gephart Shadrach
+| image         = Shadrack.jpg
+| caption       = 1860s portrait of Shadrach
+| birth_date    = {{Birth date|1840|9|15}}
+| birth_place   = [[Somerset County, Pennsylvania]], U.S.
+| death_date    = {{Death date and age|1862|6|18|1840|9|15}}
+| death_place   = [[Atlanta]], [[Georgia in the American Civil War|Georgia]], U.S.
+| death_cause   = [[Execution by hanging]]
+| allegiance    = {{flagcountry|Union (American Civil War)|1861}}
+| branch        = [[Union Army|United States Army]]  
+| branch_label  = Branch
+| service_years  = 1861–1862
+| rank          = [[Private (rank)#United States|Private]]
+| unit          = "K" Company, [[2nd Ohio Infantry Regiment]]
+| battles       = {{Tree list}}
+* [[American Civil War]]{{POW}}
+** [[Great Locomotive Chase]]{{executed}}
+{{Tree list/end}}
+| awards        = [[Medal of Honor]]
+}}
+
+'''Philip Gephart Shadrach''' (or '''Shadrack'''; September 15, 1840 – June 18, 1862) was an American soldier who was executed by the Confederates in 1862 for his participation in the [[Great Locomotive Chase]]. As a result of his involvement, he was posthumously awarded a [[Medal of Honor]] by President [[Joseph Biden]] on July 3, 2024.<ref name="bidenaward">{{cite news |last1=Boak |first1=Josh |title=WATCH LIVE: Biden issues Medal of Honor to Civil War soldiers who helped hijack train in Confederacy |url=https://www.pbs.org/newshour/politics/watch-live-biden-issues-medal-of-honor-to-civil-war-soldiers-who-helped-hijack-train-in-confederacy |access-date=July 3, 2024 |work=PBS |agency=Associated Press |date=July 3, 2024}}</ref>
+
+== Early life ==
+Shadrach was born in [[Somerset County, Pennsylvania]], on September 15, 1840. He enlisted as a private with Company "K" of the 2nd Ohio Infantry Regiment for three years on September 20, 1861, at a place called the Mitchell Salt Works in Ohio. He enlisted as "Charles P. (Perry) Shadrach".<ref>{{Cite web |title=Private Philip G. Shadrach {{!}} Medal of Honor Recipient |url=https://www.army.mil/medalofhonor/shadrach/ |access-date=2024-08-01 |website=www.army.mil}}</ref>
+
+== Andrews Raid ==
+On April 12, 1862, Shadrach participated in the Andrews Raid, otherwise known as the [[Great Locomotive Chase]]. The participants' goal was to sabotage railways to prevent Confederate soldiers stationed in [[Chattanooga, Tennessee]], from receiving supplies.<ref name=":0">{{Cite web |last=Shadrach |first=Ron |date=July 3, 2015 |title=Medals of Honor to Two Who Died Would Correct Omission (Opinion) |url=https://www.cleveland.com/opinion/2015/07/obama_can_correct_a_historical.html |url-status=live |archive-url=https://web.archive.org/web/20230715011024/https://www.cleveland.com/opinion/2015/07/obama_can_correct_a_historical.html |archive-date=July 15, 2023 |access-date=July 15, 2023 | website=[[Cleveland.com]] |language=en-US}}</ref>
+
+Shadrach was hanged alongside [[Samuel Robertson (Medal of Honor)|Samuel Robertson]], [[John Morehead Scott]], [[Samuel Slavens]], and [[George D. Wilson]] in [[Atlanta]], [[Georgia (U.S. state)|Georgia]], on June 18, 1862. However, unlike Robertson, Scott, and Slavens, Shadrach and George Wilson were not posthumously awarded a [[Medal of Honor]] for their roles in the raid. In 2008, President [[George W. Bush]] signed legislation to authorize himself to award the Medal of Honor to Shadrach and Wilson.<ref name=":0" /> He and Wilson were awarded the Medal of Honor on July 3, 2024, by President [[Joe Biden]].<ref name="bidenaward" />
+
+== Medal of Honor citation ==
+"Private Philip G. Shadrach distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty while serving with the 2nd Ohio Volunteer Infantry in Georgia on 12 April 1862. Private Shadrach was one of 22 Andrews' Raiders who, by direction of Major Ormsby M. Mitchell, penetrated nearly 200 miles south into enemy territory. Upon capturing a railroad train at Big Shanty in Georgia, the group set out to complete their mission of disrupting enemy supply lines by destroying bridges and tracks between Chattanooga and Atlanta. Private Shadrach's gallant actions in close contact with the enemy were in keeping with the highest traditions of military service and reflect great credit upon himself, the Army of the Ohio, and the United States Army."<ref>{{Cite web |title=Philip G. Shadrach {{!}} U.S. Civil War {{!}} U.S. Army {{!}} Medal of Honor Recipient |url=https://www.cmohs.org/recipients/philip-g-shadrach |access-date=2024-08-01 |website=Congressional Medal of Honor Society |language=en}}</ref>
+<gallery mode="packed" heights="160px">
+File:Joe Biden signs a citation for Medal of Honor recipient Philip G. Shadrach (53837028523).jpg|President Joe Biden signs a citation for Medal of Honor recipient Private Philip G. Shadrach (July 3, 2024)
+
+File:240704-D-XI929-1047 (53835356750).jpg|[[Lloyd Austin]], [[Christine Wormuth]], [[Randy A. George]] and [[Michael Weimer]] with Shadrach's family at the Pentagon Hall of Heroes Induction Ceremony (July 4, 2024)
+
+File:Secretary of Defense Lloyd Austin hosts the Hall of Heroes Induction Ceremony of Private Philip G. Shadrach and Private George D. Wilson, U.S. Army, at The Hall of Heroes in the Pentagon, USA on July 4, 2024.jpg|Panels displayed in the Pentagon Hall of Heroes
+
+</gallery>
+
+==See also==
+*[[List of Andrews Raiders]]
+
+== References ==
+{{Reflist}}
+
+==External links==
+* [http://www.shadrachandwilsonmoh.com/ The Quest for the Medal of Honor]
+{{Authority control}}
+
+{{DEFAULTSORT:Shadrach, Philip G.}}
+[[Category:1840 births]]
+[[Category:1862 deaths]]
+[[Category:Great Locomotive Chase]]
+[[Category:Union army soldiers]]
+[[Category:American people convicted of spying for the United States by the Confederate States of America]]
+[[Category:Union military personnel killed in the American Civil War]]
+[[Category:United States Army personnel who were court-martialed]]
+[[Category:United States Army Medal of Honor recipients]]
+[[Category:People executed by the Confederate States of America by hanging]]
+[[Category:Executed military personnel]]
+[[Category:Executed spies]]

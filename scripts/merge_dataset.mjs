@@ -16,6 +16,13 @@ for (let i = 1; i <= 14; i++) {
   if (chunk.count !== chunk.records.length) throw new Error(`chunk ${n}: count mismatch`);
   all.push(...chunk.records);
 }
+// post-2014 top-up + source-gap backfill (2026-08): fully-formed records, appended last
+let topupCount = 0;
+if (existsSync("data/topup/topup.json")) {
+  const topup = JSON.parse(readFileSync("data/topup/topup.json", "utf8"));
+  topupCount = topup.length;
+  all.push(...topup);
+}
 
 // Year-truncation repairs — 3 CORGIS source records carry truncated years, which also
 // mis-derived one conflict. Derived-field corrections only (citation text is the
@@ -108,7 +115,7 @@ for (const r of all) {
   if (!r.photo_url) noPhoto++;
   if (r.conflict_uncertain) uncertain++;
 }
-if (all.length !== 3475) throw new Error(`expected 3475 records, got ${all.length}`);
+if (all.length !== 3475 + topupCount) throw new Error(`expected ${3475 + topupCount} records, got ${all.length}`);
 
 const out = JSON.stringify(all);
 writeFileSync("data/stories.json", out);

@@ -1,0 +1,66 @@
+{{Short description|American soldier and Medal of Honor recipient (1830–1862)}}
+{{Other uses|George Wilson (disambiguation){{!}}George Wilson}}
+{{Use American English|date=March 2026}}
+{{Infobox military person
+| image         = George D. Wilson.jpg
+| caption       = 1887 portrait of Wilson
+| birth_date    = 1830
+| death_date    = June 18, {{Death year and age|1862|1830}}
+| birth_place   = [[Belmont County, Ohio]], US
+| death_place   = [[Atlanta]], [[Georgia in the American Civil War|Georgia]], U.S.
+| death_cause   = [[Execution by hanging]]
+| allegiance    = {{flagcountry|Union (American Civil War)|1861}}
+| branch        = [[Union Army|United States Army]]
+| branch_label  = Branch
+| rank          = [[Private (rank)#United States Army|Private]]
+| unit          = [[2nd Ohio Infantry Regiment]]
+| battles       = {{Tree list}}
+* [[American Civil War]]{{POW}}
+** [[Great Locomotive Chase]]{{Executed}}
+{{Tree list/end}}
+|awards        = [[Medal of Honor]]
+}}
+'''George Davenport Wilson''' (1830 – June 18, 1862) was an [[American Civil War]] soldier and [[Medal of Honor]] recipient.
+
+== Biography ==
+Wilson was born in 1830, in [[Belmont County, Ohio]], to George and Elizabeth Wilson. He worked as a [[journeyman]] [[Shoemaking|shoemaker]]. On August 31, 1861, he enlisted in the [[2nd Ohio Infantry Regiment]]. On April 12, 1862, he and 21 other men volunteered to travel 200 miles to [[Great Locomotive Chase|destroy a Confederate railway]]. They were caught, and on May 31, he and six other men were tried and convicted as spies. They were [[Hanging|executed by hanging]] on June 18, in [[Atlanta]].<ref name=":0">{{Cite web |title=Private George D. Wilson {{!}} Medal of Honor Recipient |url=https://www.army.mil/medalofhonor/wilson/ |archive-url=https://archive.today/20240705042740/https://www.army.mil/medalofhonor/wilson/ |url-status=dead |archive-date=July 5, 2024 |access-date=August 1, 2024 |website=www.army.mil}}</ref>
+
+Wilson was initially buried at his execution site, but his remains were transferred to [[Chattanooga National Cemetery]] on April 25, 1866.<ref name=":0" />
+
+On [[Independence Day (United States)|July 4]], 2024, Wilson and [[Philip G. Shadrach]] posthumously received the Medal of Honor from President [[Joe Biden]].<ref>{{Cite web |last=House |first=The White |date=July 4, 2024 |title=Remarks by President Biden at Presentation of the Medal of Honor to Army Private Philip G. Shadrach and Private George D. Wilson |url=https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2024/07/04/remarks-by-president-biden-at-presentation-of-the-medal-of-honor-to-army-private-philip-g-shadrach-and-private-george-d-wilson/ |access-date=August 1, 2024 |website=The White House |language=en-US}}</ref>
+
+== Medal of Honor citation ==
+"Private George D. Wilson distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty while serving with the 2nd Ohio Volunteer Infantry in Georgia on 12 April 1862. Private Wilson was one of 22 Andrews' Raiders who, by direction of Major Ormsby M. Mitchell, penetrated nearly 200 miles south into enemy territory. Upon capturing a railroad train at Big Shanty in Georgia, the group set out to complete their mission of disrupting enemy supply lines by destroying bridges and tracks between Chattanooga and Atlanta. Private Wilson's gallant actions in close contact with the enemy were in keeping with the highest traditions of military service and reflect great credit upon himself, the Army of the Ohio, and the United States Army."<ref>{{Cite web |title=George D. Wilson {{!}} U.S. Civil War {{!}} U.S. Army {{!}} Medal of Honor Recipient |url=https://www.cmohs.org/recipients/george-d-wilson |access-date=August 1, 2024 |website=Congressional Medal of Honor Society |language=en}}</ref>
+<gallery mode="packed" heights="160px">
+File:Joe Biden signs a citation for George D. Wilson (53837125884).jpg|President Joe Biden signs a citation for Medal of Honor recipient Private George D. Wilson (July 3, 2024)
+File:240704-D-XI929-1017 (53835262934).jpg|[[Randy A. George]] speaks at the Pentagon Hall of Heroes Induction Ceremony for Wilson and [[Philip G. Shadrach]] (July 4, 2024)
+File:240704-D-XI929-1053 (53835259409).jpg|[[Lloyd Austin]], [[Christine Wormuth]], Randy A. George and [[Michael Weimer]] with Wilson's family at the Pentagon Hall of Heroes Induction Ceremony (July 4, 2024)
+</gallery>
+
+== See also ==
+
+* [[List of Andrews Raiders]]
+
+== References ==
+{{Reflist}}
+==External links==
+* [http://www.shadrachandwilsonmoh.com/ The Quest for the Medal of Honor]
+
+{{DEFAULTSORT:Wilson, George D.}}
+
+[[Category:1830 births]]
+[[Category:1862 deaths]]
+[[Category:Union military personnel killed in the American Civil War]]
+[[Category:American Civil War recipients of the Medal of Honor]]
+[[Category:People executed by the Confederate States of America by hanging]]
+[[Category:People murdered in Georgia (U.S. state)]]
+[[Category:United States Army Medal of Honor recipients]]
+[[Category:Military personnel from Ohio]]
+
+[[Category:Great Locomotive Chase]]
+[[Category:Union army soldiers]]
+[[Category:American people convicted of spying for the United States by the Confederate States of America]]
+[[Category:United States Army personnel who were court-martialed]]
+[[Category:Executed military personnel]]
+[[Category:Executed spies]]
+[[Category:American shoemakers]]

@@ -1,0 +1,71 @@
+{{short description|United States Army Medal of Honor recipient}}
+{{for|Marvin Young the rapper and songwriter|Young MC}}
+{{Infobox military person
+|birth_name=Marvin Rex Young
+|birth_date= {{Birth date|1947|5|11}}
+|death_date= {{Death date and age|1968|8|21|1947|5|11}}
+|birth_place=[[Alpine, Texas]], US
+|death_place=near [[Ben Cui]], [[Tay Ninh Province]], [[South Vietnam|Republic of Vietnam]]
+|burial_place= Sunset Memorial Gardens, [[Odessa, Texas]]
+|burial_label= Place of burial
+|image=Armymoh.jpg
+|image_size=130
+|caption=Army Medal of Honor
+|nickname=
+|allegiance=[[United States|United States of America]]
+|branch=[[United States Army]]
+|service_years=1966–1968
+|rank=[[Staff Sergeant#United States|Staff Sergeant]]
+|commands=
+|unit=[[5th Infantry Regiment (United States)|5th Infantry Regiment]], [[25th Infantry Division (United States)|25th Infantry Division]]
+|battles=[[Vietnam War]] {{KIA}}
+|awards=
+{{plainlist|
+*[[Medal of Honor]]
+*[[Purple Heart]]
+}}
+|relations=
+|other_work=
+}}
+'''Marvin Rex Young''' (May 11, 1947 – August 21, 1968) was a [[United States Army]] soldier and a recipient of the United States military's highest decoration—the [[Medal of Honor]]—for his actions in the [[Vietnam War]].
+
+==Biography==
+Young was born in [[Alpine, Texas]], the youngest of three children born to Marilyn (née Hoskins) and Roy Clinton Young.
+
+Young joined the Army from [[Odessa, Texas]] in September 1966,<ref>[https://www.tshaonline.org/handbook/online/articles/fyobz Texas Handbook Online]</ref> and by August 21, 1968, was serving as a [[Staff Sergeant#United States|staff sergeant]] in Company C, 1st Battalion (Mechanized), [[5th Infantry Regiment (United States)|5th Infantry Regiment]], [[25th Infantry Division (United States)|25th Infantry Division]]. On that day, while on a [[reconnaissance]] mission near [[Ben Cui]], [[South Vietnam|Republic of Vietnam]], his platoon came under intense enemy fire. After the platoon leader was killed, Young assumed command and directed the unit's defense. When ordered to withdraw, he rescued several men who were pinned down by enemy fire and unable to move, suffering fatal wounds in the process.
+
+Young, aged 21 at his death, was buried in Sunset Memorial Gardens, [[Odessa, Texas]].
+
+==Medal of Honor citation==
+Staff Sergeant Young's official Medal of Honor citation reads:
+
+<blockquote>For conspicuous gallantry and intrepidity in action at the risk of his life above and beyond the call of duty. S/Sgt. Young distinguished himself at the cost of his life while serving as a squad leader with Company C. While conducting a reconnaissance mission in the vicinity of Ben Cui, Company C was suddenly engaged by an estimated [[regiment]]al-size force of the [[North Vietnamese Army]]. During the initial volley of fire the point element of the 1st Platoon was pinned down, sustaining several casualties, and the acting platoon leader was killed. S/Sgt. Young unhesitatingly assumed command of the platoon and immediately began to organize and deploy his men into a defensive position in order to repel the attacking force. As a [[human wave attack]] advanced on S/Sgt. Young's platoon, he moved from position to position, encouraging and directing fire on the hostile insurgents while exposing himself to the hail of enemy bullets. After receiving orders to withdraw to a better defensive position, he remained behind to provide covering fire for the withdrawal. Observing that a small element of the point squad was unable to extract itself from its position, and completely disregarding his personal safety, S/Sgt. Young began moving toward their position, firing as he maneuvered. When halfway to their position he sustained a critical head injury, yet he continued his mission and ordered the element to withdraw. Remaining with the squad as it fought its way to the rear, he was twice seriously wounded in the arm and leg. Although his leg was badly shattered, S/Sgt. Young refused assistance that would have slowed the retreat of his comrades, and he ordered them to continue their withdrawal while he provided protective covering fire. With indomitable courage and heroic self-sacrifice, he continued his self-assigned mission until the enemy force engulfed his position. By his gallantry at the cost of his life are in the highest traditions of the military service, S/Sgt. Young has reflected great credit upon himself, his unit, and the U.S. Army.</blockquote>
+
+==See also==
+{{Portal|Biography}}
+*[[List of Medal of Honor recipients]]
+*[[List of Medal of Honor recipients for the Vietnam War#Y|List of Medal of Honor recipients for the Vietnam War]]
+
+==References==
+{{Reflist}}
+*{{Cite web
+ |publisher = [[United States Army Center of Military History]]
+ |title = Vietnam War Medal of Honor recipients (M-Z)
+ |work = Medal of Honor citations
+ |date = October 3, 2003
+ |url = http://www.history.army.mil/html/moh/vietnam-a-l.html
+ |accessdate = 2007-05-29
+ |archive-date = 2009-06-27
+ |archive-url = https://web.archive.org/web/20090627093600/http://www.history.army.mil/html/moh/vietnam-a-l.html
+ |url-status = dead
+ }}
+
+{{DEFAULTSORT:Young, Marvin R.}}
+[[Category:1947 births]]
+[[Category:1968 deaths]]
+[[Category:United States Army Medal of Honor recipients]]
+[[Category:People from Odessa, Texas]]
+[[Category:United States Army non-commissioned officers]]
+[[Category:Vietnam War recipients of the Medal of Honor]]
+[[Category:People from Alpine, Texas]]
+[[Category:United States Army personnel killed in the Vietnam War]]

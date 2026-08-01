@@ -1,0 +1,73 @@
+{{Short description|Retired American soldier (born 1950)}}
+{{Use dmy dates|date=January 2025}}
+{{Infobox military person
+| name          = Kenneth J. David
+| image         = Official U.S. Army portrait of Medal of Honor recipient Specialist Fourth Class Kenneth J. David.jpg
+| alt           = 
+| caption       = Official U.S. Army portrait of Medal of Honor recipient Specialist Fourth Class Kenneth J. David
+| nickname      = 
+| birth_date    = {{birth date and age|df=yes|1950|01|21}}
+| birth_place   = 
+| death_date    = 
+| death_place   = 
+| burial_place  = 
+| allegiance    = United States
+| branch        = [[United States Army]]
+| service_years = 1969–1970
+| rank          = Specialist Four
+| unit          = 
+| commands      = 
+| battles       = [[Vietnam War]]
+| awards        = [[Medal of Honor]]
+| relations     = 
+| other_work    = 
+}}
+'''Kenneth J. David''' (born 21 January 1950) is a retired [[United States Army]] soldier who received the [[Medal of Honor]] on 3 January 2025 for his actions on 7 May 1970 during the [[Vietnam War]].
+
+==Early life==
+He was born on 21 January 1950, and grew up in [[Girard, Ohio]]. Active in the [[Boy Scouts of America|Boy Scouts]], he achieved the rank of [[Eagle Scout]].<ref name=USArmy>{{cite web|url=https://www.army.mil/medalofhonor/david/|title=Medal of Honor: Specialist Fourth Class Kenneth J. David|publisher=United States Army|access-date=5 January 2025}}{{PD-notice}}</ref>
+
+==Military career==
+He was drafted and entered the Army in August, 1969 and received basic training at [[Fort Campbell]], Kentucky, then advanced training at [[Fort Polk]], Louisiana.<ref name=USArmy/>
+
+He was deployed to [[South Vietnam]] in January 1970, joining Company D, 1st Battalion, [[506th Infantry Regiment (United States)|506th Infantry Regiment]], [[101st Airborne Division]].<ref name=USArmy/>
+
+After being wounded in action on 7 May 1970 at [[Firebase Maureen]], he was moved to [[Valley Forge General Hospital]] in Pennsylvania. For his actions he was awarded the [[Distinguished Service Cross (United States)|Distinguished Service Cross]].<ref name=USArmy/>
+
+==Medal of Honor citation==
+{{quotebox
+
+|[[File:Moh army mil.jpg|130px|center]]
+
+<blockquote>The [[President of the United States]] of America, authorized by Act of [[United States Congress|Congress]] March 3rd, 1863, has awarded in the name of Congress the [[Medal of Honor]] to
+
+Then-Pfc. Kenneth J. David distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty on May 7, 1970, while serving as a radio-telephone operator with Company D, 1st Battalion, 506th Infantry, 101st Airborne Division, near Fire Support Base Maureen, Thua Thien Province, Republic of Vietnam.
+
+On this date, David's company came under an intense attack from a large hostile force. The enemy’s ferocious initial assault mortally wounded the company’s platoon leader and resulted in numerous other friendly casualties. Upon the initial assault and without hesitation, David handed his radio to his platoon sergeant and moved forward to the defensive perimeter, unleashing a barrage of automatic weapons fire on the enemy. From this location, David bitterly resisted all enemy efforts to overrun his position. Realizing the impact of the enemy assault on the wounded, who were being brought to the center of the perimeter, David – without regard for his own life – moved to a position outside of the perimeter while continuing to engage the enemy.
+
+Each time the enemy attempted to concentrate its fire on the wounded inside the perimeter, David jumped from his position and yelled to draw enemy fire away from his injured comrades and back to himself. Refusing to withdraw in the face of the concentrated enemy fire now directed toward him, he continued to engage the enemy. Although wounded by an exploding satchel charge and running perilously low on ammunition, he tossed hand grenades toward the attackers to effectively counter their fire. The unit’s medic, realizing that David had been injured, moved to his position to provide aid, but David assured him that he was okay and continued to fight on.
+
+David continued to draw enemy fire away from the incoming medevac helicopters, allowing the wounded to be safely evacuated. After allied reinforcements fought their way to his company’s position, David carried a wounded comrade to a sheltered position. He then returned to the contact area and continued to engage the enemy and provide covering fire for the wounded until the enemy broke contact and fled, at which point he too was medically evacuated. David’s conspicuous gallantry, extraordinary heroism and intrepidity, at the risk of his own life, were above and beyond the call of duty and reflect great credit upon himself, his unit and the United States Army.<ref name=USArmy/></blockquote>
+
+}}
+{{Clear}}
+
+==Honors and awards==
+David's personal decorations include the Distinguished Service Cross (upgraded to the Medal of Honor), the [[Purple Heart]] with 1st Oak Leaf Cluster, [[Air Medal]], the [[Good Conduct Medal (United States)#Army Good Conduct Medal|Good Conduct Medal]], the [[National Defense Service Medal]], the [[Vietnam Service Medal]] with two Bronze Stars, the [[Vietnam Campaign Medal]], the [[Combat Infantryman Badge]], the Republic of Vietnam Civil Actions Honor Medal, the First Class Unit Citation Badge, the [[Gallantry Cross (South Vietnam)|Republic of Vietnam Gallantry Cross with Palm]], the [[Civil Actions Medal#Unit Award|Vietnam Civil Actions Unit Citation with Palm]], [[Marksmanship badges (United States)#U.S. Army|Expert Marksmanship Badge]].<ref name=USArmy/>
+
+==See also==
+{{Portal|Biography}}
+*[[List of Medal of Honor recipients for the Vietnam War#D|List of Medal of Honor recipients for the Vietnam War]]
+
+==References==
+{{reflist}}
+
+{{Commons category|Kenneth J. David}}
+{{DEFAULTSORT:David, Kenneth J.}}
+[[Category:1940 births]]
+[[Category:Living people]]
+[[Category:United States Army personnel of the Vietnam War]]
+[[Category:United States Army Medal of Honor recipients]]
+[[Category:Vietnam War recipients of the Medal of Honor]]
+[[Category:People from Girard, Ohio]]
+[[Category:Military personnel from Ohio]]

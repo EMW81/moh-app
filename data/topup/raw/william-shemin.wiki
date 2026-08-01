@@ -1,0 +1,99 @@
+{{Short description|US Army sergeant (1896–1973)}}
+{{Infobox military person
+|name= William Shemin
+|birth_date= {{Birth date|1896|10|14}}
+|death_date= {{Death date and age|1973|08|15|1896|10|14}}
+|birth_place= [[Bayonne, New Jersey]]
+|death_place= [[New York City]]
+|burial_place= [[Baron Hirsch Cemetery]]
+|burial_label= Place of burial
+|image= William Shemin c1918.jpg
+|caption=
+|nickname=
+|allegiance= [[United States|United States of America]]
+|branch= [[United States Army]]
+|service_years= 1917 - 1919
+|service_number=558173
+|rank= [[Sergeant]]
+|unit= Company G, 2nd Battalion, 47th Infantry Regiment, 4th Infantry Division
+|battles= [[World War I]]
+* [[Second Battle of the Marne]]
+|awards= {{plainlist|
+* Medal of Honor
+* Purple Heart
+}}
+}}
+'''William Shemin''' (October 14, 1896&nbsp;– August 15, 1973) was a [[Sergeant]] in the [[United States Army|U.S. Army]] during [[World War I]]. He was  awarded the [[Medal of Honor]] for bravery in action at [[Vesle River]], near [[Bazoches]], [[France]]. On June 2, 2015, William Shemin's daughters Elsie Shemin-Roth and Ina Bass accepted the nation's highest military award for valor on behalf of their father from President [[Barack Obama]] at the [[White House]]. Shemin was assigned to Company G, [[47th Infantry Regiment (United States)|47th Infantry Regiment]], [[4th Infantry Division (United States)|4th Division]], [[American Expeditionary Forces]].<ref>{{Cite web |url=https://www.army.mil/medalofhonor/shemin/?from=hp_spotlight |title=United States Army. Medal of Honor: Sergeant William Shemin |access-date=2015-06-13 }}</ref><ref name=doaHS>[https://web.archive.org/web/20220809075403/https://history.army.mil/html/books/101/101-46-1/cmhPub_101-46-1.pdf Department of the Army Historical Summary. Fiscal Year 2015], pp. 27, 28</ref> The reason of the belated award is that in  2001, the U.S. Army began a review of all WWI awards to Jewish soldiers, and Shemin's previous [[Distinguished Service Cross (United States)|Distinguished Service Cross]] was upgraded to the Medal of Honor.<ref name=jola/>
+
+== Biography ==
+William "Bill" Shemin was born in [[Bayonne, New Jersey|Bayonne]], [[New Jersey]] to Russian Jewish immigrants.<ref name=jola>{{cite web |last1=Jowdy |first1=Laura |title=Jewish-American Heritage Month: William Shemin, World War I |url=https://www.cmohs.org/news-events/medal-of-honor-recipient-profile/jewish-american-heritage-month-william-shemin-world-war-i/ |access-date=9 May 2024}}</ref> During his teenage years, he played semi-pro baseball. He graduated from the [[SUNY-ESF Ranger School|New York State Ranger School]] in 1914, and went on to work as a forester in Bayonne. Shemin enlisted in the Army, October 2, 1917. Upon completion of basic training at [[Camp Greene]], [[North Carolina]], he was assigned as a rifleman to Company G, 47th Infantry Regiment, 4th Infantry Division, American Expeditionary Forces, in [[France]].
+
+While serving as a rifleman from August 7–9, 1918, Shemin left the cover of his platoon's trench and crossed open space, repeatedly exposing himself to heavy machine gun and rifle fire to rescue the wounded. After officers and senior non-commissioned officers had become casualties, Shemin took command of the platoon and displayed great initiative under fire, until he was wounded on August 9.  It was for this action that Shemin was originally awarded the [[Distinguished Service Cross (United States)|Distinguished Service Cross]] on December 19, 1919.<ref name=doaHS/>  Some 96 years later, this Distinguished Service Cross award would be upgraded to the Medal of Honor.  Shemin was hospitalized for three months as a result of the wounds he suffered in this action which included those from shrapnel and a machine gun bullet that pierced his helmet and lodged behind his left ear.  Following his recovery, he served on light duty as part of the Army occupation in [[Germany]] and [[Belgium]] until he completed his tour.  Shemin received the [[Purple Heart]] for his combat wounds.
+
+Shemin was honorably discharged in August 1919, and went on to get a degree from the New York State [[College of Forestry]] at [[Syracuse University]].<ref>{{cite news |last1=Maser |first1=Jen |title=New Book Highlights the Incredible Legacy of World War I Veteran William Shemin '1924 |url=https://news.syr.edu/blog/2022/10/19/new-book-highlights-the-incredible-legacy-of-world-war-i-veteran-william-shemin-1924/ |access-date=19 October 2022 |work=Syracuse University News |date=19 October 2022}}</ref> After graduation, he started a greenhouse and landscaping business in the [[Bronx]], [[New York (state)|New York]], where he raised three children. Shemin died in 1973.
+
+{{Quote|With the most utter disregard for his own safety, (Shemin) sprang from his position in his platoon trench, dashed out across the open in full sight of the Germans, who opened and maintained a furious burst of machine gun and rifle fire.|Capt. Rupert Purdon, one of Shemin's superiors.}}
+
+== Medal of Honor citation ==
+[[File:Obama honors two WWI Soldiers with Medals of Honor 150602-A-AJ780-005.jpg|thumb|President Barack Obama awards the Medal of Honor to Shamin's daughters]]
+{{quote
+|The President of the United States of America, authorized by Act of Congress, March 3, 1863, has awarded in the name of Congress the Medal of Honor to:
+{{center|SERGEANT WILLIAM SHEMIN<br />United States Army}}
+''For conspicuous gallantry and intrepidity at the risk of his life above and beyond the call of duty:''
+
+Sergeant Shemin distinguished himself by acts of gallantry and intrepidity above and beyond the call of duty while serving as a Rifleman with G Company, 2d Battalion, 47th Infantry Regiment, 4th Division, American Expeditionary Forces, in connection with combat operations against an armed enemy on the Vesle River, near Bazoches, France from August 7 to August 9, 1918. Sergeant Shemin left cover and crossed open space, repeatedly exposing himself to heavy machine-gun and rifle fire, to rescue wounded. After Officers and Senior Noncommissioned Officers had become casualties, Sergeant Shemin took command of the platoon and displayed great initiative under fire until wounded on August 9. Sergeant Shemin's extraordinary heroism and selflessness, above and beyond the call of duty, are in keeping with the highest traditions of the military service and reflect great credit upon himself, his unit, and the United States Army.
+}}
+
+== Military awards ==
+Shemin's military decorations and awards include:
+{| style="margin:1em auto; text-align:center;"
+|colspan="3"|{{ribbon devices|number=0|type=oak|ribbon=Medal of Honor ribbon.svg|width=106}}
+|-
+|-
+|{{ribbon devices|number=0|type=award-star|ribbon=Purple Heart ribbon.svg|width=106}}
+|{{ribbon devices|number=2|type=service-star|ribbon=World War I Victory Medal ribbon.svg|width=106}}
+|{{ribbon devices|number=0|type=oak|ribbon=Army of Occupation of Germany ribbon.svg|width=106}}
+|-
+|}
+{| class="wikitable" style="margin:1em auto; text-align:center;"
+!1st row
+| colspan="7"|[[Medal of Honor]]
+|-
+!2nd row
+| colspan="3"|[[Purple Heart]]
+| colspan="3"|[[World War I Victory Medal (United States)|World War I Victory Medal]] w/two bronze service stars <br> to denote credit for the Aisne-Marne and Defensive Sector battle clasps
+| colspan="3"|[[Army of Occupation of Germany Medal]]
+|-
+|}
+
+==See also==
+*[[List of Medal of Honor recipients]]
+*[[List of Jewish Medal of Honor recipients]]
+*[[List of Medal of Honor recipients for World War I]]
+
+==References==
+:{{ACMH}}{{dead link|date=January 2025}}
+{{Reflist}}
+
+==Further reading==
+*{{cite book |last1=Cass |first1=Sara Shemin |last2=Burstein |first2=Dan |title=The Ivy Hero: The Brave Life of Sergeant William Shemin |date=October 25, 2022 |publisher=[[Simon & Schuster]] (City Point Press) |isbn=978-1-947951-64-8 |oclc= 1341442775 |url=https://www.theivyhero.com/about-the-book}}
+
+==External links==
+*{{find a Grave|146512961}}
+
+{{DEFAULTSORT:Shemin, William}}
+[[Category:1896 births]]
+[[Category:1973 deaths]]
+[[Category:United States Army Medal of Honor recipients]]
+[[Category:United States Army non-commissioned officers]]
+[[Category:Military personnel from the Bronx]]
+[[Category:Jewish Medal of Honor recipients]]
+[[Category:World War I recipients of the Medal of Honor]]
+[[Category:State University of New York College of Environmental Science and Forestry alumni]]
+[[Category:United States Army personnel of World War I]]
+[[Category:20th-century American Jews]]
+[[Category:Military personnel from Hudson County, New Jersey]]
+[[Category:People from Bayonne, New Jersey]]
+[[Category:Syracuse University alumni]]
+[[Category:Burials at Baron Hirsch Cemetery]]
+[[Category:American people of Russian-Jewish descent]]
