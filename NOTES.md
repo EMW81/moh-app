@@ -920,3 +920,39 @@ picks sidebar — the layer is fully dynamic over the profiles table.
    Afghanistan; validator now skips ap-keyword checks for ghost pins (that pollution
    is why they're ghosts) while still enforcing theater boxes. Post-fix validator:
    zero flags beyond the 111 null-coord records.
+
+## 2026-08-02 (later) — Backlog: Task 1 DONE, Task 2 DONE, Task 3 deferred
+
+TASK 1 (tag review, 521 low-confidence): COMPLETE. 290 resolved by precedent-backed
+rules (generic-gallantry lines -> 0 tags correct; flag captures -> The Colors,
+unanimous 193-record precedent; drowning rescues -> Rescue+Sea), 231 read manually in
+176 citation groups. 43 groups corrected (net adds: Sea 13, Rescue 6, Belated Justice
+3 — the 1916-rescinded/1989-restored records; removals incl. a wrong Healer, a wrong
+Body-on-Grenade -> Rescue for a fuse-extinguishing act). All 521 now medium
+confidence; ZERO low-confidence records remain corpus-wide.
+
+TASK 2 (post-2014 top-up): COMPLETE — 36 records, total 3,475 -> 3,511 (fell 438->445).
+- Enumerated via raw-wikitext parsing of Wikipedia era lists (the WebFetch summarizer
+  model produced a partial/garbled list — raw parsing was the reliable path), diffed
+  against the corpus by normalized name (caught 4 namesake false-positives: the
+  Chapman/Atkins/Payne/H.Johnson hits were 19th-century records).
+- MAJOR FINDS past my training cutoff, verified via protected Wikipedia articles:
+  Eric Slover (CW5, 160th SOAR) — MoH for Operation Absolute Resolve, VENEZUELA,
+  Jan 3 2026 (new conflict label "Venezuela Intervention (2026)"); James Capers Jr.
+  (Silver Star -> MoH June 2026); John Ripley (Dong Ha Bridge, Navy Cross -> MoH
+  March 2026); Terry P. Richardson (Loc Ninh 1968, recent award).
+- Plus 3 CORGIS source-gap backfills (Zabitosky, Gerald O. Young, Marvin R. Young —
+  classic 1968 recipients absent from the source data).
+- Citations: public-domain official text from Wikipedia articles (30) + cmohs.org (6);
+  cached in data/topup/{raw,citations.json}. All records fully formed: coords with
+  precision (gazetteer-grade battlefield/exact), survived (action semantics — e.g.
+  Kaneshiro survived the cited action, KIA later), categories tagged citation-first
+  with Belated Justice on the decades-late upgrades.
+- Verified end-to-end headless: 3,511 load; Venezuela in Conflict filter; Slover card
+  renders with Army medal + Wings chip + modal; Vietnam filter 270 (253+17); Capers
+  pinned at Phu Loc; map 3,252 shown / 259 unmappable; geo validator clean.
+
+TASK 3 (photos at scale): NOT STARTED this session (context limit). The plan stands:
+MediaWiki-API batches of ~250 across the 3,463 photo-less records, license-verified,
+commit per batch. Note: 36 top-up recipients are also photo-less and modern articles
+almost all have usable portraits — a high-yield first batch.
