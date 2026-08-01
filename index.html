@@ -400,6 +400,8 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .leaflet-popup-content{margin:12px 14px;font-family:var(--font-ui);}
 .mp-kick{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-subtle);}
 .mp-name{font-size:14px;font-weight:700;color:var(--text);margin-top:3px;}
+.mp-place{font-size:12px;font-weight:600;color:var(--text);margin-top:4px;}
+.mp-approx{font-family:var(--font-mono);font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-subtle);border:1px solid var(--border);border-radius:var(--radius-pill);padding:1px 6px;margin-left:4px;vertical-align:1px;}
 .mp-meta{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.06em;color:var(--text-muted);margin-top:4px;}
 .mp-meta .gold{color:var(--gold-line);}
 .mp-link{display:inline-block;margin-top:9px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--accent);cursor:pointer;background:none;border:none;padding:0;}
@@ -523,7 +525,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
     <div class="mapwrap" id="mapwrap" hidden>
       <div id="map"></div>
       <div class="map-legend"><span class="dot" aria-hidden="true"></span> Survived&nbsp;&nbsp;<img class="legend-star" id="legendStar" alt="" aria-hidden="true"> Fell</div>
-      <div class="map-disclaimer">Locations approximate — nearest named place.</div>
+      <div class="map-disclaimer">Pins: exact where history knows the spot; others tagged approximate.</div>
     </div>
   </main>
 </div>
@@ -842,8 +844,12 @@ function refreshTiles(){ if(MAP && MAP_TILES) MAP_TILES.setUrl(tileURL()); }
 function popupHTML(s){
   const meta=[s.conflict,s.battle].filter(Boolean).join(" · ").toUpperCase();
   const fate=s.survived?'Survived':`<span class="gold">${starSVG()} Fell</span>`;
+  // place name is the headline of a map popup; anything below battlefield precision is tagged approximate
+  const approx = (s.geo_precision==="locality"||s.geo_precision==="region") ? ' <span class="mp-approx">approximate</span>' : "";
+  const place = s.geo_place ? `<div class="mp-place">${esc(s.geo_place)}${approx}</div>` : "";
   return `<div class="mp-kick">${esc((s.rank+" · "+s.branch).toUpperCase())}</div>`+
     `<div class="mp-name">${esc(s.name)}</div>`+
+    place+
     `<div class="mp-meta">${esc(meta)}${meta?" · ":""}${fate}</div>`+
     `<button class="mp-link" data-story="${esc(s.id)}">Read the story →</button>`;
 }
@@ -858,6 +864,9 @@ function renderMap(list){
   const pts=[];
   list.forEach(s=>{
     const c=s.coords; if(!c||c.lat==null||c.lng==null) return;
+    // country-level/none precision: excluded from the map — a country-centroid pin
+    // misleads more than it informs (decision logged in NOTES, 2026-08-01)
+    if(s.geo_precision==="country"||s.geo_precision==="none") return;
     const m = s.survived
       ? L.circleMarker([c.lat,c.lng],{renderer:MAP_CANVAS,radius:4.5,weight:1,color:stroke,fillColor:accent,fillOpacity:.85})
       : L.marker([c.lat,c.lng],{icon:STAR_ICON});
