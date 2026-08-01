@@ -1,0 +1,20 @@
+{
+ "calvin-pearl-titus": {
+  "conflict": "China Relief Expedition (Boxer Rebellion)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: scaled the wall of Peking, Aug 1900 \u2014 year-era mislabel; found via geo cross-check",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "philip-bazaar": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Santiago de Cuba (ship NAME) at Fort Fisher, Jan 1865 \u2014 ship name triggered spanish keyword",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "joseph-quick": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: drowning rescue, Yokohama 1902 \u2014 non-combat",
+  "adjudicated": "manual-2026-08-01"
+ }
+}

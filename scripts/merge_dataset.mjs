@@ -56,6 +56,25 @@ if (existsSync("data/adjudication")) {
   if (files.length) console.log(`adjudication overlays: ${files.join(", ")} — ${applied} records patched`);
 }
 
+// Geo overlay (map-accuracy pass 2026-08-01): recomputed coords + precision for the
+// FULL corpus. Explicitly includes pilot records (human instruction — their coords
+// came from the same flawed source), but may only touch the three geo fields.
+if (existsSync("data/geo/overrides.json")) {
+  const geo = JSON.parse(readFileSync("data/geo/overrides.json", "utf8"));
+  const allowed = new Set(["coords", "geo_place", "geo_precision"]);
+  let n = 0;
+  for (const [id, fields] of Object.entries(geo)) {
+    for (const k of Object.keys(fields)) if (!allowed.has(k)) throw new Error(`geo overlay: field ${k} not allowed`);
+    const r = byId.get(id);
+    if (!r) throw new Error(`geo overlay: unknown id ${id}`);
+    Object.assign(r, fields);
+    n++;
+  }
+  const prec = {};
+  for (const r of all) prec[r.geo_precision || "unset"] = (prec[r.geo_precision || "unset"] || 0) + 1;
+  console.log(`geo overlay: ${n} records —`, JSON.stringify(prec));
+}
+
 // validations
 const ids = new Set(), nums = new Set();
 const pilotNums = new Set(pilot.map(r => cmohsNum(r.cmohs_link)).filter(Boolean));

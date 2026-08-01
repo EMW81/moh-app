@@ -61,7 +61,7 @@ PLACE_KEYS = [  # action_place keyword -> box (checked in addition to conflict)
     (r"\bfrance\b", "france"), (r"\bbelgium\b", "belgium"), (r"\bgermany\b", "germany"),
     (r"\bitaly\b", "italy"), (r"\bphilippine", "philippines"), (r"\bjapan\b", "japan"),
     (r"\bkorea\b", "korea"), (r"\bvietnam\b", "vietnam"), (r"\bchina\b", "china"),
-    (r"\bcuba\b", "cuba"), (r"\bmexico\b", "mexico"), (r"\bhaiti\b", "haiti"),
+    (r"\bcuba\b", "cuba"), (r"(?<!new )\bmexico\b", "mexico"), (r"\bhaiti\b", "haiti"),
     (r"\bnicaragua\b", "nicaragua"), (r"\bsomalia\b", "somalia"),
     (r"\bafghanistan\b", "afghanistan"), (r"\biraq\b", "iraq"), (r"\bchile\b", "chile"),
     (r"\bgreenland\b", "greenland"), (r"\bsamoa\b", "samoa"),
@@ -77,6 +77,11 @@ def validate(stories):
         c = r.get("coords")
         if not c or c.get("lat") is None:
             flags.append({"id": r["id"], "why": "null coords"}); continue
+        # curated gazetteer pins (exact/battlefield) are hand-verified and legitimately
+        # include theaters the boxes can't model (Kearsarge off Cherbourg, Midway,
+        # Attu past the antimeridian) — and action_place is often polluted anyway.
+        if r.get("geo_place") and r.get("geo_precision") in ("exact", "battlefield"):
+            continue
         boxes = CONFLICT_BOXES.get(r["conflict"])
         place = (r.get("action_place") or "").lower()
         pboxes = [k for pat, k in PLACE_KEYS if re.search(pat, place)]
