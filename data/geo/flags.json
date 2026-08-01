@@ -1,0 +1,1872 @@
+[
+ {
+  "id": "john-henry-quick",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": -13,
+   "lng": -71
+  },
+  "place": "Cuba, Cusco, Peru",
+  "why": "outside Spanish-American War theater; outside place-keyword box (cuba)"
+ },
+ {
+  "id": "daniel-joseph-daly",
+  "conflict": "China Relief Expedition (Boxer Rebellion)",
+  "coords": {
+   "lat": 19,
+   "lng": -71
+  },
+  "place": "Fort Liberte, Haiti",
+  "why": "outside China Relief Expedition (Boxer Rebellion) theater; outside place-keyword box (haiti)"
+ },
+ {
+  "id": "freddie-stowers",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "ernest-edwin-evans",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 53,
+   "lng": 50
+  },
+  "place": "Samara, Samara Oblast, Russia",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "gregory-boyington",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 38,
+   "lng": -76
+  },
+  "place": "Central Drive, Prince Frederick, MD 20678, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "emil-joseph-kapaun",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 33,
+   "lng": 133
+  },
+  "place": "Japan, ?780-0901 K?chi-ken, K?chi-shi, Kamimachi, 1 Chome?6?",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "bennie-g-adkins",
+  "conflict": "Vietnam War",
+  "coords": {
+   "lat": 47,
+   "lng": 8
+  },
+  "place": "9 12, 8640 Rapperswil-Jona, Switzerland",
+  "why": "outside Vietnam War theater"
+ },
+ {
+  "id": "james-robb-church",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": 19,
+   "lng": -75
+  },
+  "place": "Las Gu?simas, Cuba",
+  "why": "outside place-keyword box (cuba)"
+ },
+ {
+  "id": "theodore-roosevelt",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": -34,
+   "lng": -58
+  },
+  "place": "Avenida San Juan, Buenos Aires, Ciudad Aut?noma de Buenos Ai",
+  "why": "outside Spanish-American War theater"
+ },
+ {
+  "id": "horace-jr-carswell",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 35,
+   "lng": 104
+  },
+  "place": "China",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "antoine-a-gaujot",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 37,
+   "lng": -122
+  },
+  "place": "San Mateo, CA, USA",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "lloyd-h-hughes",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 45,
+   "lng": 24
+  },
+  "place": "Romania",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "harvey-c-jr-barnum",
+  "conflict": "Vietnam War",
+  "coords": {
+   "lat": 37,
+   "lng": -84
+  },
+  "place": "Kentucky, USA",
+  "why": "outside Vietnam War theater"
+ },
+ {
+  "id": "louis-b-lawton",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 39,
+   "lng": 117
+  },
+  "place": "Tianjin, Tianjin, China",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "calvin-pearl-titus",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 39,
+   "lng": 116
+  },
+  "place": "Beijing, Beijing, China",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "addison-e-baker",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 45,
+   "lng": 24
+  },
+  "place": "Romania",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "james-p-connor",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 35,
+   "lng": -95
+  },
+  "place": "Southern France Road, Braggs, OK 74423, USA",
+  "why": "outside World War II theater; outside place-keyword box (france)"
+ },
+ {
+  "id": "leonard-l-alvarado",
+  "conflict": "Vietnam War",
+  "coords": {
+   "lat": 36,
+   "lng": 3
+  },
+  "place": "rue journalist vietnam, Alger, Algeria",
+  "why": "outside Vietnam War theater; outside place-keyword box (vietnam)"
+ },
+ {
+  "id": "eduardo-c-gomez",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 37,
+   "lng": 119
+  },
+  "place": "Wen Hua Dong Jie & Ta Bu Lu, Laizhou Shi, Yantai Shi, Shando",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "salvador-j-lara",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 32,
+   "lng": -117
+  },
+  "place": "1944 Via Aprilia, Del Mar, CA 92014, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "manuel-v-mendoza",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 45,
+   "lng": -122
+  },
+  "place": "1944 Northwest Battaglia Avenue, Gresham, OR 97030, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "juan-e-negron",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 42,
+   "lng": -80
+  },
+  "place": "Erie International Airport (ERI), 4411 West 12th Street, Eri",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "demensio-rivera",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 30,
+   "lng": 121
+  },
+  "place": "Chang Yong Lu, Songjiang Qu, Shanghai Shi, China",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "jose-rodela",
+  "conflict": "Vietnam War",
+  "coords": {
+   "lat": 52,
+   "lng": 0
+  },
+  "place": "September Cottage, 1 Blackbird Street, Potton, Sandy, Centra",
+  "why": "outside Vietnam War theater"
+ },
+ {
+  "id": "adolphus-w-greely",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "daniel-p-matthews",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 36,
+   "lng": -115
+  },
+  "place": "Korea Court, Henderson, NV 89052, USA",
+  "why": "outside Korean War theater; outside place-keyword box (korea)"
+ },
+ {
+  "id": "david-r-kingsley",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 45,
+   "lng": 24
+  },
+  "place": "Romania",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "gordon-m-craig",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 55,
+   "lng": 49
+  },
+  "place": "Kazan, Tatarstan, Russia",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "joseph-fitz",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "anthony-t-kahoohanohano",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 32,
+   "lng": 20
+  },
+  "place": "1st September Street, Benghazi, Libya",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "henry-svehla",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 34,
+   "lng": -118
+  },
+  "place": "12 North June Street, Los Angeles, CA 90004, USA",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "john-a-logan",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 33,
+   "lng": -116
+  },
+  "place": "San Jacinto, CA, USA",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "kyle-j-white",
+  "conflict": "War on Terrorism (Afghanistan)",
+  "coords": {
+   "lat": -33,
+   "lng": -70
+  },
+  "place": "Las Ara?as 2007, La Reina, Regi?n Metropolitana, Chile",
+  "why": "outside War on Terrorism (Afghanistan) theater"
+ },
+ {
+  "id": "frank-f-ross",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -12,
+   "lng": -77
+  },
+  "place": "San Isidro Lima 27, Peru",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "jack-l-knight",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 23,
+   "lng": 98
+  },
+  "place": "Loi Kang, Republic of the Union of Myanmar",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "charles-francis-bishop",
+  "conflict": "Mexican Campaign (Vera Cruz)",
+  "coords": {
+   "lat": -22,
+   "lng": -49
+  },
+  "place": "Vera Cruz - SP, Brazil",
+  "why": "outside Mexican Campaign (Vera Cruz) theater"
+ },
+ {
+  "id": "john-angling",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "philip-bazaar",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": 33,
+   "lng": -77
+  },
+  "place": "Fort Fisher Historic Museum, 1610 South Fort Fisher Boulevar",
+  "why": "outside Spanish-American War theater"
+ },
+ {
+  "id": "donald-d-pucket",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 45,
+   "lng": 24
+  },
+  "place": "Romania",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "joseph-quick",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 35,
+   "lng": 139
+  },
+  "place": "Yokohama, Kanagawa Prefecture, Japan",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "robert-r-ingram",
+  "conflict": "Vietnam War",
+  "coords": {
+   "lat": 52,
+   "lng": 0
+  },
+  "place": "28 March Road, Friday Bridge, Wisbech, Cambridgeshire PE13 4",
+  "why": "outside Vietnam War theater"
+ },
+ {
+  "id": "charles-h-willey",
+  "conflict": "Dominican Campaign",
+  "coords": {
+   "lat": 35,
+   "lng": -106
+  },
+  "place": "Santo Domingo Early Childcare, 125 W Highway 22, Santo Domin",
+  "why": "outside Dominican Campaign theater"
+ },
+ {
+  "id": "john-r-kane",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 45,
+   "lng": 24
+  },
+  "place": "Romania",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "james-r-hendrix",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 49,
+   "lng": 5
+  },
+  "place": "Assenois, 6860 L?glise, Belgium",
+  "why": "outside place-keyword box (belgium)"
+ },
+ {
+  "id": "leon-w-johnson",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 45,
+   "lng": 24
+  },
+  "place": "Romania",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "andre-w-brewster",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 39,
+   "lng": 117
+  },
+  "place": "Tianjin, Tianjin, China",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "theodore-jr-roosevelt",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 29,
+   "lng": -90
+  },
+  "place": "The Normandy Invasion, New Orleans, LA 70130, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "joe-p-martinez",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 30,
+   "lng": -98
+  },
+  "place": "Aleutians, Fredericksburg, TX 78624, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "john-l-jerstad",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 45,
+   "lng": 24
+  },
+  "place": "Romania",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "john-c-sjogren",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 37,
+   "lng": -121
+  },
+  "place": "San Jose, CA, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "oscar-charles-badger",
+  "conflict": "Mexican Campaign (Vera Cruz)",
+  "coords": {
+   "lat": -22,
+   "lng": -49
+  },
+  "place": "Vera Cruz - SP, Brazil",
+  "why": "outside Mexican Campaign (Vera Cruz) theater"
+ },
+ {
+  "id": "edwin-a-anderson",
+  "conflict": "Mexican Campaign (Vera Cruz)",
+  "coords": {
+   "lat": -22,
+   "lng": -49
+  },
+  "place": "Vera Cruz - SP, Brazil",
+  "why": "outside Mexican Campaign (Vera Cruz) theater"
+ },
+ {
+  "id": "randolph-carter-berkeley",
+  "conflict": "Mexican Campaign (Vera Cruz)",
+  "coords": {
+   "lat": -22,
+   "lng": -49
+  },
+  "place": "Vera Cruz - SP, Brazil",
+  "why": "outside Mexican Campaign (Vera Cruz) theater"
+ },
+ {
+  "id": "john-fitzgerald",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": -13,
+   "lng": -71
+  },
+  "place": "Cuba, Cusco, Peru",
+  "why": "outside Spanish-American War theater; outside place-keyword box (cuba)"
+ },
+ {
+  "id": "richard-i-bong",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": 116
+  },
+  "place": "Balikpapan, Balikpapan, East Kalimantan, Indonesia",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "patrick-mcgunigal",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "tedford-h-cann",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "jesse-whitfield-covington",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "ora-graves",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -34,
+   "lng": -58
+  },
+  "place": "Buenos Aires, Argentina",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "john-mackenzie",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "francis-edward-jr-ormsbee",
+  "conflict": "World War I",
+  "coords": {
+   "lat": 30,
+   "lng": -87
+  },
+  "place": "Saufley Field US Navy Air Base, Saufley Field Nolf (NUN), Pe",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "frank-monroe-upton",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "harold-w-roberts",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "oscar-jr-schmidt",
+  "conflict": "World War I",
+  "coords": {
+   "lat": 47,
+   "lng": -122
+  },
+  "place": "Seattle-Tacoma International Airport, 17801 International Bo",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "michael-aheam",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "richard-nott-antrim",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -5,
+   "lng": 119
+  },
+  "place": "Makassar, Makassar, South Sulawesi, Indonesia",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "thomas-e-atkinson",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -34,
+   "lng": -56
+  },
+  "place": "Montevideo, Uruguay",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "lewis-kenneth-bausell",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "unknown-belgium",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "john-f-bickford",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "robert-blake",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "zenas-r-bliss",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "william-bond",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "hugh-p-boon",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "charles-bradley",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "willis-winter-jr-bradley",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "august-f-bronner",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 52,
+   "lng": -2
+  },
+  "place": "Great Malvern, Malvern, Worcestershire WR14, UK",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "howard-major-buckley",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 37,
+   "lng": -95
+  },
+  "place": "United States",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "john-duncan-bulkeley",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -28,
+   "lng": 153
+  },
+  "place": "Philippine Parade, Palm Beach QLD 4221, Australia",
+  "why": "outside Philippine-American War theater; outside place-keyword box (philippines)"
+ },
+ {
+  "id": "oscar-burkard",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": 47,
+   "lng": -94
+  },
+  "place": "Leech Lake, Minnesota, USA",
+  "why": "outside Spanish-American War theater"
+ },
+ {
+  "id": "george-r-burnett",
+  "conflict": "Indian Campaigns",
+  "coords": {
+   "lat": 34,
+   "lng": -105
+  },
+  "place": "New Mexico, USA",
+  "why": "outside place-keyword box (mexico)"
+ },
+ {
+  "id": "james-byrnes",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "william-robert-caddy",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 32,
+   "lng": -96
+  },
+  "place": "Iwo Jima, Dallas, TX, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "george-ham-cannon",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "powhatan-clarke",
+  "conflict": "Indian Campaigns",
+  "coords": {
+   "lat": 19,
+   "lng": -99
+  },
+  "place": "Sonora, Delegaci?n San Crist?bal Huichochitlan, 50010 Toluca",
+  "why": "outside Indian Campaigns theater"
+ },
+ {
+  "id": "patrick-colbert",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 50,
+   "lng": -4
+  },
+  "place": "Plymouth, UK",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "george-w-corliss",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "samuel-h-craig",
+  "conflict": "Indian Campaigns",
+  "coords": {
+   "lat": 19,
+   "lng": -99
+  },
+  "place": "State of Mexico, Mexico",
+  "why": "outside Indian Campaigns theater"
+ },
+ {
+  "id": "william-adolphus-crouse",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "albert-leroy-david",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 33,
+   "lng": 35
+  },
+  "place": "French, Lebanon",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "jefferson-joseph-deblanc",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 38,
+   "lng": -76
+  },
+  "place": "Solomons, MD, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "austin-denham",
+  "conflict": "Nicaraguan Campaign",
+  "coords": {
+   "lat": 10,
+   "lng": -83
+  },
+  "place": "Greytown, Nicaragua",
+  "why": "outside Nicaraguan Campaign theater; outside place-keyword box (nicaragua)"
+ },
+ {
+  "id": "john-dorman",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "allan-h-dougall",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "james-dougherty",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "william-farley",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "frederick-thomas-fisher",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "michael-fleming-folland",
+  "conflict": "Vietnam War",
+  "coords": {
+   "lat": 41,
+   "lng": -71
+  },
+  "place": "Providence, RI, USA",
+  "why": "outside Vietnam War theater"
+ },
+ {
+  "id": "bruno-albert-forsterer",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "robert-galbraith",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "edward-h-gibson",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 37,
+   "lng": -122
+  },
+  "place": "San Mateo, CA, USA",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "edward-gomez",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 60,
+   "lng": 10
+  },
+  "place": "Koreavegen, Norway",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "john-griffiths",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": 33,
+   "lng": -77
+  },
+  "place": "Fort Fisher Historic Museum, 1610 South Fort Fisher Boulevar",
+  "why": "outside Spanish-American War theater"
+ },
+ {
+  "id": "james-haley",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "william-e-hall",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -19,
+   "lng": 155
+  },
+  "place": "Coral Sea",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "mark-g-ham",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "richard-hamilton",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "bernard-harley",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "daniel-harrington",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "george-h-harrison",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "william-dean-hawkins",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 38,
+   "lng": -93
+  },
+  "place": "Gilbert Island, Osage, MO 64740, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "john-hayes",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "rufus-g-herring",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 32,
+   "lng": -96
+  },
+  "place": "Iwo Jima, Dallas, TX, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "george-hill",
+  "conflict": "Nicaraguan Campaign",
+  "coords": {
+   "lat": 10,
+   "lng": -83
+  },
+  "place": "Greytown, Nicaragua",
+  "why": "outside Nicaraguan Campaign theater; outside place-keyword box (nicaragua)"
+ },
+ {
+  "id": "james-horton",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "osmond-k-ingram",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "unknown-italy",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "erastus-w-jewett",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 53,
+   "lng": -9
+  },
+  "place": "Newport, Co. Mayo, Ireland",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "john-johnson-2025",
+  "conflict": "Nicaraguan Campaign",
+  "coords": {
+   "lat": 10,
+   "lng": -83
+  },
+  "place": "Greytown, Nicaragua",
+  "why": "outside Nicaraguan Campaign theater; outside place-keyword box (nicaragua)"
+ },
+ {
+  "id": "willie-johnston",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "george-jordan",
+  "conflict": "Indian Campaigns",
+  "coords": {
+   "lat": 34,
+   "lng": -105
+  },
+  "place": "New Mexico, USA",
+  "why": "outside place-keyword box (mexico)"
+ },
+ {
+  "id": "joseph-rodolph-julian",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 28,
+   "lng": -81
+  },
+  "place": "Volcano Island, 7460 International Drive, Orlando, FL 32819,",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "james-dennis-la-belle",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 28,
+   "lng": -81
+  },
+  "place": "Volcano Island, 7460 International Drive, Orlando, FL 32819,",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "james-h-lee",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "joseph-leonard",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 37,
+   "lng": -95
+  },
+  "place": "United States",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "william-b-lewis",
+  "conflict": "Indian Campaigns",
+  "coords": {
+   "lat": -29,
+   "lng": 31
+  },
+  "place": "Station Street, Bluff, 4052, South Africa",
+  "why": "outside Indian Campaigns theater"
+ },
+ {
+  "id": "josiah-o-livingston",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 53,
+   "lng": -9
+  },
+  "place": "Newport, Co. Mayo, Ireland",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "james-jonas-madison",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "david-mccampbell",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 19,
+   "lng": 132
+  },
+  "place": "Philippine Sea",
+  "why": "outside place-keyword box (philippines)"
+ },
+ {
+  "id": "william-l-mcgonagle",
+  "conflict": "Vietnam War",
+  "coords": {
+   "lat": 35,
+   "lng": 33
+  },
+  "place": "Eastern Mediterranean University, Famagusta Bay, Cyprus",
+  "why": "outside Vietnam War theater"
+ },
+ {
+  "id": "michael-joseph-mcnally",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "james-miller",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "charles-moore-943",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "charles-w-morton",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "john-dury-new",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "thomas-p-jr-noonan",
+  "conflict": "Vietnam War",
+  "coords": {
+   "lat": 40,
+   "lng": -79
+  },
+  "place": "Vandergrift, PA, USA",
+  "why": "outside Vietnam War theater"
+ },
+ {
+  "id": "george-h-jr-obrien",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 41,
+   "lng": -72
+  },
+  "place": "27 October Lane, Plantsville, CT 06479, USA",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "edward-henry-ohare",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "john-oneal",
+  "conflict": "Nicaraguan Campaign",
+  "coords": {
+   "lat": 10,
+   "lng": -83
+  },
+  "place": "Greytown, Nicaragua",
+  "why": "outside Nicaraguan Campaign theater; outside place-keyword box (nicaragua)"
+ },
+ {
+  "id": "james-k-okubo",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "edward-albert-ostermann",
+  "conflict": "Haitian Campaign",
+  "coords": {
+   "lat": 19,
+   "lng": -71
+  },
+  "place": "Fort Liberte, Haiti",
+  "why": "outside Haitian Campaign theater; outside place-keyword box (haiti)"
+ },
+ {
+  "id": "joachim-pease",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "theodore-s-peck",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 53,
+   "lng": -9
+  },
+  "place": "Newport, Co. Mayo, Ireland",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "thomas-perry",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "george-phillips",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 32,
+   "lng": -96
+  },
+  "place": "Iwo Jima, Dallas, TX, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "francis-junior-pierce",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 32,
+   "lng": -96
+  },
+  "place": "Iwo Jima, Dallas, TX, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "richard-pile",
+  "conflict": "Nicaraguan Campaign",
+  "coords": {
+   "lat": 10,
+   "lng": -83
+  },
+  "place": "Greytown, Nicaragua",
+  "why": "outside Nicaraguan Campaign theater; outside place-keyword box (nicaragua)"
+ },
+ {
+  "id": "william-b-poole",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "thomas-francis-prendergast",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "arthur-murray-preston",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 1,
+   "lng": 128
+  },
+  "place": "Halmahera, Indonesia",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "george-province",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": 33,
+   "lng": -77
+  },
+  "place": "Fort Fisher Historic Museum, 1610 South Fort Fisher Boulevar",
+  "why": "outside Spanish-American War theater"
+ },
+ {
+  "id": "lawson-paterson-ramage",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 46,
+   "lng": -123
+  },
+  "place": "Pacific County, WA, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "charles-a-read",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "george-e-read",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "milton-ernest-ricketts",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -19,
+   "lng": 155
+  },
+  "place": "Coral Sea",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "john-rountry",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "donald-jack-ruhl",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 32,
+   "lng": -96
+  },
+  "place": "Iwo Jima, Dallas, TX, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "unknown-rumania",
+  "conflict": "World War I",
+  "coords": {
+   "lat": 45,
+   "lng": 24
+  },
+  "place": "Romania",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "james-m-rutter",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "james-saunders",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "auzella-savage",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": 33,
+   "lng": -77
+  },
+  "place": "Fort Fisher Historic Museum, 1610 South Fort Fisher Boulevar",
+  "why": "outside Spanish-American War theater"
+ },
+ {
+  "id": "john-otto-siegel",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "james-smith-2063",
+  "conflict": "Nicaraguan Campaign",
+  "coords": {
+   "lat": 10,
+   "lng": -83
+  },
+  "place": "Greytown, Nicaragua",
+  "why": "outside Nicaraguan Campaign theater; outside place-keyword box (nicaragua)"
+ },
+ {
+  "id": "william-smith",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "tony-stein",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 32,
+   "lng": -96
+  },
+  "place": "Iwo Jima, Dallas, TX, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "robert-strahan",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": 49,
+   "lng": -1
+  },
+  "place": "Cherbourg, France",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "daniel-augustus-joseph-sullivan",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "timothy-sullivan",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "john-swanson",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": 33,
+   "lng": -77
+  },
+  "place": "Fort Fisher Historic Museum, 1610 South Fort Fisher Boulevar",
+  "why": "outside Spanish-American War theater"
+ },
+ {
+  "id": "edward-swatton",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": 33,
+   "lng": -77
+  },
+  "place": "Fort Fisher Historic Museum, 1610 South Fort Fisher Boulevar",
+  "why": "outside Spanish-American War theater"
+ },
+ {
+  "id": "charles-l-thomas",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -29,
+   "lng": -51
+  },
+  "place": "dakota - Avenida Quinze de Novembro, 3665, Nova Petr?polis -",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "clyde-thomason",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 40,
+   "lng": -85
+  },
+  "place": "Makin, IN 46750, USA",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "william-george-thordsen",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "william-peterkin-upshur",
+  "conflict": "Haitian Campaign",
+  "coords": {
+   "lat": 19,
+   "lng": -71
+  },
+  "place": "Fort Liberte, Haiti",
+  "why": "outside Haitian Campaign theater; outside place-keyword box (haiti)"
+ },
+ {
+  "id": "joseph-vittori",
+  "conflict": "Korean War",
+  "coords": {
+   "lat": 34,
+   "lng": -118
+  },
+  "place": "749 South Hill Street, Los Angeles, CA 90014, USA",
+  "why": "outside Korean War theater"
+ },
+ {
+  "id": "rudolph-von-medem",
+  "conflict": "Indian Campaigns",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside Indian Campaigns theater"
+ },
+ {
+  "id": "robert-h-von-schlick",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": 39,
+   "lng": 117
+  },
+  "place": "Tianjin, Tianjin, China",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "george-edward-wahlen",
+  "conflict": "World War II",
+  "coords": {
+   "lat": 45,
+   "lng": 147
+  },
+  "place": "Grozny Group, 694534",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "francis-b-wai",
+  "conflict": "Philippine-American War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "Unknown",
+  "why": "outside Philippine-American War theater"
+ },
+ {
+  "id": "augustus-walley",
+  "conflict": "Indian Campaigns",
+  "coords": {
+   "lat": 34,
+   "lng": -105
+  },
+  "place": "New Mexico, USA",
+  "why": "outside place-keyword box (mexico)"
+ },
+ {
+  "id": "george-watson",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War II theater"
+ },
+ {
+  "id": "charles-h-weeks",
+  "conflict": "U.S. Civil War",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside U.S. Civil War theater"
+ },
+ {
+  "id": "augustus-williams",
+  "conflict": "Spanish-American War",
+  "coords": {
+   "lat": 33,
+   "lng": -77
+  },
+  "place": "Fort Fisher Historic Museum, 1610 South Fort Fisher Boulevar",
+  "why": "outside Spanish-American War theater"
+ },
+ {
+  "id": "moses-williams",
+  "conflict": "Indian Campaigns",
+  "coords": {
+   "lat": 34,
+   "lng": -105
+  },
+  "place": "New Mexico, USA",
+  "why": "outside place-keyword box (mexico)"
+ },
+ {
+  "id": "brent-woods",
+  "conflict": "Indian Campaigns",
+  "coords": {
+   "lat": 34,
+   "lng": -105
+  },
+  "place": "New Mexico, USA",
+  "why": "outside place-keyword box (mexico)"
+ },
+ {
+  "id": "unknown-world-war-i",
+  "conflict": "World War I",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War I theater"
+ },
+ {
+  "id": "unknown-world-war-ii",
+  "conflict": "World War II",
+  "coords": {
+   "lat": -1,
+   "lng": -1
+  },
+  "place": "",
+  "why": "outside World War II theater"
+ }
+]
