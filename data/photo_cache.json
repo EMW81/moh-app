@@ -14333,5 +14333,1255 @@
     "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/George_Henry_Stockman_1865_public_domain_USGov.jpg/500px-George_Henry_Stockman_1865_public_domain_USGov.jpg",
     "photo_credit": "Wikimedia Commons — public domain",
     "processed": true
+  },
+  "james-n-strong": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "frank-stolz": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Frank_Stolz_1875_public_domain_USGov.jpg/500px-Frank_Stolz_1875_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-c-summers": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "joseph-s-g-sweatt": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Joseph_Sewell-Gerrish_GAR_1913_public_domain_USGov.jpg/500px-Joseph_Sewell-Gerrish_GAR_1913_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "jacob-swegheimer": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Jacob_Swegheimer_GAR_1913_public_domain_USGov.jpg/500px-Jacob_Swegheimer_GAR_1913_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "anthony-taylor": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "frederic-w-swift": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Frederick_W._Swift_MOH.jpg/500px-Frederick_W._Swift_MOH.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "forrester-l-taylor": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "james-b-thompson": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "henry-h-taylor": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Taylor%2C_Henry_Harrison_c1899_MoH_Public_Domain.jpg/500px-Taylor%2C_Henry_Harrison_c1899_MoH_Public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "thomas-thompson": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Thomas_W_Thompson_%281839-1927%29_c1865_MoH_Public_Domain.jpg/500px-Thomas_W_Thompson_%281839-1927%29_c1865_MoH_Public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "clifford-thomson": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Thomson%2C_Clifford_%281834-1912%29_c1899_MoH_Public_Domain.jpg/500px-Thomson%2C_Clifford_%281834-1912%29_c1899_MoH_Public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-toomer": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-j-toffey": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/John_J._Toffey_%281844-1911%29.jpg/500px-John_J._Toffey_%281844-1911%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-g-tracy": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "andrew-j-tozier": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Family_of_Andrew_Jackson_Tozier.jpg/500px-Family_of_Andrew_Jackson_Tozier.jpg",
+    "photo_credit": "TDMaine / Wikimedia Commons — CC BY-SA 4.0",
+    "processed": true
+  },
+  "howell-g-trogden": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Howell_G._Trogden.jpg/500px-Howell_G._Trogden.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "m-emmet-urell": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/M._Emmet_Urell.jpg/500px-M._Emmet_Urell.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-vale": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "moses-veale": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Veale%2C_Moses_%281832-1917%29_c1913_MoH_Public_Domain.jpg/500px-Veale%2C_Moses_%281832-1917%29_c1913_MoH_Public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "wheelock-g-veazey": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Wheelock_Veazey.jpg/500px-Wheelock_Veazey.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-d-vernay": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Vernay%2C_James_David_%281834-1918%29_c1865_MoH_Public_Domain.jpg/500px-Vernay%2C_James_David_%281834-1918%29_c1865_MoH_Public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-w-wagner": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Wagner%2C_John_W._%281837-1896%29_c1890_MoH_winner_public_domain.jpg/500px-Wagner%2C_John_W._%281837-1896%29_c1890_MoH_winner_public_domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-c-walker": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "jerry-wall": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "thomas-j-ward": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "francis-a-waller": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Medalsofhonor2.jpg/500px-Medalsofhonor2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-h-ward": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-warden": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "francis-e-warren": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Francis_E._Warren.jpg/500px-Francis_E._Warren.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "alexander-s-webb": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Alexander_S._Webb.jpg/500px-Alexander_S._Webb.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "edward-welsh": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-wells": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/William_Wells_%28Vermont%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "daniel-d-wheeler": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-g-whitney": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/William_Garrett_Whitney.jpeg/500px-William_Garrett_Whitney.jpeg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "patrick-h-white": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "andrew-j-widick": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Andrew_J._Widick.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-wiley": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "george-wilhelm": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "richard-h-wood": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "carle-a-woodruff": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Carle_Augustus_Woodruff.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "joseph-wortick": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Wortick%2C_Joseph_%281837-1910%29_c1885_MoH_Winner_Public_Domain.jpg/500px-Wortick%2C_Joseph_%281837-1910%29_c1885_MoH_Winner_Public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "samuel-wright": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "james-w-archer": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "david-l-smith": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-m-farquhar": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/John_M._Farquhar.jpg/500px-John_M._Farquhar.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-allen": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Corporal_James_Allen.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-g-b-adams": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/US_Army_MOH_recipient_John_G._B._Adams.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-b-avery": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "wallace-a-beckwith": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-c-black": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Medalsofhonor2.jpg/500px-Medalsofhonor2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "hillary-beyer": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Lieutenant_Hillary_Beyer_of_Co._H%2C_90th_Pennsylvania_Infantry_Regiment%2C_in_uniform_with_sword%29_-_F._Gutekunst%2C_photographer%2C_704_%26_706_Arch_St.%2C_Philada_LCCN2015650818.jpg/500px-thumbnail.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-p-black": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tri-service_medal_of_honor.jpg/500px-Tri-service_medal_of_honor.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "wells-h-blodgett": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Wells_H._Blodgett%2C_1st_Lieutenant-Captain%2C_37th_Illinois_Infantry%2C_Major_Cavalry%2C_U.S._Volunteers%2C_Lieutenant_Colonel%2C_48th_Missouri_Infantry_%28cropped%29.jpg/500px-Wells_H._Blodgett%2C_1st_Lieutenant-Captain%2C_37th_Illinois_Infantry%2C_Major_Cavalry%2C_U.S._Volunteers%2C_Lieutenant_Colonel%2C_48th_Missouri_Infantry_%28cropped%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-breyer": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "august-f-bronner": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "james-h-burbank": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-bumgarner": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/William_Bumgarner.jpg/500px-William_Bumgarner.jpg",
+    "photo_credit": "Matgerke / Wikimedia Commons — CC BY-SA 4.0",
+    "processed": true
+  },
+  "daniel-w-burke": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "daniel-butterfield": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Daniel_Butterfield.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "eugene-a-carr": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Eugene_A._Carr%2C_Brigadier_General_U.S.A.%2C_Brevet_Major_General_U.S.A_%28cropped%29.jpg/500px-Eugene_A._Carr%2C_Brigadier_General_U.S.A.%2C_Brevet_Major_General_U.S.A_%28cropped%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-j-carter": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "benjamin-h-child": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "orlando-e-caruana": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Orlando_E._Caruana.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-f-cleveland": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "martin-conboy": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "charles-h-t-collis": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Charles_HT_Collis.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "richard-conner": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Richard_Conner_Civil_War.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-cook": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/John_Cook_bugler_%28cropped%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-d-copp": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-n-coyne": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/John_Nicholas_Coyne%2C_U.S._Medal_of_Honor_Winner%2C_c._1907.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "richard-curran": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Richard_Curran.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-c-curtis": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/US_Army_Lieutenant_John_C._Curtis.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "timothy-donoghue": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-s-durham": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/US-MOH-1862.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "joseph-l-follett": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Follett%2C_Joseph_Leonard_c1897_GAR_public_domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "alexander-a-forman": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "frederick-w-fout": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fout%2C_Frederick_W_c1896_GAR_public_domain.jpg/500px-Fout%2C_Frederick_W_c1896_GAR_public_domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "henry-fox": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Fox%2C_Henry_c1899_GAR_public_domain.jpg/500px-Fox%2C_Henry_c1899_GAR_public_domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "henry-b-freeman": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Henry_Blanchard_Freeman.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "samuel-s-french": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/French%2C_Samuel_S._18941024_public_domain.jpg/500px-French%2C_Samuel_S._18941024_public_domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "francis-h-goodall": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Goodall%2C_Francis_Henry_c1885_GAR_public_domain.jpg/500px-Goodall%2C_Francis_Henry_c1885_GAR_public_domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "gabriel-grant": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Gabriel_Grant.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-gray": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "theodore-w-greig": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "oliver-d-greene": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Oliver_Duff_Greene.JPG",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "frank-w-haskell": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "ignatz-gresser": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ignatz_Gresser.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "marcus-m-haskell": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-p-hatch": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/John_P_Hatch.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "francis-j-herron": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/FJHerron.jpg/500px-FJHerron.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "edward-a-holton": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Edward_A._Holton_%28Union_Army_Medal_of_Honor_recipient%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "george-w-hooker": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Hooker%2C_George_White_c1865_MoH_public_domain_image.jpg/500px-Hooker%2C_George_White_c1865_MoH_public_domain_image.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-f-hopkins": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Hopkins%2C_Charles_Ferren_c1865_MoH_public_domain_image.jpg/500px-Hopkins%2C_Charles_Ferren_c1865_MoH_public_domain_image.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-h-horsfall": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/William_H._Horsfall.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "henderson-c-howard": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/US-MOH-1862.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "oliver-o-howard": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Oliver_Otis_Howard.jpg/500px-Oliver_Otis_Howard.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-c-hunterson": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Hunterson%2C_John_C_c1880_GAR_MoH_public_domain_image.jpg/500px-Hunterson%2C_John_C_c1880_GAR_MoH_public_domain_image.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "thomas-w-hyde": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Portrait_of_Thomas_Worcester_Hyde_%28cropped%29.jpg/500px-Portrait_of_Thomas_Worcester_Hyde_%28cropped%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "lewis-j-ingalls": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Laura_Ingalls_Wilder_cropped_sepia2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "leonidas-h-inscho": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Leonidas_H._Inscho_1895_public_domain_USGov.jpg/500px-Leonidas_H._Inscho_1895_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "frederick-r-jackson": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "samuel-johnson": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-kaiser": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "joseph-keene": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-s-kenyon": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "rufus-jr-king": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Rufus_King%2C_Jr.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "jc-julius-langbein": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/JC_Julius_Langbein.jpg/500px-JC_Julius_Langbein.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "benjamin-levy": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/BenjaminLevy.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "dewitt-clinton-lewis": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Lewis%2C_Dewitt_Clinton_c1865_public_domain.jpg/500px-Lewis%2C_Dewitt_Clinton_c1865_public_domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "adolphe-libaire": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "george-h-maynard": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-wade-mcdonald": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-w-mccammon": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/William_Wallace_McCammon_1875_public_domain_USGov.jpg/500px-William_Wallace_McCammon_1875_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "martin-t-mcmahon": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Martin_T_McMahon_%28cropped%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "frank-w-mills": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Medalsofhonor2.jpg/500px-Medalsofhonor2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "george-w-mindil": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tri-service_medal_of_honor.jpg/500px-Tri-service_medal_of_honor.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-h-moffitt": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/John_Henry_Moffitt_%28cropped%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "dennis-j-f-murphy": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "delano-morey": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Delano_Morey_1910_public_domain_USGov_%28cropped%29.jpg/500px-Delano_Morey_1910_public_domain_USGov_%28cropped%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-p-murphy": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michael_P._Murphy_portrait.jpg/500px-Michael_P._Murphy_portrait.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-j-nolan": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Medalsofhonor2.jpg/500px-Medalsofhonor2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "jacob-g-orth": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-h-osborne": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-g-palmer": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/William_Jackson_Palmer.jpg/500px-William_Jackson_Palmer.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-h-paul": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/William_H._Paul%2C_U.S._Medal_of_Honor_Winner%2C_c._1901.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "philip-petty": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "cassius-peck": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Cassius_Peck_%28Union_Army_Medal_of_Honor_recipient%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "frederick-phisterer": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frederick_Phisterer.jpg/500px-Frederick_Phisterer.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "edward-m-pike": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Medalsofhonor2.jpg/500px-Medalsofhonor2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "samuel-e-pingree": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Samuel_E._Pingree.jpg/500px-Samuel_E._Pingree.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "thomas-plunkett": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Thomas_Plunkett_1865_public_domain_USGov.jpg/500px-Thomas_Plunkett_1865_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-h-powell": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/WHPowell.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "albert-power": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Medalsofhonor2.jpg/500px-Medalsofhonor2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "joseph-r-prentice": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Joseph_Rollin_Prentice_1865_public_domain_USGov.jpg/500px-Joseph_Rollin_Prentice_1865_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "hiram-w-purcell": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Medalsofhonor2.jpg/500px-Medalsofhonor2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "matthew-s-quay": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Matthew_S._Quay_House.jpg/500px-Matthew_S._Quay_House.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-quinlan": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/James_Quinlan.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "myron-h-ranney": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "peter-rafferty": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Peter_F._Rafferty_1897_public_domain_USGov.jpg/500px-Peter_F._Rafferty_1897_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "julius-d-rhodes": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Julius_Dexter_Rhodes_1865_public_domain_USGov.jpg/500px-Julius_Dexter_Rhodes_1865_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-y-w-ripley": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/William_Y._W._Ripley.jpg/500px-William_Y._W._Ripley.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "milton-russell": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Milton_Russell_Medal_of_Honor.jpg/500px-Milton_Russell_Medal_of_Honor.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "martin-schubert": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Martin_Schubert.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "cyrus-sears": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Cyrus_Sears_1903_public_domain_USGov.jpg/500px-Cyrus_Sears_1903_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "julian-a-scott": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Julian-scott-cdv.JPG",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-shambaugh": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-r-shafter": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/William_Rufus_Shafter_1898.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-shiel": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "george-dallas-sidman": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/George_Dallas_Sidman_1865_public_domain_USGov.jpg/500px-George_Dallas_Sidman_1865_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "wilson-smith": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Wilson_Smith_1875_public_domain_USGov.jpg/500px-Wilson_Smith_1875_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "edward-b-spalding": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Edward_Burson_Spalding_1885_public_domain_USGov.jpg/500px-Edward_Burson_Spalding_1885_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-w-sprague": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/John_W_Sprague.jpg/500px-John_W_Sprague.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-h-surles": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/William_H._Surles_Medal_of_Honor.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "wager-swayne": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/WSwayne.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-b-tanner": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "charles-taylor": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "james-harry-thompson": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-d-terry": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/John_Darling_Terry.jpg/500px-John_Darling_Terry.jpg",
+    "photo_credit": "Dtmacl / Wikimedia Commons — CC BY-SA 4.0",
+    "processed": true
+  },
+  "john-tribe": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-m-tobin": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/1868_John_Michael_Tobin_Massachusetts_House_of_Representatives.png/500px-1868_John_Michael_Tobin_Massachusetts_House_of_Representatives.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "voltaire-p-twombly": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Voltaire_Twombly.jpg/500px-Voltaire_Twombly.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "wilson-vance": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Vance%2C_Wilson_J_%281845-1911%29_c1865_MoH_Public_Domain.jpg/500px-Vance%2C_Wilson_J_%281845-1911%29_c1865_MoH_Public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "ernest-von-vegesack": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/AMA.0009178.jpg/500px-AMA.0009178.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-webb": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Webb%2C_James_W._%281841-1915%29_c1885_MoH_Winner_public_Domain.jpg/500px-Webb%2C_James_W._%281841-1915%29_c1885_MoH_Winner_public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "j-henry-white": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Kyle_J._White.jpg/500px-Kyle_J._White.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-m-whitehead": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Whitehead%2C_John_Milton_%281823-1909%29_c18985_MoH_Winner_public_Domain.jpg/500px-Whitehead%2C_John_Milton_%281823-1909%29_c18985_MoH_Winner_public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "george-c-williams": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "elwood-m-williams": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Medalsofhonor2.jpg/500px-Medalsofhonor2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-a-williamson": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/US_Army_Gen._James_Alexander_Williamson.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-m-wilson": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Watsonwilson.jpg/500px-Watsonwilson.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "samuel-c-wright": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "evan-m-woodward": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Woodward%2C_Evan_M._%281838-1904%29_c1865_MoH_Winner_Public_Domain.jpg/500px-Woodward%2C_Evan_M._%281838-1904%29_c1865_MoH_Winner_Public_Domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "adelbert-ames": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Gen._Adelbert_Ames_-_NARA_-_527085.jpg/500px-Gen._Adelbert_Ames_-_NARA_-_527085.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "nicholas-boquet": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Nicholas_Bouquet.jpg/500px-Nicholas_Bouquet.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "walter-h-cooke": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "francis-e-brownell": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Francisbrownell.jpg/500px-Francisbrownell.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-e-cross": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Close-up_of_the_Tiffany_Cross_Medal_of_Honor.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-f-hartranft": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/JohnFHartranft.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "lorenzo-d-immell": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Lorenzo_D._Immell_1895_public_domain_USGov.jpg/500px-Lorenzo_D._Immell_1895_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "abiather-j-knowles": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Abiather_J_Knowles.jpg/500px-Abiather_J_Knowles.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "michael-madden": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "owen-mcgough": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Medalsofhonor2.jpg/500px-Medalsofhonor2.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-g-merritt": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/John_G_Merritt_1865_public_domain_USGov.jpg/500px-John_G_Merritt_1865_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-j-murphy": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Audie_Murphy.jpg/500px-Audie_Murphy.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "george-h-palmer": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/George_Henry_Palmer_%281840%E2%80%931901%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-f-rand": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Charles_Franklin_Rand_1897_public_domain_USGov.jpg/500px-Charles_Franklin_Rand_1897_public_domain_USGov.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-m-schofield": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/John_Schofield_-_Brady-Handy.jpg/500px-John_Schofield_-_Brady-Handy.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-h-tompkins": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "henry-w-wheeler": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-m-wherry": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/William_M%2C_Wherry.jpg/500px-William_M%2C_Wherry.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "orlando-b-willcox": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Orlando_B._Willcox_-_Brady-Handy.jpg/500px-Orlando_B._Willcox_-_Brady-Handy.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-h-withington": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/William_Herbert_Withington.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "h-clay-wood": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Henry_Clay_Wood_%28US_Army_brigadier_general%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-avery": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "augustus-barry": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "charles-baker": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Henry_Baker_Medal_of_Honor.jpg/500px-Henry_Baker_Medal_of_Honor.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "jesse-t-barrick": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "adolphus-w-greely": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/General_A.W._Greely%2C_half-length_portrait%2C_facing_left%2C_in_uniform_LCCN91786306.jpg/500px-General_A.W._Greely%2C_half-length_portrait%2C_facing_left%2C_in_uniform_LCCN91786306.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "thomas-barton": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-h-barnes": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "charles-l-barrell": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "richard-n-batchelder": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/BG_R_N_Batchelder.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-angling": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "gurdon-h-barter": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "philip-bazaar": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "david-l-bass": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "robert-anderson": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "matthew-arther": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "jean-j-beaufort": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/US-MOH-1862.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "frank-bois": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "charles-asten": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "charles-baldwin": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "thomas-e-atkinson": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-barnum": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "george-bell": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "samuel-n-benjamin": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Samuel_Nicholl_Benjamin.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "william-bensinger": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/William_Bensinger.jpg/500px-William_Bensinger.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-j-bibber": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "asa-betham": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-f-bickford": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/John_Bickford_photo_from_the_Boston_Evening_Transcript_21_June_1922.png/500px-John_Bickford_photo_from_the_Boston_Evening_Transcript_21_June_1922.png",
+    "photo_credit": "Wendy01902 / Wikimedia Commons — CC BY-SA 4.0",
+    "processed": true
+  },
+  "richard-binder": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Richard_Binder_%28MOH%29.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "robert-m-blair": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-blagheen": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/William_Blagheen_Medal_of_Honor.jpg/500px-William_Blagheen_Medal_of_Honor.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "robert-blake": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Robert_Blake_%28MOH%29_poster.jpg/500px-Robert_Blake_%28MOH%29_poster.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "zenas-r-bliss": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Zenas_Randall_Bliss_1835-1900.jpg/500px-Zenas_Randall_Bliss_1835-1900.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "hugh-p-boon": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-bond": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "john-g-bourke": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "thomas-bourne": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "richard-boury": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Richard_Boury_1865_public_domain.jpg/500px-Richard_Boury_1865_public_domain.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "emmer-bowen": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/US-MOH-1862.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "amos-bradley": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "edward-r-bowman": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "charles-bradley": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-breen": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-brazell": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/John_Brazell_Medal_of_Honor.jpg/500px-John_Brazell_Medal_of_Honor.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "christopher-brennan": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "andrew-brinn": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "edward-jr-brown": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "john-brown": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "james-brown": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Army_1862-1895.png/500px-Army_1862-1895.png",
+    "photo_credit": "Cambrosch / Wikimedia Commons — CC BY-SA 4.0",
+    "processed": true
+  },
+  "william-h-brown": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "robert-brown": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Brown-bobbie-e.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "wilson-brown": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "wilson-w-brown": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "william-p-brownell": {
+    "photo_url": null,
+    "photo_credit": null,
+    "processed": true
+  },
+  "henry-brutsche": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "james-buck": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/US_Navy_Medal_of_Honor_%281862_original%29.png",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
+  },
+  "robert-buffum": {
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Robert_Buffum.jpg/500px-Robert_Buffum.jpg",
+    "photo_credit": "Wikimedia Commons — public domain",
+    "processed": true
   }
 }
