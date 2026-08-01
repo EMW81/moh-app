@@ -712,3 +712,41 @@ pilot-only fields, expected); year span 1861-2010; sidebar group counts 3011/55/
 OPEN FOR HUMANS: 930 Unknown-conflict records now visible in the Conflict filter as
 "Unknown" — adjudication pass still pending (938 conflict_uncertain flags in data).
 Battles menu only covers pilot records until a battle-derivation pass runs.
+
+## 2026-08-01 — TASK 1 (adjudication): conflicts + survived DONE; tag review queued
+
+CONFLICT ADJUDICATION — conflict_uncertain 937 -> 3:
+- ROOT CAUSE of the 928 Unknowns: the Phase-5 pre-pass read only the structured year
+  field; it never mined the CITATION TEXT, where most of these records state full dates
+  and theaters outright. scripts/adjudicate.py (auto stage) extracts action years from
+  citations (excluding birth/issue-date years by context) + a much richer keyword
+  battery -> 779 auto-resolved with per-record evidence strings.
+- Manual stage (in-context review of all 158 residue): 155 resolved, evidence logged in
+  data/adjudication/manual_01.json. Still uncertain (documented): timothy-oconnor
+  ("date and place of act not of record"), john-ortega (no era signal in any field),
+  david-goodman (truncated source year 186X).
+- NEW CONFLICT LABEL, needs human sign-off: "Interim Awards (Peacetime)" — 176 records
+  (shipboard fires/explosions, drowning rescues, Squalus/S-4 divers, polar expeditions,
+  Lindbergh, long-service). These are real non-combat awards; labeling them by
+  surrounding-war era would have been false. Rename welcome if a better term exists.
+- AUTO-PASS BUGS caught during manual review (both self-corrected by design since
+  disagreements stay flagged): "german machinegun" keyword mis-suggested WWI for two
+  1944 citations (Butts, Schauer); "Cheyenne, Wyo." residence line mis-suggested Indian
+  Campaigns for Carey (WWII Rimling). All fixed in manual_01.
+- Conflict distribution now tracks history: Civil War 1,515 (~1,523 actual), Indian
+  Campaigns 416 (~426), WWII 454. Korean 160, WWI 126, Interim 176, Unknown 2.
+
+SURVIVED RE-VERIFICATION (all 43 survived_confidence=low, full-citation reads):
+- 10 flipped False->True: heuristic false-positives where died/dying referred to someone
+  else or was idiom ("smoke had died away", "his dying platoon leader", "Twenty Germans
+  died") — Dean, Walker, Hall, Dolby, Liteky, McGuire, O'Callahan, Okubo, Bolden,
+  J. Harrington. 33 confirmed fallen with explicit death statements; confidence
+  upgraded low->high on all 43. Corpus fell count 448 -> 438.
+
+Overlay mechanism: data/adjudication/{auto,manual_NN}.json applied by merge (pilot
+records refused). App verified headless: 3,475 loaded, 18 conflicts incl. Interim
+(filter returns exactly 176), fell 438, uncertain 3.
+
+REMAINING IN TASK 1 (next session): tag-correction review of the 521 confidence=low
+records (201 overlap with now-resolved conflicts). Then TASK 2 (post-2014 top-up) and
+TASK 3 (photos at scale) — untouched.
