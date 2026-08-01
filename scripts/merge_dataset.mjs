@@ -41,7 +41,7 @@ const pilotIdSet = new Set(pilot.map(r => r.id));
 const byId = new Map(all.map(r => [r.id, r]));
 if (existsSync("data/adjudication")) {
   const files = readdirSync("data/adjudication")
-    .filter(f => f === "auto.json" || /^manual_\d+\.json$/.test(f)).sort();
+    .filter(f => f === "auto.json" || /^manual_[a-z_]*\d+\.json$/.test(f)).sort();
   let applied = 0;
   for (const f of files) {
     const overlay = JSON.parse(readFileSync(`data/adjudication/${f}`, "utf8"));
