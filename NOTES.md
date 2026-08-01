@@ -784,3 +784,16 @@ DESIGN/IMPLEMENTATION NOTES:
   confirmed, pick+fate composability, dark mode, detail-modal favrow (incl. a
   fixed bug: modal opened from a shared URL before the layer loaded showed a stale
   favrow — now refreshed when the layer arrives).
+
+## 2026-08-01 (evening) — Favorites activation attempt: BLOCKED, placeholder credentials
+
+The activation request again contained the literal bracket text "[PASTE PROJECT URL]" /
+"[PASTE ANON KEY]" instead of real values (same placeholder pattern as the original
+feature request). Not inserted: literal placeholders would ship garbage constants —
+harmless (the layer's error handling would keep it hidden) but pointless and messy.
+
+No changes made; SUPABASE_URL/SUPABASE_ANON_KEY remain empty, layer remains dormant,
+production unaffected. TO ACTIVATE: resend the actual project URL (https://<ref>.supabase.co)
+and the anon public key, and I'll insert, rebuild, verify against the live project
+(signed-out parity, picks appearance, real sign-in), and push. The schema SQL in
+supabase/schema.sql still needs running in the dashboard if not done yet.
