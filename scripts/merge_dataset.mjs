@@ -4,7 +4,7 @@
 // the top of the list doesn't reshuffle when the full set swaps in), then tagged chunks
 // in chunk order. Pilot records are authoritative — the pre-pass already excluded their
 // cmohs numbers from the chunks; this script re-verifies that invariant.
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
 
 const pilot = JSON.parse(readFileSync("data/pilot50.json", "utf8")).recipients;
 const cmohsNum = link => (String(link || "").match(/recipient-detail\/(\d+)\//) || [])[1] || null;
@@ -34,6 +34,27 @@ for (const r of all) if (REPAIRS[r.id]) Object.assign(r, REPAIRS[r.id]);
 // app's display label (same category, Darrin's taxonomy unchanged).
 const CAT_ALIASES = { "Duty & Country (Patriotic)": "Duty & Country" };
 for (const r of all) r.categories = r.categories.map(c => CAT_ALIASES[c] || c);
+
+// Adjudication overlays (Task 1, 2026-08-01): data/adjudication/auto.json + manual_*.json
+// hold id-keyed field corrections. Never applied to pilot records.
+const pilotIdSet = new Set(pilot.map(r => r.id));
+const byId = new Map(all.map(r => [r.id, r]));
+if (existsSync("data/adjudication")) {
+  const files = readdirSync("data/adjudication")
+    .filter(f => f === "auto.json" || /^manual_\d+\.json$/.test(f)).sort();
+  let applied = 0;
+  for (const f of files) {
+    const overlay = JSON.parse(readFileSync(`data/adjudication/${f}`, "utf8"));
+    for (const [id, fields] of Object.entries(overlay)) {
+      if (pilotIdSet.has(id)) throw new Error(`overlay ${f} touches pilot record ${id}`);
+      const r = byId.get(id);
+      if (!r) throw new Error(`overlay ${f}: unknown id ${id}`);
+      Object.assign(r, fields);
+      applied++;
+    }
+  }
+  if (files.length) console.log(`adjudication overlays: ${files.join(", ")} — ${applied} records patched`);
+}
 
 // validations
 const ids = new Set(), nums = new Set();

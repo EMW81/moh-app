@@ -1,0 +1,4784 @@
+{
+ "edward-william-boers": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-f-brock": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-j-clausey": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "willie-cronan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "raymond-e-davis": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "emil-fredericksen": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "rade-grbitch": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frank-e-hill": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "oscar-frederick-nelson": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "otto-diller-schmidt": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-sidney-shacklette": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-avery": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-baker": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-l-day": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "truman-o-olson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "walter-atlee-edwards": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1922)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-breault": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1923)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "augustus-barry": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-e-snyder": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1910)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jesse-t-barrick": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "louis-b-lawton": {
+  "conflict": "Philippine-American War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1900 in citation text (era philippine)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "calvin-pearl-titus": {
+  "conflict": "Philippine-American War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1900 in citation text (era philippine)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "pedro-cano": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "ardie-r-copas": {
+  "conflict": "Vietnam War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1970 in citation text (era vietnam)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joe-gandara": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "salvador-j-lara": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-f-leonard": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "manuel-v-mendoza": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alfred-b-nietzel": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "donald-k-schwab": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frederick-behne": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "heinrich-behnke": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-francis-bresnahan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "demetri-corahorgi": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-floyd": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "johannes-j-johannessen": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1905)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "adolphus-w-greely": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1861 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-cahey": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "navy 1901, no combat language \u2014 interim award",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alphonse-girandy": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "navy 1901, no combat language \u2014 interim award",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "louis-fred-pfeifer": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "navy 1901, no combat language \u2014 interim award",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-alvin-clary": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1910)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "telesforo-trinidad": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1915)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-barton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-h-taylor": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1889) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "almond-e-fisher": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jon-e-swanson": {
+  "conflict": "Vietnam War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1971 in citation text (era vietnam)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-a-baker": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-j-obrien": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "dale-eldon-christensen": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "herbert-f-christian": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "albert-earnest-schwab": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-h-coolidge": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "yeiki-kobashigawa": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-t-sakato": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-angling": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "gurdon-h-barter": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "david-l-bass": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-f-warner": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "matthew-arther": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-e-muller": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: wwii keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-e-butts": {
+  "conflict": "World War I",
+  "conflict_uncertain": true,
+  "conflict_reason": "keyword (wwi keyword) vs year 1944 era ww2 \u2014 keyword kept, still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jean-j-beaufort": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "harry-d-fadden": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1903)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "peter-johnson": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1898)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-mahoney": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1898)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jonah-e-kelley": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: wwi keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "paul-f-riordan": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "andre-w-brewster": {
+  "conflict": "Philippine-American War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1900 in citation text (era philippine)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "albert-joseph-smith": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1921)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-c-squires": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "luovi-halling": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1904)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-peters": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1904)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-klein": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1904)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-thornton": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "clinton-m-hedrick": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-schauer": {
+  "conflict": "World War I",
+  "conflict_uncertain": true,
+  "conflict_reason": "keyword (wwi keyword) vs year 1944 era ww2 \u2014 keyword kept, still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "melvin-e-biddle": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "harl-jr-pease": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frank-william-crilley": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1915)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "julien-e-gaujot": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frank-bois": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "walter-d-ehlers": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "ernest-h-bjorkman": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1903)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "loddie-stupka": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1903)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "august-p-teytand": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1903)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-walsh": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1903)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-asten": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-baldwin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-mcgunigal": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1917 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "tedford-h-cann": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1917 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "ora-graves": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1917 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-mackenzie": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1917 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-g-mcmurtry": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: wwi keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "francis-edward-jr-ormsbee": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frank-monroe-upton": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "nelson-m-holderman": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: wwi keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "harold-christ-agerholm": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-ahern": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1897)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-alchesay": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-allen": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "navy 1900, no combat language \u2014 interim award",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-beatty-anderson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-anderson": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1878)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-nott-antrim": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-atkins": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1898)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-e-atkinson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-f-auer": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1883)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-e-bailey": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "kenneth-d-bailey": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-henry-balch": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-barnum": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-barrett": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-bates": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1866)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "harold-william-bauer": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "lewis-kenneth-bausell": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "clay-beauford": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-bell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1861 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "samuel-n-benjamin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "mervyn-sharp-bennion": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-bensinger": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-benson": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1872)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-joseph-berry": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "heinrich-bertram": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "asa-betham": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-j-bibber": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-f-bickford": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-binder": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-blagheen": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-blair": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-m-blair": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-blake": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "n-a-blanquet": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "zenas-r-bliss": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-bond": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-earl-bonney": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1910)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-jr-bonnyman": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "hugh-p-boon": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-james-bordelon": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-g-bourke": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-bourne": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-boury": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "emmer-bowen": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-r-bowman": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-bradley": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1872)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "amos-bradley": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "willis-winter-jr-bradley": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1917 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frank-bratling": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-brazell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-breen": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "christopher-brennan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "andrew-brinn": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-brophy": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-jr-brown": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-brown": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-brown": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-brown-1964": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1866)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-brown": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-h-brown": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "wilson-brown": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "wilson-w-brown": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-p-brownell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-brutsche": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "david-m-buchanan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1879)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-buck": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "howard-major-buckley": {
+  "conflict": "Philippine-American War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1899 in citation text (era philippine)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-buffum": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-j-burke": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-burke-1965": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1866)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-m-burns": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "albert-burton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-butts": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-robert-caddy": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "abel-g-cadwallader": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-judson-callaghan": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-j-callen": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-campbell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-ham-cannon": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "horace-jr-capron": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-f-jr-carey": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "keyword (tribe/frontier keyword) vs year 1945 era ww2 \u2014 keyword kept, still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-carey": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year None)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "louis-h-carpenter": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-m-carr": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-carroll": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jacob-cart": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-a-jr-carter": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-carter": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-w-cary": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1915)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "anthony-casamento": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-cassidy": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-cavanaugh": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "navy 1898, no combat language \u2014 interim award",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "justice-m-chambers": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-b-chandler": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "august-chandron": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1885)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "louis-g-chaput": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "n-a-chiquito": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-t-clifford": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-colbert": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "darrell-samuel-cole": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "dennis-conlan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-connolly": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-connor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-c-connor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-cooper": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-e-corcoran": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-corey": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-w-corliss": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-costello": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "peter-cotton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-c-courtney": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1882)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-alexius-jr-courtney": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-cramen": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1882)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-crandall": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-crawford": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-j-creelman": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1897) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-cripps": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-philip-cromwell": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "cornelius-cronin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-m-cumpston": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-w-cutter": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1872)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-m-cutts": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-daily": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "anthony-peter-damato": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: wwii keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "albert-leroy-david": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "rudolph-b-davila": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-davis": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-davis-2004": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-h-davis": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1886)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "samuel-w-davis": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-l-day": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-de-lacey": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-deakin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-dempster": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-deneef": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1875)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-henry-denig": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "lorenzo-denning": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-dennis": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-densmore": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "bartholomew-diggins": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-a-dillon": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-ditzenback": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-donnelly": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-doolen": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-a-dorsey": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "allan-h-dougall": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-dougherty": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-p-dow": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-dow": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-dowling": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frank-du-moulin": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1867)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "adam-duncan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-k-l-duncan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-hugo-dunlap": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-dunn": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-d-dunphy": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "aquilla-james-dyess": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "merritt-austin-edson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-edwards": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-a-eilers": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1892) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "walter-elmore": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1878)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-talmage-elrod": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "n-a-elsatsoosu": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-enderlin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-english": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-enright": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1886)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "harold-glenn-epperson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-p-erickson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-everetts": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1898)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-falcott": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-t-fallon": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-peter-fardy": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-farley": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-farrell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-farren": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "isaac-l-fasseur": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1884)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-h-ferrell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-fitzpatrick": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "francis-c-flaherty": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-flannagan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1878)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-e-fleming": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-flood": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-h-folly": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "nicholas-foran": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-jacob-foss": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-adelbert-foster": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "christopher-fowler": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1874)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-h-foy": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-j-franks": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "martin-freeman": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jacob-g-frick": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-b-frisbee": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "isaac-n-fry": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-edward-galer": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: wwii keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-gardner": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-gardner": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "harry-garland": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-r-garrison": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-garvin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-h-gay": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-g-george": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-gidding": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frank-s-gile": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "matthew-gillick": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1883)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "howard-walter-gilmore": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-golden": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "harold-gonsalves": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edwin-goodrich": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-graham": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-grant": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "ross-franklin-gray": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-greene": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "luke-m-griswold": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jacob-gunther": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-gurke": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edmund-haffee": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-h-haight": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "barney-f-hajiro": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-haley": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-halford": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1870)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-hall": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-e-hall": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-halstead": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-david-jr-halyburton": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "mark-g-ham": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-f-hamberger": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "navy 1900, no combat language \u2014 interim award",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "hugh-hamilton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-hamilton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-w-hamilton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-hazeltine-hammann": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "owen-francis-patrick-hammerberg": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "allexander-hand": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-handran": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "dale-merlin-hansen": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-murray-hanson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-harcourt": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-harding": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "bernard-harley": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "david-harrington": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1884) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-harris": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-h-harrison": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-e-hart": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "mikio-hasemoto": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-w-hathaway": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "louis-james-jr-hauge": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-hawkins": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "martin-j-hawkins": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-dean-hawkins": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joe-hayashi": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "shizuya-hayashi": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-hayden": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1879)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-b-hayden": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-hayes": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-hayes": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "clamor-heise": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-henry-helms": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1901)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "francis-s-hesseltine": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-c-hibson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + state volunteer regiment",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-hickman": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-higby": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-p-higgins": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edwin-joseph-hill": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-l-hill": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "lehmann-hinemann": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-hinnegan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-hogan": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1877 in citation text (era indian)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-p-hogarty": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-hollat": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-holt": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1871)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-horton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-horton-2024": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1879) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "lewis-a-horton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-h-houghton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-j-houghton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "martin-howard": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "peter-howard": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-russel-huber": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1928)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-hudson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-w-huff": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-huskey": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "johnnie-david-hutchins": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-j-hyde": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-hyland": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "osmond-k-ingram": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1917 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-irlam": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-irving": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-irving": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "nicholas-irwin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-h-james": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "willy-f-jr-james": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-jardine": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "navy 1898, no combat language \u2014 interim award",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-jenkins": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "n-a-jim": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-johnson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-johnson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-johnson": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1879)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-p-johnston": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "willie-johnston": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "andrew-jones": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "herbert-charpoit-jones": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-jones": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-e-jones": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-jones": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-jones": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-jordan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-jordan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-rodolph-julian": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-kane": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-keenan": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "gus-kefurt": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-kelley": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "n-a-kelsay": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-kendrick": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "barnett-kenna": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-kenyon": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "reinhardt-john-keppler": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-kersey": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "isaac-campbell-kidd": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "hugh-king": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1871)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-king": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1901)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-h-king": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "samuel-w-kinnaird": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "elbert-luther-kinser": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-a-kirkwood": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "albert-knaak": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-j-knight": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "n-a-kosoha": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-edward-kraus": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-t-kuroda": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-j-kyle": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1879)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-dennis-la-belle": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-lafferty": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "bartlett-laffey": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-lakin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-lakin": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1874)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-laverty": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-lawrence": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-lawson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "nicholas-lear": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-h-lee": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "emile-lejeune": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-w-leland": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "pierre-leon": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-leonard": {
+  "conflict": "Philippine-American War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1899 in citation text (era philippine)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "fred-faulkner-lester": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-f-w-little": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-little": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "benjamin-lloyd": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-w-lloyd": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "hugh-logan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-low": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-lucy": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1876) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jack-lummus": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-gordon-lyle": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-lyons": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "leonidas-s-lytle": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "n-a-machol": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-machon": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-mack": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-mack": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-f-mackie": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-madden": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-maddin": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-jonas-madison": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-w-magee": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1884) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "gregory-mahoney": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-j-manning": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1882)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-s-martin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "harry-linn-martin": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-martin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-martin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-martin-855": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "elihu-h-mason": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "leonard-foster-mason": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "david-a-matthews": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-matthews": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1879) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "bernard-mcbride": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-mccabe": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-howard-mccard": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-mccarthy": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-mccarton": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1882)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "matthew-mcclelland": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-miles-mccool": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-mccormick": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "adam-mccullock": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-mcdonald": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-mcdonald": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-mcfarland": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-mcgowan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "martin-mchugh": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-mcintosh": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-mckinley": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-mcknight": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-mcleod": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-mcnally": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-miller-jr-mctureous": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-h-mcveagh": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-w-mcwilliams": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-melville": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-mifflin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "nelson-a-miles": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "andrew-miller-922": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-w-miller": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "hugh-miller": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1885)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-miller": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-milliken": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-millmore": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1877)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-mills": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-mitchell": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "hugh-molloy": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-montgomery": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-moore": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-moore-943": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "francis-moore": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1882)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-moore": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "philip-moore": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1880)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-moore": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-h-morgan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-moriarity": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-l-morris": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-morris": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-w-morris": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-g-morrison": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-morse": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1880)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-w-morton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "kaoru-moto": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "st-clair-a-mulholland": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-mullen": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "hugh-p-mullin": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1899)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "harvey-m-munsell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "kiyoshi-k-muranaga": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-murphy": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "masato-nakae": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "shinyei-nakamine": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-k-nakamura": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "n-a-nannasaddie": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "n-a-nantaje": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "david-naylor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-neil": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-dury-new": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-newland": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-h-nibbe": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-nichols": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joe-m-nishimoto": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-noble": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-b-noil": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1872)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "j-w-norris": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1883)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "christopher-nugent": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-r-obeirne": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "oliver-obrien": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-ocallaghan": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-oconnell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-f-oconner": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1880)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "albert-oconnor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "menomen-odonnell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "timothy-odonoghue": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-henry-ohare": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "michael-oregan": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "allan-m-ohata": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "august-ohmsen": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1884) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-k-okubo": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "yukio-okutsu": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "paul-a-oliver": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frank-h-ono": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "david-orbansky": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "moses-orr": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-osborne": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "weedon-e-osborne": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation + wwi keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-osborne": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "christian-osepins": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1882)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "kazuo-otani": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "miles-m-oviatt": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-allen-owens": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-william-ozbourn": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-parker": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-parker": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-parks": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-joseph-parle": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joachim-pease": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "oscar-e-peck": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-pelham": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-perry": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alfred-peterson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "oscar-verner-peterson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "orlando-henderson-petty": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "wesley-phelps": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "lewis-phife": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-phillips": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-phinney": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "francis-junior-pierce": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-pittinger": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-b-poole": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "everett-parker-pope": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-r-porter": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "philip-sidney-post": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-vincent-power": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-james-powers": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-prance": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-francis-prendergast": {
+  "conflict": "Philippine-American War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1899 in citation text (era philippine)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-preston": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-price": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-pyne": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-rannahan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-read": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-a-read": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-e-read": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-h-reddick": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-james-reeves": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jeremiah-regan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-regan-2056": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1873) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-rice": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "louis-richards": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "samuel-richman": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "milton-ernest-ricketts": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-ringold": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "ruben-rivers": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "hampton-m-roach": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-howard-roan": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-s-roantree": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-roberts": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "samuel-robertson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-f-robie": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-robinson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-robinson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-robinson": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1867) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-robinson-1970": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1866)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "albert-harold-rooks": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "marion-a-ross": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "johannes-rouning": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1882)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-rountry": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "archibald-h-jr-rowand": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "donald-jack-ruhl": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-rush": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-russell": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1880)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-m-rutter": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-ryan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1876)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-sadler": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "aaron-sanderson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-sands": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "isacc-sapp": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1871)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-saunders": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "herbert-emery-schonland": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-schutt": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-d-scott": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-m-scott": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "norman-scott": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-r-scott": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "elisha-b-seaman": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-seanor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-shaffer": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "patrick-shanahan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1899)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "hendrick-sharp": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-c-sharpless": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-sheerin": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "irwin-shepard": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "louis-c-shepard": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-sheppard": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-sheridan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-shipman": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-shivers": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "david-monroe-shoup": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-shutes": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-otto-siegel": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "lebbeus-simkins": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-simpson": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1877)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "luther-jr-skaggs": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "samuel-slavens": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-h-smith-1263": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edwin-smith": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-smith": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-smith-1269": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-smith": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-smith-1271": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-smith-2064": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1880)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-lucian-smith": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "oloff-smith": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "otto-smith": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-smith": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-smith-2065": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1878)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "walter-b-smith": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "willard-m-smith": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-smith": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-keith-sorenson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-e-sova": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "timothy-spillane": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "david-sprowle": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-a-stanley": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "rudolph-stauffer": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "tony-stein": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-e-sterling": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-d-stevens": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-a-stewart": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1872)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-w-stivers": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-stoddard": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-stokes": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1899)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-stout": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-strahan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-levick-iii-street": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "benoni-strivson": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-augustus-joseph-sullivan": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-sullivan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-f-sullivan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1882)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-sullivan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-summers": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-a-sutherland": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "benjamin-swearer": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1861 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-sweeney": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-sweeney": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1880)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-l-s-tabor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "ralph-talbot": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1918 in citation text (era ww1)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-talbott": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-tallentine": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "ted-t-tanouye": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-taylor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-taylor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "thomas-taylor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "wilbur-n-taylor": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-g-taylor": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-thayer": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1879)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-thielberg": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-l-thomas-3016": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "herbert-joseph-thomas": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "clyde-thomason": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-a-thompson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-thompson": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1878)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-thompson-1370": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1861 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-tilton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "grant-frederick-timmerman": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-p-tobie": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "paul-tobin": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1871)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "samuel-todd": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "peter-tomich": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "andrew-j-tomlin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "othniel-tripp": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-m-trout": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1877)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jeremiah-troy": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1882)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-h-truett": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-h-turpin": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-haure-turvelin": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-tweedale": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "matt-urban": {
+  "conflict": "World War I",
+  "conflict_uncertain": true,
+  "conflict_reason": "keyword (wwi keyword) vs year 1944 era ww2 \u2014 keyword kept, still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "franklin-van-valkenburgh": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "bruce-avery-van-voorhis": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "alexander-archer-vandegrift": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1942 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-e-vantine": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "pinkerton-r-vaughn": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-w-verney": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-h-von-schlick": {
+  "conflict": "Philippine-American War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1900 in citation text (era philippine)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "maurice-wagg": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "kenneth-ambrose-walsh": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-gary-walsh": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-ward": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "james-richard-ward": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1941 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "david-warren": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-watson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1943 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "wilson-douglas-watson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "andrew-j-weaher": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-s-webster": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-h-weeks": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "albert-weisbogel": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1874)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "adam-weissel": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1881)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-h-welch": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-wells-1456": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-white": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "daniel-whitfield": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "franklin-l-wilcox": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1865 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-wilkes": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "perry-wilkes": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "anthony-williams": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "antonio-williams": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1877) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-williams": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1879) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "jack-williams": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-williams": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1861 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-williams-1490": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1861 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-williams-1491": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "louis-williams": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1883)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "peter-williams": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-williams": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-williams": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-willis": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": true,
+  "conflict_reason": "frontier-era (1873) Navy/Marine, possibly peacetime \u2014 still uncertain",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-harlan-willis": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1945 in citation + wwii keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "richard-willis": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "henry-wills": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "august-wilson": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "non-combat rescue/accident language, no combat signal (year 1897)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-a-wilson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "louis-hugh-jr-wilson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-lee-wilson": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "joseph-witcome": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "frank-peter-witek": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1944 in citation text (era ww2)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-wollam": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "leonard-wood": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "mark-wood": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: state volunteer regiment (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "robert-b-wood": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-h-woodall": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: civil-war keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "samuel-woods": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "john-woon": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1863 in citation text (era civil)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "charles-b-woram": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "george-g-wortman": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: tribe/frontier keyword (no usable year)",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "edward-wright": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1862 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ },
+ "william-wright": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "adjudicated: year 1864 in citation + civil-war keyword",
+  "adjudicated": "auto-2026-08-01"
+ }
+}
