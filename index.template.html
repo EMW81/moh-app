@@ -1001,8 +1001,8 @@ function cycleTheme(){
 /* ===================== favorites layer (Supabase, plain fetch) ===================== */
 // Anon key is safe to embed client-side (RLS enforces writes). NEVER a service_role key.
 // Empty values = the layer stays hidden and the app behaves exactly as before.
-const SUPABASE_URL = "";       // ← paste the Supabase project URL, then rebuild
-const SUPABASE_ANON_KEY = "";  // ← paste the anon (public) key, then rebuild
+const SUPABASE_URL = "https://emqpqnbdtjdamqdphloo.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_4aMMXcENK5RbVl4zDu7k1g_l6u0CuL8";  // publishable (client-safe) key — sent via apikey header
 const FAV = {on:false, profiles:[], prof:{}, byStory:new Map(), byUser:new Map(), session:null};
 const HEART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
 

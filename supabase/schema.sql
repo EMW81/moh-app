@@ -1,5 +1,5 @@
 -- VALOR favorites schema (run in Supabase SQL editor) — 2026-08-01
--- Users (Darrin, Chet, Brant) are created in Supabase Auth by hand; this adds
+-- Users (Darrin, Chet, Brandt) are created in Supabase Auth by hand; this adds
 -- public profile rows + favorites with RLS: world-readable, self-writable.
 
 create table if not exists public.profiles (
@@ -34,4 +34,4 @@ create policy "delete own favorites" on public.favorites
 -- insert into public.profiles (id, display_name, color) values
 --   ('<darrin-uuid>', 'Darrin', 'sky'),
 --   ('<chet-uuid>',   'Chet',   'moss'),
---   ('<brant-uuid>',  'Brant',  'amber');
+--   ('<brandt-uuid>',  'Brandt',  'amber');
