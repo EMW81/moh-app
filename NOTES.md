@@ -797,3 +797,26 @@ production unaffected. TO ACTIVATE: resend the actual project URL (https://<ref>
 and the anon public key, and I'll insert, rebuild, verify against the live project
 (signed-out parity, picks appearance, real sign-in), and push. The schema SQL in
 supabase/schema.sql still needs running in the dashboard if not done yet.
+
+## 2026-08-01 (night) — URGENT map accuracy: DIAGNOSIS (stage 1)
+
+Sampled + quantified across all 3,475 records. THREE SYSTEMATIC ERROR CLASSES in the
+CORGIS-sourced coords (pilot 50 included — same source):
+1. INTEGER TRUNCATION — 3,475/3,475 records have integer lat/lng. Every single pin is
+   up to ~±55-110 km off before any other error. This is the base failure.
+2. GEOCODER ENTITY MISMATCH — the upstream geocoder matched battle names against a
+   US-biased index: "Iwo Jima, Dallas, TX", "Makin, IN 46750", "Solomons, MD",
+   "Volcano Island, Orlando FL", "Argonnestraat, Sint-Gillis, Belgium" (a Brussels
+   street for the Argonne); US home/enlistment street addresses for overseas actions
+   (Vittori's Korea action at "749 South Hill Street, Los Angeles"; Svehla likewise);
+   birth/residence states (Folland -> Providence RI, Barnum -> Kentucky); country
+   centroids (Izac -> "Germany" 51,10). 35 overseas-conflict records sit inside the
+   continental-US box; more mismatches exist within plausible boxes.
+3. Correct-entity places (Five Forks VA, Mobile Bay, Cherbourg, Bamban Tarlac) are
+   right-entity but truncated per (1).
+CONCLUSION: per-record patching is insufficient — coordinates must be RECOMPUTED for
+the full corpus: curated gazetteer (famous battles, exact/battlefield) -> place
+extracted from citation text ("Place and date:" lines beat the polluted action_place)
+-> cached Nominatim (1 req/s, proper UA) -> conflict-consistency validation; plus a
+per-record geo_precision field (exact|battlefield|locality|region|country) surfaced
+in the map popups. Stages 2-5 follow in this session's commits.
