@@ -672,3 +672,43 @@ NEXT: wire data/tagged/*.json into the app (Phase 5 render at scale — lazy/chu
 rendering ~200 cards/rAF per the queue) and re-run the inject/build so index.html
 carries the full tagged set instead of pilot50. Optionally diff against Darrin's
 59-story calibration set if it has arrived.
+
+## 2026-08-01 — MILESTONE: full collection live — 50 -> 3,475 stories
+
+DATASET (scripts/merge_dataset.mjs -> data/stories.json, 4.26 MB raw / ~933 KB gzip):
+- pilot 50 FIRST (instant-render continuity), then chunks 01-14. Pre-pass had already
+  excluded pilot cmohs numbers; merge re-verifies (dup ids, dup cmohs, schema).
+- 3,475 records: 3,027 survived / 448 fell / 937 conflict_uncertain (flag kept in data
+  for the adjudication pass; app displays derived conflict normally) / 3,427 no photo.
+- REPAIRS (derived fields only, citation-evidenced): robert-b-nett year 194->1944 +
+  conflict Philippine-American War->WORLD WAR II (real mis-derivation caused by the
+  truncated source year); george-c-platt 63->1863 Civil War; david-goodman 186X
+  unrecoverable -> year null, Indian Campaigns, uncertain.
+- Category alias: "Duty & Country (Patriotic)" (17 records, tagging-prompt long form)
+  -> app label "Duty & Country". App also hardened: unknown tag can't crash a card.
+
+ARCHITECTURE (approved): stories.json fetched at runtime (Pages gzips); pilot 50 stays
+inline = instant render + file://-offline fallback (verified: file:// -> 50 records,
+"Pilot 50" kicker + notice). Swap re-parses the original URL params against full-corpus
+index lists unless the user already interacted. Kicker shows Loading… -> "3,475
+Stories"; toast on arrival; rail-foot + empty-state copy now dynamic.
+
+PERFORMANCE (headless, localhost): swap 133ms; themes popover ALL 32 faceted counts
+3-5ms via per-dim pass-mask cache (was 32 corpus scans, now 1/dim/render); search
+render 27-33ms (1,079 hits for "gallantry"); map build of 3,475 pins 48ms.
+MAP CHOICE (logged): hybrid — canvas circleMarkers for 3,027 survived (cheap pan/zoom),
+branded star divIcons kept for the 448 fallen (few enough for DOM; the star matters
+most there); popups build lazily on click; canvas colors resolved from tokens and
+re-rendered on theme change. No new external deps (no markercluster).
+APP-SIDE FIX: yearOf() fallback regex bounded to 1860+ ("Birth: 1844" in a dateless
+citation was polluting the year span).
+
+VERIFIED: every filter dimension against full corpus (Korea 153 = source count, USMC
+295, grenade theme 152, fell 448, "machinegun" 390, Iwo Jima 1 — battles are
+pilot-only fields, expected); year span 1861-2010; sidebar group counts 3011/55/385/
+1810; initials placeholder on photo-less records; light+dark; 500px mobile; node
+--check x2; zero raw hex outside tokens. index.html 230,183 B.
+
+OPEN FOR HUMANS: 930 Unknown-conflict records now visible in the Conflict filter as
+"Unknown" — adjudication pass still pending (938 conflict_uncertain flags in data).
+Battles menu only covers pilot records until a battle-derivation pass runs.
