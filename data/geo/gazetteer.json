@@ -1,0 +1,1159 @@
+[
+{
+"p": "little big ?horn",
+"n": "Little Bighorn Battlefield, Montana",
+"lat": 45.564,
+"lng": -107.427,
+"prec": "exact",
+"c": [
+"Indian Campaigns"
+]
+},
+{
+"p": "iwo jima|suribachi",
+"n": "Iwo Jima",
+"lat": 24.78,
+"lng": 141.32,
+"prec": "battlefield",
+"c": [
+"World War II"
+]
+},
+{
+"p": "belleau wood|bois de belleau",
+"n": "Belleau Wood, France",
+"lat": 49.078,
+"lng": 3.293,
+"prec": "battlefield",
+"c": [
+"World War I"
+]
+},
+{
+"p": "mogadishu",
+"n": "Mogadishu, Somalia",
+"lat": 2.046,
+"lng": 45.318,
+"prec": "battlefield"
+},
+{
+"p": "pearl harbor",
+"n": "Pearl Harbor, Oahu, Hawaii",
+"lat": 21.365,
+"lng": -157.95,
+"prec": "exact",
+"c": [
+"World War II"
+]
+},
+{
+"p": "kamdesh|cop keating",
+"n": "COP Keating, Kamdesh, Afghanistan",
+"lat": 35.421,
+"lng": 71.336,
+"prec": "exact"
+},
+{
+"p": "gettysburg",
+"n": "Gettysburg, Pennsylvania",
+"lat": 39.812,
+"lng": -77.225,
+"prec": "battlefield"
+},
+{
+"p": "antietam|sharpsburg",
+"n": "Antietam, Maryland",
+"lat": 39.475,
+"lng": -77.745,
+"prec": "battlefield"
+},
+{
+"p": "vicksburg",
+"n": "Vicksburg, Mississippi",
+"lat": 32.346,
+"lng": -90.878,
+"prec": "battlefield"
+},
+{
+"p": "chancellorsville",
+"n": "Chancellorsville, Virginia",
+"lat": 38.31,
+"lng": -77.649,
+"prec": "battlefield"
+},
+{
+"p": "fredericksburg",
+"n": "Fredericksburg, Virginia",
+"lat": 38.3,
+"lng": -77.47,
+"prec": "battlefield"
+},
+{
+"p": "spotsylvania",
+"n": "Spotsylvania Court House, Virginia",
+"lat": 38.22,
+"lng": -77.588,
+"prec": "battlefield"
+},
+{
+"p": "cold harbor",
+"n": "Cold Harbor, Virginia",
+"lat": 37.594,
+"lng": -77.288,
+"prec": "battlefield"
+},
+{
+"p": "five forks",
+"n": "Five Forks, Virginia",
+"lat": 37.14,
+"lng": -77.626,
+"prec": "battlefield"
+},
+{
+"p": "petersburg",
+"n": "Petersburg, Virginia",
+"lat": 37.204,
+"lng": -77.377,
+"prec": "battlefield"
+},
+{
+"p": "cedar creek",
+"n": "Cedar Creek, Virginia",
+"lat": 39.021,
+"lng": -78.307,
+"prec": "battlefield",
+"c": [
+"U.S. Civil War"
+]
+},
+{
+"p": "appomattox",
+"n": "Appomattox, Virginia",
+"lat": 37.377,
+"lng": -78.796,
+"prec": "battlefield"
+},
+{
+"p": "shiloh|pittsburg landing",
+"n": "Shiloh, Tennessee",
+"lat": 35.138,
+"lng": -88.343,
+"prec": "battlefield"
+},
+{
+"p": "chickamauga",
+"n": "Chickamauga, Georgia",
+"lat": 34.94,
+"lng": -85.26,
+"prec": "battlefield"
+},
+{
+"p": "stones? river|murfreesboro",
+"n": "Stones River, Tennessee",
+"lat": 35.881,
+"lng": -86.432,
+"prec": "battlefield"
+},
+{
+"p": "franklin, tenn",
+"n": "Franklin, Tennessee",
+"lat": 35.918,
+"lng": -86.87,
+"prec": "battlefield"
+},
+{
+"p": "kenesaw|kennesaw",
+"n": "Kennesaw Mountain, Georgia",
+"lat": 33.977,
+"lng": -84.578,
+"prec": "battlefield"
+},
+{
+"p": "missionary ridge",
+"n": "Missionary Ridge, Tennessee",
+"lat": 35.028,
+"lng": -85.257,
+"prec": "battlefield"
+},
+{
+"p": "lookout mountain",
+"n": "Lookout Mountain, Tennessee",
+"lat": 35.01,
+"lng": -85.344,
+"prec": "battlefield"
+},
+{
+"p": "fort wagner|morris island",
+"n": "Fort Wagner, Morris Island, South Carolina",
+"lat": 32.722,
+"lng": -79.875,
+"prec": "exact"
+},
+{
+"p": "fort fisher",
+"n": "Fort Fisher, North Carolina",
+"lat": 33.971,
+"lng": -77.919,
+"prec": "exact"
+},
+{
+"p": "mobile bay|fort morgan",
+"n": "Mobile Bay, Alabama",
+"lat": 30.228,
+"lng": -88.023,
+"prec": "battlefield"
+},
+{
+"p": "forts jackson and st\\. philip",
+"n": "Forts Jackson & St. Philip, Louisiana",
+"lat": 29.357,
+"lng": -89.456,
+"prec": "exact"
+},
+{
+"p": "new market, va",
+"n": "New Market, Virginia",
+"lat": 38.647,
+"lng": -78.671,
+"prec": "battlefield"
+},
+{
+"p": "opequon|winchester, va",
+"n": "Opequon (Third Winchester), Virginia",
+"lat": 39.183,
+"lng": -78.163,
+"prec": "battlefield"
+},
+{
+"p": "fort donelson",
+"n": "Fort Donelson, Tennessee",
+"lat": 36.483,
+"lng": -87.855,
+"prec": "exact"
+},
+{
+"p": "charleston harbor|fort sumter",
+"n": "Charleston Harbor, South Carolina",
+"lat": 32.752,
+"lng": -79.875,
+"prec": "battlefield"
+},
+{
+"p": "hampton roads",
+"n": "Hampton Roads, Virginia",
+"lat": 36.96,
+"lng": -76.33,
+"prec": "battlefield"
+},
+{
+"p": "cherbourg",
+"n": "Off Cherbourg, France",
+"lat": 49.65,
+"lng": -1.62,
+"prec": "battlefield",
+"c": [
+"U.S. Civil War"
+]
+},
+{
+"p": "gaines'?s? mill",
+"n": "Gaines' Mill, Virginia",
+"lat": 37.578,
+"lng": -77.287,
+"prec": "battlefield"
+},
+{
+"p": "malvern hill",
+"n": "Malvern Hill, Virginia",
+"lat": 37.418,
+"lng": -77.249,
+"prec": "battlefield"
+},
+{
+"p": "fair oaks",
+"n": "Fair Oaks, Virginia",
+"lat": 37.53,
+"lng": -77.3,
+"prec": "battlefield"
+},
+{
+"p": "white oak swamp",
+"n": "White Oak Swamp, Virginia",
+"lat": 37.45,
+"lng": -77.35,
+"prec": "battlefield"
+},
+{
+"p": "the wilderness, va|wilderness, va",
+"n": "The Wilderness, Virginia",
+"lat": 38.32,
+"lng": -77.747,
+"prec": "battlefield"
+},
+{
+"p": "weldon railroad",
+"n": "Weldon Railroad, Virginia",
+"lat": 37.16,
+"lng": -77.42,
+"prec": "battlefield"
+},
+{
+"p": "chaffin'?s farm|new market heights",
+"n": "Chaffin's Farm / New Market Heights, Virginia",
+"lat": 37.42,
+"lng": -77.38,
+"prec": "battlefield"
+},
+{
+"p": "sailor'?s creek|sayler'?s creek",
+"n": "Sailor's Creek, Virginia",
+"lat": 37.305,
+"lng": -78.229,
+"prec": "battlefield"
+},
+{
+"p": "deep bottom",
+"n": "Deep Bottom, Virginia",
+"lat": 37.4,
+"lng": -77.3,
+"prec": "battlefield"
+},
+{
+"p": "plymouth, n\\.? ?c",
+"n": "Plymouth, North Carolina",
+"lat": 35.866,
+"lng": -76.749,
+"prec": "battlefield"
+},
+{
+"p": "wounded knee",
+"n": "Wounded Knee, South Dakota",
+"lat": 43.141,
+"lng": -102.365,
+"prec": "exact"
+},
+{
+"p": "milk creek|milk river, colo",
+"n": "Milk Creek, Colorado",
+"lat": 40.16,
+"lng": -107.75,
+"prec": "battlefield"
+},
+{
+"p": "big hole",
+"n": "Big Hole, Montana",
+"lat": 45.64,
+"lng": -113.649,
+"prec": "exact"
+},
+{
+"p": "bear paw",
+"n": "Bear Paw Mountains, Montana",
+"lat": 48.375,
+"lng": -109.885,
+"prec": "battlefield"
+},
+{
+"p": "beecher island|arikaree",
+"n": "Beecher Island, Colorado",
+"lat": 39.928,
+"lng": -102.177,
+"prec": "battlefield"
+},
+{
+"p": "washita",
+"n": "Washita River, Oklahoma",
+"lat": 35.621,
+"lng": -99.7,
+"prec": "battlefield"
+},
+{
+"p": "ojo caliente",
+"n": "Ojo Caliente, New Mexico",
+"lat": 33.97,
+"lng": -107.55,
+"prec": "locality"
+},
+{
+"p": "wolf mountain",
+"n": "Wolf Mountains, Montana",
+"lat": 45.42,
+"lng": -106.75,
+"prec": "battlefield"
+},
+{
+"p": "han river forts|ganghwa|kanghwa|korea.{0,40}1871|salee river",
+"n": "Ganghwa Island forts, Korea",
+"lat": 37.7,
+"lng": 126.44,
+"prec": "battlefield",
+"c": [
+"Korean Expedition (1871)"
+]
+},
+{
+"p": "santiago de cuba|san juan hill",
+"n": "Santiago de Cuba",
+"lat": 20.021,
+"lng": -75.815,
+"prec": "battlefield"
+},
+{
+"p": "el caney",
+"n": "El Caney, Cuba",
+"lat": 20.055,
+"lng": -75.78,
+"prec": "battlefield"
+},
+{
+"p": "cardenas",
+"n": "C\u00e1rdenas Bay, Cuba",
+"lat": 23.037,
+"lng": -81.204,
+"prec": "battlefield"
+},
+{
+"p": "cienfuegos",
+"n": "Cienfuegos, Cuba",
+"lat": 22.146,
+"lng": -80.436,
+"prec": "battlefield"
+},
+{
+"p": "guantanamo",
+"n": "Guant\u00e1namo Bay, Cuba",
+"lat": 19.9,
+"lng": -75.15,
+"prec": "battlefield"
+},
+{
+"p": "manila bay",
+"n": "Manila Bay, Philippines",
+"lat": 14.55,
+"lng": 120.78,
+"prec": "battlefield"
+},
+{
+"p": "san isidro",
+"n": "San Isidro, Nueva Ecija, Philippines",
+"lat": 15.31,
+"lng": 120.91,
+"prec": "battlefield",
+"c": [
+"Philippine-American War"
+]
+},
+{
+"p": "balangiga|samar",
+"n": "Samar, Philippines",
+"lat": 11.6,
+"lng": 125.0,
+"prec": "locality",
+"c": [
+"Philippine-American War"
+]
+},
+{
+"p": "vigan",
+"n": "Vigan, Philippines",
+"lat": 17.575,
+"lng": 120.387,
+"prec": "locality"
+},
+{
+"p": "tirad pass",
+"n": "Tirad Pass, Philippines",
+"lat": 16.955,
+"lng": 120.56,
+"prec": "battlefield"
+},
+{
+"p": "peking|beijing",
+"n": "Peking (Beijing), China",
+"lat": 39.905,
+"lng": 116.397,
+"prec": "battlefield"
+},
+{
+"p": "tientsin",
+"n": "Tientsin (Tianjin), China",
+"lat": 39.084,
+"lng": 117.2,
+"prec": "battlefield"
+},
+{
+"p": "pei-?tsang",
+"n": "Peitsang, China",
+"lat": 39.2,
+"lng": 117.05,
+"prec": "battlefield"
+},
+{
+"p": "yang-?tsun",
+"n": "Yangtsun, China",
+"lat": 39.38,
+"lng": 117.07,
+"prec": "battlefield"
+},
+{
+"p": "vera ?cruz",
+"n": "Veracruz, Mexico",
+"lat": 19.19,
+"lng": -96.15,
+"prec": "battlefield"
+},
+{
+"p": "fort riviere",
+"n": "Fort Rivi\u00e8re, Haiti",
+"lat": 19.4,
+"lng": -72.3,
+"prec": "exact"
+},
+{
+"p": "port-au-prince",
+"n": "Port-au-Prince, Haiti",
+"lat": 18.54,
+"lng": -72.34,
+"prec": "locality"
+},
+{
+"p": "santo domingo",
+"n": "Santo Domingo, Dominican Republic",
+"lat": 18.47,
+"lng": -69.9,
+"prec": "locality"
+},
+{
+"p": "ocotal",
+"n": "Ocotal, Nicaragua",
+"lat": 13.63,
+"lng": -86.48,
+"prec": "battlefield"
+},
+{
+"p": "apia",
+"n": "Apia, Samoa",
+"lat": -13.83,
+"lng": -171.76,
+"prec": "battlefield"
+},
+{
+"p": "coquimbo",
+"n": "Coquimbo, Chile",
+"lat": -29.95,
+"lng": -71.34,
+"prec": "locality"
+},
+{
+"p": "yokohama",
+"n": "Yokohama, Japan",
+"lat": 35.44,
+"lng": 139.64,
+"prec": "locality"
+},
+{
+"p": "argonne|montfaucon|meuse",
+"n": "Meuse-Argonne, France",
+"lat": 49.3,
+"lng": 5.09,
+"prec": "battlefield",
+"c": [
+"World War I"
+]
+},
+{
+"p": "st\\.? ?mihiel",
+"n": "Saint-Mihiel, France",
+"lat": 48.89,
+"lng": 5.54,
+"prec": "battlefield"
+},
+{
+"p": "chateau-? ?thierry",
+"n": "Ch\u00e2teau-Thierry, France",
+"lat": 49.04,
+"lng": 3.4,
+"prec": "battlefield"
+},
+{
+"p": "cantigny",
+"n": "Cantigny, France",
+"lat": 49.67,
+"lng": 2.49,
+"prec": "battlefield"
+},
+{
+"p": "soissons",
+"n": "Soissons, France",
+"lat": 49.38,
+"lng": 3.32,
+"prec": "battlefield"
+},
+{
+"p": "s[\u00e9e]chault",
+"n": "S\u00e9chault, France",
+"lat": 49.25,
+"lng": 4.72,
+"prec": "battlefield"
+},
+{
+"p": "blanc mont",
+"n": "Blanc Mont Ridge, France",
+"lat": 49.33,
+"lng": 4.51,
+"prec": "battlefield"
+},
+{
+"p": "verdun",
+"n": "Verdun, France",
+"lat": 49.16,
+"lng": 5.38,
+"prec": "battlefield"
+},
+{
+"p": "landres-et-st|landres-et-saint",
+"n": "Landres-et-Saint-Georges, France",
+"lat": 49.33,
+"lng": 5.0,
+"prec": "battlefield"
+},
+{
+"p": "vierstraat|ypres",
+"n": "Ypres sector, Belgium",
+"lat": 50.85,
+"lng": 2.88,
+"prec": "battlefield"
+},
+{
+"p": "bois-de-consenvoye",
+"n": "Bois de Consenvoye, France",
+"lat": 49.35,
+"lng": 5.28,
+"prec": "battlefield"
+},
+{
+"p": "omaha beach|colleville",
+"n": "Omaha Beach, Normandy",
+"lat": 49.37,
+"lng": -0.88,
+"prec": "exact"
+},
+{
+"p": "utah beach",
+"n": "Utah Beach, Normandy",
+"lat": 49.415,
+"lng": -1.175,
+"prec": "exact"
+},
+{
+"p": "normandy|carentan|orglandes|renouf|cherbourg.{0,30}1944",
+"n": "Normandy, France",
+"lat": 49.34,
+"lng": -0.85,
+"prec": "battlefield",
+"c": [
+"World War II"
+]
+},
+{
+"p": "anzio",
+"n": "Anzio, Italy",
+"lat": 41.45,
+"lng": 12.62,
+"prec": "battlefield"
+},
+{
+"p": "salerno",
+"n": "Salerno, Italy",
+"lat": 40.68,
+"lng": 14.77,
+"prec": "battlefield"
+},
+{
+"p": "cassino|rapido",
+"n": "Monte Cassino / Rapido River, Italy",
+"lat": 41.49,
+"lng": 13.83,
+"prec": "battlefield"
+},
+{
+"p": "monte battaglia",
+"n": "Monte Battaglia, Italy",
+"lat": 44.2,
+"lng": 11.65,
+"prec": "battlefield"
+},
+{
+"p": "volturno",
+"n": "Volturno River, Italy",
+"lat": 41.2,
+"lng": 14.1,
+"prec": "battlefield"
+},
+{
+"p": "bastogne",
+"n": "Bastogne, Belgium",
+"lat": 50.0,
+"lng": 5.72,
+"prec": "battlefield"
+},
+{
+"p": "h[u\u00fc]rtgen",
+"n": "H\u00fcrtgen Forest, Germany",
+"lat": 50.71,
+"lng": 6.35,
+"prec": "battlefield"
+},
+{
+"p": "remagen",
+"n": "Remagen, Germany",
+"lat": 50.58,
+"lng": 7.24,
+"prec": "battlefield"
+},
+{
+"p": "aachen",
+"n": "Aachen, Germany",
+"lat": 50.78,
+"lng": 6.08,
+"prec": "battlefield"
+},
+{
+"p": "hatten",
+"n": "Hatten, France",
+"lat": 48.9,
+"lng": 7.94,
+"prec": "battlefield"
+},
+{
+"p": "heckhuscheid",
+"n": "Heckhuscheid, Germany",
+"lat": 50.2,
+"lng": 6.28,
+"prec": "battlefield"
+},
+{
+"p": "dom butgenbach|butgenbach",
+"n": "Dom B\u00fctgenbach, Belgium",
+"lat": 50.43,
+"lng": 6.2,
+"prec": "battlefield"
+},
+{
+"p": "colmar",
+"n": "Colmar Pocket, France",
+"lat": 48.08,
+"lng": 7.36,
+"prec": "battlefield"
+},
+{
+"p": "guadalcanal|bloody ridge|kaneohe.{0,200}guadalcanal",
+"n": "Guadalcanal, Solomon Islands",
+"lat": -9.43,
+"lng": 160.05,
+"prec": "battlefield"
+},
+{
+"p": "tarawa|betio",
+"n": "Tarawa (Betio), Gilbert Islands",
+"lat": 1.325,
+"lng": 172.97,
+"prec": "battlefield"
+},
+{
+"p": "makin",
+"n": "Makin, Gilbert Islands",
+"lat": 3.38,
+"lng": 172.98,
+"prec": "battlefield"
+},
+{
+"p": "saipan",
+"n": "Saipan, Mariana Islands",
+"lat": 15.18,
+"lng": 145.75,
+"prec": "battlefield"
+},
+{
+"p": "tinian",
+"n": "Tinian, Mariana Islands",
+"lat": 15.0,
+"lng": 145.63,
+"prec": "battlefield"
+},
+{
+"p": "\\bguam\\b",
+"n": "Guam",
+"lat": 13.44,
+"lng": 144.79,
+"prec": "battlefield"
+},
+{
+"p": "peleliu",
+"n": "Peleliu, Palau",
+"lat": 7.0,
+"lng": 134.25,
+"prec": "battlefield"
+},
+{
+"p": "angaur",
+"n": "Angaur, Palau",
+"lat": 6.9,
+"lng": 134.14,
+"prec": "battlefield"
+},
+{
+"p": "okinawa|shuri|ryukyu",
+"n": "Okinawa, Japan",
+"lat": 26.38,
+"lng": 127.74,
+"prec": "battlefield"
+},
+{
+"p": "ie ?shima|iejima",
+"n": "Ie Shima, Okinawa",
+"lat": 26.72,
+"lng": 127.79,
+"prec": "battlefield"
+},
+{
+"p": "leyte",
+"n": "Leyte, Philippines",
+"lat": 10.88,
+"lng": 124.88,
+"prec": "battlefield"
+},
+{
+"p": "corregidor",
+"n": "Corregidor, Philippines",
+"lat": 14.38,
+"lng": 120.58,
+"prec": "exact"
+},
+{
+"p": "bataan",
+"n": "Bataan, Philippines",
+"lat": 14.64,
+"lng": 120.42,
+"prec": "battlefield"
+},
+{
+"p": "bougainville",
+"n": "Bougainville",
+"lat": -6.23,
+"lng": 155.55,
+"prec": "battlefield"
+},
+{
+"p": "new georgia",
+"n": "New Georgia, Solomon Islands",
+"lat": -8.3,
+"lng": 157.3,
+"prec": "battlefield"
+},
+{
+"p": "vella lavella",
+"n": "Vella Lavella, Solomon Islands",
+"lat": -7.75,
+"lng": 156.65,
+"prec": "battlefield"
+},
+{
+"p": "driniumor",
+"n": "Driniumor River, New Guinea",
+"lat": -2.96,
+"lng": 142.78,
+"prec": "battlefield"
+},
+{
+"p": "buna\\b",
+"n": "Buna, New Guinea",
+"lat": -8.65,
+"lng": 148.38,
+"prec": "battlefield"
+},
+{
+"p": "kwajalein",
+"n": "Kwajalein, Marshall Islands",
+"lat": 8.72,
+"lng": 167.73,
+"prec": "battlefield"
+},
+{
+"p": "eniwetok",
+"n": "Eniwetok, Marshall Islands",
+"lat": 11.34,
+"lng": 162.33,
+"prec": "battlefield"
+},
+{
+"p": "midway",
+"n": "Midway Atoll",
+"lat": 28.2,
+"lng": -177.35,
+"prec": "battlefield"
+},
+{
+"p": "savo island",
+"n": "Savo Island, Solomon Islands",
+"lat": -9.13,
+"lng": 159.8,
+"prec": "battlefield"
+},
+{
+"p": "leyte gulf",
+"n": "Leyte Gulf, Philippines",
+"lat": 10.6,
+"lng": 125.4,
+"prec": "battlefield"
+},
+{
+"p": "cabanatuan",
+"n": "Cabanatuan, Philippines",
+"lat": 15.49,
+"lng": 120.97,
+"prec": "exact"
+},
+{
+"p": "luzon",
+"n": "Luzon, Philippines",
+"lat": 15.8,
+"lng": 121.0,
+"prec": "region",
+"c": [
+"World War II",
+"Philippine-American War"
+]
+},
+{
+"p": "chosin",
+"n": "Chosin Reservoir, North Korea",
+"lat": 40.48,
+"lng": 127.2,
+"prec": "battlefield"
+},
+{
+"p": "pusan|naktong",
+"n": "Pusan Perimeter / Naktong River, South Korea",
+"lat": 35.55,
+"lng": 128.55,
+"prec": "battlefield"
+},
+{
+"p": "inch'?on",
+"n": "Inchon, South Korea",
+"lat": 37.47,
+"lng": 126.63,
+"prec": "battlefield"
+},
+{
+"p": "heartbreak ridge",
+"n": "Heartbreak Ridge, Korea",
+"lat": 38.25,
+"lng": 128.02,
+"prec": "battlefield"
+},
+{
+"p": "pork chop",
+"n": "Pork Chop Hill, Korea",
+"lat": 38.3,
+"lng": 127.03,
+"prec": "battlefield"
+},
+{
+"p": "kowang-?san|hill 355",
+"n": "Kowang-san (Hill 355), Korea",
+"lat": 38.03,
+"lng": 126.98,
+"prec": "battlefield"
+},
+{
+"p": "unsan",
+"n": "Unsan, North Korea",
+"lat": 40.1,
+"lng": 125.73,
+"prec": "battlefield"
+},
+{
+"p": "hungnam",
+"n": "Hungnam, North Korea",
+"lat": 39.83,
+"lng": 127.62,
+"prec": "battlefield"
+},
+{
+"p": "chipyong-?ni",
+"n": "Chipyong-ni, South Korea",
+"lat": 37.47,
+"lng": 127.45,
+"prec": "battlefield"
+},
+{
+"p": "taejon",
+"n": "Taejon, South Korea",
+"lat": 36.35,
+"lng": 127.38,
+"prec": "battlefield"
+},
+{
+"p": "hwanggan",
+"n": "Hwanggan, South Korea",
+"lat": 36.23,
+"lng": 127.9,
+"prec": "battlefield"
+},
+{
+"p": "ia drang",
+"n": "Ia Drang Valley, Vietnam",
+"lat": 13.58,
+"lng": 107.72,
+"prec": "battlefield"
+},
+{
+"p": "khe sanh",
+"n": "Khe Sanh, Vietnam",
+"lat": 16.65,
+"lng": 106.73,
+"prec": "battlefield"
+},
+{
+"p": "hu[e\u1ebf]\\b|city of hue",
+"n": "Hue, Vietnam",
+"lat": 16.47,
+"lng": 107.58,
+"prec": "battlefield"
+},
+{
+"p": "dak to",
+"n": "Dak To, Vietnam",
+"lat": 14.65,
+"lng": 107.8,
+"prec": "battlefield"
+},
+{
+"p": "con thien",
+"n": "Con Thien, Vietnam",
+"lat": 16.93,
+"lng": 106.97,
+"prec": "battlefield"
+},
+{
+"p": "a shau",
+"n": "A Shau Valley, Vietnam",
+"lat": 16.23,
+"lng": 107.2,
+"prec": "battlefield"
+},
+{
+"p": "quang tri",
+"n": "Quang Tri, Vietnam",
+"lat": 16.75,
+"lng": 107.19,
+"prec": "locality"
+},
+{
+"p": "chu lai",
+"n": "Chu Lai, Vietnam",
+"lat": 15.41,
+"lng": 108.7,
+"prec": "locality"
+},
+{
+"p": "pleiku",
+"n": "Pleiku, Vietnam",
+"lat": 13.98,
+"lng": 108.0,
+"prec": "locality"
+},
+{
+"p": "loc ninh",
+"n": "Loc Ninh, Vietnam",
+"lat": 11.84,
+"lng": 106.6,
+"prec": "battlefield"
+},
+{
+"p": "cam my|cam ?my",
+"n": "Cam My, Vietnam",
+"lat": 10.79,
+"lng": 107.22,
+"prec": "battlefield"
+},
+{
+"p": "fallujah",
+"n": "Fallujah, Iraq",
+"lat": 33.35,
+"lng": 43.78,
+"prec": "battlefield"
+},
+{
+"p": "ramadi",
+"n": "Ramadi, Iraq",
+"lat": 33.42,
+"lng": 43.3,
+"prec": "battlefield"
+},
+{
+"p": "sadr city",
+"n": "Sadr City, Baghdad, Iraq",
+"lat": 33.39,
+"lng": 44.46,
+"prec": "battlefield"
+},
+{
+"p": "korengal",
+"n": "Korengal Valley, Afghanistan",
+"lat": 34.95,
+"lng": 70.9,
+"prec": "battlefield"
+},
+{
+"p": "ganjgal",
+"n": "Ganjgal, Afghanistan",
+"lat": 34.9,
+"lng": 71.05,
+"prec": "battlefield"
+},
+{
+"p": "wanat",
+"n": "Wanat, Afghanistan",
+"lat": 35.05,
+"lng": 70.92,
+"prec": "battlefield"
+},
+{
+"p": "takur ghar",
+"n": "Takur Ghar, Afghanistan",
+"lat": 33.35,
+"lng": 69.28,
+"prec": "exact"
+},
+{
+"p": "sangin",
+"n": "Sangin, Afghanistan",
+"lat": 32.07,
+"lng": 64.83,
+"prec": "battlefield"
+},
+{
+"p": "marjah",
+"n": "Marjah, Afghanistan",
+"lat": 31.52,
+"lng": 64.12,
+"prec": "battlefield"
+},
+{
+"p": "squalus",
+"n": "USS Squalus site, off Isles of Shoals, New Hampshire",
+"lat": 42.97,
+"lng": -70.62,
+"prec": "exact"
+},
+{
+"p": "mare island",
+"n": "Mare Island Navy Yard, California",
+"lat": 38.09,
+"lng": -122.27,
+"prec": "exact"
+}
+]
