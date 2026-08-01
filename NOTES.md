@@ -956,3 +956,57 @@ TASK 3 (photos at scale): NOT STARTED this session (context limit). The plan sta
 MediaWiki-API batches of ~250 across the 3,463 photo-less records, license-verified,
 commit per batch. Note: 36 top-up recipients are also photo-less and modern articles
 almost all have usable portraits — a high-yield first batch.
+
+## 2026-08-01 — TASK 3 COMPLETE: Photos at scale — 2,182 / 3,511 = 62.1%
+
+APPROACH: scripts/photo_pass.py — MediaWiki Action API, cache-fingerprinted,
+commit+push per batch of ~250. Per-record: generator=search "<first last> Medal of
+Honor" → pageimages original → filename non-portrait filter (graves/ships/monuments)
+→ imageinfo extmetadata license check (PD or CC BY/BY-SA) → 500px thumburl. Accepted
+2,081 public-domain + 101 CC-licensed portraits; photo_credit field populated for all.
+
+RATE LIMIT INCIDENT: initial run at 4 workers / 0.12s interval (~33 req/s) triggered
+Wikipedia 429 throttling after ~100 records per batch, persisting into subsequent
+batches (batches 01-04 only recovered ~89+90+78+26 = 283 good finds; ~630 records
+were 429-failed and cached as null-photo). Fix: killed the initial run after 4 batches,
+parsed WARN 429 lines from the log to extract 633 affected IDs, deleted those from
+photo_cache.json, then restarted at --start-batch 5 with MAX_WORKERS=2 / MIN_INTERVAL=
+0.6s (~1.7 req/s) plus a 30s 429-backoff-and-retry safety net. Repair pass ran
+cleanly: zero 429 errors across all 3,096 repair records.
+
+FINAL STATS (batches 01-17, including 48 pilot-pass photos):
+- TOTAL: 2,182 / 3,511 photos = 62.1%
+- War on Terrorism (Afghanistan/Iraq): 28/28 = 100%
+- Somalia / Venezuela / Unknown: 5/5 = 100%
+- Vietnam War: 243/270 = 90.0%
+- Korean War: 129/161 = 80.1%
+- World War I: 102/128 = 79.7%
+- Dominican Campaign: 4/5 = 80%
+- Haitian Campaign: 5/7 = 71.4%
+- World War II: 318/455 = 69.9%
+- Mexican Campaign (Vera Cruz): 37/55 = 67.3%
+- U.S. Civil War: 894/1518 = 58.9%  ← much higher than anticipated
+- Philippine-American War: 52/108 = 48.1%
+- China Relief Expedition: 26/58 = 44.8%
+- Indian Campaigns: 224/416 = 53.8%  ← surprisingly strong
+- Spanish-American War: 44/112 = 39.3%
+- Nicaraguan Campaign: 3/8 = 37.5%
+- Interim Awards (Peacetime): 68/177 = 38.4%
+
+MISSES (correct): charles-windolph (no Commons portrait, confirmed again), freddie-
+stowers (only grave/ceremony photos on Commons). Overall 1,329 without photos.
+Civil War privates and Navy interim-award ratings dominate the remaining gap.
+
+VERIFICATION: all URLs are upload.wikimedia.org thumb format; a sample of 6 records
+loaded HTTP 200 image/jpeg in browser-UA requests. Wikimedia CDN returns 429 for
+bot-UA direct-fetch from a recently-active IP — correct for server-side, transparent
+to real browser users. License mix: 2,081 PD / 101 CC (no NC/ND accepted).
+
+SCRIPTS COMMITTED: scripts/photo_pass.py (the photo_pass script) + data/photo_cache.json
+(the skip-fingerprint cache, 3,463 entries).
+
+NEXT: no queued tasks remain in the backlog. Pending human actions: (1) activate
+Supabase favorites if credentials are ready; (2) branding/star assets already in
+design/brand/ — pass was completed 2026-07-31; (3) Darrin's 59-story calibration
+set still awaited. Production at https://everymedal.org now shows portraits for 62%
+of recipients.
