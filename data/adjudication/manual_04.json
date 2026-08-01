@@ -1,0 +1,20 @@
+{
+ "louis-b-lawton": {
+  "conflict": "China Relief Expedition (Boxer Rebellion)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: action_place Tianjin + 9th Infantry, 1900 (Tientsin) \u2014 year-era mislabel, same class as Titus",
+  "adjudicated": "manual-2026-08-02"
+ },
+ "andre-w-brewster": {
+  "conflict": "China Relief Expedition (Boxer Rebellion)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: action_place Tianjin + 9th Infantry, 1900 (Tientsin) \u2014 year-era mislabel, same class as Titus",
+  "adjudicated": "manual-2026-08-02"
+ },
+ "robert-h-von-schlick": {
+  "conflict": "China Relief Expedition (Boxer Rebellion)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: action_place Tianjin + 9th Infantry, 1900 (Tientsin) \u2014 year-era mislabel, same class as Titus",
+  "adjudicated": "manual-2026-08-02"
+ }
+}

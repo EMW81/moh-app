@@ -70,9 +70,21 @@ if (existsSync("data/geo/overrides.json")) {
     Object.assign(r, fields);
     n++;
   }
+  // rescue pass (2026-08-02): approximate campaign/theater placements for records the
+  // main pipeline left at country/none — applied AFTER overrides so it only upgrades
+  if (existsSync("data/geo/rescue.json")) {
+    const rescue = JSON.parse(readFileSync("data/geo/rescue.json", "utf8"));
+    for (const [id, fields] of Object.entries(rescue)) {
+      for (const k of Object.keys(fields)) if (!allowed.has(k)) throw new Error(`rescue overlay: field ${k} not allowed`);
+      const r = byId.get(id);
+      if (!r) throw new Error(`rescue overlay: unknown id ${id}`);
+      Object.assign(r, fields);
+      n++;
+    }
+  }
   const prec = {};
   for (const r of all) prec[r.geo_precision || "unset"] = (prec[r.geo_precision || "unset"] || 0) + 1;
-  console.log(`geo overlay: ${n} records —`, JSON.stringify(prec));
+  console.log(`geo overlays: ${n} records —`, JSON.stringify(prec));
 }
 
 // validations

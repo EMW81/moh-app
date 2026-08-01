@@ -894,3 +894,29 @@ was fully verified against the API mock previously.
    now explained in the UI by the count line.
 NOTE: a fourth profile (Eric) appeared in Supabase and renders correctly in the
 picks sidebar — the layer is fully dynamic over the profiles table.
+
+## 2026-08-02 (later) — MAP COVERAGE EXPANSION shipped: ghost-pin precision language
+
+1. Z-INDEX: verified already fixed at HEAD (previous session, --z-modal token) — no redo.
+2. VISUAL LANGUAGE: precise pins (exact/battlefield/locality) unchanged — solid dot /
+   solid gold star. Approximate (campaign/region) render as ghosts: dashed low-opacity
+   ring (survived) and hollow star outline (fallen); both added to the legend. Ghost
+   popups LEAD with "Approximate — precise location unknown; placed near <name>".
+3. RESCUE PASS (scripts/geo_rescue.py, idempotent over overrides.json): ladder = deep
+   full-citation gazetteer scan -> campaign keyword table -> theater inference (single-
+   theater conflicts; WWII split by enemy keyword; WWI -> Western Front; Indian
+   Campaigns -> state centroids) -> per-id deterministic jitter (±0.35°) -> theater-box
+   validation. 718/977 excluded records upgraded; 259 with truly nothing stay off.
+4. COVERAGE BEFORE -> AFTER: on-map 2,495 -> 3,216 of 3,475 (93%), of which 772 ghost.
+   Tiers: battlefield 1,230 / locality 1,054 / campaign 581 / region 191 / exact 160 /
+   country 148 (off) / none 111 (off). Korea 160/160 (124 ghost); Vietnam 253/253
+   (206 ghost); WWI 126/126; WWII 411/454.
+   Count line: "X of Y filtered stories on map (Z approximate) · N unmappable".
+5. QA finds during the pass: 9 Battle-of-the-Bulge records initially fell to the ETO
+   centroid (Belgium campaign entry added); 3 MORE Boxer-era conflict mislabels found
+   via Tianjin action_place (Lawton, Brewster, Von Schlick -> manual_04, gazetteer
+   gained the Tianjin spelling); Kyle White's action_place is a Santiago-de-Chile
+   street the old geocoder matched from "Aranas" (Nuristan) — pin correctly in
+   Afghanistan; validator now skips ap-keyword checks for ghost pins (that pollution
+   is why they're ghosts) while still enforcing theater boxes. Post-fix validator:
+   zero flags beyond the 111 null-coord records.

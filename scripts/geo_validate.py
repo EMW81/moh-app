@@ -82,9 +82,14 @@ def validate(stories):
         # Attu past the antimeridian) — and action_place is often polluted anyway.
         if r.get("geo_place") and r.get("geo_precision") in ("exact", "battlefield"):
             continue
+        # ghost pins (campaign/region) were placed BECAUSE action_place is unreliable —
+        # theater boxes still apply below, but ap keyword checks would only re-flag the
+        # very pollution the rescue routed around (e.g. a Santiago-de-Chile street
+        # matched from "Aranas", Nuristan)
+        ghost = r.get("geo_precision") in ("campaign", "region")
         boxes = CONFLICT_BOXES.get(r["conflict"])
         place = (r.get("action_place") or "").lower()
-        pboxes = [k for pat, k in PLACE_KEYS if re.search(pat, place)]
+        pboxes = [] if ghost else [k for pat, k in PLACE_KEYS if re.search(pat, place)]
         why = []
         if boxes and not any(inside(c, k) for k in boxes):
             why.append(f"outside {r['conflict']} theater")

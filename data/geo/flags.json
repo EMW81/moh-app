@@ -1,58 +1,10 @@
 [
  {
-  "id": "daniel-k-inouye",
-  "why": "null coords"
- },
- {
-  "id": "john-r-fox",
-  "why": "null coords"
- },
- {
   "id": "gregory-boyington",
   "why": "null coords"
  },
  {
-  "id": "arthur-f-defranzos",
-  "why": "null coords"
- },
- {
-  "id": "patrick-l-kessler",
-  "why": "null coords"
- },
- {
   "id": "edward-william-boers",
-  "why": "null coords"
- },
- {
-  "id": "mack-a-jordan",
-  "why": "null coords"
- },
- {
-  "id": "lloyd-c-hawks",
-  "why": "null coords"
- },
- {
-  "id": "edward-s-michael",
-  "why": "null coords"
- },
- {
-  "id": "jack-c-montgomery",
-  "why": "null coords"
- },
- {
-  "id": "edward-r-jr-schowalter",
-  "why": "null coords"
- },
- {
-  "id": "stanley-bender",
-  "why": "null coords"
- },
- {
-  "id": "william-wylie-galt",
-  "why": "null coords"
- },
- {
-  "id": "charles-r-long",
   "why": "null coords"
  },
  {
@@ -68,35 +20,7 @@
   "why": "null coords"
  },
  {
-  "id": "daniel-w-lee",
-  "why": "null coords"
- },
- {
-  "id": "thomas-w-wigle",
-  "why": "null coords"
- },
- {
   "id": "eugene-p-smith",
-  "why": "null coords"
- },
- {
-  "id": "orville-emil-bloch",
-  "why": "null coords"
- },
- {
-  "id": "antoine-a-gaujot",
-  "why": "null coords"
- },
- {
-  "id": "melvin-l-brown",
-  "why": "null coords"
- },
- {
-  "id": "charles-e-kelly",
-  "why": "null coords"
- },
- {
-  "id": "gerry-h-kisters",
   "why": "null coords"
  },
  {
@@ -108,75 +32,7 @@
   "why": "null coords"
  },
  {
-  "id": "joseph-f-merrell",
-  "why": "null coords"
- },
- {
-  "id": "walter-c-wetzel",
-  "why": "null coords"
- },
- {
-  "id": "harvey-c-jr-barnum",
-  "why": "null coords"
- },
- {
-  "id": "sadao-s-munemori",
-  "why": "null coords"
- },
- {
-  "id": "louis-gedeon",
-  "why": "null coords"
- },
- {
-  "id": "louis-b-lawton",
-  "why": "null coords"
- },
- {
   "id": "addison-e-baker",
-  "why": "null coords"
- },
- {
-  "id": "james-p-connor",
-  "why": "null coords"
- },
- {
-  "id": "junior-j-spurrier",
-  "why": "null coords"
- },
- {
-  "id": "john-r-towle",
-  "why": "null coords"
- },
- {
-  "id": "leonard-l-alvarado",
-  "why": "null coords"
- },
- {
-  "id": "eduardo-c-gomez",
-  "why": "null coords"
- },
- {
-  "id": "salvador-j-lara",
-  "why": "null coords"
- },
- {
-  "id": "manuel-v-mendoza",
-  "why": "null coords"
- },
- {
-  "id": "juan-e-negron",
-  "why": "null coords"
- },
- {
-  "id": "demensio-rivera",
-  "why": "null coords"
- },
- {
-  "id": "jose-rodela",
-  "why": "null coords"
- },
- {
-  "id": "donald-k-schwab",
   "why": "null coords"
  },
  {
@@ -220,22 +76,6 @@
   "why": "null coords"
  },
  {
-  "id": "maurice-l-britt",
-  "why": "null coords"
- },
- {
-  "id": "harold-a-garman",
-  "why": "null coords"
- },
- {
-  "id": "john-j-tominac",
-  "why": "null coords"
- },
- {
-  "id": "daniel-p-matthews",
-  "why": "null coords"
- },
- {
   "id": "telesforo-trinidad",
   "why": "null coords"
  },
@@ -248,67 +88,7 @@
   "why": "null coords"
  },
  {
-  "id": "floyd-k-lindstrom",
-  "why": "null coords"
- },
- {
-  "id": "ernest-childers",
-  "why": "null coords"
- },
- {
-  "id": "wilburn-k-ross",
-  "why": "null coords"
- },
- {
-  "id": "joseph-j-sadowski",
-  "why": "null coords"
- },
- {
-  "id": "gordon-m-craig",
-  "why": "null coords"
- },
- {
-  "id": "charles-p-davis",
-  "why": "null coords"
- },
- {
-  "id": "marcus-w-robertson",
-  "why": "null coords"
- },
- {
-  "id": "joseph-fitz",
-  "why": "null coords"
- },
- {
-  "id": "anthony-t-kahoohanohano",
-  "why": "null coords"
- },
- {
-  "id": "henry-svehla",
-  "why": "null coords"
- },
- {
-  "id": "john-a-logan",
-  "why": "null coords"
- },
- {
   "id": "george-breeman",
-  "why": "null coords"
- },
- {
-  "id": "kyle-j-white",
-  "why": "null coords"
- },
- {
-  "id": "jay-r-vargas",
-  "why": "null coords"
- },
- {
-  "id": "otto-boehler",
-  "why": "null coords"
- },
- {
-  "id": "john-b-kinne",
   "why": "null coords"
  },
  {
@@ -320,47 +100,7 @@
   "why": "null coords"
  },
  {
-  "id": "robert-craig",
-  "why": "null coords"
- },
- {
-  "id": "paul-b-huff",
-  "why": "null coords"
- },
- {
-  "id": "james-d-slaton",
-  "why": "null coords"
- },
- {
-  "id": "jake-w-lindsey",
-  "why": "null coords"
- },
- {
-  "id": "carl-v-sheridan",
-  "why": "null coords"
- },
- {
   "id": "jack-l-knight",
-  "why": "null coords"
- },
- {
-  "id": "isadore-s-jachman",
-  "why": "null coords"
- },
- {
-  "id": "robert-t-henry",
-  "why": "null coords"
- },
- {
-  "id": "charles-h-coolidge",
-  "why": "null coords"
- },
- {
-  "id": "jose-m-lopez",
-  "why": "null coords"
- },
- {
-  "id": "george-t-sakato",
   "why": "null coords"
  },
  {
@@ -368,51 +108,11 @@
   "why": "null coords"
  },
  {
-  "id": "john-d-hawk",
-  "why": "null coords"
- },
- {
-  "id": "carlos-c-ogden",
-  "why": "null coords"
- },
- {
-  "id": "robert-r-ingram",
-  "why": "null coords"
- },
- {
-  "id": "joe-c-specker",
-  "why": "null coords"
- },
- {
-  "id": "john-d-magrath",
-  "why": "null coords"
- },
- {
-  "id": "oscar-g-johnson",
-  "why": "null coords"
- },
- {
-  "id": "william-j-crawford",
-  "why": "null coords"
- },
- {
-  "id": "curtis-f-shoup",
-  "why": "null coords"
- },
- {
   "id": "harry-d-fadden",
   "why": "null coords"
  },
  {
-  "id": "einar-h-jr-ingman",
-  "why": "null coords"
- },
- {
   "id": "john-r-kane",
-  "why": "null coords"
- },
- {
-  "id": "lester-jr-hammond",
   "why": "null coords"
  },
  {
@@ -424,67 +124,7 @@
   "why": "null coords"
  },
  {
-  "id": "arthur-o-beyer",
-  "why": "null coords"
- },
- {
-  "id": "paul-l-bolden",
-  "why": "null coords"
- },
- {
-  "id": "turney-w-leonard",
-  "why": "null coords"
- },
- {
-  "id": "andrew-miller",
-  "why": "null coords"
- },
- {
-  "id": "leroy-a-mendonca",
-  "why": "null coords"
- },
- {
-  "id": "leonard-a-jr-funk",
-  "why": "null coords"
- },
- {
-  "id": "arnold-l-bjorklund",
-  "why": "null coords"
- },
- {
-  "id": "william-j-johnston",
-  "why": "null coords"
- },
- {
   "id": "leon-w-johnson",
-  "why": "null coords"
- },
- {
-  "id": "jonah-e-kelley",
-  "why": "null coords"
- },
- {
-  "id": "eric-g-gibson",
-  "why": "null coords"
- },
- {
-  "id": "andre-w-brewster",
-  "why": "null coords"
- },
- {
-  "id": "van-t-barfoot",
-  "why": "null coords"
- },
- {
-  "id": "carlton-w-barrett",
-  "why": "null coords"
- },
- {
-  "id": "john-c-squires",
-  "why": "null coords"
- },
- {
-  "id": "roy-w-harmon",
   "why": "null coords"
  },
  {
@@ -520,27 +160,7 @@
   "why": "null coords"
  },
  {
-  "id": "robert-t-waugh",
-  "why": "null coords"
- },
- {
-  "id": "john-w-dutko",
-  "why": "null coords"
- },
- {
   "id": "robert-klein",
-  "why": "null coords"
- },
- {
-  "id": "vernon-mcgarity",
-  "why": "null coords"
- },
- {
-  "id": "clinton-m-hedrick",
-  "why": "null coords"
- },
- {
-  "id": "david-c-waybur",
   "why": "null coords"
  },
  {
@@ -548,19 +168,7 @@
   "why": "null coords"
  },
  {
-  "id": "thomas-w-fowler",
-  "why": "null coords"
- },
- {
-  "id": "melvin-e-biddle",
-  "why": "null coords"
- },
- {
   "id": "cleto-rodriguez",
-  "why": "null coords"
- },
- {
-  "id": "edward-a-silk",
   "why": "null coords"
  },
  {
@@ -573,26 +181,6 @@
  },
  {
   "id": "isidor-nordstrom",
-  "why": "null coords"
- },
- {
-  "id": "john-fitzgerald",
-  "why": "null coords"
- },
- {
-  "id": "homer-l-wise",
-  "why": "null coords"
- },
- {
-  "id": "james-e-jr-robinson",
-  "why": "null coords"
- },
- {
-  "id": "mike-colalillo",
-  "why": "null coords"
- },
- {
-  "id": "walter-d-ehlers",
   "why": "null coords"
  },
  {
@@ -612,118 +200,6 @@
   "why": "null coords"
  },
  {
-  "id": "ralphe-e-pomeroy",
-  "why": "null coords"
- },
- {
-  "id": "patrick-mcgunigal",
-  "why": "null coords"
- },
- {
-  "id": "tedford-h-cann",
-  "why": "null coords"
- },
- {
-  "id": "jesse-whitfield-covington",
-  "why": "null coords"
- },
- {
-  "id": "ora-graves",
-  "why": "null coords"
- },
- {
-  "id": "john-mackenzie",
-  "why": "null coords"
- },
- {
-  "id": "george-g-mcmurtry",
-  "why": "null coords"
- },
- {
-  "id": "francis-edward-jr-ormsbee",
-  "why": "null coords"
- },
- {
-  "id": "frank-monroe-upton",
-  "why": "null coords"
- },
- {
-  "id": "charles-d-barger",
-  "why": "null coords"
- },
- {
-  "id": "marcellus-h-chiles",
-  "why": "null coords"
- },
- {
-  "id": "henry-g-costin",
-  "why": "null coords"
- },
- {
-  "id": "alan-louis-eggers",
-  "why": "null coords"
- },
- {
-  "id": "jesse-n-funk",
-  "why": "null coords"
- },
- {
-  "id": "benjamin-kaufman",
-  "why": "null coords"
- },
- {
-  "id": "john-cridland-latham",
-  "why": "null coords"
- },
- {
-  "id": "james-i-mestrovitch",
-  "why": "null coords"
- },
- {
-  "id": "thomas-e-oshea",
-  "why": "null coords"
- },
- {
-  "id": "archie-a-peck",
-  "why": "null coords"
- },
- {
-  "id": "patrick-regan",
-  "why": "null coords"
- },
- {
-  "id": "harold-w-roberts",
-  "why": "null coords"
- },
- {
-  "id": "william-sawelson",
-  "why": "null coords"
- },
- {
-  "id": "oscar-jr-schmidt",
-  "why": "null coords"
- },
- {
-  "id": "alexander-r-skinker",
-  "why": "null coords"
- },
- {
-  "id": "edward-r-talley",
-  "why": "null coords"
- },
- {
-  "id": "nels-wold",
-  "why": "null coords"
- },
- {
-  "id": "nelson-m-holderman",
-  "why": "null coords"
- },
- {
-  "id": "michael-a-donaldson",
-  "why": "null coords"
- },
- {
   "id": "william-ahern",
   "why": "null coords"
  },
@@ -737,14 +213,6 @@
  },
  {
   "id": "daniel-atkins",
-  "why": "null coords"
- },
- {
-  "id": "john-henry-balch",
-  "why": "null coords"
- },
- {
-  "id": "unknown-belgium",
   "why": "null coords"
  },
  {
@@ -768,19 +236,7 @@
   "why": "null coords"
  },
  {
-  "id": "willis-winter-jr-bradley",
-  "why": "null coords"
- },
- {
   "id": "august-f-bronner",
-  "why": "null coords"
- },
- {
-  "id": "howard-major-buckley",
-  "why": "null coords"
- },
- {
-  "id": "john-duncan-bulkeley",
   "why": "null coords"
  },
  {
@@ -804,10 +260,6 @@
   "why": "null coords"
  },
  {
-  "id": "henry-a-sr-commiskey",
-  "why": "null coords"
- },
- {
   "id": "george-w-corliss",
   "why": "null coords"
  },
@@ -817,14 +269,6 @@
  },
  {
   "id": "william-j-creelman",
-  "why": "null coords"
- },
- {
-  "id": "william-adolphus-crouse",
-  "why": "null coords"
- },
- {
-  "id": "albert-leroy-david",
   "why": "null coords"
  },
  {
@@ -844,10 +288,6 @@
   "why": "null coords"
  },
  {
-  "id": "john-walter-ehle",
-  "why": "null coords"
- },
- {
   "id": "walter-elmore",
   "why": "null coords"
  },
@@ -856,31 +296,7 @@
   "why": "null coords"
  },
  {
-  "id": "frederick-thomas-fisher",
-  "why": "null coords"
- },
- {
-  "id": "michael-fleming-folland",
-  "why": "null coords"
- },
- {
-  "id": "bruno-albert-forsterer",
-  "why": "null coords"
- },
- {
-  "id": "robert-galbraith",
-  "why": "null coords"
- },
- {
   "id": "frederick-w-gerber",
-  "why": "null coords"
- },
- {
-  "id": "edward-h-gibson",
-  "why": "null coords"
- },
- {
-  "id": "edward-gomez",
   "why": "null coords"
  },
  {
@@ -896,10 +312,6 @@
   "why": "null coords"
  },
  {
-  "id": "charles-hazeltine-hammann",
-  "why": "null coords"
- },
- {
   "id": "bernard-harley",
   "why": "null coords"
  },
@@ -912,43 +324,11 @@
   "why": "null coords"
  },
  {
-  "id": "mikio-hasemoto",
-  "why": "null coords"
- },
- {
-  "id": "joe-hayashi",
-  "why": "null coords"
- },
- {
-  "id": "shizuya-hayashi",
-  "why": "null coords"
- },
- {
-  "id": "frank-c-high",
-  "why": "null coords"
- },
- {
   "id": "james-horton",
   "why": "null coords"
  },
  {
   "id": "james-horton-2024",
-  "why": "null coords"
- },
- {
-  "id": "osmond-k-ingram",
-  "why": "null coords"
- },
- {
-  "id": "unknown-italy",
-  "why": "null coords"
- },
- {
-  "id": "franz-anton-itrich",
-  "why": "null coords"
- },
- {
-  "id": "willy-f-jr-james",
   "why": "null coords"
  },
  {
@@ -964,23 +344,11 @@
   "why": "null coords"
  },
  {
-  "id": "joseph-leonard",
-  "why": "null coords"
- },
- {
   "id": "william-b-lewis",
   "why": "null coords"
  },
  {
   "id": "josiah-o-livingston",
-  "why": "null coords"
- },
- {
-  "id": "richard-m-longfellow",
-  "why": "null coords"
- },
- {
-  "id": "james-jonas-madison",
   "why": "null coords"
  },
  {
@@ -992,34 +360,6 @@
   "why": "null coords"
  },
  {
-  "id": "william-l-mcgonagle",
-  "why": "null coords"
- },
- {
-  "id": "michael-joseph-mcnally",
-  "why": "null coords"
- },
- {
-  "id": "kaoru-moto",
-  "why": "null coords"
- },
- {
-  "id": "kiyoshi-k-muranaga",
-  "why": "null coords"
- },
- {
-  "id": "shinyei-nakamine",
-  "why": "null coords"
- },
- {
-  "id": "william-k-nakamura",
-  "why": "null coords"
- },
- {
-  "id": "george-h-jr-obrien",
-  "why": "null coords"
- },
- {
   "id": "timothy-oconnor",
   "why": "null coords"
  },
@@ -1028,19 +368,7 @@
   "why": "null coords"
  },
  {
-  "id": "allan-m-ohata",
-  "why": "null coords"
- },
- {
   "id": "august-ohmsen",
-  "why": "null coords"
- },
- {
-  "id": "james-k-okubo",
-  "why": "null coords"
- },
- {
-  "id": "frank-h-ono",
   "why": "null coords"
  },
  {
@@ -1048,15 +376,7 @@
   "why": "null coords"
  },
  {
-  "id": "kazuo-otani",
-  "why": "null coords"
- },
- {
   "id": "theodore-s-peck",
-  "why": "null coords"
- },
- {
-  "id": "thomas-francis-prendergast",
   "why": "null coords"
  },
  {
@@ -1072,15 +392,7 @@
   "why": "null coords"
  },
  {
-  "id": "ruben-rivers",
-  "why": "null coords"
- },
- {
   "id": "john-rountry",
-  "why": "null coords"
- },
- {
-  "id": "unknown-rumania",
   "why": "null coords"
  },
  {
@@ -1088,23 +400,7 @@
   "why": "null coords"
  },
  {
-  "id": "william-seach",
-  "why": "null coords"
- },
- {
   "id": "patrick-shanahan",
-  "why": "null coords"
- },
- {
-  "id": "john-otto-siegel",
-  "why": "null coords"
- },
- {
-  "id": "jerome-a-sudut",
-  "why": "null coords"
- },
- {
-  "id": "daniel-augustus-joseph-sullivan",
   "why": "null coords"
  },
  {
@@ -1112,31 +408,11 @@
   "why": "null coords"
  },
  {
-  "id": "ted-t-tanouye",
-  "why": "null coords"
- },
- {
   "id": "charles-l-thomas",
   "why": "null coords"
  },
  {
-  "id": "william-george-thordsen",
-  "why": "null coords"
- },
- {
-  "id": "joseph-vittori",
-  "why": "null coords"
- },
- {
   "id": "rudolph-von-medem",
-  "why": "null coords"
- },
- {
-  "id": "robert-h-von-schlick",
-  "why": "null coords"
- },
- {
-  "id": "john-s-jr-walmsley",
   "why": "null coords"
  },
  {
@@ -1161,10 +437,6 @@
  },
  {
   "id": "august-wilson",
-  "why": "null coords"
- },
- {
-  "id": "unknown-world-war-i",
   "why": "null coords"
  },
  {

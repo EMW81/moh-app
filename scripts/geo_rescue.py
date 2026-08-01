@@ -23,7 +23,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GAZ = json.load(open(os.path.join(ROOT, "data", "geo", "gazetteer.json")))
 for g in GAZ: g["rx"] = re.compile(g["p"], re.I)
 
-CAMPAIGN = [  # (regex, name, lat, lng, conflicts-or-None)
+CAMPAIGN = [  # (regex, name, lat, lng, conflicts-or-None) — specific signals before theater fallback
+    (r"\bbelgium\b|\bflanders\b", "Flanders, Belgium", 50.85, 2.9, ["World War I"]),
+    (r"\bbelgium\b|\bardennes\b", "the Ardennes, Belgium", 50.25, 5.67, ["World War II"]),
+    (r"\bitaly\b|\bitalian\b", "the Italian Front", 45.9, 11.9, ["World War I"]),
+    (r"\bgermany\b", "Germany", 50.8, 9.5, ["World War I"]),
+    (r"\bchina\b|\bburma\b", "the China-Burma-India theater", 24.0, 98.0, ["World War II"]),
     (r"\bmekong\b", "the Mekong Delta, Vietnam", 9.9, 105.8, ["Vietnam War"]),
     (r"demilitarized zone|\bdmz\b", "the Vietnamese DMZ", 16.9, 107.0, ["Vietnam War"]),
     (r"central highlands", "the Central Highlands, Vietnam", 13.9, 108.1, ["Vietnam War"]),
@@ -71,7 +76,10 @@ def boxes_ok(conflict, lat, lng):
 
 def main():
     stories = json.load(open(os.path.join(ROOT, "data", "stories.json")))
-    targets = [r for r in stories if r.get("geo_precision") in ("country", "none")]
+    # idempotent: targets are defined by the PRE-rescue pipeline output (overrides.json),
+    # not the merged dataset — re-runs always re-derive the full rescue set
+    overrides = json.load(open(os.path.join(ROOT, "data", "geo", "overrides.json")))
+    targets = [r for r in stories if overrides.get(r["id"], {}).get("geo_precision") in ("country", "none")]
     out, stats = {}, {"deep_gazetteer":0,"campaign":0,"theater":0,"state":0,"still_off":0,"box_reject":0}
     for r in targets:
         text = " | ".join(filter(None,[r.get("battle"), r.get("action_place"), r.get("citation")])).lower()

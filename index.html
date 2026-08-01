@@ -395,6 +395,11 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .map-legend{left:42px;bottom:44px;display:flex;align-items:center;gap:4px;}
 .map-legend .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);display:inline-block;}
 .map-legend .legend-star{width:14px;height:14px;vertical-align:-3px;}
+.map-legend .ghost-ring{background:transparent;border:1.5px dashed var(--accent);opacity:.7;}
+.map-legend .ghost-star-slot svg{width:14px;height:14px;vertical-align:-3px;opacity:.7;}
+.pin-star.ghost{opacity:.62;}
+.pin-star.ghost svg{width:100%;height:100%;display:block;}
+.mp-approxline{font-size:10.5px;font-style:italic;color:var(--text-subtle);border-left:2px solid var(--border-strong);padding-left:6px;margin-bottom:5px;max-width:210px;}
 .map-disclaimer{right:42px;bottom:44px;color:var(--text-subtle);}
 .pin-star{width:20px;height:20px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5));}
 .pin-star img{width:100%;height:100%;display:block;}
@@ -526,7 +531,7 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 
     <div class="mapwrap" id="mapwrap" hidden>
       <div id="map"></div>
-      <div class="map-legend"><span class="dot" aria-hidden="true"></span> Survived&nbsp;&nbsp;<img class="legend-star" id="legendStar" alt="" aria-hidden="true"> Fell</div>
+      <div class="map-legend"><span class="dot" aria-hidden="true"></span> Survived&nbsp;&nbsp;<img class="legend-star" id="legendStar" alt="" aria-hidden="true"> Fell&nbsp;&nbsp;<span class="dot ghost-ring" aria-hidden="true"></span><span class="ghost-star-slot" aria-hidden="true"></span> Approximate</div>
       <div class="map-disclaimer">Pins: exact where history knows the spot; others tagged approximate.</div>
     </div>
   </main>
@@ -745,8 +750,9 @@ function renderCounts(list){
   const range = ys.length ? `${Math.min(...ys)} — ${Math.max(...ys)}` : "—";
   let mapLine = "";
   if(state.view==="map"){
-    const onMap = list.filter(mapEligible).length;
-    mapLine = ` · <span class="maponly">${onMap} of ${list.length} filtered stories shown on map · ${list.length-onMap} without precise location</span>`;
+    const elig = list.filter(mapEligible);
+    const ghosts = elig.filter(isGhost).length;
+    mapLine = ` · <span class="maponly">${elig.length} of ${list.length} filtered stories on map (${ghosts} approximate) · ${list.length-elig.length} unmappable</span>`;
   }
   $("#countbar").innerHTML =
     `<span><span class="n">${list.length} of ${STORIES.length}</span> stories · ${surv} survived · <span class="fell">${starSVG()} ${fell} fell</span>${mapLine}</span>`+
@@ -835,7 +841,9 @@ function emptyHTML(){
 /* Full-corpus scale (~3,300 pins): survived pins are CANVAS circle markers (cheap to
    pan/zoom at ~3,000); fallen pins (~450) stay branded star divIcons — few enough for
    the DOM, and the star matters most there. Popups build lazily on click. */
-let MAP=null, MAP_TILES=null, MAP_MARKERS=null, MAP_CANVAS=null, STAR_ICON=null;
+let MAP=null, MAP_TILES=null, MAP_MARKERS=null, MAP_CANVAS=null, STAR_ICON=null, GHOST_STAR_ICON=null;
+const isGhost = s => s.geo_precision==="campaign" || s.geo_precision==="region";
+const ghostStarSVG = () => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${STAR_PATH}" fill="none" stroke="var(--gold-line)" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
 function tileURL(){
   const eff = document.documentElement.getAttribute("data-theme")==="dark" ? "dark_all" : "light_all";
   return `https://{s}.basemaps.cartocdn.com/${eff}/{z}/{x}/{y}{r}.png`;
@@ -847,15 +855,20 @@ function initMap(){
   MAP_MARKERS = L.layerGroup().addTo(MAP);
   MAP_CANVAS = L.canvas({padding:0.3});
   STAR_ICON = L.divIcon({className:"",html:`<div class="pin-star"><img src="${ASSETS.star}" alt=""></div>`,iconSize:[20,20],iconAnchor:[10,10]});
+  GHOST_STAR_ICON = L.divIcon({className:"",html:`<div class="pin-star ghost">${ghostStarSVG()}</div>`,iconSize:[20,20],iconAnchor:[10,10]});
 }
 function refreshTiles(){ if(MAP && MAP_TILES) MAP_TILES.setUrl(tileURL()); }
 function popupHTML(s){
   const meta=[s.conflict,s.battle].filter(Boolean).join(" · ").toUpperCase();
   const fate=s.survived?'Survived':`<span class="gold">${starSVG()} Fell</span>`;
-  // place name is the headline of a map popup; anything below battlefield precision is tagged approximate
-  const approx = (s.geo_precision==="locality"||s.geo_precision==="region") ? ' <span class="mp-approx">approximate</span>' : "";
-  const place = s.geo_place ? `<div class="mp-place">${esc(s.geo_place)}${approx}</div>` : "";
-  return `<div class="mp-kick">${esc((s.rank+" · "+s.branch).toUpperCase())}</div>`+
+  // ghost pins lead with the disclaimer; precise pins headline the place name
+  const lead = isGhost(s)
+    ? `<div class="mp-approxline">Approximate — precise location unknown; placed near ${esc(s.geo_place||"the theater of action")}</div>`
+    : "";
+  const approx = (!isGhost(s) && s.geo_precision==="locality") ? ' <span class="mp-approx">approximate</span>' : "";
+  const place = (!isGhost(s) && s.geo_place) ? `<div class="mp-place">${esc(s.geo_place)}${approx}</div>` : "";
+  return lead+
+    `<div class="mp-kick">${esc((s.rank+" · "+s.branch).toUpperCase())}</div>`+
     `<div class="mp-name">${esc(s.name)}</div>`+
     place+
     `<div class="mp-meta">${esc(meta)}${meta?" · ":""}${fate}</div>`+
@@ -871,13 +884,20 @@ function renderMap(list){
   const stroke = css.getPropertyValue("--surface").trim();
   const pts=[];
   list.forEach(s=>{
-    // country-level/none precision excluded — a country-centroid pin misleads more
-    // than it informs (decision logged in NOTES, 2026-08-01); count surfaced in countbar
+    // unmappable (none / residual country) stay off; count surfaced in countbar
     if(!mapEligible(s)) return;
     const c=s.coords;
-    const m = s.survived
-      ? L.circleMarker([c.lat,c.lng],{renderer:MAP_CANVAS,radius:4.5,weight:1,color:stroke,fillColor:accent,fillOpacity:.85})
-      : L.marker([c.lat,c.lng],{icon:STAR_ICON});
+    let m;
+    if(isGhost(s)){
+      // approximate: ghost variants — dashed ring survived, hollow star fallen
+      m = s.survived
+        ? L.circleMarker([c.lat,c.lng],{renderer:MAP_CANVAS,radius:5,weight:1.5,color:accent,dashArray:"3 3",fillColor:accent,fillOpacity:.10,opacity:.6})
+        : L.marker([c.lat,c.lng],{icon:GHOST_STAR_ICON});
+    } else {
+      m = s.survived
+        ? L.circleMarker([c.lat,c.lng],{renderer:MAP_CANVAS,radius:4.5,weight:1,color:stroke,fillColor:accent,fillOpacity:.85})
+        : L.marker([c.lat,c.lng],{icon:STAR_ICON});
+    }
     m.bindPopup(()=>popupHTML(s));
     MAP_MARKERS.addLayer(m); pts.push([c.lat,c.lng]);
   });
@@ -1374,6 +1394,7 @@ window.addEventListener("popstate", ()=>{
 $("#wmStar").src = ASSETS.star;
 $("#legendStar").src = ASSETS.star;
 document.querySelectorAll(".star-slot").forEach(e=>{ e.innerHTML = starSVG(); });
+document.querySelectorAll(".ghost-star-slot").forEach(e=>{ e.innerHTML = ghostStarSVG(); });
 applyTheme(localStorage.getItem("moh_theme")||"auto");
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{ if((localStorage.getItem("moh_theme")||"auto")==="auto") applyTheme("auto"); });
 readURL();

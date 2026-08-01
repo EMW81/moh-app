@@ -624,7 +624,7 @@
 ]
 },
 {
-"p": "\\btientsin\\b",
+"p": "\\btientsin\\b|\\btianjin\\b",
 "n": "Tientsin (Tianjin), China",
 "lat": 39.084,
 "lng": 117.2,
