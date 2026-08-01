@@ -1,0 +1,942 @@
+{
+ "noah-o-knight": {
+  "conflict": "Korean War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Korean place-name/geocode + Korea-era unit and outpost/hill action language",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "dan-d-schoonover": {
+  "conflict": "Korean War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Korean place-name/geocode + Korea-era unit and outpost/hill action language",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "richard-t-jr-shea": {
+  "conflict": "Korean War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Korean place-name/geocode + Korea-era unit and outpost/hill action language",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "james-l-stone": {
+  "conflict": "Korean War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Korean place-name/geocode + Korea-era unit and outpost/hill action language",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "carl-h-dodd": {
+  "conflict": "Korean War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Korean place-name/geocode + Korea-era unit and outpost/hill action language",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "gordon-m-craig": {
+  "conflict": "Korean War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Korean place-name/geocode + Korea-era unit and outpost/hill action language",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-h-jr-obrien": {
+  "conflict": "Korean War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: 'enemy aggressor forces' phrasing (Korea-era) + Marine unit engaged 1951-52 actions",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "joseph-vittori": {
+  "conflict": "Korean War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: 'enemy aggressor forces' phrasing (Korea-era) + Marine unit engaged 1951-52 actions",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "vito-r-bertoldo": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Hatten, France defense, 42d Inf Div (Jan 1945 Alsace)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "martin-o-may": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Ie Shima / legusuku-Yama, Ryukyus assault (Apr 1945)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "robert-e-roeder": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Monte Battaglia, Italy, 88th Inf Div (autumn 1944)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-e-butts": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: citation: Normandy, France, June 1944 (auto WWI keyword misfire corrected)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "henry-schauer": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: citation: 23 May 1944, German snipers, Italy (auto WWI keyword misfire corrected)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "matt-urban": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Normandy (Renouf/Lingreville) 1944, 60th Inf Regt (belated 1980 presentation)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "charles-f-jr-carey": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Rimling, France, 100th Inf Div, enemy tanks (Jan 1945); 'Cheyenne, Wyo.' is residence \u2014 tribe-keyword misfire corrected",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "raymond-l-knight": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: fighter-bomber strafing, Allied drive northern Italy (Apr 1945)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "robert-t-waugh": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Tremensuoli, Italy, 85th Inf Div, 11 May 1944 era",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "edward-a-bennett": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: assault on Heckhuscheid, Germany (Feb 1945)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "chris-carr": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Casoni di Remagna ridge, Italy, 85th Inf Div (Oct 1944)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "samuel-david-dealey": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Harder 5th War Patrol, Japanese-controlled waters",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "jason-l-dunham": {
+  "conflict": "War on Terrorism (Iraq)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Iraq place field + OIF citation language, 2004/2006",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "michael-a-monsoor": {
+  "conflict": "War on Terrorism (Iraq)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: Iraq place field + OIF citation language, 2004/2006",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-b-kinne": {
+  "conflict": "Philippine-American War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: 1st North Dakota Volunteers, burning-bridge charge vs entrenched insurgents (San Isidro 1899; geocode noise)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "frank-f-ross": {
+  "conflict": "Philippine-American War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: 1st North Dakota Volunteers, burning-bridge charge vs entrenched insurgents (San Isidro 1899; geocode noise)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-h-barnes": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: U.S. Colored Troops unit \u2014 Civil War by unit type",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "charles-l-barrell": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: U.S. Colored Troops unit \u2014 Civil War by unit type",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-davis-336": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: capture of C.S.A. flag (Worrill Grays)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "aaron-r-hudson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: capture of C.S.A. flag (Worrill Grays)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "charles-bradley": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Louisville (Mississippi Squadron ironclad) battle service",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "james-byrnes": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Louisville (Mississippi Squadron ironclad) battle service",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "timothy-sullivan": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Louisville (Mississippi Squadron ironclad) battle service",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-dorman": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Carondelet actions, wounded repeatedly \u2014 river-ironclad combat",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "james-dougherty": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Carondelet actions, wounded repeatedly \u2014 river-ironclad combat",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "patrick-dougherty": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Lackawanna powder supply under heavy enemy fire (Mobile Bay)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "daniel-harrington": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Pocahontas shore party ambushed \u2014 blockade-era combat",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-s-lann": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Magnolia, attack on St. Marks, Fla. (Mar 1865)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "robert-anderson": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: USS Crusader/Keokuk actions (Keokuk: Charleston, 1863)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "fitz-w-guerin": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: 1st Missouri Light Artillery aboard steamer Cheeseman, Grand Gulf",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "henry-a-hammel": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: 1st Missouri Light Artillery aboard steamer Cheeseman, Grand Gulf",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "joseph-pesch": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: 1st Missouri Light Artillery aboard steamer Cheeseman, Grand Gulf",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "richard-n-batchelder": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: 2d Corps trains through Virginia under attack (1863)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "rufus-saxton": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: defense of Harpers Ferry (1862)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "martin-schwenk": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: 6th US Cav, through enemy lines near Millerstown PA (Gettysburg campaign)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-uhrl": {
+  "conflict": "U.S. Civil War",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: saved field gun under advancing enemy, White Oak Swamp (1862)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "thomas-boyne": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "lorenzo-d-brown": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "richard-burke": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "denis-byrne": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "joseph-a-cable": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "james-s-calvert": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "heth-canfield": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "aquilla-coonrod": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-de-armond": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-s-donelly": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "christopher-freemeyer": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "francis-c-green": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "edward-p-grimes": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-haddoo": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "david-holland": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "fred-o-hunt": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-james": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "bernhard-jetter": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "henry-johnson-1720": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "edward-johnston": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "philip-kennedy": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "wendelin-kreher": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-b-lewis": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "patrick-martin": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "bernard-mccann": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "michael-mccormick-1775": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "owen-mcgar": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-mchugh": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "michael-mcloughlin": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "robert-mcphelan": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-merrill": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-miller": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "charles-h-montrose": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-moquin": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "adam-neder": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "frederick-s-neilon": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "adam-paine": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "edwin-phoenix": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-a-poppe": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "david-roche": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "henry-rodenburg": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "edward-rooney": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "david-ryan": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "julius-schou": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "eben-stanley": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "rudolph-von-medem": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-wallace": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "patton-g-whitehead": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "charles-wilson": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-o-wilson": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-baker": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "james-b-aka-james-doshier-dozier": {
+  "conflict": "Indian Campaigns",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: regular-army company (U.S. Infantry/Cavalry/Scouts) at western frontier station \u2014 Indian Campaigns era pattern",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-robert-cholister": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "henry-clay-drexler": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "eugene-p-smith": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "thomas-john-ryan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-henry-gowan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-huber-wheeler": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "wilhelm-smith": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "robert-edward-cox": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "richard-h-taylor": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-breeman": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "mons-monssen": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "charles-s-schepke": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "august-holtz": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "harry-lipscomb": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "patrick-reid": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "charles-church-roberts": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "thomas-stanton": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "karl-westa": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "isidor-nordstrom": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "charles-a-lindbergh": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-badders": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "floyd-bennett": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "richard-evelyn-jr-byrd": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-merrill-jr-corry": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "orson-l-crandall": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-j-creelman": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "thomas-eadie": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "henry-a-eilers": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "james-fegan": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "frederick-w-gerber": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "david-harrington": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "james-horton-2024": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "carlton-barmore-hutchins": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-lucy": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-w-magee": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "joseph-matthews": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "james-harper-mcdonald": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-mihalowski": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "august-ohmsen": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "patrick-regan-2056": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-robinson": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "antonio-williams": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "henry-williams": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-willis": {
+  "conflict": "Interim Awards (Peacetime)",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: non-combat heroism (shipboard fire/explosion/wreck, rescue, expedition, or long-service award) \u2014 no enemy action in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-price-hays": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: AEF division/regiment in France, 1918 offensive context in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-s-robb": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: AEF division/regiment in France, 1918 offensive context in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "harold-w-roberts": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: AEF division/regiment in France, 1918 offensive context in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-sawelson": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: AEF division/regiment in France, 1918 offensive context in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "ludovicus-m-m-van-iersel": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: AEF division/regiment in France, 1918 offensive context in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-joseph-donovan": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: AEF division/regiment in France, 1918 offensive context in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "deming-bronson": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: AEF division/regiment in France, 1918 offensive context in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "samuel-i-parker": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: AEF division/regiment in France, 1918 offensive context in citation",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "unknown-belgium": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: honorary award to an Allied/American Unknown Soldier of the World War (acts of 1921-22)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "unknown-france": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: honorary award to an Allied/American Unknown Soldier of the World War (acts of 1921-22)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "unknown-great-britain": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: honorary award to an Allied/American Unknown Soldier of the World War (acts of 1921-22)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "unknown-italy": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: honorary award to an Allied/American Unknown Soldier of the World War (acts of 1921-22)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "unknown-rumania": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: honorary award to an Allied/American Unknown Soldier of the World War (acts of 1921-22)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "unknown-world-war-i": {
+  "conflict": "World War I",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: honorary award to an Allied/American Unknown Soldier of the World War (acts of 1921-22)",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "unknown-world-war-ii": {
+  "conflict": "World War II",
+  "conflict_uncertain": false,
+  "conflict_reason": "manual: honorary award to the American Unknown of the Second World War",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "timothy-oconnor": {
+  "conflict_uncertain": true,
+  "conflict_reason": "manual: citation states date and place of act not of record in War Department \u2014 undecidable",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-ortega": {
+  "conflict_uncertain": true,
+  "conflict_reason": "manual: USS Saratoga 'actions' with no era signal in any field \u2014 undecidable from record alone",
+  "adjudicated": "manual-2026-08-01"
+ }
+}

@@ -1,0 +1,260 @@
+{
+ "william-f-dean": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: death language is hypothetical risk ('apt to result in his death'); no death stated",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "frank-o-walker": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: 'dying comrade' refers to the man he rescued",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-j-hall": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: 'smoke had died away' \u2014 idiom, not a death",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "david-charles-dolby": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: 'his dying platoon leader' \u2014 the leader, not Dolby",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "angelo-j-liteky": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: 'last rites to the dying' \u2014 others",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "fred-henry-mcguire": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: 'his dying leader' \u2014 McGuire himself ministered on, wounded",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "joseph-timothy-ocallahan": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: 'wounded and dying' \u2014 others; he returned the ship to port",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "james-k-okubo": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: 'would have died' \u2014 the rescued crewman",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "paul-l-bolden": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: 'Twenty Germans died' \u2014 enemy dead; Bolden wounded, no death stated",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-harrington": {
+  "survived": true,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: 'defending an exposed dying man' \u2014 another soldier",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "bryant-h-womack": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-robert-cholister": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "henry-clay-drexler": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "anthony-l-krotiak": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "walter-c-wetzel": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "frederick-w-castle": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "cornelius-h-charlton": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-d-keathley": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "joseph-j-sadowski": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "jon-e-swanson": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "robert-e-femoyer": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "alfred-l-wilson": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "george-william-rud": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "clifton-t-speicher": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "arlo-l-olson": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "jonah-e-kelley": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-h-thomas": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "leroy-johnson": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-w-dutko": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "ova-a-kelley": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "robert-m-viale": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "leonard-c-brostrom": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "joseph-j-cicchetti": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "marcellus-h-chiles": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "oscar-f-miller": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "emory-j-pike": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "j-hunter-wickersham": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "erwin-r-bleckley": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "william-merrill-jr-corry": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "john-kelvin-koelsch": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "thomas-james-reeves": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "edwin-f-savacool": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ },
+ "louis-j-sebille": {
+  "survived": false,
+  "survived_confidence": "high",
+  "survived_reason": "adjudicated: citation states the recipient's death explicitly",
+  "adjudicated": "manual-2026-08-01"
+ }
+}
