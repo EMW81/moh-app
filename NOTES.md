@@ -872,3 +872,25 @@ invalid_credentials and surfaces as "Wrong email or password."; /auth/v1/recover
 responds 200. No real account passwords in reach, so an actual session was NOT
 exercised end-to-end — first human sign-in is the remaining smoke test; the flow
 was fully verified against the API mock previously.
+
+## 2026-08-02 — Map fixes: dropdown z-index over Leaflet + count transparency
+
+1. Z-INDEX: popovers were z 50 under Leaflet's panes (~700-1000) on the Map view —
+   same class as the old modal bug. Popovers now use var(--z-modal) (2000), scrim
+   calc(var(--z-modal) - 10). Verified: Conflict dropdown opens fully over the map,
+   light + dark.
+2. COUNT TRANSPARENCY: map view's countbar now appends "X of Y filtered stories
+   shown on map · Z without precise location", live with filters.
+   EXACT COVERAGE (post-recovery): map-eligible 2,495 of 3,475. By tier:
+   battlefield 1,219 / locality 1,054 / country 687 (excluded) / none 293 (excluded)
+   / exact 160 / region 62.
+3. KOREA INVESTIGATION: eligible records all render (no rendering bug). The low
+   count was data-side: 92/160 Korean War records carry action_place = literally
+   "South Korea" (country tier, honestly excluded); ~40 more were dropped for
+   mojibake ("?????, Yangchon-myeon...") or unretried empty geocodes. FIX: mojibake
+   segment salvage + query ladder (full string -> tail segments) in geo_fix.
+   Korea 28 -> 38 pins (all inside the Korea box); corpus-wide unplaced 770 -> 293,
+   map-eligible 2,290 -> 2,495 (+205). Remaining Korea gap is source-data poverty,
+   now explained in the UI by the count line.
+NOTE: a fourth profile (Eric) appeared in Supabase and renders correctly in the
+picks sidebar — the layer is fully dynamic over the profiles table.

@@ -305,9 +305,11 @@ main{margin-left:230px;flex:1 1 auto;min-width:0;display:flex;flex-direction:col
 .empty .actions{display:flex;gap:10px;margin-top:4px;}
 
 /* ---------- popover menus ---------- */
-.scrim{position:fixed;inset:0;background:rgba(0,0,0,.28);z-index:40;opacity:0;pointer-events:none;transition:opacity .12s ease;}
+/* z-index: var(--z-modal) (2000) escapes Leaflet's panes/controls (~700-1000), same fix
+   as the detail modal — dropdowns must open fully over the Map view */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.28);z-index:calc(var(--z-modal) - 10);opacity:0;pointer-events:none;transition:opacity .12s ease;}
 .scrim.open{opacity:1;pointer-events:auto;}
-.popover{position:absolute;z-index:50;background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow-lg);
+.popover{position:absolute;z-index:var(--z-modal);background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow-lg);
   padding:0;display:none;}
 .popover.open{display:block;}
 .menu-list{max-height:340px;overflow-y:auto;padding:8px;min-width:230px;}
@@ -735,13 +737,19 @@ function renderActive(){
 }
 
 /* ===================== render: count bar ===================== */
+const mapEligible = s => s.coords && s.coords.lat!=null && s.geo_precision!=="country" && s.geo_precision!=="none";
 function renderCounts(list){
   const fell = list.filter(s=>!s.survived).length;
   const surv = list.length - fell;
   const ys = list.map(s=>s._year).filter(Boolean);
   const range = ys.length ? `${Math.min(...ys)} — ${Math.max(...ys)}` : "—";
+  let mapLine = "";
+  if(state.view==="map"){
+    const onMap = list.filter(mapEligible).length;
+    mapLine = ` · <span class="maponly">${onMap} of ${list.length} filtered stories shown on map · ${list.length-onMap} without precise location</span>`;
+  }
   $("#countbar").innerHTML =
-    `<span><span class="n">${list.length} of ${STORIES.length}</span> stories · ${surv} survived · <span class="fell">${starSVG()} ${fell} fell</span></span>`+
+    `<span><span class="n">${list.length} of ${STORIES.length}</span> stories · ${surv} survived · <span class="fell">${starSVG()} ${fell} fell</span>${mapLine}</span>`+
     `<span class="range">${range}</span>`;
 }
 
@@ -863,10 +871,10 @@ function renderMap(list){
   const stroke = css.getPropertyValue("--surface").trim();
   const pts=[];
   list.forEach(s=>{
-    const c=s.coords; if(!c||c.lat==null||c.lng==null) return;
-    // country-level/none precision: excluded from the map — a country-centroid pin
-    // misleads more than it informs (decision logged in NOTES, 2026-08-01)
-    if(s.geo_precision==="country"||s.geo_precision==="none") return;
+    // country-level/none precision excluded — a country-centroid pin misleads more
+    // than it informs (decision logged in NOTES, 2026-08-01); count surfaced in countbar
+    if(!mapEligible(s)) return;
+    const c=s.coords;
     const m = s.survived
       ? L.circleMarker([c.lat,c.lng],{renderer:MAP_CANVAS,radius:4.5,weight:1,color:stroke,fillColor:accent,fillOpacity:.85})
       : L.marker([c.lat,c.lng],{icon:STAR_ICON});

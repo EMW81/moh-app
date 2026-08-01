@@ -45,10 +45,24 @@ def candidate_place(r):
         c = clean_place(m.group(1))
         if 3 <= len(c) <= 90 and "?" not in c: return c
     ap = (r.get("action_place") or "").strip()
-    if ap and "?" not in ap:
+    if ap:
+        if "?" in ap:
+            # mojibake (lost non-ASCII): salvage the clean comma segments —
+            # "?????, Yangchon-myeon, Nonsan-si" -> "Yangchon-myeon, Nonsan-si"
+            segs = [s.strip() for s in ap.split(",") if s.strip() and "?" not in s]
+            if segs: return clean_place(", ".join(segs))
+            return None
         polluted = r["conflict"] in OVERSEAS and (STREET.search(ap) or ap.endswith("USA"))
         if not polluted: return clean_place(ap)
     return None
+
+def query_ladder(q):
+    """Full string first; empty results retry on the tail segments (county/city level)."""
+    segs = [s.strip() for s in q.split(",") if s.strip()]
+    out = [q]
+    if len(segs) >= 3: out.append(", ".join(segs[-2:]))
+    if len(segs) >= 2: out.append(segs[-1])
+    return out
 
 PREC_BY_TYPE = {
     "city":"locality","town":"locality","village":"locality","hamlet":"locality",
@@ -100,12 +114,16 @@ def main():
             continue
         q = candidate_place(r)
         if q:
-            res = nominatim(q, cache, offline)
-            if res is None:
-                queue.add(q); stats["queue"] += 1
-                continue
-            if isinstance(res, list) and res:
-                item = res[0]
+            item = None; pending = False
+            for attempt in query_ladder(q):
+                res = nominatim(attempt, cache, offline)
+                if res is None:
+                    queue.add(attempt); stats["queue"] += 1; pending = True
+                    break
+                if isinstance(res, list) and res:
+                    item = res[0]; break
+            if pending: continue
+            if item:
                 lat, lng = float(item["lat"]), float(item["lon"])
                 prec = PREC_BY_TYPE.get(item.get("addresstype") or item.get("type"), "locality")
                 if item.get("type") in ("administrative",) and item.get("place_rank", 30) <= 8:
