@@ -856,3 +856,19 @@ exact/battlefield pins now skip theater boxes (Midway, Attu, Philippine Sea).
 
 QUEUE STATUS: urgent map task DONE. Still pending: Task-1 remainder (tag review of
 521 confidence=low), Task 2 (post-2014 top-up), Task 3 (photos at scale).
+
+## 2026-08-01 (later) — Favorites layer ACTIVATED against live Supabase
+
+Real credentials received (new publishable-key format — works unchanged with our
+fetch client, which always sent the key via the apikey header; no adaptation needed).
+Correction: third user is BRANDT with a D (docs/schema comments fixed; app code never
+hardcoded names — display names come from the profiles table, which reads
+Darrin/sky, Chet/moss, Brandt/amber).
+
+LIVE verification (headless vs the real project): layer activates; 3 profiles load;
+picks section renders (all counts 0 — no favorites yet); hearts visible signed-out
+and clicking prompts sign-in + opens the auth box; wrong-password sign-in returns
+invalid_credentials and surfaces as "Wrong email or password."; /auth/v1/recover
+responds 200. No real account passwords in reach, so an actual session was NOT
+exercised end-to-end — first human sign-in is the remaining smoke test; the flow
+was fully verified against the API mock previously.
